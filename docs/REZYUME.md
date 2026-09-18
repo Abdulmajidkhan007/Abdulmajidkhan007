@@ -2,7 +2,7 @@
 
 **AI Automation & Full-stack Engineer** · Python · LLM · React
 
-📞 +998 90 854 56 03 · ✉️ abdulmajidsharipovic@gmail.com · 📍 Qo'qon, O'zbekiston
+📞 +998 90 854 56 03 · ✉️ abdullohhacker007@gmail.com · 📍 Qo'qon, O'zbekiston
 💬 Telegram: [@Abdulloh_77700](https://t.me/Abdulloh_77700)
 🔗 GitHub: [github.com/Abdulmajidkhan007](https://github.com/Abdulmajidkhan007)
 🔗 LinkedIn: [linkedin.com/in/abdulmajid-sharipov-profile](https://linkedin.com/in/abdulmajid-sharipov-profile)
@@ -77,7 +77,7 @@ frontend.
 
 ### 🛍 Atoyo — E-Commerce va boshqaruv platformasi
 `Next.js` `TypeScript` `Firebase Firestore` `Telegram integratsiya`
-🔗 https://github.com/Abdulmajidkhan007/atoyo-e-commerce · 🌐 https://atoyo-uz.web.app
+🔗 https://github.com/Abdulmajidkhan007/atoyo-e-commerce · 🌐 https://atoyo.uz
 *2026-07 → hozirgacha · **jonli ishlayapti***
 
 - Mahsulotlar, toifalar, qoldiq va buyurtmalarni boshqaruvchi **to'liq admin panel**

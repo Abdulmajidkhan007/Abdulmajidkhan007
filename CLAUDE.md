@@ -58,7 +58,7 @@ sababini yozgan odam ajralib turadi.
 === LOYIHALAR (boshlang'ich ro'yxat, tekshirilgan) ===
 ✅ Ishlayapti:
   atoyo-e-commerce — Next.js 16 + Firebase + Telegram integratsiya,
-    10 000+ mahsulot, jonli: atoyo-uz.web.app
+    10 000+ mahsulot, jonli: atoyo.uz
   telegram-bots — 11 ta bot monorepo (7 Node, 3 Python, 1 TS),
     bitta clone bilan hammasi, npm start bilan birdan ishga tushadi
 

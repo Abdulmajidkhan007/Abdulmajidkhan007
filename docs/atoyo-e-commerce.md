@@ -2,7 +2,7 @@
 
 > Qo'qondagi santexnika do'koni uchun to'liq e-commerce platformasi: 10 000+ mahsulot, admin panel, Telegram integratsiya.
 
-**Repo:** https://github.com/Abdulmajidkhan007/atoyo-e-commerce · **Jonli:** https://atoyo-uz.web.app
+**Repo:** https://github.com/Abdulmajidkhan007/atoyo-e-commerce · **Jonli:** https://atoyo.uz
 **Holat:** ✅ Ishlayapti
 
 ---
@@ -79,7 +79,7 @@ tezligi yetarli. VPS ushlab turish va sertifikat yangilash ishi qolmaydi.
 ## Havolalar
 
 - Repo: https://github.com/Abdulmajidkhan007/atoyo-e-commerce
-- Jonli sayt: https://atoyo-uz.web.app
+- Jonli sayt: https://atoyo.uz
 
 ---
 

@@ -8,8 +8,8 @@
   <a href="https://t.me/Abdulloh_77700">
     <img src="https://img.shields.io/badge/Telegram-@Abdulloh__77700-2CA5E0?style=flat&logo=telegram&logoColor=white" alt="Telegram">
   </a>
-  <a href="mailto:abdulmajidsharipovic@gmail.com">
-    <img src="https://img.shields.io/badge/Email-abdulmajidsharipovic@gmail.com-EA4335?style=flat&logo=gmail&logoColor=white" alt="Email">
+  <a href="mailto:abdullohhacker007@gmail.com">
+    <img src="https://img.shields.io/badge/Email-abdullohhacker007@gmail.com-EA4335?style=flat&logo=gmail&logoColor=white" alt="Email">
   </a>
   <img src="https://img.shields.io/badge/Qo'qon-O'zbekiston-1f6feb?style=flat" alt="Manzil">
 </p>
@@ -44,7 +44,7 @@ vektor qidiruv.
 
 | Loyiha | Nima qiladi | Stack | Holat | Batafsil |
 |---|---|---|---|---|
-| **[atoyo-e-commerce](https://github.com/Abdulmajidkhan007/atoyo-e-commerce)** | Santexnika do'koni uchun to'liq e-commerce: 10 000+ mahsulot, admin panel, Telegram integratsiya. Jonli: [atoyo-uz.web.app](https://atoyo-uz.web.app) | Next.js 16 · Firebase · TypeScript | ✅ Ishlayapti | [📄](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/atoyo-e-commerce.md) |
+| **[atoyo-e-commerce](https://github.com/Abdulmajidkhan007/atoyo-e-commerce)** | Santexnika do'koni uchun to'liq e-commerce: 10 000+ mahsulot, admin panel, Telegram integratsiya. Jonli: [atoyo.uz](https://atoyo.uz) | Next.js 16 · Firebase · TypeScript | ✅ Ishlayapti | [📄](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/atoyo-e-commerce.md) |
 | **[telegram-bots](https://github.com/Abdulmajidkhan007/telegram-bots)** | 12 ta mustaqil bot bitta repoda — bitta clone, bitta buyruq bilan hammasi ishga tushadi | Node · Python · TypeScript | ✅ Ishlayapti | [📄](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/telegram-bots.md) |
 | **learning-datacenter-tc-project** 🔒 | O'quv markazlari uchun on-premise CRM: 46 jadval, ruxsatga asoslangan RBAC, multi-tenancy | NestJS 11 · Prisma 7 · Next.js 16 | 🚧 Qurilmoqda | [📄](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/learning-datacenter-tc-project.md) |
 | **portfolio-3d** 🔒 | 3D portfolio sayti — Lighthouse desktop 97 (o'lchangan) | R3F · GSAP · Lenis · Vitest | 🚧 Qurilmoqda | [📄](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/portfolio-3d.md) |
