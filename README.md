@@ -42,21 +42,40 @@ vektor qidiruv.
 
 ## 📦 Loyihalar
 
-| Loyiha | Nima qiladi | Stack | Holat | Batafsil |
-|---|---|---|---|---|
-| **[atoyo-e-commerce](https://github.com/Abdulmajidkhan007/atoyo-e-commerce)** | Santexnika do'koni uchun to'liq e-commerce: 10 000+ mahsulot, admin panel, Telegram integratsiya. Jonli: [atoyo.uz](https://atoyo.uz) | Next.js 16 · Firebase · TypeScript | ✅ Ishlayapti | [📄](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/atoyo-e-commerce.md) |
-| **[telegram-bots](https://github.com/Abdulmajidkhan007/telegram-bots)** | 12 ta mustaqil bot bitta repoda — bitta clone, bitta buyruq bilan hammasi ishga tushadi | Node · Python · TypeScript | ✅ Ishlayapti | [📄](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/telegram-bots.md) |
-| **learning-datacenter-tc-project** 🔒 | O'quv markazlari uchun on-premise CRM: 46 jadval, ruxsatga asoslangan RBAC, multi-tenancy | NestJS 11 · Prisma 7 · Next.js 16 | 🚧 Qurilmoqda | [📄](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/learning-datacenter-tc-project.md) |
-| **portfolio-3d** 🔒 | 3D portfolio sayti — Lighthouse desktop 97 (o'lchangan) | R3F · GSAP · Lenis · Vitest | 🚧 Qurilmoqda | [📄](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/portfolio-3d.md) |
-| **web-3d** 🔒 | To'liq ekranli WebGL fon + Higgsfield AI. Bitta kodbaza uch rejimda ishlaydi | three.js · Higgsfield AI | 🚧 Qurilmoqda | [📄](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/web-3d.md) |
-| **[rn-r-e-commerce](https://github.com/Abdulmajidkhan007/rn-r-e-commerce)** | KidsWear: veb + Expo mobil monorepo, umumiy design token, uz/en/ru | Next.js · Expo · TypeScript | 🚧 Qurilmoqda | [📄](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/rn-r-e-commerce.md) |
-| **[go-uz](https://github.com/Abdulmajidkhan007/go-uz)** | Vroom — ride-hailing va kuryer super-app, 9 ta umumiy paket | Turborepo · pnpm · TypeScript | 🚧 Qurilmoqda | [📄](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/go-uz.md) |
-| **[ios-asistent](https://github.com/Abdulmajidkhan007/ios-asistent)** | Salom AI — o'zbekcha ovozli AI yordamchi | TypeScript · LLM API | 🚧 Qurilmoqda | [📄](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/ios-asistent.md) |
-| **[countlist](https://github.com/Abdulmajidkhan007/countlist)** | Guruh xarajatlarini hisoblovchi bot + dashboard (Python va TS versiyalari) | FastAPI · NestJS · React | 🚧 Qurilmoqda | [📄](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/countlist.md) |
-| **[lumina](https://github.com/Abdulmajidkhan007/lumina)** | Expo SDK 53 asosidagi social app | React Native · Expo | 🚧 Qurilmoqda | [📄](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/lumina.md) |
-| **DevCraft-AI** 🔒 | BYOK zero-knowledge AI muhiti (AES-256-GCM, PBKDF2), WebContainers sandbox | TypeScript · Turborepo | ❄️ Muzlatilgan | [📄](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/DevCraft-AI.md) |
+✅ **[atoyo-e-commerce](https://github.com/Abdulmajidkhan007/atoyo-e-commerce)** — santexnika do'koni uchun to'liq e-commerce: 10 000+ mahsulot, admin panel, Telegram integratsiya<br>
+<sub>Next.js 16 · Firebase · TypeScript · [🌐 atoyo.uz](https://atoyo.uz) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/atoyo-e-commerce.md)</sub>
 
-🔒 — repo hozircha yopiq. So'rasangiz ko'rsataman.
+✅ **[telegram-bots](https://github.com/Abdulmajidkhan007/telegram-bots)** — 12 ta mustaqil bot bitta repoda — bitta clone, bitta buyruq bilan hammasi ishga tushadi<br>
+<sub>Node · Python · TypeScript · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/telegram-bots.md)</sub>
+
+🚧 **learning-datacenter 🔒** — o'quv markazlari uchun on-premise CRM: 46 jadval, ruxsatga asoslangan RBAC, multi-tenancy<br>
+<sub>NestJS 11 · Prisma 7 · Next.js 16 · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/learning-datacenter-tc-project.md)</sub>
+
+🚧 **portfolio-3d 🔒** — 3D portfolio sayti, Lighthouse desktop 97 (o'lchangan), Vitest invariant testlar<br>
+<sub>R3F · three.js · GSAP · Lenis · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/portfolio-3d.md)</sub>
+
+🚧 **web-3d 🔒** — to'liq ekranli WebGL fon, bitta kodbaza uch rejimda: LIVE / MOCK / BROWSER<br>
+<sub>three.js · WebGL · Higgsfield AI · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/web-3d.md)</sub>
+
+🚧 **[rn-r-e-commerce](https://github.com/Abdulmajidkhan007/rn-r-e-commerce)** — KidsWear: veb va mobil bitta monorepoda, umumiy design token, uz/en/ru<br>
+<sub>Next.js · Expo · TypeScript · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/rn-r-e-commerce.md)</sub>
+
+🚧 **[go-uz](https://github.com/Abdulmajidkhan007/go-uz)** — Vroom — ride-hailing va kuryer super-app, 9 ta umumiy paket qurilgan<br>
+<sub>Turborepo · pnpm · TypeScript · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/go-uz.md)</sub>
+
+🚧 **[ios-asistent](https://github.com/Abdulmajidkhan007/ios-asistent)** — Salom AI — o'zbekcha ovozli AI yordamchi<br>
+<sub>TypeScript · LLM API · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/ios-asistent.md)</sub>
+
+🚧 **[countlist](https://github.com/Abdulmajidkhan007/countlist)** — guruh xarajatlarini hisoblovchi bot va dashboard (Python va TS versiyalari)<br>
+<sub>FastAPI · NestJS · React · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/countlist.md)</sub>
+
+🚧 **[lumina](https://github.com/Abdulmajidkhan007/lumina)** — Expo asosidagi social app<br>
+<sub>React Native · Expo SDK 53 · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/lumina.md)</sub>
+
+❄️ **DevCraft-AI 🔒** — BYOK zero-knowledge AI muhiti — kalit faqat brauzerda, server uni ko'rmaydi<br>
+<sub>TypeScript · AES-256-GCM · WebContainers · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/DevCraft-AI.md)</sub>
+
+<sub>✅ Ishlayapti · 🚧 Qurilmoqda · ❄️ Muzlatilgan · 🔒 repo yopiq, so'rasangiz ko'rsataman</sub>
 
 ---
 
