@@ -102,7 +102,8 @@ monorepo, `xulosa-ai-bot`, `atoyo-ai-bot`, `countlist`, `ios-asistent`.
 Quyidagi faktlar `CLAUDE.md` dagi ro'yxatdan olindi, lekin repolar bu
 sessiyada ochilmagani uchun kod bilan solishtirilmadi:
 
-- [ ] `countlist` da **Whisper** ishlatilganmi
+- [x] `countlist` da **Whisper** ishlatilganmi — **HA**, tasdiqlandi
+      (`bot/services/voice.py`, OpenAI `whisper-1`, `language="uz"`)
 - [ ] `learning-datacenter-tc-project` — 46 jadval, Prisma 7 versiyasi
 - [ ] `portfolio-3d` — Lighthouse 97 / 65–71 raqamlari
 - [ ] `go-uz` — 9 ta umumiy paket
@@ -127,3 +128,40 @@ Har repo ochilganda `docs/<repo>.md` yangilanadi va sana qo'yiladi
 ---
 
 *Yozilgan: 2026-09-18*
+
+---
+
+## 6. 2026-09-21 — qo'shimcha ish
+
+### Repolar tekshiruvi
+
+12 ta alohida bot reposi monorepodagi nusxasi bilan solishtirildi (fayl
+nomlari va hajmlari bo'yicha):
+
+| Repo | Natija |
+|---|---|
+| anonim-bot, quiz-bot, malware-bot, gemini-qa-bot, idfinder-bot, arxiv-topadi-bot, killspam-bot, countlist-ts-node | monorepoda AYNAN bor (README +66 bayt: muallif qatori) |
+| xulosa-ai-bot | monorepodagi nusxasi YANGIROQ (testlar va tuzatishlar bilan) |
+| countlist | monorepoda YO'Q edi → `bots/countlist-python` sifatida qo'shildi |
+| first-bot | 11 baytlik README, bot yo'q |
+| asistent-bot | repo umuman bo'sh, bitta ham commit yo'q |
+
+### ⚠️ Xavfsizlik hodisasi
+
+`countlist` reposining `SETUP_NO_DOCKER.md` faylida **haqiqiy Telegram bot
+tokeni** va `SECRET_KEY` ochiq yozilgan. Repo public. Monorepodagi nusxada
+ikkalasi ham namuna qiymatga almashtirildi, lekin **token `countlist`
+reposining git tarixida qolmoqda** — BotFather'da bekor qilinishi shart.
+
+### main branchlar
+
+32 ta repodan 20 tasida `main` yo'q edi — yaratildi (har birining eng
+yangi default branchidan). Default branchni almashtirish repo sozlamasi,
+uni egasi o'zi qiladi.
+
+`asistent-bot` bo'sh bo'lgani uchun unda branch yaratib bo'lmaydi.
+
+### portfolio-3d
+
+`main` yaratildi. CSP inline skriptni bloklayotgani tuzatildi (hash +
+invariant test). Netlify'da production branch `main` ga o'tkazilishi kerak.

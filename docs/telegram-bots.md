@@ -1,6 +1,6 @@
 # telegram-bots
 
-> 12 ta mustaqil Telegram bot bitta repoda: bitta clone, bitta buyruq — hammasi ishga tushadi.
+> 13 ta mustaqil Telegram bot bitta repoda: bitta clone, bitta buyruq — hammasi ishga tushadi.
 
 **Repo:** https://github.com/Abdulmajidkhan007/telegram-bots · **Jonli:** botlar Telegram'da
 **Holat:** ✅ Ishlayapti
@@ -21,7 +21,7 @@ kerak**. Papkani nusxalab olsang, bot mustaqil ishlashi shart.
 
 | Qatlam | Texnologiya |
 |---|---|
-| Runtime | Node.js ≥18 (7 bot) · Python 3 (4 bot) · TypeScript (1 monorepo) |
+| Runtime | Node.js ≥18 (7 bot) · Python 3 (5 bot) · TypeScript (1 monorepo) |
 | Telegram | node-telegram-bot-api · Telethon (MTProto/userbot) · aiogram 3 |
 | AI | Google Gemini API (matn, vision, audio) |
 | Baza | SQLite · PostgreSQL (killspam-bot) · ChromaDB (atoyo-rag-bot) |
@@ -83,11 +83,12 @@ tugaydi. Sekin test yozilmaydi va ishlatilmaydi.
 | `atoyo-ai-bot` | Python | Mahsulot rasmini Gemini Vision bilan katalog kartochkasiga aylantiradi (pHash dublikat filtri) |
 | `atoyo-rag-bot` | Python | Katalog ustida RAG savol-javob, lid → admin guruh + n8n |
 | `countlist-ts-node` | TypeScript | Xarajat boti + NestJS API + React dashboard |
+| `countlist-python` | Python | O'sha mahsulotning Python varianti: aiogram + FastAPI + Whisper |
 
 ## Holat
 
 **Ishlaydi:**
-- 12 ta bot, `npm run list` / `npm run start` orqali boshqariladi
+- 13 ta bot, `npm run list` / `npm run start` orqali boshqariladi
 - `npm run check` — testlar + kalit skaneri, yashil
 - Har botda o'z README va `.env.example`
 
@@ -108,4 +109,4 @@ tugaydi. Sekin test yozilmaydi va ishlatilmaydi.
 
 ---
 
-*Oxirgi yangilanish: 2026-09-18*
+*Oxirgi yangilanish: 2026-09-21*

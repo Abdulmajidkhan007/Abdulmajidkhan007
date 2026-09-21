@@ -26,7 +26,7 @@ frontend.
 
 | Yo'nalish | Texnologiyalar |
 |---|---|
-| **AI & LLM** | Google Gemini API (matn, vision, audio — multimodal), Anthropic Claude API, Prompt engineering, RAG, LangChain, ChromaDB, vektor qidiruv va embeddinglar |
+| **AI & LLM** | Google Gemini API (matn, vision, audio — multimodal), Anthropic Claude API, OpenAI Whisper API (nutqni matnga o'girish), Prompt engineering, RAG, LangChain, ChromaDB, vektor qidiruv va embeddinglar |
 | **Python** | aiogram 3, Telethon (MTProto/userbot), FastAPI, asyncio, SQLite, Pillow |
 | **JavaScript / TypeScript** | React, Next.js, Redux Toolkit, TailwindCSS, Node.js, NestJS, Prisma |
 | **Integratsiya** | REST API, Webhook, Telegram Bot API, Firebase (Firestore, Auth, Functions), n8n webhook, CRM/admin kanallariga lid uzatish |
@@ -87,13 +87,15 @@ frontend.
 - Firestore real-time baza + Firebase Authentication (Google Sign-In, OTP).
 
 ### 💰 Countlist — guruh xarajatlarini hisoblovchi tizim
-`TypeScript` `NestJS` `Prisma` `React` `Python`
+`TypeScript` `NestJS` `Prisma` `React` `Python` `FastAPI` `OpenAI Whisper`
 🔗 https://github.com/Abdulmajidkhan007/countlist-ts-node ·
 https://github.com/Abdulmajidkhan007/countlist · *2026-05*
 
 - Telegram bot + **NestJS API** + React dashboard — uchtasi bitta monorepoda,
   TypeScript `strict` rejimida.
 - Guruhdagi xarajatlarni yozib boradi, bo'lishadi va veb-panelda ko'rsatadi.
+- **Ovozli xabar** OpenAI Whisper orqali matnga o'giriladi va xarajatga aylantiriladi
+  (Python versiyasi: FastAPI + aiogram + PostgreSQL + Redis).
 
 ### 🎙 Salom AI (ios-asistent) — o'zbekcha ovozli AI yordamchi
 `TypeScript` `LLM API`
@@ -121,5 +123,5 @@ O'zbek (ona tili) · Rus · Ingliz (texnik hujjatlar)
 
 ---
 
-*Oxirgi yangilanish: 2026-09-17. Yuqoridagi barcha havolalar ochiq — kodni
+*Oxirgi yangilanish: 2026-09-21. Yuqoridagi barcha havolalar ochiq — kodni
 bevosita tekshirib ko'rishingiz mumkin.*
