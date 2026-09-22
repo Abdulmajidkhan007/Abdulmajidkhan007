@@ -51,8 +51,8 @@ vektor qidiruv.
 🚧 **learning-datacenter 🔒** — o'quv markazlari uchun on-premise CRM: 46 jadval, ruxsatga asoslangan RBAC, multi-tenancy<br>
 <sub>NestJS 11 · Prisma 7 · Next.js 16 · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/learning-datacenter-tc-project.md)</sub>
 
-🚧 **portfolio-3d 🔒** — 3D portfolio sayti, Lighthouse desktop 97 (o'lchangan), Vitest invariant testlar<br>
-<sub>R3F · three.js · GSAP · Lenis · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/portfolio-3d.md)</sub>
+🚧 **portfolio-3d 🔒** — full-stack 3D portfolio: Firebase Hosting + Cloud Functions backend, Lighthouse desktop 97 (o'lchangan)<br>
+<sub>R3F · three.js · GSAP · Firebase · Cloud Functions · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/portfolio-3d.md)</sub>
 
 🚧 **web-3d 🔒** — to'liq ekranli WebGL fon, bitta kodbaza uch rejimda: LIVE / MOCK / BROWSER<br>
 <sub>three.js · WebGL · Higgsfield AI · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/web-3d.md)</sub>
