@@ -1,127 +1,82 @@
 # Abdulmajid Sharipov
 
-**AI Automation & Full-stack Engineer** · Python · LLM · React
+**Frontend Engineer**
 
-📞 +998 90 854 56 03 · ✉️ abdullohhacker007@gmail.com · 📍 Qo'qon, O'zbekiston
-💬 Telegram: [@Abdulloh_77700](https://t.me/Abdulloh_77700)
-🔗 GitHub: [github.com/Abdulmajidkhan007](https://github.com/Abdulmajidkhan007)
-🔗 LinkedIn: [linkedin.com/in/abdulmajid-sharipov-profile](https://linkedin.com/in/abdulmajid-sharipov-profile)
++998 90 854 56 03 · [abdullohhacker007@gmail.com](mailto:abdullohhacker007@gmail.com) ·
+Telegram: [@Abdulloh_77700](https://t.me/Abdulloh_77700) · Qo'qon, O'zbekiston
+[github.com/Abdulmajidkhan007](https://github.com/Abdulmajidkhan007) ·
+[linkedin.com/in/abdulmajid-sharipov-profile](https://linkedin.com/in/abdulmajid-sharipov-profile)
 
 ---
 
 ## Profil
 
-O'zbek bozori uchun LLM-ga asoslangan mahsulotlar quraman: Telegram botlar, RAG
-tizimlari va ularni biznes jarayonlariga ulovchi integratsiyalar. Kuchli tomonim —
-g'oyani ishlaydigan, foydalanuvchi qo'lidagi tizimga aylantirish: 11 ta bot ishlab
-chiqarishda, e-commerce platformasi jonli ishlayapti.
-
-Asosiy yo'nalish: **Python (aiogram, Telethon, FastAPI)**, **LLM integratsiyasi
-(Gemini, Anthropic Claude)**, **RAG (LangChain + ChromaDB)** va **React/TypeScript**
-frontend.
+React va TypeScript bilan veb interfeyslar quraman. So'nggi yildagi asosiy ishim —
+Next.js asosidagi e-commerce platformasi: katalog, admin panel va buyurtma oqimi;
+u bugun ham real do'konda ishlatilmoqda. Backend tomonini ham o'zim yopaman
+(Node.js, Python), kerak bo'lganda LLM integratsiyalarini qo'shaman — lekin asosiy
+yo'nalishim frontend.
 
 ---
 
 ## Texnik ko'nikmalar
 
-| Yo'nalish | Texnologiyalar |
-|---|---|
-| **AI & LLM** | Google Gemini API (matn, vision, audio — multimodal), Anthropic Claude API, OpenAI Whisper API (nutqni matnga o'girish), Prompt engineering, RAG, LangChain, ChromaDB, vektor qidiruv va embeddinglar |
-| **Python** | aiogram 3, Telethon (MTProto/userbot), FastAPI, asyncio, SQLite, Pillow |
-| **JavaScript / TypeScript** | React, Next.js, Redux Toolkit, TailwindCSS, Node.js, NestJS, Prisma |
-| **Integratsiya** | REST API, Webhook, Telegram Bot API, Firebase (Firestore, Auth, Functions), n8n webhook, CRM/admin kanallariga lid uzatish |
-| **Ma'lumotlar bazasi** | Firestore, PostgreSQL (Prisma), SQLite, ChromaDB (vektor) |
-| **DevOps & vositalar** | Git, GitHub, GitHub Actions, Docker Compose, Linux / CLI, Termux |
+**Frontend:** React, Next.js, TypeScript, JavaScript, Tailwind CSS, Redux Toolkit
+**Backend:** Node.js, NestJS, Python (FastAPI, aiogram), REST API
+**Ma'lumotlar bazasi:** PostgreSQL, Firestore, SQLite
+**Vositalar:** Git, Docker, Firebase, Vite, Vitest
+**AI:** Gemini API, LangChain, ChromaDB
 
 ---
 
 ## Loyihalar
 
-### 🤖 Telegram Bots Monorepo — 11 ta bot, bitta repo
-`Python` `Node.js` `Telethon` `aiogram` `Gemini API` `SQLite`
-🔗 https://github.com/Abdulmajidkhan007/telegram-bots · *2026-07 → hozirgacha*
+### Atoyo — e-commerce platformasi
+[atoyo.uz](https://atoyo.uz) · [kod](https://github.com/Abdulmajidkhan007/atoyo-e-commerce)
+`Next.js 16 · TypeScript · Tailwind CSS · Firebase (Firestore, Auth) · Telegram Bot API`
 
-- **11 ta mustaqil bot** bitta monorepoda: har biri o'z `requirements.txt`/`package.json`,
-  o'z `.env.example` va README bilan — papkani nusxalab olsang, bot alohida ishlaydi.
-- **Markazlashgan CLI** (`tools/run.js`) `bots.json` reestri asosida barcha botlarni
-  ro'yxatlaydi, o'rnatadi va ishga tushiradi; `tools/registry.js` — I/O siz toza mantiq,
-  test bilan qoplangan.
-- **Kalit sizib chiqishiga qarshi himoya**: `tools/scan-secrets.js` har commit oldidan
-  avtomatik ishlaydi — repo ochiq, ichida bironta token yo'q.
+- Qo'qondagi santexnika do'koni uchun qurdim. Katalogda 10 000 dan ortiq mahsulot.
+- Admin panelni noldan yozdim: mahsulot, toifa, ombor qoldig'i va buyurtmalarni
+  sotuvchining o'zi boshqaradi — dasturchi aralashmaydi.
+- Firestore real-time obunasi: admin narxni o'zgartirsa, ochiq turgan sahifada darhol
+  yangilanadi.
+- Yangi buyurtma tushganda ma'lumotlari Telegram kanaliga avtomatik yuboriladi —
+  sotuvchi yangi ilova o'rnatmaydi. Kirish: Google Sign-In va SMS OTP.
 
-### 🧠 Xulosachi AI Bot — guruh va kanallarni LLM bilan xulosalash (SaaS)
-`Python` `Telethon` `Google Gemini` `SQLite`
-🔗 https://github.com/Abdulmajidkhan007/xulosa-ai-bot · *2026-08*
+### telegram-bots — 12 ta botning monorepo'si
+[github.com/Abdulmajidkhan007/telegram-bots](https://github.com/Abdulmajidkhan007/telegram-bots)
+`Node.js · Python · TypeScript · Gemini API · PostgreSQL · SQLite · Docker`
 
-- Guruh yozishmalari, ochiq kanal postlari va xabar havolalarini tahlil qilib
-  **o'zbek tilida qisqa xulosa** qaytaradi.
-- **Multimodal**: ovozli va video xabarlarni Gemini orqali matnga o'giradi
-  (transkripsiya), so'ng xulosaga qo'shadi.
-- **To'rt xil ulanish rejimi** bitta kodbazada: QR-login, telefon+SMS, StringSession
-  (userbot) va BotFather tokeni (rasmiy Bot API).
-- **Monetizatsiya mantiqi**: 3 kunlik bepul sinov, kunlik limit, chek rasmini yuborish
-  → admin tasdiqlashi → obuna faollashadi. Admin panel: statistika, broadcast,
-  foydalanuvchi qidiruvi, loglar.
+- 12 ta mustaqil bot bitta repoda: har birining o'z kodi, bog'liqliklari va sozlama
+  namunasi bor. Papkani nusxalab olsang, bot alohida ishlaydi.
+- Boshqaruv uchun o'z CLI mni yozdim: JSON reestr asosida botlarni ro'yxatlaydi,
+  o'rnatadi, sozlaydi va bittada ishga tushiradi. Reestr mantiqi I/O dan ajratilgan
+  va testdan o'tkazilgan.
+- Repo ochiq: har commit oldidan kalit skaneri ishlaydi, ichida bironta token yo'q.
+  Har tuzatilgan xato uchun regressiya testi yoziladi.
 
-### 🛒 Atoyo AI Katalog Userbot — rasmdan katalog kartochkasi
-`Python` `Telethon` `Gemini Vision` `pHash`
-🔗 `bots/atoyo-ai-bot` — https://github.com/Abdulmajidkhan007/telegram-bots · *2026-08*
+**Repodagi botlar:**
 
-- Guruhga tashlangan **mahsulot rasmini Gemini Vision** bilan tahlil qilib, tayyor
-  katalog kartochkasi (nomi, kodi, kategoriya, narx, tavsif) yasaydi va kerakli
-  Telegram topicga joylaydi.
-- **pHash dublikat filtri** — bir xil mahsulot ikki marta joylanmaydi.
-- **Ko'p kalitli Gemini rotatsiyasi** — bir kalit `429` limitga yetsa, avtomatik
-  keyingisiga o'tadi, oqim to'xtamaydi.
-- **Arxivni bosqichma-bosqich ko'chirish** — qayerda to'xtaganini eslab qoladi.
+- **AI botlari:** Gemini savol-javob boti; guruh va kanal yozishmalarini xulosalovchi
+  bot (ovozli va video xabarlar matnga o'giriladi); do'kon katalogi ustida RAG qidiruv
+  qiladigan savdo maslahatchisi (LangChain + ChromaDB); mahsulot rasmini Gemini Vision
+  bilan tayyor katalog kartochkasiga aylantiruvchi userbot.
+- **Xizmat botlari:** guruhlarni spam va zararli havolalardan tozalovchi; havolalarni
+  VirusTotal orqali tekshiruvchi; YouTube, Instagram va TikTok dan video yuklovchi;
+  foydalanuvchi va guruh ID larini topuvchi botlar.
+- **Boshqalar:** guruh xarajatlarini hisoblovchi tizim (bot + NestJS API + React
+  dashboard); IT testlari; anonim savol-javob; o'chgan xabarlarni tiklash bo'yicha
+  qo'llanma-bot.
 
-### 🛍 Atoyo — E-Commerce va boshqaruv platformasi
-`Next.js` `TypeScript` `Firebase Firestore` `Telegram integratsiya`
-🔗 https://github.com/Abdulmajidkhan007/atoyo-e-commerce · 🌐 https://atoyo.uz
-*2026-07 → hozirgacha · **jonli ishlayapti***
+Har biri haqida batafsil ma'lumot va o'rnatish qadamlari — repodagi `README` fayllarida.
 
-- Mahsulotlar, toifalar, qoldiq va buyurtmalarni boshqaruvchi **to'liq admin panel**
-  noldan qurildi.
-- **Telegram integratsiyasi**: har bir yangi buyurtma va mijoz rekvizitlari darhol
-  operator kanaliga avtomatik yuboriladi.
-- Firestore real-time baza + Firebase Authentication (Google Sign-In, OTP).
+### Boshqa loyihalar
 
-### 💰 Countlist — guruh xarajatlarini hisoblovchi tizim
-`TypeScript` `NestJS` `Prisma` `React` `Python` `FastAPI` `OpenAI Whisper`
-🔗 https://github.com/Abdulmajidkhan007/countlist-ts-node ·
-https://github.com/Abdulmajidkhan007/countlist · *2026-05*
-
-- Telegram bot + **NestJS API** + React dashboard — uchtasi bitta monorepoda,
-  TypeScript `strict` rejimida.
-- Guruhdagi xarajatlarni yozib boradi, bo'lishadi va veb-panelda ko'rsatadi.
-- **Ovozli xabar** OpenAI Whisper orqali matnga o'giriladi va xarajatga aylantiriladi
-  (Python versiyasi: FastAPI + aiogram + PostgreSQL + Redis).
-
-### 🎙 Salom AI (ios-asistent) — o'zbekcha ovozli AI yordamchi
-`TypeScript` `LLM API`
-🔗 https://github.com/Abdulmajidkhan007/ios-asistent · *2026-05*
-
-- O'zbek tilida ovozli so'rovlarni qabul qilib javob beradigan AI yordamchi.
-
-> **Yopiq repolar** (talab qilinsa, ko'rsatishga tayyorman): o'quv markazlari uchun
-> on-premise CRM (NestJS 11 + Prisma 7 + Next.js 16, 46 jadval, ruxsatga asoslangan
-> RBAC, multi-tenancy), R3F/WebGL portfolio, ride-hailing super-app monorepo.
+[rn-r-e-commerce](https://github.com/Abdulmajidkhan007/rn-r-e-commerce) — veb va mobil
+ilova bitta monorepoda (Next.js, React Native / Expo, TypeScript).
+portfolio-3d — React 19 va React Three Fiber asosidagi sayt, Firebase Hosting va
+Cloud Functions bilan.
 
 ---
 
-## Ta'lim va rivojlanish
-
-- **Pro Teach** — Dasturlash va kompyuter texnologiyalari (2024 – 2025)
-- Mustaqil izlanish: LLM integratsiyalari, RAG arxitekturasi, prompt muhandisligi,
-  Webhook va API dizayni
-
----
-
-## Tillar
-
-O'zbek (ona tili) · Rus · Ingliz (texnik hujjatlar)
-
----
-
-*Oxirgi yangilanish: 2026-09-21. Yuqoridagi barcha havolalar ochiq — kodni
-bevosita tekshirib ko'rishingiz mumkin.*
+*Oxirgi yangilanish: 2026-10-02*
