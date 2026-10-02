@@ -13,18 +13,19 @@ Telegram: [@Abdulloh_77700](https://t.me/Abdulloh_77700) · Qo'qon, O'zbekiston
 
 React va TypeScript bilan veb interfeyslar quraman. So'nggi yildagi asosiy ishim —
 Next.js asosidagi e-commerce platformasi: katalog, admin panel va buyurtma oqimi;
-u bugun ham real do'konda ishlatilmoqda. Backend tomonini ham o'zim yopaman
-(Node.js, Python), kerak bo'lganda LLM integratsiyalarini qo'shaman — lekin asosiy
-yo'nalishim frontend.
+u bugun ham real do'konda ishlatilmoqda, shu bitta baza ustida Android va desktop
+ilovalarini ham yig'dim. Backend tomonini o'zim yopaman (Node.js, Python) va kerak
+bo'lganda LLM integratsiyalarini qo'shaman — lekin asosiy yo'nalishim frontend.
 
 ---
 
 ## Texnik ko'nikmalar
 
 **Frontend:** React, Next.js, TypeScript, JavaScript, Tailwind CSS, Redux Toolkit
+**Mobil va desktop:** React Native, Electron
 **Backend:** Node.js, NestJS, Python (FastAPI, aiogram), REST API
-**Ma'lumotlar bazasi:** PostgreSQL, Firestore, SQLite
-**Vositalar:** Git, Docker, Firebase, Vite, Vitest
+**Ma'lumotlar bazasi:** Firestore, PostgreSQL, SQLite
+**Vositalar:** Git, Docker, Firebase, Vite, Vitest, Playwright
 **AI:** Gemini API, LangChain, ChromaDB
 
 ---
@@ -33,49 +34,58 @@ yo'nalishim frontend.
 
 ### Atoyo — e-commerce platformasi
 [atoyo.uz](https://atoyo.uz) · [kod](https://github.com/Abdulmajidkhan007/atoyo-e-commerce)
-`Next.js 16 · TypeScript · Tailwind CSS · Firebase (Firestore, Auth) · Telegram Bot API`
+`Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS · Firebase (Auth, Firestore, Storage) · React Native 0.76 · Electron 33`
 
-- Qo'qondagi santexnika do'koni uchun qurdim. Katalogda 10 000 dan ortiq mahsulot.
-- Admin panelni noldan yozdim: mahsulot, toifa, ombor qoldig'i va buyurtmalarni
-  sotuvchining o'zi boshqaradi — dasturchi aralashmaydi.
-- Firestore real-time obunasi: admin narxni o'zgartirsa, ochiq turgan sahifada darhol
-  yangilanadi.
-- Yangi buyurtma tushganda ma'lumotlari Telegram kanaliga avtomatik yuboriladi —
-  sotuvchi yangi ilova o'rnatmaydi. Kirish: Google Sign-In va SMS OTP.
+- Qo'qondagi santexnika do'koni uchun qurdim. Katalogda 10 000 dan ortiq mahsulot,
+  bugun ham savdoda ishlatilmoqda.
+- **Bitta baza — besh kanal.** Sayt, Android ilova, do'kon kompyuteri uchun ilova,
+  televizor ekrani va Telegram bot bir xil Firestore ma'lumoti ustida ishlaydi: admin
+  narxni bir joyda o'zgartiradi, hamma kanalda yangilanadi.
+- **Android ilova** (`mobile/`) — React Native 0.76, @react-native-firebase
+  (Auth, Firestore, Messaging), Google Sign-In, React Navigation 7,
+  Redux Toolkit + redux-persist. Push bildirishnomalar FCM orqali.
+- **Do'kon kompyuteri uchun ilova** (`desktop/`) — Electron 33 + electron-builder;
+  Windows, Linux va macOS uchun yig'iladi, internet uzilganda offline sahifa
+  ko'rsatiladi.
+- **Do'kon televizori** — `/tv` sahifasi. Alohida ilova kerak emas: Smart TV brauzeri
+  yoki Android TV box kiosk rejimida shu manzilni ochadi. Avtomatik slayder, katta narx
+  va QR kod; nima ko'rsatilishi admin panelda sozlanadi.
+- Katalog: cursor-based pagination va infinite scroll, kompozit indeksli filtrlar,
+  xatoga chidamli qidiruv (Firestore prefiks + Fuse.js).
+- Buyurtma Telegram guruhining forum topic'iga tushadi; xabar ostidagi tugmalar webhook
+  orqali Firestore statusini yangilaydi — operator saytga kirmaydi. Admin yo'llari ikki
+  qatlamda tekshiriladi, optom narx va tannarx mijozga umuman uzatilmaydi.
+
+### Organick — organik oziq-ovqat do'koni
+[kod](https://github.com/Abdulmajidkhan007/organick_org)
+`React 19 · TypeScript · Vite · Redux Toolkit · Tailwind CSS v4 · Firebase · i18next · Playwright`
+
+- Uch tilli interfeys (o'zbek, ingliz, rus), dark/light rejim, mobile-first layout.
+- Katalog (filtr, qidiruv, saralash), savat, mahsulot sahifasi; admin panelda mahsulot
+  va blog CRUD, reyting boshqaruvi.
+- Firebase Auth uch usulda: Google, email/parol va SMS OTP; aloqa formasi va obuna
+  Telegram guruhiga boradi.
+- Playwright e2e testlari; `master` ga push bo'lganda GitHub Actions Firebase Hosting'ga
+  avtomatik deploy qiladi.
 
 ### telegram-bots — 12 ta botning monorepo'si
 [github.com/Abdulmajidkhan007/telegram-bots](https://github.com/Abdulmajidkhan007/telegram-bots)
 `Node.js · Python · TypeScript · Gemini API · PostgreSQL · SQLite · Docker`
 
-- 12 ta mustaqil bot bitta repoda: har birining o'z kodi, bog'liqliklari va sozlama
-  namunasi bor. Papkani nusxalab olsang, bot alohida ishlaydi.
-- Boshqaruv uchun o'z CLI mni yozdim: JSON reestr asosida botlarni ro'yxatlaydi,
-  o'rnatadi, sozlaydi va bittada ishga tushiradi. Reestr mantiqi I/O dan ajratilgan
-  va testdan o'tkazilgan.
-- Repo ochiq: har commit oldidan kalit skaneri ishlaydi, ichida bironta token yo'q.
-  Har tuzatilgan xato uchun regressiya testi yoziladi.
+- 12 ta mustaqil bot bitta repoda. Boshqaruv uchun o'z CLI mni yozdim: JSON reestr
+  asosida hammasini ro'yxatlaydi, o'rnatadi, sozlaydi va bittada ishga tushiradi.
+- Ichida: Gemini savol-javob va yozishmalarni xulosalovchi botlar; do'kon katalogi ustida
+  RAG qidiruv (LangChain + ChromaDB); rasmdan katalog kartochkasi yasovchi userbot;
+  spam filtri; VirusTotal tekshiruvi; video yuklovchi; xarajat hisobi (NestJS API +
+  React dashboard).
+- Repo ochiq: har commit oldidan kalit skaneri ishlaydi, har tuzatilgan xato uchun
+  regressiya testi yoziladi.
 
-**Repodagi botlar:**
+---
 
-- **AI botlari:** Gemini savol-javob boti; guruh va kanal yozishmalarini xulosalovchi
-  bot (ovozli va video xabarlar matnga o'giriladi); do'kon katalogi ustida RAG qidiruv
-  qiladigan savdo maslahatchisi (LangChain + ChromaDB); mahsulot rasmini Gemini Vision
-  bilan tayyor katalog kartochkasiga aylantiruvchi userbot.
-- **Xizmat botlari:** guruhlarni spam va zararli havolalardan tozalovchi; havolalarni
-  VirusTotal orqali tekshiruvchi; YouTube, Instagram va TikTok dan video yuklovchi;
-  foydalanuvchi va guruh ID larini topuvchi botlar.
-- **Boshqalar:** guruh xarajatlarini hisoblovchi tizim (bot + NestJS API + React
-  dashboard); IT testlari; anonim savol-javob; o'chgan xabarlarni tiklash bo'yicha
-  qo'llanma-bot.
-
-Har biri haqida batafsil ma'lumot va o'rnatish qadamlari — repodagi `README` fayllarida.
-
-### Boshqa loyihalar
-
-[rn-r-e-commerce](https://github.com/Abdulmajidkhan007/rn-r-e-commerce) — veb va mobil
-ilova bitta monorepoda (Next.js, React Native / Expo, TypeScript).
-portfolio-3d — React 19 va React Three Fiber asosidagi sayt, Firebase Hosting va
-Cloud Functions bilan.
+**Boshqa loyihalar.** Yuqoridagilar — production'da ishlayotgani va chiqishga tayyori.
+Qolganlari (veb+mobil monorepo, React Three Fiber portfolio, o'quv markazlar uchun CRM)
+GitHub profilimda.
 
 ---
 
