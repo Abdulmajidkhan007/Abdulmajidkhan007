@@ -20,9 +20,9 @@ uchinchisini izlaydi — ko'rinishi esda qoladigan, lekin **o'lchangan** sayt.
 | 3D | React Three Fiber · three.js |
 | Animatsiya | GSAP · Lenis (silliq scroll) |
 | Frontend | TypeScript |
-| Test | Vitest — invariant testlar (427 ta) |
+| Test | Vitest — invariant testlar (431 ta) |
 | Hosting | Firebase Hosting |
-| Backend | Cloud Functions (Node 20, TypeScript) |
+| Backend | Cloud Functions (Node 22, TypeScript) |
 | Baza | Cloud Firestore |
 
 ## Arxitektura: asosiy qarorlar
@@ -64,14 +64,19 @@ xatti-harakati bir xil emas.
 
 ## Holat
 
-**Ishlaydi:** 3D sahna, scroll animatsiyalari, 427 ta invariant test,
+**Ishlaydi:** 3D sahna, scroll animatsiyalari, 431 ta invariant test,
 o'lchangan Lighthouse natijalari, Firebase Hosting konfiguratsiyasi va
 aloqa formasi backendi (kod tayyor, deploy qilinmagan).
 
-**Hali yo'q:** Firebase'ga haqiqiy deploy (Blaze rejasi kerak); mobil
-unumdorlik 90+ ga chiqarilmagan; kontent to'liq to'ldirilmagan; domen
-ulanmagan.
+**Hali yo'q:** Firebase'ga haqiqiy deploy (Firebase loyihasi va Blaze
+rejasi kerak, `.firebaserc` da hali namuna ID); mobil unumdorlik 90+ ga
+chiqarilmagan; Lighthouse raqamlari Firebase'dagi jonli saytda qayta
+o'lchanmagan; domen ulanmagan.
+
+**2026-10-03:** Netlify'dan qolgan izlar tozalandi (robots.txt, sitemap,
+rezyume — endi `web.app`), runtime Node 22 ga o'tkazildi, CI `functions/`
+ni ham tekshiradi.
 
 ---
 
-*Oxirgi yangilanish: 2026-09-22*
+*Oxirgi yangilanish: 2026-10-03*
