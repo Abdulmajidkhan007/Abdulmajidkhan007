@@ -42,7 +42,7 @@ vektor qidiruv.
 
 ## 📦 Loyihalar
 
-✅ **[atoyo-e-commerce](https://github.com/Abdulmajidkhan007/atoyo-e-commerce)** — santexnika do'koni uchun to'liq e-commerce: 10 000+ mahsulot, admin panel, Telegram integratsiya<br>
+✅ **[atoyo-e-commerce](https://github.com/Abdulmajidkhan007/atoyo-e-commerce)** — santexnika do'koni uchun e-commerce: veb, Android, desktop va TV ekrani bitta baza ustida<br>
 <sub>Next.js 16 · Firebase · TypeScript · [🌐 atoyo.uz](https://atoyo.uz) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/atoyo-e-commerce.md)</sub>
 
 ✅ **[telegram-bots](https://github.com/Abdulmajidkhan007/telegram-bots)** — 12 ta mustaqil bot bitta repoda — bitta clone, bitta buyruq bilan hammasi ishga tushadi<br>

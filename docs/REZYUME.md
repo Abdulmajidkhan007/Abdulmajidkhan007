@@ -36,8 +36,8 @@ bo'lganda LLM integratsiyalarini qo'shaman — lekin asosiy yo'nalishim frontend
 [atoyo.uz](https://atoyo.uz) · [kod](https://github.com/Abdulmajidkhan007/atoyo-e-commerce)
 `Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS · Firebase (Auth, Firestore, Storage) · React Native 0.76 · Electron 33`
 
-- Qo'qondagi santexnika do'koni uchun qurdim. Katalogda 10 000 dan ortiq mahsulot,
-  bugun ham savdoda ishlatilmoqda.
+- Qo'qondagi santexnika do'koni uchun qurdim; bugun do'konda ishlatilmoqda. Katalogni
+  adminlar o'zlari to'ldirmoqda — hozirgacha 500 ga yaqin mahsulot kiritildi.
 - **Bitta baza — besh kanal.** Sayt, Android ilova, do'kon kompyuteri uchun ilova,
   televizor ekrani va Telegram bot bir xil Firestore ma'lumoti ustida ishlaydi: admin
   narxni bir joyda o'zgartiradi, hamma kanalda yangilanadi.
@@ -52,11 +52,16 @@ bo'lganda LLM integratsiyalarini qo'shaman — lekin asosiy yo'nalishim frontend
   va QR kod; nima ko'rsatilishi admin panelda sozlanadi.
 - Katalog: cursor-based pagination va infinite scroll, kompozit indeksli filtrlar,
   xatoga chidamli qidiruv (Firestore prefiks + Fuse.js).
+- Mahsulot kirimini tezlashtirish uchun alohida Telegram userbot yozdim: admin guruh
+  topic'iga mahsulot rasmini tashlaydi, bot uni Gemini Vision bilan tahlil qilib tayyor
+  katalog kartochkasini (nomi, kodi, kategoriya, narx, tavsif) qaytaradi. pHash bilan
+  bir xil rasm ikki marta ishlanmaydi.
 - Buyurtma Telegram guruhining forum topic'iga tushadi; xabar ostidagi tugmalar webhook
   orqali Firestore statusini yangilaydi — operator saytga kirmaydi. Admin yo'llari ikki
   qatlamda tekshiriladi, optom narx va tannarx mijozga umuman uzatilmaydi.
 
 ### Organick — organik oziq-ovqat do'koni
+[organick-e1c5a.web.app](https://organick-e1c5a.web.app) ·
 [kod](https://github.com/Abdulmajidkhan007/organick_org)
 `React 19 · TypeScript · Vite · Redux Toolkit · Tailwind CSS v4 · Firebase · i18next · Playwright`
 
@@ -89,4 +94,4 @@ GitHub profilimda.
 
 ---
 
-*Oxirgi yangilanish: 2026-10-02*
+*Oxirgi yangilanish: 2026-10-03*

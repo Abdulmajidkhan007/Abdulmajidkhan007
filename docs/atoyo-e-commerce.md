@@ -1,6 +1,6 @@
 # atoyo-e-commerce
 
-> Qo'qondagi santexnika do'koni uchun to'liq e-commerce platformasi: 10 000+ mahsulot, admin panel, Telegram integratsiya.
+> Qo'qondagi santexnika do'koni uchun e-commerce platformasi: veb, Android ilova, do'kon kompyuteri, televizor ekrani va Telegram bot — bitta baza ustida.
 
 **Repo:** https://github.com/Abdulmajidkhan007/atoyo-e-commerce · **Jonli:** https://atoyo.uz
 **Holat:** ✅ Ishlayapti
@@ -61,7 +61,7 @@ tezligi yetarli. VPS ushlab turish va sertifikat yangilash ishi qolmaydi.
 ## Holat
 
 **Ishlaydi:**
-- Katalog, filtr va qidiruv — jonli saytda
+- Katalog, filtr va qidiruv — jonli saytda (katalog to'ldirilmoqda, ~500 mahsulot)
 - Admin panel: mahsulot, toifa, qoldiq, buyurtma boshqaruvi
 - Telegram xabarnomasi
 - Google Sign-In va OTP
@@ -83,4 +83,4 @@ tezligi yetarli. VPS ushlab turish va sertifikat yangilash ishi qolmaydi.
 
 ---
 
-*Oxirgi yangilanish: 2026-09-15 (repodagi so'nggi o'zgarish sanasi)*
+*Oxirgi yangilanish: 2026-10-03*

@@ -108,7 +108,9 @@ sessiyada ochilmagani uchun kod bilan solishtirilmadi:
 - [ ] `portfolio-3d` — Lighthouse 97 / 65–71 raqamlari
 - [ ] `go-uz` — 9 ta umumiy paket
 - [ ] `rn-r-e-commerce` — Phase 8a holati
-- [ ] `atoyo-e-commerce` — 10 000+ mahsulot raqami
+- [x] `atoyo-e-commerce` — mahsulot soni **aniqlandi**: 10 000+ emas. Katalogni
+      adminlar to'ldirmoqda, 2026-10-03 holatiga ~500 ta mahsulot kiritilgan.
+      Rezyume va docs tuzatildi.
 - [ ] `ios-asistent` — qaysi LLM va qaysi STT ishlatilgan
 
 Har repo ochilganda `docs/<repo>.md` yangilanadi va sana qo'yiladi
