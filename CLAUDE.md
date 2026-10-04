@@ -58,8 +58,10 @@ sababini yozgan odam ajralib turadi.
 === LOYIHALAR (boshlang'ich ro'yxat, tekshirilgan) ===
 2026-10-04 yangilanishi (shu ro'yxatdan ustun turadi):
   README da faqat shular, shu tartibda: atoyo-e-commerce (havola —
-  atoyo.uz), telegram-bots (ochiq botlar username bilan), portfolio-3d,
-  learning-datacenter, lumina, rn-r-e-commerce, go-uz.
+  atoyo.uz), Organick_org, telegram-bots (ochiq botlar username bilan),
+  portfolio-3d, learning-center-front (nurulloh-coder-dev, jamoaviy —
+  men frontend), lumina, rn-r-e-commerce, go-uz.
+  learning-datacenter-tc-project README dan olindi.
   web-3d, ios-asistent, countlist, DevCraft-AI va o'quv loyihalari
   README dan olindi. lumina va go-uz — Expo emas, bare React Native CLI.
   Stack'da eskirgan major versiya yozilmaydi: versiya faqat u hozirgi

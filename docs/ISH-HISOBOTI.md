@@ -202,3 +202,14 @@ PDF portfolio-3d dagi "Rezyumeni yuklab olish" tugmasiga (`public/resume.pdf`)
 qo'yildi. Profil reposiga PDF qo'yilmaydi.
 
 *Yozilgan: 2026-10-04*
+
+### Qo'shimcha (o'sha kun)
+
+- **Organick_org** README ga 2-o'ringa qo'shildi (✅, jonli sayt bor), to'liq
+  `docs/organick_org.md` koddan yozildi: admin claim, idempotent zaxira,
+  server tomonda reyting, Telegram + IP-limit, psevdo-email himoyasi.
+- **learning-center-front** (nurulloh-coder-dev) learning-datacenter o'rniga
+  qo'yildi — jamoaviy loyiha, men frontend tomonida. `docs/learning-center-front.md`
+  da mening hissam commit tarixidan olindi (75 ta commit). learning-datacenter
+  docs sahifasi olindi.
+- @Atoyo_service_bot → `atoyo-rag-bot` bog'lanishi egasi tomonidan tasdiqlandi.

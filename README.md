@@ -45,6 +45,9 @@ integratsiyasini qo'shaman — Gemini API, RAG, vektor qidiruv.
 ✅ **[atoyo-e-commerce](https://atoyo.uz)** — santexnika do'koni uchun e-commerce: veb, Android, desktop va TV ekrani bitta baza ustida<br>
 <sub>Next.js 16 · React 19 · Firebase · TypeScript · [🌐 atoyo.uz](https://atoyo.uz) · [💻 kod](https://github.com/Abdulmajidkhan007/atoyo-e-commerce) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/atoyo-e-commerce.md)</sub>
 
+✅ **[Organick](https://organick-e1c5a.web.app)** — organik oziq-ovqat do'koni: uch til, admin panel, Google / email / SMS orqali kirish, buyurtma Telegram'ga<br>
+<sub>React 19 · Vite 8 · Tailwind v4 · Redux Toolkit 2 · Firebase · Playwright · [🌐 jonli](https://organick-e1c5a.web.app) · [💻 kod](https://github.com/Abdulmajidkhan007/Organick_org) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/organick_org.md)</sub>
+
 ✅ **[telegram-bots](https://github.com/Abdulmajidkhan007/telegram-bots)** — 12 ta bot bitta repoda, bitta buyruq bilan ishga tushadi. Telegram'da ochiq botlarim:<br>
 <sub>Node · Python · TypeScript · Gemini API · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/telegram-bots.md)</sub>
 
@@ -64,8 +67,8 @@ integratsiyasini qo'shaman — Gemini API, RAG, vektor qidiruv.
 🚧 **portfolio-3d 🔒** — full-stack 3D portfolio: Firebase Hosting + Cloud Functions backend, Lighthouse desktop 97 (o'lchangan)<br>
 <sub>React Three Fiber · three.js · GSAP · Vite 8 · Firebase · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/portfolio-3d.md)</sub>
 
-🚧 **learning-datacenter 🔒** — o'quv markazlari uchun on-premise CRM: 46 jadval, ruxsatga asoslangan RBAC, multi-tenancy<br>
-<sub>NestJS · Prisma 7 · Next.js 16 · PostgreSQL · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/learning-datacenter-tc-project.md)</sub>
+🚧 **[learning-center-front](https://github.com/nurulloh-coder-dev/learning-center-front)** — o'quv markazi CRM'i (A.L.I.A.), jamoaviy loyiha: men frontend tomonidaman<br>
+<sub>React 19 · TypeScript · Vite 8 · Tailwind v4 · TanStack Query 5 · Vitest · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/learning-center-front.md)</sub>
 
 🚧 **[lumina](https://github.com/Abdulmajidkhan007/lumina)** — Instagram uslubidagi social ilova<br>
 <sub>React Native (bare) · TanStack Query · Zustand · Firebase · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/lumina.md)</sub>
