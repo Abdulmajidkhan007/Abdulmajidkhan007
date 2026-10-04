@@ -1,6 +1,6 @@
 <h1 align="center">Abdulmajid Sharipov</h1>
 <p align="center">
-  <b>Middle Full-stack Engineer</b> · O'zbekiston<br>
+  <b>Frontend Engineer</b> · O'zbekiston<br>
   Veb · Mobil · Telegram botlar · AI
 </p>
 
@@ -16,12 +16,12 @@
 
 ---
 
-O'zbek bozori uchun mahsulot quraman: veb, mobil, Telegram botlar va AI bilan
-ishlaydigan narsalar. G'oyadan ishlaydigan tizimgacha — dizayn, backend, deploy
-va undan keyingi qo'llab-quvvatlash. Eng ko'p vaqtim **Next.js + NestJS**,
-**React Native (Expo)** va **Python (aiogram, FastAPI)** da o'tadi; so'nggi yilda
-ishimning katta qismi **LLM integratsiyasi** — Gemini va Anthropic API, RAG,
-vektor qidiruv.
+React va TypeScript bilan veb interfeyslar quraman — O'zbek bozori uchun veb,
+mobil, Telegram botlar va AI bilan ishlaydigan mahsulotlar. Asosiy ishim —
+[atoyo.uz](https://atoyo.uz): Next.js asosidagi e-commerce, bugun real do'konda
+ishlatilmoqda; shu bitta baza ustida Android, desktop va TV ekrani ham ishlaydi.
+Backendni o'zim yopaman (Node.js, NestJS, Python) va kerak bo'lganda LLM
+integratsiyasini qo'shaman — Gemini API, RAG, vektor qidiruv.
 
 ---
 
@@ -29,68 +29,54 @@ vektor qidiruv.
 
 | | |
 |---|---|
-| **Frontend** | React 19 · Next.js 16 · TypeScript · Tailwind v4 · Redux Toolkit · TanStack Query · Zustand · Vite |
-| **Mobil** | React Native · Expo SDK 53 · Expo Router · Reanimated |
-| **Backend** | NestJS 11 · FastAPI · Express · Prisma 7 · SQLAlchemy |
-| **Baza** | PostgreSQL · Firestore · Redis · MinIO |
-| **3D** | React Three Fiber · three.js · GSAP |
-| **AI** | Gemini · Anthropic SDK · Whisper · LangChain · ChromaDB |
-| **DevOps** | Docker Compose · Caddy · GitHub Actions · Firebase Hosting |
-| **Botlar** | node-telegram-bot-api · Telethon · aiogram |
+| **Frontend** | React 19 · Next.js 16 · TypeScript · Tailwind CSS v4 · Redux Toolkit 2 · TanStack Query · Zustand · MUI 9 · Vite 8 |
+| **Mobil va desktop** | React Native (bare CLI) · React Navigation 7 · React Native Paper · Reanimated · Electron |
+| **Backend** | Node.js · NestJS · Express · FastAPI · Prisma 7 · SQLAlchemy 2 |
+| **Baza** | Firestore · PostgreSQL · Redis · SQLite · MinIO |
+| **3D va animatsiya** | React Three Fiber · three.js · GSAP · Lenis |
+| **AI** | Gemini API · Anthropic SDK · Whisper · LangChain · ChromaDB |
+| **Test va DevOps** | Vitest · Playwright · Docker Compose · GitHub Actions · Firebase Hosting / Functions |
+| **Botlar** | node-telegram-bot-api · Telegraf · aiogram 3 · Telethon |
 
 ---
 
 ## 📦 Loyihalar
 
-✅ **[atoyo-e-commerce](https://github.com/Abdulmajidkhan007/atoyo-e-commerce)** — santexnika do'koni uchun e-commerce: veb, Android, desktop va TV ekrani bitta baza ustida<br>
-<sub>Next.js 16 · Firebase · TypeScript · [🌐 atoyo.uz](https://atoyo.uz) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/atoyo-e-commerce.md)</sub>
+✅ **[atoyo-e-commerce](https://atoyo.uz)** — santexnika do'koni uchun e-commerce: veb, Android, desktop va TV ekrani bitta baza ustida<br>
+<sub>Next.js 16 · React 19 · Firebase · TypeScript · [🌐 atoyo.uz](https://atoyo.uz) · [💻 kod](https://github.com/Abdulmajidkhan007/atoyo-e-commerce) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/atoyo-e-commerce.md)</sub>
 
-✅ **[telegram-bots](https://github.com/Abdulmajidkhan007/telegram-bots)** — 12 ta mustaqil bot bitta repoda — bitta clone, bitta buyruq bilan hammasi ishga tushadi<br>
-<sub>Node · Python · TypeScript · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/telegram-bots.md)</sub>
+✅ **[telegram-bots](https://github.com/Abdulmajidkhan007/telegram-bots)** — 12 ta bot bitta repoda, bitta buyruq bilan ishga tushadi. Telegram'da ochiq botlarim:<br>
+<sub>Node · Python · TypeScript · Gemini API · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/telegram-bots.md)</sub>
 
-🚧 **learning-datacenter 🔒** — o'quv markazlari uchun on-premise CRM: 46 jadval, ruxsatga asoslangan RBAC, multi-tenancy<br>
-<sub>NestJS 11 · Prisma 7 · Next.js 16 · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/learning-datacenter-tc-project.md)</sub>
+| Bot | Nima qiladi |
+|---|---|
+| 🛡 [@KillSpam_007_Bot](https://t.me/KillSpam_007_Bot) | Guruhni spam, reklama va zararli havolalardan tozalaydi |
+| 💰 [@COUNTLIST_BOT](https://t.me/COUNTLIST_BOT) | Oila yoki jamoa xarajatlarini hisoblaydi — matn yoki ovozli xabar |
+| 🎬 [@Uzb_saver_007_bot](https://t.me/Uzb_saver_007_bot) | Instagram, TikTok, YouTube'dan video va musiqa yuklaydi |
+| 🆔 [@IDFINDER007BOT](https://t.me/IDFINDER007BOT) | Foydalanuvchi, kanal va guruh ID sini topadi |
+| 🕵️ [@Anonim_007_bot](https://t.me/Anonim_007_bot) | Shaxsiy havola orqali anonim savol-javob |
+| 🦠 [@Tekshiruvchi_07_bot](https://t.me/Tekshiruvchi_07_bot) | Fayl va havolani ochishdan oldin virusga tekshiradi |
+| 🧠 [@SavolJavob_007_bot](https://t.me/SavolJavob_007_bot) | IT bo'yicha testlar, o'z testingizni ham yaratasiz |
+| 🗂 [@arxiv_topadi_bot](https://t.me/arxiv_topadi_bot) | O'chgan xabarlarni rasmiy yo'l bilan qaytarishni o'rgatadi |
+| 🛠 [@Atoyo_service_bot](https://t.me/Atoyo_service_bot) | Atoyo bo'yicha savollarga AI javob beradi, buyurtma qabul qiladi |
+| 🛒 [@Atoyo_uz_bot](https://t.me/Atoyo_uz_bot) | Saytga ulangan do'kon: mahsulotni topib, shu yerda buyurtma berasiz |
 
 🚧 **portfolio-3d 🔒** — full-stack 3D portfolio: Firebase Hosting + Cloud Functions backend, Lighthouse desktop 97 (o'lchangan)<br>
-<sub>R3F · three.js · GSAP · Firebase · Cloud Functions · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/portfolio-3d.md)</sub>
+<sub>React Three Fiber · three.js · GSAP · Vite 8 · Firebase · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/portfolio-3d.md)</sub>
 
-🚧 **web-3d 🔒** — to'liq ekranli WebGL fon, bitta kodbaza uch rejimda: LIVE / MOCK / BROWSER<br>
-<sub>three.js · WebGL · Higgsfield AI · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/web-3d.md)</sub>
+🚧 **learning-datacenter 🔒** — o'quv markazlari uchun on-premise CRM: 46 jadval, ruxsatga asoslangan RBAC, multi-tenancy<br>
+<sub>NestJS · Prisma 7 · Next.js 16 · PostgreSQL · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/learning-datacenter-tc-project.md)</sub>
 
-🚧 **[rn-r-e-commerce](https://github.com/Abdulmajidkhan007/rn-r-e-commerce)** — KidsWear: veb va mobil bitta monorepoda, umumiy design token, uz/en/ru<br>
-<sub>Next.js · Expo · TypeScript · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/rn-r-e-commerce.md)</sub>
+🚧 **[lumina](https://github.com/Abdulmajidkhan007/lumina)** — Instagram uslubidagi social ilova<br>
+<sub>React Native (bare) · TanStack Query · Zustand · Firebase · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/lumina.md)</sub>
+
+🚧 **[rn-r-e-commerce](https://github.com/Abdulmajidkhan007/rn-r-e-commerce)** — KidsWear: bolalar kiyimi do'koni, veb + Android bitta monorepoda, Payme/Click to'lovi<br>
+<sub>React 19 · Vite 8 · MUI 9 · React Native (bare) · Turborepo · Firebase · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/rn-r-e-commerce.md)</sub>
 
 🚧 **[go-uz](https://github.com/Abdulmajidkhan007/go-uz)** — Vroom — ride-hailing va kuryer super-app, 9 ta umumiy paket qurilgan<br>
-<sub>Turborepo · pnpm · TypeScript · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/go-uz.md)</sub>
+<sub>React Native · React · Turborepo · pnpm · Firebase · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/go-uz.md)</sub>
 
-🚧 **[ios-asistent](https://github.com/Abdulmajidkhan007/ios-asistent)** — Salom AI — o'zbekcha ovozli AI yordamchi<br>
-<sub>TypeScript · LLM API · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/ios-asistent.md)</sub>
-
-🚧 **[countlist](https://github.com/Abdulmajidkhan007/countlist)** — guruh xarajatlarini hisoblovchi bot va dashboard (Python va TS versiyalari)<br>
-<sub>FastAPI · NestJS · React · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/countlist.md)</sub>
-
-🚧 **[lumina](https://github.com/Abdulmajidkhan007/lumina)** — Expo asosidagi social app<br>
-<sub>React Native · Expo SDK 53 · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/lumina.md)</sub>
-
-❄️ **DevCraft-AI 🔒** — BYOK zero-knowledge AI muhiti — kalit faqat brauzerda, server uni ko'rmaydi<br>
-<sub>TypeScript · AES-256-GCM · WebContainers · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/DevCraft-AI.md)</sub>
-
-<sub>✅ Ishlayapti · 🚧 Qurilmoqda · ❄️ Muzlatilgan · 🔒 repo yopiq, so'rasangiz ko'rsataman</sub>
-
----
-
-## 🎓 O'quv loyihalari
-
-Alohida texnologiyani o'rganish uchun qurilgan, kichik va tugallangan ishlar:
-
-[bank](https://github.com/Abdulmajidkhan007/bank) ·
-[taxi](https://github.com/Abdulmajidkhan007/taxi) ·
-[chat-app](https://github.com/Abdulmajidkhan007/chat-app) ·
-[social-app](https://github.com/Abdulmajidkhan007/social-app) ·
-[calculator](https://github.com/Abdulmajidkhan007/calculator) ·
-[chatapp](https://github.com/Abdulmajidkhan007/chatapp) ·
-[e-commerce-platform](https://github.com/Abdulmajidkhan007/e-commerce-platform) ·
-[atoyo](https://github.com/Abdulmajidkhan007/atoyo)
+<sub>✅ Ishlayapti · 🚧 Qurilmoqda · 🔒 repo yopiq, so'rasangiz ko'rsataman</sub>
 
 ---
 

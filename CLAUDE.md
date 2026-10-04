@@ -22,7 +22,7 @@ CLAUDE.md              — shu reponi yuritish qoidalari
 
 === README.md tarkibi ===
 1. Kim: Abdulmajid Sharipov (Abdullohkhan)
-   Middle Full-stack Engineer · O'zbekiston
+   Frontend Engineer · O'zbekiston
    Aloqa: @Abdulloh_77700 · kanal: (nomi keyin beriladi)
 2. Bir paragraf: nima qilaman va kim uchun —
    "O'zbek bozori uchun mahsulot quraman: veb, mobil, Telegram
@@ -56,6 +56,16 @@ CLAUDE.md              — shu reponi yuritish qoidalari
 sababini yozgan odam ajralib turadi.
 
 === LOYIHALAR (boshlang'ich ro'yxat, tekshirilgan) ===
+2026-10-04 yangilanishi (shu ro'yxatdan ustun turadi):
+  README da faqat shular, shu tartibda: atoyo-e-commerce (havola —
+  atoyo.uz), telegram-bots (ochiq botlar username bilan), portfolio-3d,
+  learning-datacenter, lumina, rn-r-e-commerce, go-uz.
+  web-3d, ios-asistent, countlist, DevCraft-AI va o'quv loyihalari
+  README dan olindi. lumina va go-uz — Expo emas, bare React Native CLI.
+  Stack'da eskirgan major versiya yozilmaydi: versiya faqat u hozirgi
+  major bo'lsa (React 19, Next.js 16, Tailwind v4, Vite 8, Prisma 7 ...);
+  aks holda versiyasiz yoziladi. docs/ ichida aniq versiya — fakt sifatida.
+
 ✅ Ishlayapti:
   atoyo-e-commerce — Next.js 16 + Firebase + Telegram integratsiya,
     10 000+ mahsulot, jonli: atoyo.uz

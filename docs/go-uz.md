@@ -12,7 +12,7 @@ Taksi va kuryer ilovalari bir xil poydevorga tayanadi: xarita, buyurtma holati, 
 
 ## Stack
 
-Turborepo · pnpm · TypeScript. 9 ta umumiy paket ajratilgan, ilovalar shular ustiga quriladi.
+Turborepo · pnpm · TypeScript. Ilovalar: `apps/mobile` (React Native 0.79, bare CLI), `apps/web` va `apps/admin` (React + Vite), Firebase Cloud Functions. 9 ta umumiy paket ajratilgan (api, assets, config, constants, theme, types, ui, utils, validation), ilovalar shular ustiga quriladi.
 
 ## Holat
 
@@ -24,4 +24,4 @@ Turborepo · pnpm · TypeScript. 9 ta umumiy paket ajratilgan, ilovalar shular u
 
 ---
 
-*Oxirgi yangilanish: 2026-07-12*
+*Oxirgi yangilanish: 2026-10-04*

@@ -1,6 +1,6 @@
 # lumina
 
-> Expo SDK 53 asosidagi social app.
+> Instagram uslubidagi social ilova — bare React Native CLI va TypeScript.
 
 **Repo:** https://github.com/Abdulmajidkhan007/lumina · **Holat:** 🚧 Qurilmoqda
 
@@ -8,20 +8,23 @@
 
 ## Muammo
 
-React Native va Expo ning yangi imkoniyatlarini (Expo Router, Reanimated) real ilova ustida o'rganish uchun qurilgan.
+React Native'da social ilovaning og'ir qismlarini — lenta, media, animatsiya,
+offline kesh, push — real loyiha ustida o'rganish va mustahkamlash uchun qurilgan.
 
 ## Stack
 
-React Native · Expo SDK 53 · Expo Router · TypeScript.
+React Native 0.79 (bare CLI, New Architecture) · React 19 · TypeScript (strict) ·
+React Navigation 7 · TanStack Query 5 (AsyncStorage bilan offline kesh) · Zustand 5 ·
+React Hook Form + Zod · Reanimated + Gesture Handler · @react-native-firebase
+(Auth, Firestore, Storage, Messaging) · Sentry.
 
 ## Holat
 
-**Ishlaydi:** asosiy ekranlar va navigatsiya.
-**Hali yo'q:** backend ulanmagan, ilova store'ga chiqarilmagan.
+**Kodda bor:** asosiy ekranlar va navigatsiya, Firebase kutubxonalari ulangan.
+**Hali yo'q:** ilova store'ga chiqarilmagan.
 
-> 📝 Bu qisqa sahifa. To'liq versiyasi — repodagi `README.md` va
-> `package.json` o'qib chiqilgandan keyin yoziladi ([SHABLON.md](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/SHABLON.md) bo'yicha).
+> 📝 Bu qisqa sahifa. To'liq versiyasi keyin [SHABLON.md](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/SHABLON.md) bo'yicha yoziladi.
 
 ---
 
-*Oxirgi yangilanish: 2026-07-27*
+*Oxirgi yangilanish: 2026-10-04*

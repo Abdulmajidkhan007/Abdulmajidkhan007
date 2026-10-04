@@ -21,7 +21,7 @@ bo'lganda LLM integratsiyalarini qo'shaman — lekin asosiy yo'nalishim frontend
 
 ## Texnik ko'nikmalar
 
-**Frontend:** React, Next.js, TypeScript, JavaScript, Tailwind CSS, Redux Toolkit
+**Frontend:** React 19, Next.js 16, TypeScript, JavaScript, Tailwind CSS v4, Redux Toolkit, TanStack Query
 **Mobil va desktop:** React Native, Electron
 **Backend:** Node.js, NestJS, Python (FastAPI, aiogram), REST API
 **Ma'lumotlar bazasi:** Firestore, PostgreSQL, SQLite
@@ -34,17 +34,17 @@ bo'lganda LLM integratsiyalarini qo'shaman — lekin asosiy yo'nalishim frontend
 
 ### Atoyo — e-commerce platformasi
 [atoyo.uz](https://atoyo.uz) · [kod](https://github.com/Abdulmajidkhan007/atoyo-e-commerce)
-`Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS · Firebase (Auth, Firestore, Storage) · React Native 0.76 · Electron 33`
+`Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS · Firebase (Auth, Firestore, Storage) · React Native · Electron`
 
 - Qo'qondagi santexnika do'koni uchun qurdim; bugun do'konda ishlatilmoqda. Katalogni
   adminlar o'zlari to'ldirmoqda — hozirgacha 500 ga yaqin mahsulot kiritildi.
 - **Bitta baza — besh kanal.** Sayt, Android ilova, do'kon kompyuteri uchun ilova,
   televizor ekrani va Telegram bot bir xil Firestore ma'lumoti ustida ishlaydi: admin
   narxni bir joyda o'zgartiradi, hamma kanalda yangilanadi.
-- **Android ilova** (`mobile/`) — React Native 0.76, @react-native-firebase
+- **Android ilova** (`mobile/`) — React Native, @react-native-firebase
   (Auth, Firestore, Messaging), Google Sign-In, React Navigation 7,
   Redux Toolkit + redux-persist. Push bildirishnomalar FCM orqali.
-- **Do'kon kompyuteri uchun ilova** (`desktop/`) — Electron 33 + electron-builder;
+- **Do'kon kompyuteri uchun ilova** (`desktop/`) — Electron + electron-builder;
   Windows, Linux va macOS uchun yig'iladi, internet uzilganda offline sahifa
   ko'rsatiladi.
 - **Do'kon televizori** — `/tv` sahifasi. Alohida ilova kerak emas: Smart TV brauzeri
@@ -83,8 +83,11 @@ bo'lganda LLM integratsiyalarini qo'shaman — lekin asosiy yo'nalishim frontend
   RAG qidiruv (LangChain + ChromaDB); rasmdan katalog kartochkasi yasovchi userbot;
   spam filtri; VirusTotal tekshiruvi; video yuklovchi; xarajat hisobi (NestJS API +
   React dashboard).
-- Repo ochiq: har commit oldidan kalit skaneri ishlaydi, har tuzatilgan xato uchun
-  regressiya testi yoziladi.
+- Telegram'da ochiq ishlaydi: [@KillSpam_007_Bot](https://t.me/KillSpam_007_Bot) (spam filtri),
+  [@COUNTLIST_BOT](https://t.me/COUNTLIST_BOT) (xarajat hisobi, ovozli xabar ham),
+  [@Uzb_saver_007_bot](https://t.me/Uzb_saver_007_bot) (video yuklovchi),
+  [@Tekshiruvchi_07_bot](https://t.me/Tekshiruvchi_07_bot) (virus tekshiruvi) va yana 5 ta.
+  Repo ochiq: har commit oldidan kalit skaneri ishlaydi.
 
 ---
 
@@ -94,4 +97,4 @@ GitHub profilimda.
 
 ---
 
-*Oxirgi yangilanish: 2026-10-03*
+*Oxirgi yangilanish: 2026-10-04*

@@ -1,6 +1,6 @@
 # telegram-bots
 
-> 13 ta mustaqil Telegram bot bitta repoda: bitta clone, bitta buyruq — hammasi ishga tushadi.
+> 12 ta mustaqil Telegram bot bitta repoda: bitta clone, bitta buyruq — hammasi ishga tushadi. 9 tasi Telegram'da ochiq ishlaydi.
 
 **Repo:** https://github.com/Abdulmajidkhan007/telegram-bots · **Jonli:** botlar Telegram'da
 **Holat:** ✅ Ishlayapti
@@ -21,9 +21,9 @@ kerak**. Papkani nusxalab olsang, bot mustaqil ishlashi shart.
 
 | Qatlam | Texnologiya |
 |---|---|
-| Runtime | Node.js ≥18 (7 bot) · Python 3 (5 bot) · TypeScript (1 monorepo) |
-| Telegram | node-telegram-bot-api · Telethon (MTProto/userbot) · aiogram 3 |
-| AI | Google Gemini API (matn, vision, audio) |
+| Runtime | Node.js ≥18 (7 bot) · Python 3 (4 bot) · TypeScript (1 monorepo) |
+| Telegram | node-telegram-bot-api · Telegraf (countlist) · Telethon (MTProto/userbot) · aiogram 3 |
+| AI | Google Gemini API (matn, vision, audio) · OpenAI Whisper (countlist, ixtiyoriy) |
 | Baza | SQLite · PostgreSQL (killspam-bot) · ChromaDB (atoyo-rag-bot) |
 | Boshqaruv | `tools/run.js` — o'z CLI si, tashqi kutubxonasiz |
 | Test | `node:test` + `node:assert` · Python `unittest` |
@@ -82,13 +82,32 @@ tugaydi. Sekin test yozilmaydi va ishlatilmaydi.
 | `xulosa-ai-bot` | Python | Guruh/kanal yozishmalarini Gemini bilan xulosalaydi, ovozli xabarni matnga o'giradi |
 | `atoyo-ai-bot` | Python | Mahsulot rasmini Gemini Vision bilan katalog kartochkasiga aylantiradi (pHash dublikat filtri) |
 | `atoyo-rag-bot` | Python | Katalog ustida RAG savol-javob, lid → admin guruh + n8n |
-| `countlist-ts-node` | TypeScript | Xarajat boti + NestJS API + React dashboard |
-| `countlist-python` | Python | O'sha mahsulotning Python varianti: aiogram + FastAPI + Whisper |
+| `countlist-ts-node` | TypeScript | Xarajat boti (matn yoki ovozli xabar) + NestJS API + React dashboard |
+
+## Telegram'da ochiq botlar
+
+| Bot | Papka | Nima qiladi |
+|---|---|---|
+| [@KillSpam_007_Bot](https://t.me/KillSpam_007_Bot) | `killspam-bot` | Guruhni spam, reklama va zararli havolalardan tozalaydi |
+| [@COUNTLIST_BOT](https://t.me/COUNTLIST_BOT) | `countlist-ts-node` | Oila yoki jamoa xarajatlarini hisoblaydi — matn yoki ovozli xabar |
+| [@Uzb_saver_007_bot](https://t.me/Uzb_saver_007_bot) | `save-video-downloader-bot` | Instagram, TikTok, YouTube'dan video va musiqa |
+| [@IDFINDER007BOT](https://t.me/IDFINDER007BOT) | `idfinder-bot` | Foydalanuvchi, kanal va guruh ID sini topadi |
+| [@Anonim_007_bot](https://t.me/Anonim_007_bot) | `anonim-bot` | Shaxsiy havola orqali anonim savol-javob |
+| [@Tekshiruvchi_07_bot](https://t.me/Tekshiruvchi_07_bot) | `malware-bot` | Fayl va havolani VirusTotal orqali tekshiradi |
+| [@SavolJavob_007_bot](https://t.me/SavolJavob_007_bot) | `quiz-bot` | IT bo'yicha testlar, o'z testingizni yaratish |
+| [@arxiv_topadi_bot](https://t.me/arxiv_topadi_bot) | `arxiv-topadi-bot` | O'chgan xabarlarni rasmiy yo'l bilan qaytarishni o'rgatadi |
+| [@Atoyo_service_bot](https://t.me/Atoyo_service_bot) | `atoyo-rag-bot` | Atoyo savollariga AI javob, buyurtma (lid) qabul qiladi |
+| [@Atoyo_uz_bot](https://t.me/Atoyo_uz_bot) | atoyo-e-commerce repo | Saytga ulangan do'kon: qidirish va buyurtma |
+
+@Atoyo_uz_bot kodi bu repoda emas, atoyo-e-commerce ichida. Repodagi qolgan
+uchtasi ommaga e'lon qilinmagan: `gemini-qa-bot`, hamda `xulosa-ai-bot` va
+`atoyo-ai-bot` — shaxsiy akkaunt / ichki guruh uchun ishlaydigan userbotlar.
 
 ## Holat
 
 **Ishlaydi:**
-- 13 ta bot, `npm run list` / `npm run start` orqali boshqariladi
+- 12 ta bot, `npm run list` / `npm run start` orqali boshqariladi
+- 9 tasi Telegram'da ochiq (yuqoridagi jadval, @Atoyo_uz_bot dan tashqari)
 - `npm run check` — testlar + kalit skaneri, yashil
 - Har botda o'z README va `.env.example`
 
@@ -109,4 +128,4 @@ tugaydi. Sekin test yozilmaydi va ishlatilmaydi.
 
 ---
 
-*Oxirgi yangilanish: 2026-09-21*
+*Oxirgi yangilanish: 2026-10-04*

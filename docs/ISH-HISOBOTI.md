@@ -167,3 +167,38 @@ uni egasi o'zi qiladi.
 
 `main` yaratildi. CSP inline skriptni bloklayotgani tuzatildi (hash +
 invariant test). Netlify'da production branch `main` ga o'tkazilishi kerak.
+
+---
+
+## 7. 2026-10-04 — profil va rezyume yangilandi
+
+### Profil README
+
+- Sarlavha: **Frontend Engineer** (rezyume bilan bir xil).
+- Loyihalar faqat shular, shu tartibda: atoyo-e-commerce (asosiy havola —
+  atoyo.uz), telegram-bots, portfolio-3d, learning-datacenter, lumina,
+  rn-r-e-commerce, go-uz.
+- telegram-bots ostida Telegram'dagi 10 ta ochiq bot username bilan jadvalda
+  (9 tasi shu repoda, @Atoyo_uz_bot — atoyo-e-commerce ichida).
+- web-3d, ios-asistent, countlist, DevCraft-AI va "O'quv loyihalari"
+  bo'limi README dan olindi; ularning docs sahifalari o'chirildi (git
+  tarixida qoladi). `countlist` reposi GitHub'da endi yo'q — havola buzuq edi.
+
+### Stack: faktlar bo'yicha tuzatishlar
+
+- **Expo hech qayerda yo'q.** rn-r-e-commerce (RN 0.85), lumina (RN 0.79) va
+  go-uz (RN 0.79) — bare React Native CLI. Profil "Next.js · Expo" deb
+  yozgandi; rn-r-e-commerce aslida Vite + React veb + RN mobil.
+- Eskirgan major versiyalar yozilmadi (npm'da tekshirildi, 2026-10-04):
+  React Native 0.76/0.85 (oxirgisi 0.87), Electron 33 (44), NestJS 11 (12),
+  Expo SDK 53 (57). Hozirgi major'lar qoldi: React 19, Next.js 16,
+  Tailwind v4, Vite 8, Redux Toolkit 2, MUI 9, Prisma 7, SQLAlchemy 2, aiogram 3.
+
+### Rezyume
+
+`REZYUME.md` va PDF: Atoyo stack qatoridan eski versiyalar olindi,
+telegram-bots qismiga ochiq botlardan to'rttasi havola bilan qo'shildi.
+PDF portfolio-3d dagi "Rezyumeni yuklab olish" tugmasiga (`public/resume.pdf`)
+qo'yildi. Profil reposiga PDF qo'yilmaydi.
+
+*Yozilgan: 2026-10-04*
