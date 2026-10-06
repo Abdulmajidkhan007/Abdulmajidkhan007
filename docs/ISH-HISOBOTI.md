@@ -213,3 +213,18 @@ qo'yildi. Profil reposiga PDF qo'yilmaydi.
   da mening hissam commit tarixidan olindi (75 ta commit). learning-datacenter
   docs sahifasi olindi.
 - @Atoyo_service_bot → `atoyo-rag-bot` bog'lanishi egasi tomonidan tasdiqlandi.
+
+---
+
+## 8. 2026-10-06 — xizmatlar sayti
+
+- `site/index.html` — bir sahifali, tez yuklanadigan sayt (framework'siz, tashqi
+  skript yo'q, ~19 KB): xizmatlar, ishlarim (atoyo.uz, Organick, botlar), ish
+  tartibi, savollar, ariza formasi. Mobil (390px) va desktopda gorizontal
+  scroll yo'q, dark mode bor — Playwright bilan tekshirildi.
+- Ariza formasi backend'siz: matnni yig'ib `t.me/Abdulloh_77700?text=...` ni
+  ochadi va matnni nusxalaydi. Bot tokeni yoki server kerak emas.
+- Hosting: GitHub Pages, `.github/workflows/pages.yml` (`site/**` o'zgarsa
+  avtomatik joylaydi). Narx ataylab yozilmagan — egasi bozorni ko'rib qo'yadi.
+
+*Yozilgan: 2026-10-06*

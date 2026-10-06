@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abdulloh — sayt, Telegram bot va Android ilova</title>
+<meta name="description" content="Biznesingiz uchun sayt, Telegram bot, Android ilova va AI yechimlar. Ishlab turgan loyihalar: atoyo.uz, Organick, 10 ta Telegram bot. Buyurtma: @Abdulloh_77700">
+<meta property="og:title" content="Abdulloh — sayt, Telegram bot va Android ilova">
+<meta property="og:description" content="Va'da emas — ishlab turgan loyihalar. Biznesingiz uchun sayt, bot, ilova va AI yechimlar.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#4f46e5">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234f46e5'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='18' font-weight='700' fill='white' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg-soft: #f5f6fb;
+    --card: #ffffff;
+    --text: #14151a;
+    --muted: #5b5f6e;
+    --line: #e4e6ef;
+    --accent: #4f46e5;
+    --accent-ink: #ffffff;
+    --accent-soft: #eef0ff;
+    --ok: #15803d;
+    --radius: 14px;
+    --shadow: 0 1px 2px rgba(20, 21, 26, .05), 0 8px 24px rgba(20, 21, 26, .06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0f14;
+      --bg-soft: #15171f;
+      --card: #191b24;
+      --text: #eceef5;
+      --muted: #a2a7b8;
+      --line: #2a2d3a;
+      --accent: #8b85ff;
+      --accent-ink: #0e0f14;
+      --accent-soft: #23234a;
+      --ok: #4ade80;
+      --shadow: none;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+  section { padding: 56px 0; }
+  section.soft { background: var(--bg-soft); }
+  h1, h2, h3 { line-height: 1.2; margin: 0; }
+  h2 { font-size: clamp(1.5rem, 4vw, 2rem); margin-bottom: 8px; }
+  .lead { color: var(--muted); margin: 0 0 28px; max-width: 640px; }
+
+  /* Header */
+  header {
+    position: sticky; top: 0; z-index: 10;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; }
+  .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--text); text-decoration: none; }
+  .logo-mark {
+    width: 32px; height: 32px; border-radius: 8px; background: var(--accent); color: var(--accent-ink);
+    display: grid; place-items: center; font-weight: 800;
+  }
+  nav a { color: var(--muted); text-decoration: none; margin-left: 20px; font-size: .95rem; }
+  nav a:hover { color: var(--text); }
+  @media (max-width: 720px) { nav .hide-sm { display: none; } }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 12px 20px; border-radius: 10px; font-weight: 600; font-size: 1rem;
+    text-decoration: none; border: 1px solid transparent; cursor: pointer;
+  }
+  .btn-primary { background: var(--accent); color: var(--accent-ink); }
+  .btn-primary:hover { filter: brightness(1.08); }
+  .btn-ghost { border-color: var(--line); color: var(--text); background: var(--card); }
+  .btn-ghost:hover { border-color: var(--accent); }
+
+  /* Hero */
+  .hero { padding: 64px 0 56px; }
+  .hero h1 { font-size: clamp(1.9rem, 6vw, 3.1rem); letter-spacing: -.02em; max-width: 820px; }
+  .hero h1 span { color: var(--accent); }
+  .hero p { font-size: 1.15rem; color: var(--muted); max-width: 640px; margin: 18px 0 28px; }
+  .hero .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .proof { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 32px; color: var(--muted); font-size: .95rem; }
+  .proof b { color: var(--text); }
+
+  /* Cards */
+  .grid { display: grid; gap: 16px; }
+  .grid-2 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); }
+  .grid-3 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 22px; box-shadow: var(--shadow);
+  }
+  .card h3 { font-size: 1.15rem; margin: 12px 0 10px; }
+  .icon {
+    width: 44px; height: 44px; border-radius: 12px; background: var(--accent-soft); color: var(--accent);
+    display: grid; place-items: center;
+  }
+  .icon svg { width: 24px; height: 24px; }
+  ul.list { list-style: none; padding: 0; margin: 0; }
+  ul.list li { padding: 5px 0 5px 22px; position: relative; color: var(--muted); }
+  ul.list li::before {
+    content: ""; position: absolute; left: 4px; top: 13px; width: 7px; height: 7px;
+    border-radius: 50%; background: var(--accent);
+  }
+
+  /* Portfolio */
+  .work .tag {
+    display: inline-block; font-size: .8rem; font-weight: 600; padding: 3px 10px; border-radius: 99px;
+    background: var(--accent-soft); color: var(--accent); margin-right: 6px;
+  }
+  .work .live { color: var(--ok); font-weight: 600; font-size: .9rem; }
+  .work p { color: var(--muted); margin: 8px 0 14px; }
+  .work .links a { margin-right: 16px; font-weight: 600; text-decoration: none; }
+  .bots { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 8px 16px; margin-top: 8px; }
+  .bots a { text-decoration: none; font-weight: 600; }
+  .bots span { display: block; color: var(--muted); font-size: .9rem; font-weight: 400; }
+
+  /* Steps */
+  ol.steps { list-style: none; padding: 0; margin: 0; counter-reset: s; display: grid; gap: 14px;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); }
+  ol.steps li { counter-increment: s; background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); padding: 18px 18px 18px 64px; position: relative; }
+  ol.steps li::before {
+    content: counter(s); position: absolute; left: 18px; top: 16px; width: 32px; height: 32px;
+    border-radius: 50%; background: var(--accent); color: var(--accent-ink);
+    display: grid; place-items: center; font-weight: 700;
+  }
+  ol.steps b { display: block; }
+  ol.steps span { color: var(--muted); font-size: .95rem; }
+
+  /* FAQ */
+  details { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 20px; }
+  details + details { margin-top: 10px; }
+  summary { cursor: pointer; font-weight: 600; }
+  details p { color: var(--muted); margin: 10px 0 0; }
+
+  /* Form */
+  form { display: grid; gap: 14px; }
+  label { font-weight: 600; font-size: .95rem; display: grid; gap: 6px; }
+  input, select, textarea {
+    font: inherit; padding: 12px 14px; border-radius: 10px; border: 1px solid var(--line);
+    background: var(--bg); color: var(--text); width: 100%;
+  }
+  input:focus, select:focus, textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  textarea { min-height: 110px; resize: vertical; }
+  .row-2 { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); }
+  .note { color: var(--muted); font-size: .9rem; margin: 0; }
+  .status { font-weight: 600; color: var(--ok); margin: 0; min-height: 1.5em; }
+
+  footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: .95rem; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: space-between; }
+  footer a { text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#"><span class="logo-mark">A</span> Abdulloh</a>
+    <nav>
+      <a class="hide-sm" href="#xizmatlar">Xizmatlar</a>
+      <a class="hide-sm" href="#ishlar">Ishlarim</a>
+      <a href="#ariza">Ariza</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <h1>Biznesingiz uchun <span>sayt, Telegram bot</span> va Android ilova</h1>
+      <p>Va'da emas — ishlab turgan loyihalarimni ko'rsataman. Buyurtmalarni qabul qiladigan,
+        mijozga javob beradigan va qo'l mehnatini kamaytiradigan tizimlar quraman.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#ariza">Ariza qoldirish</a>
+        <a class="btn btn-ghost" href="https://t.me/Abdulloh_77700" target="_blank" rel="noopener">Telegram'da yozish</a>
+      </div>
+      <div class="proof">
+        <span><b>atoyo.uz</b> — real do'konda ishlayapti</span>
+        <span><b>10 ta</b> bot Telegram'da ochiq</span>
+        <span><b>AI</b> bilan ishlaydigan yechimlar</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="xizmatlar" class="soft">
+    <div class="wrap">
+      <h2>Xizmatlar</h2>
+      <p class="lead">Kichik do'kondan o'quv markazigacha — vazifangizga mos yechim.</p>
+      <div class="grid grid-2">
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg></div>
+          <h3>Saytlar</h3>
+          <ul class="list">
+            <li>Vizitka sayt va landing page</li>
+            <li>Portfolio va o'quv markazlar uchun sayt</li>
+            <li>Ariza qabul qiluvchi sayt — arizalar Telegram'ga tushadi</li>
+            <li>Internet-do'kon: katalog, savat, buyurtma, admin panel</li>
+            <li>Kirim-chiqim va hisob-kitob tizimlari</li>
+            <li>Mavjud saytdagi xatolarni topish va tuzatish</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg></div>
+          <h3>Telegram botlar</h3>
+          <ul class="list">
+            <li>Ariza bot — ma'lumot guruhga, kanalga yoki kerakli odamga boradi</li>
+            <li>Katalog / do'kon bot — mahsulotni topib, botning o'zida buyurtma</li>
+            <li>Guruh himoyachisi — spam, reklama va zararli havolalarni o'chiradi</li>
+            <li>Test bot, anonim savol-javob bot va boshqalar</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
+          <h3>Android ilova</h3>
+          <ul class="list">
+            <li>Do'kon yoki xizmatingiz uchun ilova</li>
+            <li>Sayt bilan bitta bazada ishlaydi — narx bir joyda o'zgarsa, hamma joyda yangilanadi</li>
+            <li>Push bildirishnomalar</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <h3>AI yechimlar</h3>
+          <ul class="list">
+            <li>Mijoz savollariga 24/7 javob beradigan AI yordamchi — saytda yoki botda</li>
+            <li>Qo'l mehnatini avtomatlashtirish: masalan, mahsulot rasmidan tayyor katalog kartochkasi</li>
+            <li>Arizalarni avtomatik saralash va kerakli odamga yuborish</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ishlar">
+    <div class="wrap">
+      <h2>Ishlarim</h2>
+      <p class="lead">Hammasi jonli — o'zingiz ochib ko'ring.</p>
+      <div class="grid grid-3">
+        <div class="card work">
+          <span class="tag">Sayt</span><span class="tag">Android</span><span class="tag">AI</span>
+          <h3>Atoyo — santexnika do'koni</h3>
+          <div class="live">● Do'konda ishlayapti</div>
+          <p>Sayt, Android ilova, do'kon kompyuteri uchun dastur, televizor ekrani va Telegram bot —
+            hammasi bitta bazada. AI yordamchi mijozga mahsulot topib beradi, admin rasm tashlasa —
+            AI tayyor katalog kartochkasini yasaydi.</p>
+          <div class="links"><a href="https://atoyo.uz" target="_blank" rel="noopener">atoyo.uz →</a></div>
+        </div>
+        <div class="card work">
+          <span class="tag">Sayt</span><span class="tag">Admin panel</span>
+          <h3>Organick — organik mahsulotlar do'koni</h3>
+          <div class="live">● Jonli</div>
+          <p>Uch tilli internet-do'kon: katalog, savat, buyurtma, admin panel. Google, email va SMS
+            orqali kirish. Buyurtma va murojaatlar Telegram'ga tushadi.</p>
+          <div class="links"><a href="https://organick-e1c5a.web.app" target="_blank" rel="noopener">Saytni ochish →</a></div>
+        </div>
+        <div class="card work">
+          <span class="tag">Telegram</span><span class="tag">AI</span>
+          <h3>Telegram botlar</h3>
+          <div class="live">● 10 ta bot ochiq ishlayapti</div>
+          <div class="bots">
+            <a href="https://t.me/Atoyo_service_bot" target="_blank" rel="noopener">@Atoyo_service_bot<span>Do'kon savollariga AI javob beradi, buyurtma qabul qiladi</span></a>
+            <a href="https://t.me/Atoyo_uz_bot" target="_blank" rel="noopener">@Atoyo_uz_bot<span>Saytga ulangan do'kon boti</span></a>
+            <a href="https://t.me/KillSpam_007_Bot" target="_blank" rel="noopener">@KillSpam_007_Bot<span>Guruhni spamdan tozalaydi</span></a>
+            <a href="https://t.me/COUNTLIST_BOT" target="_blank" rel="noopener">@COUNTLIST_BOT<span>Xarajatlar hisobi, ovozli xabarni ham tushunadi</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft">
+    <div class="wrap">
+      <h2>Ish qanday bo'ladi</h2>
+      <p class="lead">Har bosqichda nima bo'layotganini ko'rib turasiz.</p>
+      <ol class="steps">
+        <li><b>Yozasiz</b><span>Nima kerakligini qisqacha aytasiz</span></li>
+        <li><b>Kelishamiz</b><span>Narx, muddat va nimalar bo'lishi yozma kelishiladi</span></li>
+        <li><b>Oldindan to'lov</b><span>Kelishilgan summaning 30%</span></li>
+        <li><b>Ko'rsataman</b><span>Tayyor qismni ko'rib, fikr bildirasiz</span></li>
+        <li><b>Topshiraman</b><span>Qolgan to'lovdan keyin to'liq topshiriladi</span></li>
+        <li><b>Qo'llab-quvvatlash</b><span>Topshirilgandan keyin — kelishuv asosida</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Ko'p beriladigan savollar</h2>
+      <p class="lead">Javobini topmasangiz — pastda ariza qoldiring yoki Telegram'da yozing.</p>
+      <details>
+        <summary>Narxi qancha?</summary>
+        <p>Ish hajmiga bog'liq. Ariza qoldiring — nima kerakligini aniqlab, narx va muddatni yozma aytaman.</p>
+      </details>
+      <details>
+        <summary>Qancha vaqtda tayyor bo'ladi?</summary>
+        <p>Oddiy bot yoki landing page tezroq, internet-do'kon va ilova ko'proq vaqt oladi. Aniq muddat kelishuvda yoziladi.</p>
+      </details>
+      <details>
+        <summary>Domen va server bilan ham yordam berasizmi?</summary>
+        <p>Ha. Sayt yoki bot ishlab turishi uchun kerak bo'ladigan hamma narsani sozlab beraman.</p>
+      </details>
+      <details>
+        <summary>To'lov qanday?</summary>
+        <p>Humo, Uzcard (karta orqali) yoki naqd. 30% oldindan, qolgani topshirishda.</p>
+      </details>
+    </div>
+  </section>
+
+  <section id="ariza" class="soft">
+    <div class="wrap">
+      <h2>Ariza qoldirish</h2>
+      <p class="lead">Formani to'ldiring — Telegram ochiladi va arizangiz tayyor xabar bo'lib turadi. Faqat "Yuborish" ni bosasiz.</p>
+      <div class="card">
+        <form id="ariza-form" novalidate>
+          <div class="row-2">
+            <label>Ismingiz
+              <input name="ism" autocomplete="name" required maxlength="60" placeholder="Masalan: Jasur">
+            </label>
+            <label>Telefon raqamingiz
+              <input name="tel" type="tel" autocomplete="tel" required maxlength="20" placeholder="+998 90 123 45 67">
+            </label>
+          </div>
+          <label>Sizga nima kerak?
+            <select name="xizmat" required>
+              <option value="">Tanlang</option>
+              <option>Sayt</option>
+              <option>Internet-do'kon</option>
+              <option>Telegram bot</option>
+              <option>Android ilova</option>
+              <option>AI yechim</option>
+              <option>Saytdagi xatoni tuzatish</option>
+              <option>Boshqa</option>
+            </select>
+          </label>
+          <label>Qisqacha tavsif
+            <textarea name="tavsif" maxlength="800" placeholder="Masalan: kiyim do'konim uchun katalog va buyurtma qabul qiladigan bot kerak"></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Telegram'da yuborish</button>
+          <p class="note">Telegram ochilmasa yoki xabar avtomatik chiqmasa — u nusxalangan bo'ladi, chatga joylab yuboring.</p>
+          <p class="status" id="ariza-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Abdulloh — sayt, bot, ilova</span>
+    <span>
+      <a href="https://t.me/Abdulloh_77700" target="_blank" rel="noopener">Telegram: @Abdulloh_77700</a>
+      &nbsp;·&nbsp;
+      <a href="https://github.com/Abdulmajidkhan007" target="_blank" rel="noopener">GitHub</a>
+    </span>
+  </div>
+</footer>
+
+<script>
+  // Backend yo'q: ariza matnini yig'ib, Telegram chatini tayyor xabar bilan ochamiz.
+  // Bot tokeni yoki server kerak emas — sahifa GitHub Pages'da statik turadi.
+  (function () {
+    var USERNAME = "Abdulloh_77700";
+    var form = document.getElementById("ariza-form");
+    var status = document.getElementById("ariza-status");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var d = new FormData(form);
+      var ism = (d.get("ism") || "").trim();
+      var tel = (d.get("tel") || "").trim();
+      var xizmat = d.get("xizmat") || "";
+      var tavsif = (d.get("tavsif") || "").trim();
+
+      if (!ism || !tel || !xizmat) {
+        status.style.color = "#dc2626";
+        status.textContent = "Ism, telefon va xizmat turini to'ldiring.";
+        return;
+      }
+
+      var matn = "Assalomu alaykum! Saytingizdan ariza:\n" +
+        "Ism: " + ism + "\n" +
+        "Telefon: " + tel + "\n" +
+        "Xizmat: " + xizmat +
+        (tavsif ? "\nTavsif: " + tavsif : "");
+
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(matn).catch(function () { /* nusxalash ixtiyoriy — link baribir ochiladi */ });
+      }
+
+      status.style.color = "";
+      status.textContent = "Telegram ochilmoqda...";
+      window.location.href = "https://t.me/" + USERNAME + "?text=" + encodeURIComponent(matn);
+    });
+  })();
+</script>
+</body>
+</html>

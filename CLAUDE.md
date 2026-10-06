@@ -19,6 +19,9 @@ README.md              — profil sahifasi: rezyume + loyihalar jadvali
 docs/<repo-nomi>.md    — har loyiha uchun alohida sahifa
 docs/SHABLON.md        — yangi loyiha qo'shish uchun namuna
 CLAUDE.md              — shu reponi yuritish qoidalari
+site/index.html        — xizmatlar sayti (buyurtmachilar uchun), GitHub Pages'da
+                         .github/workflows/pages.yml orqali chiqadi. Backend yo'q:
+                         ariza formasi Telegram chatini tayyor matn bilan ochadi
 
 === README.md tarkibi ===
 1. Kim: Abdulmajid Sharipov (Abdullohkhan)
