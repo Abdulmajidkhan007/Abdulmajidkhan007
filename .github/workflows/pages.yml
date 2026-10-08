@@ -1,5 +1,7 @@
 # site/ papkasini GitHub Pages'ga joylaydi.
 # Bir martalik sozlash: Settings → Pages → Build and deployment → Source: "GitHub Actions".
+# Eslatma: GitHub'ning "Static HTML" shabloni (static.yml) butun repoyni joylaydi va
+# sayt manzili 404 bo'ladi — shuning uchun faqat shu workflow ishlatiladi (2026-10-08).
 name: Xizmatlar sayti (GitHub Pages)
 
 on:

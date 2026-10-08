@@ -18,6 +18,7 @@ Bu repo ikki vazifani bajaradi:
 README.md              — profil sahifasi: rezyume + loyihalar jadvali
 docs/<repo-nomi>.md    — har loyiha uchun alohida sahifa
 docs/SHABLON.md        — yangi loyiha qo'shish uchun namuna
+docs/REJA.md           — hamma repolar xaritasi va tugatish navbati (yangi sessiya shundan boshlaydi)
 CLAUDE.md              — shu reponi yuritish qoidalari
 site/index.html        — xizmatlar sayti (buyurtmachilar uchun), GitHub Pages'da
                          .github/workflows/pages.yml orqali chiqadi. Backend yo'q:

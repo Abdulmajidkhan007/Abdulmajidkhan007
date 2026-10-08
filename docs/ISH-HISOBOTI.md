@@ -228,3 +228,21 @@ qo'yildi. Profil reposiga PDF qo'yilmaydi.
   avtomatik joylaydi). Narx ataylab yozilmagan — egasi bozorni ko'rib qo'yadi.
 
 *Yozilgan: 2026-10-06*
+
+---
+
+## 9. 2026-10-08 — hamma repolar tekshiruvi
+
+- 20 ta repo xaritasi va tugatish navbati: `docs/REJA.md`.
+- atoyo-e-commerce: 8–15 audit bandlari kodda tekshirilib BAJARILDI deb
+  belgilandi; README/PLAY-STORE dagi "10 000+ mahsulot" da'vosi olindi;
+  ilova relizi 1.5.2 ga moslandi.
+- telegram-bots: 13 ta bot (kino-bot), KALI-LINUX va REJA yangilandi.
+- portfolio-3d: sitemap/robots Netlify manzili, Atoyo havolasi tuzatildi
+  (+ regressiya testi, 428 test yashil).
+- lumina, rn-r-e-commerce, chat-app: `main` default branch kodiga yetkazildi.
+- Profil: go-uz endi private — README da 🔒; telegram-bots sahifasi 13 bot,
+  CI bor. Pages: GitHub'ning `static.yml` shabloni butun repoyni joylab
+  sayt manzilini buzgan edi — olib tashlandi.
+
+*Yozilgan: 2026-10-08*

@@ -2,7 +2,7 @@
 
 > Vroom — ride-hailing va kuryer xizmati uchun super-app.
 
-**Repo:** https://github.com/Abdulmajidkhan007/go-uz · **Holat:** 🚧 Qurilmoqda
+**Repo:** yopiq (private), so'rasangiz ko'rsataman · **Holat:** 🚧 Qurilmoqda
 
 ---
 

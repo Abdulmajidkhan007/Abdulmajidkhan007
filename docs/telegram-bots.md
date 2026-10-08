@@ -1,6 +1,6 @@
 # telegram-bots
 
-> 12 ta mustaqil Telegram bot bitta repoda: bitta clone, bitta buyruq — hammasi ishga tushadi. 9 tasi Telegram'da ochiq ishlaydi.
+> 13 ta mustaqil Telegram bot bitta repoda: bitta clone, bitta buyruq — hammasi ishga tushadi. 9 tasi Telegram'da ochiq ishlaydi.
 
 **Repo:** https://github.com/Abdulmajidkhan007/telegram-bots · **Jonli:** botlar Telegram'da
 **Holat:** ✅ Ishlayapti
@@ -21,7 +21,7 @@ kerak**. Papkani nusxalab olsang, bot mustaqil ishlashi shart.
 
 | Qatlam | Texnologiya |
 |---|---|
-| Runtime | Node.js ≥18 (7 bot) · Python 3 (4 bot) · TypeScript (1 monorepo) |
+| Runtime | Node.js ≥18 (7 bot) · Python 3 (5 bot) · TypeScript (1 monorepo) |
 | Telegram | node-telegram-bot-api · Telegraf (countlist) · Telethon (MTProto/userbot) · aiogram 3 |
 | AI | Google Gemini API (matn, vision, audio) · OpenAI Whisper (countlist, ixtiyoriy) |
 | Baza | SQLite · PostgreSQL (killspam-bot) · ChromaDB (atoyo-rag-bot) |
@@ -77,7 +77,8 @@ tugaydi. Sekin test yozilmaydi va ishlatilmaydi.
 | `gemini-qa-bot` | Node | Gemini savol-javob, suhbat konteksti bilan |
 | `idfinder-bot` | Node | Foydalanuvchi / kanal / guruh ID larini topadi |
 | `malware-bot` | Node | Havola va fayllarni VirusTotal orqali tekshiradi |
-| `quiz-bot` | Node | IT testlari: yakka va guruh rejimi, taymer, reyting |
+| `quiz-bot` | Node | IT testlari: 2007 ta savol (13 yo'nalish, 72 bo'lim), yakka va guruh rejimi, taymer, reyting |
+| `kino-bot` | Python | Kino kodi bo'yicha video beradi: majburiy obuna, admin panel, reklama, statistika, `/backup` va `/restore` |
 | `killspam-bot` | Python | Guruhlarni spam va zararli havolalardan tozalaydi |
 | `xulosa-ai-bot` | Python | Guruh/kanal yozishmalarini Gemini bilan xulosalaydi, ovozli xabarni matnga o'giradi |
 | `atoyo-ai-bot` | Python | Mahsulot rasmini Gemini Vision bilan katalog kartochkasiga aylantiradi (pHash dublikat filtri) |
@@ -106,7 +107,8 @@ uchtasi ommaga e'lon qilinmagan: `gemini-qa-bot`, hamda `xulosa-ai-bot` va
 ## Holat
 
 **Ishlaydi:**
-- 12 ta bot, `npm run list` / `npm run start` orqali boshqariladi
+- 13 ta bot, `npm run list` / `npm run start` orqali boshqariladi
+- GitHub Actions CI: har push'da testlar va kalit skaneri (`.github/workflows/ci.yml`)
 - 9 tasi Telegram'da ochiq (yuqoridagi jadval, @Atoyo_uz_bot dan tashqari)
 - `npm run check` — testlar + kalit skaneri, yashil
 - Har botda o'z README va `.env.example`
@@ -114,7 +116,6 @@ uchtasi ommaga e'lon qilinmagan: `gemini-qa-bot`, hamda `xulosa-ai-bot` va
 **Hali yo'q:**
 - Umumiy Docker Compose (ayrim botlarda alohida bor)
 - Markazlashgan log yig'ish va monitoring
-- CI da avtomatik test (hozircha lokal)
 
 **Ma'lum cheklovlar:**
 - `killspam-bot` uchun PostgreSQL alohida ko'tarilishi kerak
@@ -128,4 +129,4 @@ uchtasi ommaga e'lon qilinmagan: `gemini-qa-bot`, hamda `xulosa-ai-bot` va
 
 ---
 
-*Oxirgi yangilanish: 2026-10-04*
+*Oxirgi yangilanish: 2026-10-08*
