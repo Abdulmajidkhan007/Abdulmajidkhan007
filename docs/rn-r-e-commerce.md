@@ -97,6 +97,12 @@ admin hisobot. Chegirma, yetkazish narxi, jami va depozit Firestore
 qoidalarida qayta hisoblanadi (51 qoida testi); emulyatorda brauzer bilan
 to'liq buyurtma oqimi sinaldi. Topilgan eski xato: buyurtmadan keyin mijoz
 muvaffaqiyat sahifasi o'rniga bo'sh savatga tushardi — tuzatildi.
+Keyin xuddi shu funksiyalar Android ilovaga ham qo'shildi: sevimlilar
+(yurakcha + alohida ekran), blog, aloqa formasi, checkout'da promo-kod va
+hudud bo'yicha yetkazish narxi, profilda hudud tanlash; admin bo'limida
+hisobot, xabarlar, blog, promo-kodlar va yetkazish narxlari. Ilova ham
+buyurtma paytida promo va narxlarni bazadan qayta o'qiydi — qoidalar bir xil.
+Tekshiruv: tsc, lint, 168 test, Metro bundle.
 
 ## Havolalar
 
