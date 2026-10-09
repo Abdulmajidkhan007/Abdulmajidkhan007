@@ -5,7 +5,8 @@
 +998 90 854 56 03 · [abdullohhacker007@gmail.com](mailto:abdullohhacker007@gmail.com) ·
 Telegram: [@Abdulloh_77700](https://t.me/Abdulloh_77700) · Qo'qon, O'zbekiston
 [github.com/Abdulmajidkhan007](https://github.com/Abdulmajidkhan007) ·
-[linkedin.com/in/abdulmajid-sharipov-profile](https://linkedin.com/in/abdulmajid-sharipov-profile)
+[linkedin.com/in/abdulmajid-sharipov-profile](https://linkedin.com/in/abdulmajid-sharipov-profile) ·
+[abdulmajidkhan-portfolio.web.app](https://abdulmajidkhan-portfolio.web.app)
 
 ---
 
@@ -59,6 +60,9 @@ bo'lganda LLM integratsiyalarini qo'shaman — lekin asosiy yo'nalishim frontend
 - Buyurtma Telegram guruhining forum topic'iga tushadi; xabar ostidagi tugmalar webhook
   orqali Firestore statusini yangilaydi — operator saytga kirmaydi. Admin yo'llari ikki
   qatlamda tekshiriladi, optom narx va tannarx mijozga umuman uzatilmaydi.
+- E'lonlar (broadcast): admin paneldan yoki guruhdagi `/elon` buyrug'idan bot
+  mijozlariga Telegram'da, sayt foydalanuvchilariga email'da va ochiq kanalga bir
+  vaqtda tarqatiladi; bitta xato butun ro'yxatni to'xtatmaydi.
 
 ### Organick — organik oziq-ovqat do'koni
 [organick-e1c5a.web.app](https://organick-e1c5a.web.app) ·
@@ -73,11 +77,11 @@ bo'lganda LLM integratsiyalarini qo'shaman — lekin asosiy yo'nalishim frontend
 - Playwright e2e testlari; `master` ga push bo'lganda GitHub Actions Firebase Hosting'ga
   avtomatik deploy qiladi.
 
-### telegram-bots — 12 ta botning monorepo'si
+### telegram-bots — 13 ta botning monorepo'si
 [github.com/Abdulmajidkhan007/telegram-bots](https://github.com/Abdulmajidkhan007/telegram-bots)
 `Node.js · Python · TypeScript · Gemini API · PostgreSQL · SQLite · Docker`
 
-- 12 ta mustaqil bot bitta repoda. Boshqaruv uchun o'z CLI mni yozdim: JSON reestr
+- 13 ta mustaqil bot bitta repoda. Boshqaruv uchun o'z CLI mni yozdim: JSON reestr
   asosida hammasini ro'yxatlaydi, o'rnatadi, sozlaydi va bittada ishga tushiradi.
 - Ichida: Gemini savol-javob va yozishmalarni xulosalovchi botlar; do'kon katalogi ustida
   RAG qidiruv (LangChain + ChromaDB); rasmdan katalog kartochkasi yasovchi userbot;
@@ -92,8 +96,11 @@ bo'lganda LLM integratsiyalarini qo'shaman — lekin asosiy yo'nalishim frontend
 ---
 
 **Boshqa loyihalar.** Yuqoridagilar — production'da ishlayotgani va chiqishga tayyori.
-Qolganlari (veb+mobil monorepo, React Three Fiber portfolio, o'quv markazlar uchun CRM)
-GitHub profilimda.
+React Three Fiber portfolio — [abdulmajidkhan-portfolio.web.app](https://abdulmajidkhan-portfolio.web.app).
+Qolganlari (veb+mobil monorepo, o'quv markazlar uchun CRM) GitHub profilimda.
+
+> Manba: portfolio-3d reposidagi `scripts/resume/resume.html` — saytdagi PDF shundan
+> yig'iladi. Bu sahifa o'sha bilan bir vaqtda yangilanadi.
 
 ---
 

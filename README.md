@@ -64,14 +64,14 @@ integratsiyasini qo'shaman — Gemini API, RAG, vektor qidiruv.
 | 🛠 [@Atoyo_service_bot](https://t.me/Atoyo_service_bot) | Atoyo bo'yicha savollarga AI javob beradi, buyurtma qabul qiladi |
 | 🛒 [@Atoyo_uz_bot](https://t.me/Atoyo_uz_bot) | Saytga ulangan do'kon: mahsulotni topib, shu yerda buyurtma berasiz |
 
-🚧 **portfolio-3d 🔒** — full-stack 3D portfolio: Firebase Hosting + Cloud Functions backend, Lighthouse desktop 97 (o'lchangan)<br>
-<sub>React Three Fiber · three.js · GSAP · Vite 8 · Firebase · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/portfolio-3d.md)</sub>
+✅ **[portfolio-3d](https://abdulmajidkhan-portfolio.web.app)** 🔒 — 3D portfolio: React Three Fiber sahnasi, uz/en, rezyume PDF; telefondan GitHub Actions orqali Firebase'ga deploy<br>
+<sub>React Three Fiber · three.js · GSAP · Vite 8 · Firebase · [🌐 jonli](https://abdulmajidkhan-portfolio.web.app) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/portfolio-3d.md)</sub>
 
 🚧 **[learning-center-front](https://github.com/nurulloh-coder-dev/learning-center-front)** — o'quv markazi CRM'i (A.L.I.A.), jamoaviy loyiha: men frontend tomonidaman<br>
 <sub>React 19 · TypeScript · Vite 8 · Tailwind v4 · TanStack Query 5 · Vitest · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/learning-center-front.md)</sub>
 
-🚧 **[lumina](https://github.com/Abdulmajidkhan007/lumina)** — Instagram uslubidagi social ilova<br>
-<sub>React Native (bare) · TanStack Query · Zustand · Firebase · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/lumina.md)</sub>
+🚧 **[lumina](https://lumina-007app.web.app)** — Instagram uslubidagi social ilova; veb versiyasi jonli, Android hali store'da emas<br>
+<sub>React Native (bare) · TanStack Query · Zustand · Firebase · [🌐 jonli](https://lumina-007app.web.app) · [💻 kod](https://github.com/Abdulmajidkhan007/lumina) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/lumina.md)</sub>
 
 🚧 **[rn-r-e-commerce](https://github.com/Abdulmajidkhan007/rn-r-e-commerce)** — KidsWear: bolalar kiyimi do'koni, veb + Android bitta monorepoda, Payme/Click to'lovi<br>
 <sub>React 19 · Vite 8 · MUI 9 · React Native (bare) · Turborepo · Firebase · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/rn-r-e-commerce.md)</sub>

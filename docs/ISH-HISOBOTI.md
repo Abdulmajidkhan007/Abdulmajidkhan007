@@ -245,4 +245,19 @@ qo'yildi. Profil reposiga PDF qo'yilmaydi.
   CI bor. Pages: GitHub'ning `static.yml` shabloni butun repoyni joylab
   sayt manzilini buzgan edi — olib tashlandi.
 
-*Yozilgan: 2026-10-08*
+## 10. 2026-10-09 — portfolio jonli
+
+- portfolio-3d Firebase'ga chiqdi: https://abdulmajidkhan-portfolio.web.app.
+  Billing hisobining loyiha limiti to'lgani uchun Blaze ulanmadi — workflow'ga
+  `FIREBASE_PLAN=spark` rejimi qo'shildi (faqat Hosting); forma bu rejimda
+  Telegram havolasini ko'rsatadi va soxta "yuborildi" demaydi.
+- Rezyume: saytdagi PDF 2026-10-04 dagisi edi (12 bot, portfolio havolasiz).
+  Manba endi portfolio-3d `scripts/resume/resume.html`; PDF bilan hash
+  saqlanadi va test HTML↔PDF, email, Telegram, bot sonini tekshiradi.
+- Sayt: statistika halol raqamlarga (oldin 25 loyiha / 7 mijoz — tasdiqsiz),
+  atoyo kartasida "10 000+" o'rniga broadcast, Telegram Bots kartasi, har
+  kartada `docs/<repo>.md` havolasi, email abdullohhacker007@gmail.com.
+- Profil README: portfolio ✅ jonli havola bilan, lumina veb havolasi.
+  REJA navbati: rn-r-e-commerce va parallel lumina.
+
+*Yozilgan: 2026-10-09*

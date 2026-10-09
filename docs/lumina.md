@@ -2,7 +2,7 @@
 
 > Instagram uslubidagi social ilova — bare React Native CLI va TypeScript.
 
-**Repo:** https://github.com/Abdulmajidkhan007/lumina · **Holat:** 🚧 Qurilmoqda
+**Repo:** https://github.com/Abdulmajidkhan007/lumina · **Jonli (veb):** https://lumina-007app.web.app · **Holat:** 🚧 Qurilmoqda
 
 ---
 
@@ -21,10 +21,11 @@ React Hook Form + Zod · Reanimated + Gesture Handler · @react-native-firebase
 ## Holat
 
 **Kodda bor:** asosiy ekranlar va navigatsiya, Firebase kutubxonalari ulangan.
-**Hali yo'q:** ilova store'ga chiqarilmagan.
+Veb versiyasi Firebase Hosting'da ochiq, real foydalanuvchilar post joylay boshlagan.
+**Hali yo'q:** Android ilova store'ga chiqarilmagan.
 
 > 📝 Bu qisqa sahifa. To'liq versiyasi keyin [SHABLON.md](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/SHABLON.md) bo'yicha yoziladi.
 
 ---
 
-*Oxirgi yangilanish: 2026-10-04*
+*Oxirgi yangilanish: 2026-10-09*

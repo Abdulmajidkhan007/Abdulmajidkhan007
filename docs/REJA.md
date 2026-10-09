@@ -14,9 +14,9 @@
 | **Organick_org** | public | Organik do'kon, Firebase | 2026-09-29 | ✅ Jonli | Tayyor |
 | **telegram-bots** | public | 13 ta bot monorepo, CI | 2026-10-08 | ✅ Ishlayapti | Davom (hosting + hr-bot) |
 | **Abdulmajidkhan007** | public | Profil README + xizmatlar sayti | 2026-10-08 | ✅ | Yuritiladi |
-| **portfolio-3d** | private | 3D portfolio, Firebase Hosting + Functions | 2026-10-08 | 🚧 deploy qilinmagan | **1-navbat** |
-| **rn-r-e-commerce** | public | KidsWear: veb + Android, Payme/Click | 2026-07-28 | 🚧 Phase 10, jonli yo'q | **2-navbat** |
-| **lumina** | public | Instagram uslubidagi RN ilova (bare) | 2026-07-27 | 🚧 | 5-navbat: tugatish yoki muzlatish |
+| **portfolio-3d** | private | 3D portfolio, Firebase Hosting + Functions | 2026-10-09 | ✅ jonli (forma Blaze'ni kutadi) | Tayyor |
+| **rn-r-e-commerce** | public | KidsWear: veb + Android, Payme/Click | 2026-07-28 | 🚧 Phase 10, jonli yo'q | **1-navbat** |
+| **lumina** | public | Instagram uslubidagi RN ilova (bare); veb jonli: lumina-007app.web.app | 2026-07-27 | 🚧 real foydalanuvchilar bor | **1-navbat (parallel)**: tugatish |
 | **learning-datacenter-tc-project** | private | On-premise o'quv markaz CRM (NestJS) | 2026-08-12 | 🚧 Faza 1 boshlangan | Muzlatish (o'xshash ish: learning-center-front) |
 | **go-uz** | private | Vroom super-app monorepo | 2026-07-12 | 🚧 | Muzlatish |
 | **web-3d** | private | NEBULA, WebGL fon + Higgsfield | 2026-08-01 | 🚧 3 commit | Muzlatish |
@@ -54,38 +54,41 @@ push'da ishlaydi. Almashtirilsa, deploy workflow'ini ham o'zgartirish kerak.
 
 ## 3. Tugatish navbati
 
-### 1) portfolio-3d — eng tez g'alaba, bu sizning CV'ingiz
-- Egasi: Firebase loyiha ochish → `.firebaserc` ga ID → `firebase deploy`
-  (`docs/FIREBASE.md`).
-- Kod: kontent halolligi — `Supabase` ko'nikmalarda turibdi (ko'rilgan
-  repolarda topilmadi — tekshirilsin; `Expo` faqat muzlatilgan ios-asistent'da),
-  ko'nikma foizlari (`level: 95`) bo'rttirilgan
-  ko'rinadi; Lumina `live` havolasi tekshirilsin; `scripts/resume/` eski
-  rezyume (Netlify havolasi bilan) — o'chirish yoki yangilash.
-- Deploy'dan keyin: profil README da 🔒 o'rniga jonli havola.
+### ✅ portfolio-3d — tugadi (2026-10-09)
+- Jonli: https://abdulmajidkhan-portfolio.web.app — `main` ga push → GitHub
+  Actions → Firebase. Hozir `FIREBASE_PLAN=spark` (faqat Hosting).
+- Qolgan: aloqa formasi Blaze'ni kutadi — billing hisobining loyiha limiti
+  to'lgan. Yechim: keraksiz loyihadan billing'ni uzish yoki limit so'rash,
+  keyin `FIREBASE_PLAN` ni o'chirib workflow'ni qayta ishga tushirish.
+- Rezyume manbasi: `portfolio-3d/scripts/resume/resume.html`. O'zgarsa — PDF
+  qayta yig'iladi (`node scripts/resume/build.mjs`), `docs/REZYUME.md` ham
+  birga yangilanadi; test eskirgan PDF'ni ushlaydi.
 
-### 2) rn-r-e-commerce — veb'ni jonli qilish
+### 1) rn-r-e-commerce — veb'ni jonli qilish
 - `firebase.json` (hosting: `apps/web/dist`) va `scripts/deploy-backend.sh` bor.
-- Egasi: Firebase loyiha (konsoldagi `kids-wear`) + deploy.
+- Egasi: Firebase loyiha (konsoldagi `kids-wear`). Deploy — portfolio kabi
+  GitHub Actions orqali (telefondan).
 - Kod: README "Phase 10" holati, demo ma'lumot (seed), `mock` to'lov rejimi
   aniq ko'rsatilsin. Android/Play Store — keyin.
 
-### 3) telegram-bots — botlarni doimiy ishlatish, keyin hr-bot
+### 1b) lumina — parallel tugatish
+- Veb versiyasi jonli (lumina-007app.web.app), real foydalanuvchilar post
+  joylay boshladi (vakansiya joylaydigan foydalanuvchi qo'shildi).
+- Kod: veb'dagi kamchiliklar ro'yxati, moderatsiya/shikoyat (real odamlar
+  bor), APK yig'ish. Batafsil — ish boshlanganda alohida prompt.
+
+### 2) telegram-bots — botlarni doimiy ishlatish, keyin hr-bot
 - 2–3 ommaviy botni doimiy serverga (Railway/VPS) chiqarish; kino-bot uchun
   Volume (`DATA_DIR=/data`).
 - hr-bot: `docs/HR-BOT-PROMPT.md` — "telegram-bots/hr-bot ni boshla" bilan.
   2026-12-11 cheklovi — egasi istisno qilsa.
 - bot-factory: hr-bot MVP'dan keyin, alohida repo.
 
-### 4) atoyo-e-commerce — qo'llab-quvvatlash
+### 3) atoyo-e-commerce — qo'llab-quvvatlash
 - Egasi: ilova 1.5.2 ni admin panelda e'lon qilish; production'da XFF;
   Payme/Click kalitlari.
 - Kod: 800+ qatorli fayllarni bo'lish (3.7); 16-band 3D model — egasi
   image→3D API kalitini bergach. Batafsil: repo `docs/AUDIT-ISHLARI.md`.
-
-### 5) lumina — qaror
-- Oxirgi ish iyulda. Firebase ulangan, store'ga chiqmagan.
-  Variant: APK yig'ib demo sifatida tugatish **yoki** muzlatish.
 
 ### Muzlatilganlar
 learning-datacenter-tc-project, go-uz, web-3d, ios-asistent, mythos-uzbek-ai,
@@ -97,12 +100,13 @@ DevCraft-AI — 2026-12-11 gacha tegilmaydi.
 
 - [ ] 14 ta repoda default branch → `main` (2-bo'lim)
 - [ ] O'quv repolarini arxivlash (1-bo'lim)
-- [ ] portfolio-3d: Firebase + deploy
+- [x] portfolio-3d: Firebase + deploy (2026-10-09)
+- [ ] Billing: keraksiz loyihadan uzish yoki limit so'rash → portfolio formasi
 - [ ] atoyo: ilova 1.5.2 ni e'lon qilish
 - [ ] countlist'dan oqib ketgan eski bot tokenini BotFather'da bekor qilish
       (agar hali qilinmagan bo'lsa)
-- [ ] Rezyume: "12 ta bot" → 13 (PDF qayta yig'iladi)
+- [x] Rezyume: 13 bot, broadcast, portfolio havolasi (2026-10-09)
 
 ---
 
-*Oxirgi yangilanish: 2026-10-08*
+*Oxirgi yangilanish: 2026-10-09*

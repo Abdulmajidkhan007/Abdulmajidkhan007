@@ -2,8 +2,8 @@
 
 > 3D portfolio sayti: React Three Fiber sahnasi, GSAP animatsiyalari, Firebase backend bilan.
 
-**Repo:** 🔒 yopiq · **Jonli:** yo'q
-**Holat:** 🚧 Qurilmoqda
+**Repo:** 🔒 yopiq · **Jonli:** https://abdulmajidkhan-portfolio.web.app
+**Holat:** ✅ Ishlayapti (forma — Blaze'dan keyin)
 
 ---
 
@@ -64,14 +64,22 @@ xatti-harakati bir xil emas.
 
 ## Holat
 
-**Ishlaydi:** 3D sahna, scroll animatsiyalari, 431 ta invariant test,
-o'lchangan Lighthouse natijalari, Firebase Hosting konfiguratsiyasi va
-aloqa formasi backendi (kod tayyor, deploy qilinmagan).
+**Ishlaydi:** sayt jonli — https://abdulmajidkhan-portfolio.web.app (Firebase
+Hosting, Spark). 3D sahna, scroll animatsiyalari, 451 ta test. Deploy telefondan:
+`main` ga push → GitHub Actions → Firebase (service account bilan).
+Rezyume bitta manbada (`scripts/resume/resume.html`); test PDF HTML'dan
+yig'ilganini, email, Telegram va bot sonini saytdagi bilan solishtiradi —
+eskirgan rezyume saytda qolib ketmaydi. Har loyiha kartasida shu `docs/`
+sahifalariga "Batafsil" havolasi.
 
-**Hali yo'q:** Firebase'ga haqiqiy deploy (Firebase loyihasi va Blaze
-rejasi kerak, `.firebaserc` da hali namuna ID); mobil unumdorlik 90+ ga
-chiqarilmagan; Lighthouse raqamlari Firebase'dagi jonli saytda qayta
-o'lchanmagan; domen ulanmagan.
+**Hali yo'q:** aloqa formasi — Cloud Functions Blaze talab qiladi; billing
+hisobining loyiha limiti to'lgan (`FIREBASE_PLAN=spark` rejimida forma
+xato o'rniga Telegram havolasini ko'rsatadi). Mobil unumdorlik 90+ ga
+chiqarilmagan; Lighthouse jonli saytda qayta o'lchanmagan; domen ulanmagan.
+
+**2026-10-09:** Firebase'ga chiqdi (`abdulmajidkhan-portfolio`). Statistika
+kartalari halol raqamlarga almashtirildi (2 yil dasturlashda, 4 jonli sayt,
+13 bot, 1 real do'kon); email — abdullohhacker007@gmail.com, Telegram qo'shildi.
 
 **2026-10-03:** Netlify'dan qolgan izlar tozalandi (robots.txt, sitemap,
 rezyume — endi `web.app`), runtime Node 22 ga o'tkazildi, CI `functions/`
@@ -79,4 +87,4 @@ ni ham tekshiradi.
 
 ---
 
-*Oxirgi yangilanish: 2026-10-03*
+*Oxirgi yangilanish: 2026-10-09*
