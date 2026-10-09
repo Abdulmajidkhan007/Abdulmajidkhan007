@@ -260,4 +260,17 @@ qo'yildi. Profil reposiga PDF qo'yilmaydi.
 - Profil README: portfolio ✅ jonli havola bilan, lumina veb havolasi.
   REJA navbati: rn-r-e-commerce va parallel lumina.
 
+## 11. 2026-10-09 (davomi) — KidsWear, Lumina, tozalash
+
+- KidsWear: dizayn buzilishi (MUI `@layer` tartibi), til, bosh sahifa; keyin
+  1-guruh funksiyalar — aloqa, blog, promo-kod, hudud bo'yicha yetkazish,
+  sevimlilar, admin hisobot. Qoidalar pul hisobini qayta tekshiradi.
+- Lumina: admin `email_verified`, `activityLogs` yopildi; APK har push'da
+  GitHub Release (`lumina.apk`); shaffof menyu (`bg-surface` aniqlanmagan);
+  social-app'dan Welcome ekrani ko'chirildi, social-app o'chirildi.
+- chatapp qoladi, chat-app o'chiriladi (mock).
+- Portfolio: fotorealistik AI portret olib tashlandi, 3D avatar.
+- telegram-bots: xulosa-ai-bot o'chirilgan gemini-1.5-flash ni chaqirardi —
+  GEMINI_MODEL ga o'tkazildi.
+
 *Yozilgan: 2026-10-09*

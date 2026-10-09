@@ -91,6 +91,12 @@ ustuvorlikka tushib, Tailwind reset'i hamma padding/ramkani o'chirgan —
 tuzatildi; do'kon sahifalari brauzer tilida (inglizcha) chiqardi — til
 endi hamma joyda saqlangan tanlovga bo'ysunadi. Bosh sahifa: hero, toifadan
 filtrlangan katalog, chegirmalar bo'limi.
+Shu kuni atoyo'dagi 1-guruh funksiyalar qo'shildi (veb): aloqa formasi,
+blog (uz/en/ru), promo-kod, 14 hudud bo'yicha yetkazish narxi, sevimlilar,
+admin hisobot. Chegirma, yetkazish narxi, jami va depozit Firestore
+qoidalarida qayta hisoblanadi (51 qoida testi); emulyatorda brauzer bilan
+to'liq buyurtma oqimi sinaldi. Topilgan eski xato: buyurtmadan keyin mijoz
+muvaffaqiyat sahifasi o'rniga bo'sh savatga tushardi — tuzatildi.
 
 ## Havolalar
 
