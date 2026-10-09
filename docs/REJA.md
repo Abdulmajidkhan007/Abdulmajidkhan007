@@ -74,8 +74,15 @@ push'da ishlaydi. Almashtirilsa, deploy workflow'ini ham o'zgartirish kerak.
 ### 1b) lumina — parallel tugatish
 - Veb versiyasi jonli (lumina-007app.web.app), real foydalanuvchilar post
   joylay boshladi (vakansiya joylaydigan foydalanuvchi qo'shildi).
-- Kod: veb'dagi kamchiliklar ro'yxati, moderatsiya/shikoyat (real odamlar
-  bor), APK yig'ish. Batafsil — ish boshlanganda alohida prompt.
+- Bor (2026-10-09 tekshirildi): shikoyat + admin moderatsiya navbati
+  (`/admin/reports`), CI yashil va release APK yig'iladi, imzolangan AAB
+  workflow, Play Store rasmlari, maxfiylik siyosati.
+- Kod: Firestore rules'da admin faqat email bilan tekshiriladi
+  (`email_verified` yo'q); `activityLogs` ga kirmagan odam ham yoza oladi
+  (`allow create: if true`) — spam va xarajat xavfi. Shulardan boshlanadi.
+- Egasi: Play Store qarori (developer akkaunt $25; 2023-11 dan keyin ochilgan
+  shaxsiy akkauntga 12 testerli 14 kunlik yopiq test kerak) yoki APK'ni
+  GitHub Releases orqali tarqatish.
 
 ### 2) telegram-bots — botlarni doimiy ishlatish, keyin hr-bot
 - 2–3 ommaviy botni doimiy serverga (Railway/VPS) chiqarish; kino-bot uchun

@@ -80,6 +80,13 @@ FCM push, Firestore rules testlari, CI.
 (faqat listing qoralamasi bor); Payme/Click merchant shartnomasi yo'q —
 hozircha `mock` provayder bilan ishlaydi.
 
+**2026-10-09:** telefondan deploy qo'shildi — `main` ga push yoki Actions →
+Deploy (Firebase): test → web config loyihadan avtomatik olinadi → build →
+Hosting + Firestore (`FIREBASE_PLAN=spark`). Qo'lda ishga tushirganda demo
+katalogni yuklash va emailga admin huquqi berish mumkin. CI iyuldan beri
+qizil edi (functions testlari uchun kutubxona o'rnatilmagan, functions
+type-check test fayllarni ham tekshirgan) — tuzatildi. Functions Node 22.
+
 ## Havolalar
 
 - Repo: https://github.com/Abdulmajidkhan007/rn-r-e-commerce
@@ -87,4 +94,4 @@ hozircha `mock` provayder bilan ishlaydi.
 
 ---
 
-*Oxirgi yangilanish: 2026-10-04*
+*Oxirgi yangilanish: 2026-10-09*
