@@ -70,8 +70,8 @@ integratsiyasini qo'shaman — Gemini API, RAG, vektor qidiruv.
 🚧 **[learning-center-front](https://github.com/nurulloh-coder-dev/learning-center-front)** — o'quv markazi CRM'i (A.L.I.A.), jamoaviy loyiha: men frontend tomonidaman<br>
 <sub>React 19 · TypeScript · Vite 8 · Tailwind v4 · TanStack Query 5 · Vitest · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/learning-center-front.md)</sub>
 
-🚧 **[lumina](https://lumina-007app.web.app)** — Instagram uslubidagi social ilova; veb jonli, Android hali store'da emas<br>
-<sub>React Native (bare) · TanStack Query · Zustand · Firebase · [🌐 jonli](https://lumina-007app.web.app) · [💻 kod](https://github.com/Abdulmajidkhan007/lumina) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/lumina.md)</sub>
+🚧 **[lumina](https://lumina-007app.web.app)** — Instagram uslubidagi social ilova; veb jonli, Android APK GitHub Releases'da, Play Store'da hali yo'q<br>
+<sub>React Native (bare) · TanStack Query · Zustand · Firebase · [🌐 jonli](https://lumina-007app.web.app) · [📱 APK](https://github.com/Abdulmajidkhan007/lumina/releases/latest/download/lumina.apk) · [💻 kod](https://github.com/Abdulmajidkhan007/lumina) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/lumina.md)</sub>
 
 🚧 **[rn-r-e-commerce](https://kids-wear-007.web.app)** — KidsWear: bolalar kiyimi do'koni, veb + Android bitta monorepoda; veb jonli (demo katalog, test to'lov)<br>
 <sub>React 19 · Vite 8 · MUI 9 · React Native (bare) · Turborepo · Firebase · [🌐 jonli](https://kids-wear-007.web.app) · [💻 kod](https://github.com/Abdulmajidkhan007/rn-r-e-commerce) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/rn-r-e-commerce.md)</sub>
