@@ -2,7 +2,7 @@
 
 > KidsWear — bolalar kiyimi do'koni: React veb va React Native (bare CLI) Android ilova, bitta monorepoda.
 
-**Repo:** https://github.com/Abdulmajidkhan007/rn-r-e-commerce · **Holat:** 🚧 Qurilmoqda (Phase 10)
+**Repo:** https://github.com/Abdulmajidkhan007/rn-r-e-commerce · **Jonli:** https://kids-wear-007.web.app · **Holat:** 🚧 Qurilmoqda
 
 ---
 
@@ -86,11 +86,17 @@ Hosting + Firestore (`FIREBASE_PLAN=spark`). Qo'lda ishga tushirganda demo
 katalogni yuklash va emailga admin huquqi berish mumkin. CI iyuldan beri
 qizil edi (functions testlari uchun kutubxona o'rnatilmagan, functions
 type-check test fayllarni ham tekshirgan) — tuzatildi. Functions Node 22.
+Sayt chiqdi, lekin xunuk edi: MUI stillari `@layer mui` da eng past
+ustuvorlikka tushib, Tailwind reset'i hamma padding/ramkani o'chirgan —
+tuzatildi; do'kon sahifalari brauzer tilida (inglizcha) chiqardi — til
+endi hamma joyda saqlangan tanlovga bo'ysunadi. Bosh sahifa: hero, toifadan
+filtrlangan katalog, chegirmalar bo'limi.
 
 ## Havolalar
 
 - Repo: https://github.com/Abdulmajidkhan007/rn-r-e-commerce
-- Jonli sayt: yo'q
+- Jonli sayt: https://kids-wear-007.web.app (Spark: demo katalog, test to'lov)
+- Repo ichidagi to'liq tavsif: `docs/LOYIHA-HAQIDA.md`; atoyo funksiyalari rejasi: `docs/REJA.md`
 
 ---
 

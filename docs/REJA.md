@@ -15,7 +15,7 @@
 | **telegram-bots** | public | 13 ta bot monorepo, CI | 2026-10-08 | ✅ Ishlayapti | Davom (hosting + hr-bot) |
 | **Abdulmajidkhan007** | public | Profil README + xizmatlar sayti | 2026-10-08 | ✅ | Yuritiladi |
 | **portfolio-3d** | private | 3D portfolio, Firebase Hosting + Functions | 2026-10-09 | ✅ jonli (forma Blaze'ni kutadi) | Tayyor |
-| **rn-r-e-commerce** | public | KidsWear: veb + Android, Payme/Click | 2026-07-28 | 🚧 Phase 10, jonli yo'q | **1-navbat** |
+| **rn-r-e-commerce** | public | KidsWear: veb + Android, Payme/Click | 2026-10-09 | 🚧 veb jonli: kids-wear-007.web.app | **1-navbat**: atoyo funksiyalari |
 | **lumina** | public | Instagram uslubidagi RN ilova (bare); veb jonli: lumina-007app.web.app | 2026-07-27 | 🚧 real foydalanuvchilar bor | **1-navbat (parallel)**: tugatish |
 | **learning-datacenter-tc-project** | private | On-premise o'quv markaz CRM (NestJS) | 2026-08-12 | 🚧 Faza 1 boshlangan | Muzlatish (o'xshash ish: learning-center-front) |
 | **go-uz** | private | Vroom super-app monorepo | 2026-07-12 | 🚧 | Muzlatish |
@@ -64,16 +64,19 @@ push'da ishlaydi. Almashtirilsa, deploy workflow'ini ham o'zgartirish kerak.
   qayta yig'iladi (`node scripts/resume/build.mjs`), `docs/REZYUME.md` ham
   birga yangilanadi; test eskirgan PDF'ni ushlaydi.
 
-### 1) rn-r-e-commerce — veb'ni jonli qilish
-- `firebase.json` (hosting: `apps/web/dist`) va `scripts/deploy-backend.sh` bor.
-- Egasi: Firebase loyiha (konsoldagi `kids-wear`). Deploy — portfolio kabi
-  GitHub Actions orqali (telefondan).
-- Kod: README "Phase 10" holati, demo ma'lumot (seed), `mock` to'lov rejimi
-  aniq ko'rsatilsin. Android/Play Store — keyin.
+### 1) rn-r-e-commerce — atoyo darajasiga
+- ✅ 2026-10-09: telefondan deploy, CI yashil, sayt jonli (Spark), dizayn
+  buzilishi (MUI/Tailwind layer) va til xatosi tuzatildi, bosh sahifa yangilandi.
+- Keyingi: repo `docs/REJA.md` — 1-guruh Blaze'siz (aloqa, blog, promo-kod,
+  yetkazish narxi, sevimlilar, hisobot), keyin Blaze bilan Telegram buyurtma
+  xabari, to'lov, push, e'lon.
 
 ### 1b) lumina — parallel tugatish
 - Veb versiyasi jonli (lumina-007app.web.app), real foydalanuvchilar post
   joylay boshladi (vakansiya joylaydigan foydalanuvchi qo'shildi).
+- ✅ 2026-10-09: admin `email_verified`, `activityLogs` yopildi; APK har
+  push'da GitHub Release, "Get the app" uni yuklaydi; veb shaffof menyu va
+  buzilgan rasm tuzatildi. Keyingi — repo `docs/REJA.md`.
 - Bor (2026-10-09 tekshirildi): shikoyat + admin moderatsiya navbati
   (`/admin/reports`), CI yashil va release APK yig'iladi, imzolangan AAB
   workflow, Play Store rasmlari, maxfiylik siyosati.
@@ -108,7 +111,8 @@ DevCraft-AI — 2026-12-11 gacha tegilmaydi.
 - [ ] 14 ta repoda default branch → `main` (2-bo'lim)
 - [ ] O'quv repolarini arxivlash (1-bo'lim)
 - [x] portfolio-3d: Firebase + deploy (2026-10-09)
-- [ ] Billing: keraksiz loyihadan uzish yoki limit so'rash → portfolio formasi
+- [ ] Billing: keraksiz loyihadan uzish yoki limit so'rash → portfolio formasi, KidsWear Telegram/to'lov
+- [ ] rn-r-e-commerce va lumina: default branch → `main`
 - [ ] atoyo: ilova 1.5.2 ni e'lon qilish
 - [ ] countlist'dan oqib ketgan eski bot tokenini BotFather'da bekor qilish
       (agar hali qilinmagan bo'lsa)
