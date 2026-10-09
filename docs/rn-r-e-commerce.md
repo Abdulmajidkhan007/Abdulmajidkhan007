@@ -76,7 +76,7 @@ native modullar bilan to'liq nazorat kerak bo'ldi.
 **Kodda bor:** veb va Android ilova, katalog va qidiruv, savat va checkout,
 buyurtmalar (real-time), admin panel, Google Sign-In, Payme/Click oqimi,
 FCM push, Firestore rules testlari, CI.
-**Hali yo'q:** jonli sayt yo'q; Android ilova Play Store'ga chiqarilmagan
+**Hali yo'q:** Android ilova Play Store'ga chiqarilmagan
 (faqat listing qoralamasi bor); Payme/Click merchant shartnomasi yo'q —
 hozircha `mock` provayder bilan ishlaydi.
 
@@ -103,6 +103,8 @@ hudud bo'yicha yetkazish narxi, profilda hudud tanlash; admin bo'limida
 hisobot, xabarlar, blog, promo-kodlar va yetkazish narxlari. Ilova ham
 buyurtma paytida promo va narxlarni bazadan qayta o'qiydi — qoidalar bir xil.
 Tekshiruv: tsc, lint, 168 test, Metro bundle.
+APK har `main` push'da GitHub Release'ga chiqadi: https://github.com/Abdulmajidkhan007/rn-r-e-commerce/releases/latest/download/kidswear.apk
+(debug kalit bilan imzolangan — telefonga o'rnatish uchun, Play Store uchun emas).
 
 ## Havolalar
 

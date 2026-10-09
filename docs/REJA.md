@@ -15,7 +15,7 @@
 | **telegram-bots** | public | 13 ta bot monorepo, CI | 2026-10-08 | ✅ Ishlayapti | Davom (hosting + hr-bot) |
 | **Abdulmajidkhan007** | public | Profil README + xizmatlar sayti | 2026-10-08 | ✅ | Yuritiladi |
 | **portfolio-3d** | private | 3D portfolio, Firebase Hosting + Functions | 2026-10-09 | ✅ jonli (forma Blaze'ni kutadi) | Tayyor |
-| **rn-r-e-commerce** | public | KidsWear: veb + Android, Payme/Click | 2026-10-09 | 🚧 veb jonli: kids-wear-007.web.app | **1-navbat**: atoyo funksiyalari |
+| **rn-r-e-commerce** | public | KidsWear: veb + Android, Payme/Click | 2026-10-09 | 🚧 veb jonli: kids-wear-007.web.app, APK Releases'da | 1-guruh tayyor (veb + mobil); keyingisi 2-guruh |
 | **lumina** | public | Instagram uslubidagi RN ilova (bare); veb jonli: lumina-007app.web.app | 2026-07-27 | 🚧 real foydalanuvchilar bor | **1-navbat (parallel)**: tugatish |
 | **learning-datacenter-tc-project** | private | On-premise o'quv markaz CRM (NestJS) | 2026-08-12 | 🚧 Faza 1 boshlangan | Muzlatish (o'xshash ish: learning-center-front) |
 | **go-uz** | private | Vroom super-app monorepo | 2026-07-12 | 🚧 | Muzlatish |

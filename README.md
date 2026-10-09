@@ -73,8 +73,8 @@ integratsiyasini qo'shaman — Gemini API, RAG, vektor qidiruv.
 🚧 **[lumina](https://lumina-007app.web.app)** — Instagram uslubidagi social ilova; veb jonli, Android APK GitHub Releases'da, Play Store'da hali yo'q<br>
 <sub>React Native (bare) · TanStack Query · Zustand · Firebase · [🌐 jonli](https://lumina-007app.web.app) · [📱 APK](https://github.com/Abdulmajidkhan007/lumina/releases/latest/download/lumina.apk) · [💻 kod](https://github.com/Abdulmajidkhan007/lumina) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/lumina.md)</sub>
 
-🚧 **[rn-r-e-commerce](https://kids-wear-007.web.app)** — KidsWear: bolalar kiyimi do'koni, veb + Android bitta monorepoda; veb jonli (demo katalog, test to'lov)<br>
-<sub>React 19 · Vite 8 · MUI 9 · React Native (bare) · Turborepo · Firebase · [🌐 jonli](https://kids-wear-007.web.app) · [💻 kod](https://github.com/Abdulmajidkhan007/rn-r-e-commerce) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/rn-r-e-commerce.md)</sub>
+🚧 **[rn-r-e-commerce](https://kids-wear-007.web.app)** — KidsWear: bolalar kiyimi do'koni, veb + Android bitta monorepoda; veb jonli (demo katalog, test to'lov), Android APK GitHub Releases'da<br>
+<sub>React 19 · Vite 8 · MUI 9 · React Native (bare) · Turborepo · Firebase · [🌐 jonli](https://kids-wear-007.web.app) · [📱 APK](https://github.com/Abdulmajidkhan007/rn-r-e-commerce/releases/latest/download/kidswear.apk) · [💻 kod](https://github.com/Abdulmajidkhan007/rn-r-e-commerce) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/rn-r-e-commerce.md)</sub>
 
 🚧 **go-uz 🔒** — Vroom — ride-hailing va kuryer super-app, 9 ta umumiy paket qurilgan<br>
 <sub>React Native · React · Turborepo · pnpm · Firebase · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/go-uz.md)</sub>
