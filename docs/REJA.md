@@ -25,7 +25,7 @@
 | **DevCraft-AI** | private | Faqat arxitektura (1 commit) | 2026-08-24 | ❄️ | Muzlatish |
 | **chatapp** | private | CRA chat (o'quv) | 2026-05-19 | o'quv | Arxivlash |
 | **chat-app** | private | RN messenger (o'quv) | 2026-05-31 | o'quv | Arxivlash |
-| **social-app** | private | o'quv | 2026-06-01 | o'quv | Arxivlash |
+| **social-app** | private | Lumina'ning Expo prototipi (mock ma'lumot) | 2026-06-01 | o'quv | **O'chirish** — yagona foydali qismi (Welcome ekrani) 2026-10-09 da Lumina'ga ko'chirildi |
 | **bank** | private | o'quv | 2026-05-20 | o'quv | Arxivlash |
 | **taxi** | private | o'quv | 2026-05-19 | o'quv | Arxivlash |
 | **calculator** | private | o'quv | 2026-05-21 | o'quv | Arxivlash |
@@ -100,6 +100,10 @@ push'da ishlaydi. Almashtirilsa, deploy workflow'ini ham o'zgartirish kerak.
 - Kod: 800+ qatorli fayllarni bo'lish (3.7); 16-band 3D model — egasi
   image→3D API kalitini bergach. Batafsil: repo `docs/AUDIT-ISHLARI.md`.
 
+### Keyin: chatapp va chat-app
+rn-r-e-commerce va lumina tugagach — ikkalasini solishtirib, bittasini
+qoldirish (egasi so'ragan tartib).
+
 ### Muzlatilganlar
 learning-datacenter-tc-project, go-uz, web-3d, ios-asistent, mythos-uzbek-ai,
 DevCraft-AI — 2026-12-11 gacha tegilmaydi.
@@ -110,6 +114,7 @@ DevCraft-AI — 2026-12-11 gacha tegilmaydi.
 
 - [ ] 14 ta repoda default branch → `main` (2-bo'lim)
 - [ ] O'quv repolarini arxivlash (1-bo'lim)
+- [ ] social-app'ni o'chirish (Lumina'ga ko'chirildi)
 - [x] portfolio-3d: Firebase + deploy (2026-10-09)
 - [ ] Billing: keraksiz loyihadan uzish yoki limit so'rash → portfolio formasi, KidsWear Telegram/to'lov
 - [ ] rn-r-e-commerce va lumina: default branch → `main`
