@@ -31,10 +31,16 @@ yuklaydi. Play Store'ga chiqmagan.
 `activityLogs` ga anonim yozish yopildi (emulyatorda sinaldi). Veb:
 aniqlanmagan `bg-surface` rangi tufayli shaffof menyu/inputlar tuzatildi;
 ochilmaydigan rasm o'rniga toza zaxira ko'rinish.
-**Hali yo'q:** Play Store, veb'ning o'zbekcha tarjimasi, hisoblagichlarni
-qoidada cheklash. To'liq tavsif va reja — repo ichida `docs/LOYIHA-HAQIDA.md`,
+**2026-10-11:** veb uch tilda (uz/en/ru) — landing, ilova va admin. Video
+yuklash va Reels: Reels kolleksiyasini avval hech qaysi kod yozmagan ekan,
+endi bitta videoli post (ilova va vebdan) reel ham bo'ladi. Aloqa formasi
+`mailto:` o'rniga bazaga yoziladi va admin panelda ko'rinadi. Landing'dagi
+telefon ilovaning haqiqiy Feed ko'rinishida; admin haqiqiy skrinshotlarni
+telefondan yuklaydi. Ilovadagi Google `DEVELOPER_ERROR` (imzo kaliti SHA-1
+Firebase'da yo'q edi) — CI endi kalitni o'zi ro'yxatga qo'shadi.
+**Hali yo'q:** Play Store, hisoblagichlarni qoidada cheklash. To'liq tavsif va reja — repo ichida `docs/LOYIHA-HAQIDA.md`,
 `docs/REJA.md`.
 
 ---
 
-*Oxirgi yangilanish: 2026-10-09*
+*Oxirgi yangilanish: 2026-10-11*
