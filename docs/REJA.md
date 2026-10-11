@@ -23,8 +23,8 @@
 | **ios-asistent** | private | Salom AI, Expo | 2026-05-17 | 🚧 7 commit | Muzlatish |
 | **mythos-uzbek-ai** | private | Noldan Transformer, Termux | 2026-09-15 | tajriba | Muzlatish |
 | **DevCraft-AI** | private | Faqat arxitektura (1 commit) | 2026-08-24 | ❄️ | Muzlatish |
-| **chatapp** | private | Veb chat: Firebase real-time, guruh/kanal, presence, Google/telefon kirish (CRA) | 2026-05-19 | o'quv | **Qoldiriladi** (arxiv) — chat-app'dan kuchliroq |
-| **chat-app** | private | Expo "Pulse Messenger": UI tayyor, ma'lumot to'liq mock | 2026-05-31 | o'quv | **O'chirish** — backend yo'q; real chat Lumina'da bor |
+| **suhbat** (avval chatapp) | private | Telegram'dek mustaqil messenjer; hozir CRA + Firebase veb | 2026-10-11 | 🚧 reja | Monorepo: NestJS + PostgreSQL + WebSocket, veb/desktop/mobil (RN CLI) |
+| **uzbek-tg** (avval chat-app) | private | Telegram mijozi (ghost mode); hozir Expo UI, mock ma'lumot | 2026-10-11 | 🚧 reja | RN CLI + TDLib |
 | **social-app** | private | Lumina'ning Expo prototipi (mock ma'lumot) | 2026-06-01 | o'quv | **O'chirish** — yagona foydali qismi (Welcome ekrani) 2026-10-09 da Lumina'ga ko'chirildi |
 | **bank** | private | o'quv | 2026-05-20 | o'quv | Arxivlash |
 | **taxi** | private | o'quv | 2026-05-19 | o'quv | Arxivlash |
@@ -100,13 +100,16 @@ push'da ishlaydi. Almashtirilsa, deploy workflow'ini ham o'zgartirish kerak.
 - Kod: 800+ qatorli fayllarni bo'lish (3.7); 16-band 3D model — egasi
   image→3D API kalitini bergach. Batafsil: repo `docs/AUDIT-ISHLARI.md`.
 
-### ✅ chatapp va chat-app — solishtirildi (2026-10-09)
-- **chatapp qoladi:** haqiqiy Firebase (Firestore real-time, presence, typing),
-  guruh va kanallar, Google/telefon kirish, Firestore rules bor. Eskirgan joyi:
-  Create React App. Lumina'da guruh chat yo'q — kerak bo'lsa shu yerdan
-  ko'chiriladi.
-- **chat-app o'chiriladi:** `main` da hamma chat ma'lumoti mock (~1400 qator
-  soxta ma'lumot), Firebase faqat telefon kirishda va u ham `feature/` branchda.
+### 🚧 suhbat va uzbek-tg — yo'nalish aniqlandi (2026-10-11)
+- 2026-10-09 dagi "chat-app o'chiriladi" qarori bekor: ikki repo ikki xil
+  loyiha ekan.
+- **uzbek-tg** (chat-app): Telegram'ning uchinchi tomon mijozi (Plus,
+  Nicegram kabi) — haqiqiy akkaunt, ustiga ghost mode. RN CLI + TDLib.
+  Hozir: Expo'dagi UI, ma'lumot mock. Reja: repo `docs/REJA.md`.
+- **suhbat** (chatapp): Telegram'ga bog'liq bo'lmagan o'z messenjerimiz —
+  veb, macOS/Windows, Android/iOS. Monorepo, backend NestJS + PostgreSQL +
+  WebSocket (Firebase'dan voz kechiladi). Sandbox sinovida ikki xato topildi:
+  birinchi xabardan keyin yiqilish, buzuq lock fayl. Reja: repo `docs/REJA.md`.
 
 ### Muzlatilganlar
 learning-datacenter-tc-project, go-uz, web-3d, ios-asistent, mythos-uzbek-ai,
@@ -119,7 +122,7 @@ DevCraft-AI — 2026-12-11 gacha tegilmaydi.
 - [ ] 14 ta repoda default branch → `main` (2-bo'lim)
 - [ ] O'quv repolarini arxivlash (1-bo'lim)
 - [x] social-app'ni o'chirish (Lumina'ga ko'chirildi)
-- [ ] chat-app'ni o'chirish, chatapp'ni arxivlash
+- [ ] GitHub'da qayta nomlash: chat-app → `uzbek-tg`, chatapp → `suhbat` (Settings → Repository name)
 - [x] portfolio-3d: Firebase + deploy (2026-10-09)
 - [ ] Billing: keraksiz loyihadan uzish yoki limit so'rash → portfolio formasi, KidsWear Telegram/to'lov
 - [ ] rn-r-e-commerce va lumina: default branch → `main`
