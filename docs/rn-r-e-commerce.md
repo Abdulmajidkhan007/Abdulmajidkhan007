@@ -106,6 +106,13 @@ Tekshiruv: tsc, lint, 168 test, Metro bundle.
 APK har `main` push'da GitHub Release'ga chiqadi: https://github.com/Abdulmajidkhan007/rn-r-e-commerce/releases/latest/download/kidswear.apk
 (debug kalit bilan imzolangan — telefonga o'rnatish uchun, Play Store uchun emas).
 
+**2026-10-11:** foydalanuvchi sinovida ikki jiddiy xato chiqdi va tuzatildi:
+vebda Google bilan kirish umuman ishlamagan (`initializeAuth` ga popup
+resolver berilmagan, xato esa ekranda ko'rsatilmagan); APK ochilishi bilan
+yopilgan (CI build'da `google-services.json` yo'q — push moduli startda
+yiqitgan). Endi CI Android config'ni loyihadan oladi, push config bo'lmasa
+o'chadi. Do'kon egasi har deploy'da avtomatik admin qilinadi.
+
 ## Havolalar
 
 - Repo: https://github.com/Abdulmajidkhan007/rn-r-e-commerce
@@ -114,4 +121,4 @@ APK har `main` push'da GitHub Release'ga chiqadi: https://github.com/Abdulmajidk
 
 ---
 
-*Oxirgi yangilanish: 2026-10-09*
+*Oxirgi yangilanish: 2026-10-11*
