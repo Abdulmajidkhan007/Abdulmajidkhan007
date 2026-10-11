@@ -52,85 +52,74 @@ push'da ishlaydi. Almashtirilsa, deploy workflow'ini ham o'zgartirish kerak.
 
 ---
 
-## 3. Tugatish navbati
+## 3. Tugatish navbati (egasi tasdiqlagan, 2026-10-11)
 
-### ✅ portfolio-3d — tugadi (2026-10-09)
-- Jonli: https://abdulmajidkhan-portfolio.web.app — `main` ga push → GitHub
-  Actions → Firebase. Hozir `FIREBASE_PLAN=spark` (faqat Hosting).
-- Qolgan: aloqa formasi Blaze'ni kutadi — billing hisobining loyiha limiti
-  to'lgan. Yechim: keraksiz loyihadan billing'ni uzish yoki limit so'rash,
-  keyin `FIREBASE_PLAN` ni o'chirib workflow'ni qayta ishga tushirish.
-- Rezyume manbasi: `portfolio-3d/scripts/resume/resume.html`. O'zgarsa — PDF
-  qayta yig'iladi (`node scripts/resume/build.mjs`), `docs/REZYUME.md` ham
-  birga yangilanadi; test eskirgan PDF'ni ushlaydi.
+> **Yangi sessiya shu bo'limdan boshlaydi.** Har loyiha — alohida sessiya,
+> o'sha repoda; repo ichidagi `CLAUDE.md` + `docs/REJA.md` (yoki
+> `docs/LOYIHA-HAQIDA.md`) holatni saqlaydi. Bu suhbat tarixi kerak emas.
 
-### 1) rn-r-e-commerce — atoyo darajasiga
-- ✅ 2026-10-09: telefondan deploy, CI yashil, sayt jonli (Spark), dizayn
-  buzilishi (MUI/Tailwind layer) va til xatosi tuzatildi, bosh sahifa yangilandi.
-- Keyingi: repo `docs/REJA.md` — 1-guruh Blaze'siz (aloqa, blog, promo-kod,
-  yetkazish narxi, sevimlilar, hisobot), keyin Blaze bilan Telegram buyurtma
-  xabari, to'lov, push, e'lon.
+### A. Hozirgi 9 ta loyiha — avval shular tugaydi
 
-### 1b) lumina — parallel tugatish
-- Veb versiyasi jonli (lumina-007app.web.app), real foydalanuvchilar post
-  joylay boshladi (vakansiya joylaydigan foydalanuvchi qo'shildi).
-- ✅ 2026-10-09: admin `email_verified`, `activityLogs` yopildi; APK har
-  push'da GitHub Release, "Get the app" uni yuklaydi; veb shaffof menyu va
-  buzilgan rasm tuzatildi. Keyingi — repo `docs/REJA.md`.
-- Bor (2026-10-09 tekshirildi): shikoyat + admin moderatsiya navbati
-  (`/admin/reports`), CI yashil va release APK yig'iladi, imzolangan AAB
-  workflow, Play Store rasmlari, maxfiylik siyosati.
-- Kod: Firestore rules'da admin faqat email bilan tekshiriladi
-  (`email_verified` yo'q); `activityLogs` ga kirmagan odam ham yoza oladi
-  (`allow create: if true`) — spam va xarajat xavfi. Shulardan boshlanadi.
-- Egasi: Play Store qarori (developer akkaunt $25; 2023-11 dan keyin ochilgan
-  shaxsiy akkauntga 12 testerli 14 kunlik yopiq test kerak) yoki APK'ni
-  GitHub Releases orqali tarqatish.
+| # | Repo | Holat (2026-10-11) | Keyingi qadam |
+|---|---|---|---|
+| 1 | **rn-r-e-commerce** (KidsWear) | Veb jonli (kids-wear-007.web.app), 1-guruh funksiyalar veb+mobil; admin = santexnika.atoyo@gmail.com (har deploy'da, faqat tasdiqlangan email); yetkazish narxlari boshlang'ich qiymat bilan yozildi | **APK ochilmayapti** (v1.0.5 da ham). v1.0.7 (apk-7) da crash ekrani bor → egasi xato matnini yuboradi → shu xato tuzatiladi. Keyin 2-guruh (repo `docs/REJA.md`) |
+| 2 | **lumina** | Veb + APK (apk-5) yangilandi: uz/en/ru, video→Reels, aloqa formasi→admin Messages, landing'da haqiqiy ilova ko'rinishi, Admin→Landing'dan skrinshot (Firestore), imzo SHA-1 Firebase'ga | Egasi sinaydi: ilovada Google bilan kirish, skrinshot yuklash. CI'dagi SA Storage qoidalari/indekslarni deploy qila olmaydi (FIREBASE_TOKEN yoki "Firebase Rules Admin" roli kerak) |
+| 3 | **telegram-bots** | 13 bot, CI | **Bitta sessiyada 3 ish:** botlarni doimiy serverga, hr-bot MVP, bot-factory rejasi — prompt pastda (C) |
+| 4 | **atoyo-e-commerce** | ✅ jonli (atoyo.uz) | Qo'llab-quvvatlash: repo `docs/AUDIT-ISHLARI.md` |
+| 5 | **Organick_org** | ✅ jonli | Tayyor; faqat xato chiqsa |
+| 6 | **Abdulmajidkhan007** (profil) | ✅ | Har loyiha o'zgarganda `docs/<repo>.md` + sana |
+| 7 | **portfolio-3d** | ✅ jonli | Aloqa formasi Blaze'ni kutadi (billing) |
+| 8 | **suhbat** (avval chatapp) | Reja tayyor: monorepo, NestJS + PostgreSQL + WebSocket, veb/desktop/RN CLI | Alohida sessiya: repo `docs/REJA.md` → "Keyingi sessiya uchun" |
+| 9 | **uzbek-tg** (avval chat-app) | Reja tayyor: RN CLI + TDLib, ghost mode; `applicationId` = `org.uzbektg.app` | Alohida sessiya: repo `docs/REJA.md` → "Keyingi sessiya uchun"; `TG_API_ID`/`TG_API_HASH` faqat GitHub secret |
 
-### 2) telegram-bots — botlarni doimiy ishlatish, keyin hr-bot
-- 2–3 ommaviy botni doimiy serverga (Railway/VPS) chiqarish; kino-bot uchun
-  Volume (`DATA_DIR=/data`).
-- hr-bot: `docs/HR-BOT-PROMPT.md` — "telegram-bots/hr-bot ni boshla" bilan.
-  2026-12-11 cheklovi — egasi istisno qilsa.
-- bot-factory: hr-bot MVP'dan keyin, alohida repo.
+### B. Keyin — shu tartibda (9 tasi tugagach)
+1. **learning-datacenter-tc-project** — CRM, Faza 1 (guruhlar, jadval, davomat)
+2. **go-uz** — bitta ilovani MVP'gacha
+3. **DevCraft-AI** — hozir faqat arxitektura hujjati
+4. **mythos-uzbek-ai**
+5. **web-3d**
+6. **ios-asistent**
 
-### 3) atoyo-e-commerce — qo'llab-quvvatlash
-- Egasi: ilova 1.5.2 ni admin panelda e'lon qilish; production'da XFF;
-  Payme/Click kalitlari.
-- Kod: 800+ qatorli fayllarni bo'lish (3.7); 16-band 3D model — egasi
-  image→3D API kalitini bergach. Batafsil: repo `docs/AUDIT-ISHLARI.md`.
+Har biri boshlanishidan oldin `suhbat`/`uzbek-tg` dagi kabi reja hujjati yoziladi.
 
-### 🚧 suhbat va uzbek-tg — yo'nalish aniqlandi (2026-10-11)
-- 2026-10-09 dagi "chat-app o'chiriladi" qarori bekor: ikki repo ikki xil
-  loyiha ekan.
-- **uzbek-tg** (chat-app): Telegram'ning uchinchi tomon mijozi (Plus,
-  Nicegram kabi) — haqiqiy akkaunt, ustiga ghost mode. RN CLI + TDLib.
-  Hozir: Expo'dagi UI, ma'lumot mock. Reja: repo `docs/REJA.md`.
-- **suhbat** (chatapp): Telegram'ga bog'liq bo'lmagan o'z messenjerimiz —
-  veb, macOS/Windows, Android/iOS. Monorepo, backend NestJS + PostgreSQL +
-  WebSocket (Firebase'dan voz kechiladi). Sandbox sinovida ikki xato topildi:
-  birinchi xabardan keyin yiqilish, buzuq lock fayl. Reja: repo `docs/REJA.md`.
+### C. telegram-bots — bitta sessiya uchun prompt
+Repo: `telegram-bots`. Yuboriladigan matn:
 
-### Muzlatilganlar
-learning-datacenter-tc-project, go-uz, web-3d, ios-asistent, mythos-uzbek-ai,
-DevCraft-AI — 2026-12-11 gacha tegilmaydi.
+> CLAUDE.md, docs/REJA.md, docs/HR-BOT-PROMPT.md va docs/BOT-FACTORY-PROMPT.md
+> ni o'qi. Shu sessiyada uchta ishni tartib bilan tugat:
+> 1) 2–3 ommaviy botni (save-video-downloader-bot, kino-bot, anonim-bot)
+>    doimiy serverga chiqarish: Railway (yoki men tanlagan VPS) uchun konfig,
+>    kino-bot uchun Volume (`DATA_DIR=/data`), har bot uchun qisqa deploy
+>    qo'llanmasi — men telefondan bajaraman. Tokenlar faqat platforma
+>    Variables'ida, repoda yo'q.
+> 2) hr-bot MVP — HR-BOT-PROMPT.md dagi fazalar bo'yicha, testlar bilan.
+> 3) bot-factory — BOT-FACTORY-PROMPT.md bo'yicha reja va skelet (alohida repo
+>    kerak bo'lsa, avval menga ayt).
+> Har bosqichdan keyin `npm test` va `npm run scan`, commit + push.
+
+### Kod emas — egasi keyinroq qiladi
+- bank, taxi, calculator — private, arxivlash keyin.
+- portfolio-builder — bo'sh (0 KB, faqat README) → o'chirish yoki arxivlash.
 
 ---
 
 ## 4. Egasi qiladigan ishlar (kod emas)
 
+- [ ] KidsWear APK v1.0.7 ni o'rnatish; yopilsa "Nusxa olish" → matnni yuborish
+- [ ] KidsWear: Admin → Yetkazish narxlarini tekshirish (hozir boshlang'ich qiymat)
+- [ ] Lumina: APK'da Google bilan kirishni sinash; Admin → Landing'ga 5 ta skrinshot
+- [ ] GitHub: `chat-app` → `uzbek-tg` nomi; ikkala repoda default branch → `main`
+      ("Could not change default branch" chiqsa — sahifani yangilash yoki Desktop site)
+- [x] chatapp → `suhbat` nomi (2026-10-11)
 - [ ] 14 ta repoda default branch → `main` (2-bo'lim)
-- [ ] O'quv repolarini arxivlash (1-bo'lim)
-- [x] social-app'ni o'chirish (Lumina'ga ko'chirildi)
-- [ ] GitHub'da qayta nomlash: chat-app → `uzbek-tg`, chatapp → `suhbat` (Settings → Repository name)
-- [x] portfolio-3d: Firebase + deploy (2026-10-09)
-- [ ] Billing: keraksiz loyihadan uzish yoki limit so'rash → portfolio formasi, KidsWear Telegram/to'lov
-- [ ] rn-r-e-commerce va lumina: default branch → `main`
+- [ ] Billing: keraksiz loyihadan uzish yoki limit so'rash → portfolio formasi,
+      KidsWear to'lov/push, Lumina Storage qoidalari
+- [ ] Lumina CI: `FIREBASE_TOKEN` secret yoki SA'ga "Firebase Rules Admin" roli
 - [ ] atoyo: ilova 1.5.2 ni e'lon qilish
 - [ ] countlist'dan oqib ketgan eski bot tokenini BotFather'da bekor qilish
       (agar hali qilinmagan bo'lsa)
-- [x] Rezyume: 13 bot, broadcast, portfolio havolasi (2026-10-09)
+- [x] social-app o'chirildi; rezyume yangilandi (2026-10-09)
 
 ---
 
-*Oxirgi yangilanish: 2026-10-09*
+*Oxirgi yangilanish: 2026-10-11*

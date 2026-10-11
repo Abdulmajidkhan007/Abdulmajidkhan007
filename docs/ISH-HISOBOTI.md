@@ -273,4 +273,41 @@ qo'yildi. Profil reposiga PDF qo'yilmaydi.
 - telegram-bots: xulosa-ai-bot o'chirilgan gemini-1.5-flash ni chaqirardi —
   GEMINI_MODEL ga o'tkazildi.
 
-*Yozilgan: 2026-10-09*
+## 12. 2026-10-10 / 11 — KidsWear mobil, xatolar, Lumina, chat loyihalari
+
+**KidsWear (rn-r-e-commerce)**
+- Mobil ilovaga 1-guruh: sevimlilar, blog, aloqa, promo-kod, hudud narxi,
+  admin (hisobot, xabarlar, blog, promo, yetkazish). APK release CI.
+- APK build xatolari: Groovy versionCode, monorepo'da hermesc yo'li, release
+  yuklash qayta urinishi; gradle xatosi annotatsiyaga chiqadi.
+- Ilova ochilishi bilan yopilardi: `google-services.json` yo'q → `messaging()`.
+  CI endi Android config'ni loyihadan oladi, debug SHA-1 qo'shadi, push
+  himoyalandi. v1.0.5 da ham yopilgani aytildi → v1.0.7 ga crash ekrani
+  (:crash jarayoni, "Nusxa olish") va `onCreate(null)` qo'shildi; sabab
+  egasining skrinshotini kutmoqda.
+- Vebda Google kirish umuman ishlamagan: `initializeAuth` ga
+  `browserPopupRedirectResolver` berilmagan, xato yutilardi — tuzatildi.
+- Admin hech kimga berilmagan edi → deploy egasini (faqat tasdiqlangan
+  email) admin qiladi; berildi. Yetkazish narxlari bo'sh bo'lsa boshlang'ich
+  qiymat yoziladi (admin o'zgartiradi).
+
+**Lumina**
+- Veb uch tilda (uz/en/ru, 253 matn); video yuklash + bitta videoli post
+  `reels/` ga (avval Reels'ni hech narsa yozmagan); aloqa formasi Firestore +
+  admin Messages; landing telefoni ilovaning haqiqiy Feed ko'rinishida,
+  Admin → Landing'dan skrinshot (Storage o'rniga Firestore — CI storage
+  qoidalarini deploy qila olmaydi); veb ilova tab bar ilovadagidek.
+- Ilovada Google `DEVELOPER_ERROR`: upload key SHA-1 Firebase'da yo'q edi →
+  CI har build'da ro'yxatga qo'shadi. Qoidalar emulyatorda 26/26.
+
+**Chat loyihalari**
+- Ikkalasi sandbox'da ishga tushirilib skrinshot olindi. chatapp'da
+  birinchi xabardan keyin yiqilish (Timestamp) va buzuq lock fayl topildi.
+- Qaror: chat-app → `uzbek-tg` (Telegram mijozi, RN CLI + TDLib, ghost mode),
+  chatapp → `suhbat` (o'z messenjeri, monorepo, NestJS + PostgreSQL +
+  WebSocket). Ikkala repoda `CLAUDE.md` + `docs/REJA.md`. Ish alohida
+  sessiyalarda.
+
+**Navbat** — `docs/REJA.md` 3-bo'lim (egasi tasdiqlagan tartib).
+
+*Yozilgan: 2026-10-11*
