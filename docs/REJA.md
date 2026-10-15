@@ -119,7 +119,19 @@ Repo: `telegram-bots`. Yuboriladigan matn:
 - [ ] countlist'dan oqib ketgan eski bot tokenini BotFather'da bekor qilish
       (agar hali qilinmagan bo'lsa)
 - [x] social-app o'chirildi; rezyume yangilandi (2026-10-09)
+- [ ] @Yovuzhackerbot (va Atoyo Service, agar yoqilgan bo'lsa): BotFather'da
+      Serverless'ni o'chirish — handler'siz yoqilgan Serverless update'larni yutadi
 
 ---
 
-*Oxirgi yangilanish: 2026-10-11*
+## 5. Keyinga qoldirilgan g'oyalar
+
+- **Telegram Serverless (early access)** — keyin **alohida yangi bot** bilan sinash.
+  Mavjud botlarga (@Yovuzhackerbot, Atoyo Service, telegram-bots, bot-factory)
+  **tegilmaydi**. Sabab: platforma faqat JS (V8 isolate, npm yo'q, faqat `sdk`
+  moduli), bitta loyiha = bitta bot; bot-factory (Python, ko'p bolali bot) bunga
+  ko'chmaydi. Hozir boshlanmaydi — egasi aytganda (2026-10-15 qaror).
+
+---
+
+*Oxirgi yangilanish: 2026-10-15*
