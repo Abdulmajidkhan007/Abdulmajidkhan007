@@ -52,15 +52,16 @@ emas, "ishlab chiqqanman". Hozirgi tavsifdagi `— " Atoyo.uz " asoschisi` qator
 
 **Tavsif:**
 
-> Biznesingizni avtomatlashtiraman, ishingizni osonlashtiraman, AI yechimlar qilaman.
+> Biznesingizni avtomatlashtiraman, osonlashtiraman, AI yechimlar qilaman.
 >
 > Telegram bot, do'kon sayti, landing, CRM, Android ilova.
 >
 > Ishlarim: atoyo.uz va 9 ta Telegram bot.\
-> Narx — ishga qarab, yozing: @Abdulloh_77700
+> Narx ishga qarab: @Abdulloh_77700
 >
-> Sayt:\
 > abdulmajidkhan007.github.io/Abdulmajidkhan007
+
+Telegram kanal tavsifi 255 belgigacha — bu matn ~240 belgi, sig'adi.
 
 (Domen olingach — sayt qatori yangi manzilga almashadi.)
 
