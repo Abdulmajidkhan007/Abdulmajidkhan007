@@ -1,6 +1,6 @@
 # Abdulmajid Sharipov
 
-**Frontend Engineer**
+**Middle Frontend Engineer**
 
 +998 90 854 56 03 · [abdullohhacker007@gmail.com](mailto:abdullohhacker007@gmail.com) ·
 Telegram: [@Abdulloh_77700](https://t.me/Abdulloh_77700) · Qo'qon, O'zbekiston
