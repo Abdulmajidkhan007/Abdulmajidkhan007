@@ -113,6 +113,12 @@ yopilgan (CI build'da `google-services.json` yo'q — push moduli startda
 yiqitgan). Endi CI Android config'ni loyihadan oladi, push config bo'lmasa
 o'chadi. Do'kon egasi har deploy'da avtomatik admin qilinadi.
 
+**2026-10-12/13:** APK hali ham ochilishda yiqilardi (`useState of null` —
+bundle'da React ikki nusxada). Metro endi bitta React oladi; ikonkalar, til va
+tema tanlash, bosh sahifa dizayni tuzatildi. **2026-10-21:** egasi APK **1.0.9**
+ni telefonda ochdi — bosh sahifa, katalog, Blog, Aloqa ishlaydi. Ilovada Google
+bilan kirish va to'liq buyurtma oqimi hali sinalmagan.
+
 ## Havolalar
 
 - Repo: https://github.com/Abdulmajidkhan007/rn-r-e-commerce
@@ -121,4 +127,4 @@ o'chadi. Do'kon egasi har deploy'da avtomatik admin qilinadi.
 
 ---
 
-*Oxirgi yangilanish: 2026-10-11*
+*Oxirgi yangilanish: 2026-10-21*

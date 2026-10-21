@@ -48,7 +48,7 @@ integratsiyasini qo'shaman — Gemini API, RAG, vektor qidiruv.
 ✅ **[Organick](https://organick-e1c5a.web.app)** — organik oziq-ovqat do'koni: uch til, admin panel, Google / email / SMS orqali kirish, buyurtma Telegram'ga<br>
 <sub>React 19 · Vite 8 · Tailwind v4 · Redux Toolkit 2 · Firebase · Playwright · [🌐 jonli](https://organick-e1c5a.web.app) · [💻 kod](https://github.com/Abdulmajidkhan007/Organick_org) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/organick_org.md)</sub>
 
-✅ **[telegram-bots](https://github.com/Abdulmajidkhan007/telegram-bots)** — 13 ta bot bitta repoda, bitta buyruq bilan ishga tushadi. Telegram'da ochiq botlarim:<br>
+✅ **[telegram-bots](https://github.com/Abdulmajidkhan007/telegram-bots)** — 15 ta bot bitta repoda, bitta buyruq bilan ishga tushadi. Telegram'da ochiq botlarim:<br>
 <sub>Node · Python · TypeScript · Gemini API · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/telegram-bots.md)</sub>
 
 | Bot | Nima qiladi |

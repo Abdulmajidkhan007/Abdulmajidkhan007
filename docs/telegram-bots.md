@@ -1,6 +1,6 @@
 # telegram-bots
 
-> 13 ta mustaqil Telegram bot bitta repoda: bitta clone, bitta buyruq — hammasi ishga tushadi. 9 tasi Telegram'da ochiq ishlaydi.
+> 15 ta mustaqil Telegram bot bitta repoda: bitta clone, bitta buyruq — hammasi ishga tushadi. 9 tasi Telegram'da ochiq ishlaydi.
 
 **Repo:** https://github.com/Abdulmajidkhan007/telegram-bots · **Jonli:** botlar Telegram'da
 **Holat:** ✅ Ishlayapti
@@ -21,7 +21,7 @@ kerak**. Papkani nusxalab olsang, bot mustaqil ishlashi shart.
 
 | Qatlam | Texnologiya |
 |---|---|
-| Runtime | Node.js ≥18 (7 bot) · Python 3 (5 bot) · TypeScript (1 monorepo) |
+| Runtime | Node.js ≥18 (7 bot) · Python 3 (7 bot) · TypeScript (1 monorepo) |
 | Telegram | node-telegram-bot-api · Telegraf (countlist) · Telethon (MTProto/userbot) · aiogram 3 |
 | AI | Google Gemini API (matn, vision, audio) · OpenAI Whisper (countlist, ixtiyoriy) |
 | Baza | SQLite · PostgreSQL (killspam-bot) · ChromaDB (atoyo-rag-bot) |
@@ -83,7 +83,9 @@ tugaydi. Sekin test yozilmaydi va ishlatilmaydi.
 | `xulosa-ai-bot` | Python | Guruh/kanal yozishmalarini Gemini bilan xulosalaydi, ovozli xabarni matnga o'giradi |
 | `atoyo-ai-bot` | Python | Mahsulot rasmini Gemini Vision bilan katalog kartochkasiga aylantiradi (pHash dublikat filtri) |
 | `atoyo-rag-bot` | Python | Katalog ustida RAG savol-javob, lid → admin guruh + n8n |
-| `countlist-ts-node` | TypeScript | Xarajat boti (matn yoki ovozli xabar) + NestJS API + React dashboard |
+| `countlist-ts-node` | TypeScript | Xarajat boti (matn yoki ovozli xabar) + NestJS API + React dashboard; 2026-10-13 dan Mini App «Tarix», hisoblar va daromad |
+| `hr-bot` | Python | Multi-tenant HR bot: PDF CV qabul, Gemini ball, SQLite; to'lov va Business fazalari kodi bor (2026-10-12) |
+| `ovoz-bot` | Python | Gemini bilan ovoz → matn (STT) va matn → ovoz (TTS), 1-faza |
 
 ## Telegram'da ochiq botlar
 
@@ -107,7 +109,7 @@ uchtasi ommaga e'lon qilinmagan: `gemini-qa-bot`, hamda `xulosa-ai-bot` va
 ## Holat
 
 **Ishlaydi:**
-- 13 ta bot, `npm run list` / `npm run start` orqali boshqariladi
+- 15 ta bot, `npm run list` / `npm run start` orqali boshqariladi
 - GitHub Actions CI: har push'da testlar va kalit skaneri (`.github/workflows/ci.yml`)
 - 9 tasi Telegram'da ochiq (yuqoridagi jadval, @Atoyo_uz_bot dan tashqari)
 - `npm run check` — testlar + kalit skaneri, yashil
@@ -129,4 +131,4 @@ uchtasi ommaga e'lon qilinmagan: `gemini-qa-bot`, hamda `xulosa-ai-bot` va
 
 ---
 
-*Oxirgi yangilanish: 2026-10-08*
+*Oxirgi yangilanish: 2026-10-21*

@@ -38,9 +38,13 @@ endi bitta videoli post (ilova va vebdan) reel ham bo'ladi. Aloqa formasi
 telefon ilovaning haqiqiy Feed ko'rinishida; admin haqiqiy skrinshotlarni
 telefondan yuklaydi. Ilovadagi Google `DEVELOPER_ERROR` (imzo kaliti SHA-1
 Firebase'da yo'q edi) — CI endi kalitni o'zi ro'yxatga qo'shadi.
+**2026-10-12:** admin to'lqini — rollar (admin/moderator), foydalanuvchini
+bloklash, shikoyatlarni ko'rib chiqish oqimi, faollik grafiklari, hamma
+foydalanuvchiga e'lon (veb va ilovada). E'lonning push'i Functions deploy
+(Blaze) kutadi.
 **Hali yo'q:** Play Store, hisoblagichlarni qoidada cheklash. To'liq tavsif va reja — repo ichida `docs/LOYIHA-HAQIDA.md`,
 `docs/REJA.md`.
 
 ---
 
-*Oxirgi yangilanish: 2026-10-11*
+*Oxirgi yangilanish: 2026-10-21*

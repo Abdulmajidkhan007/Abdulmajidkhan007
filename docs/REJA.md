@@ -6,49 +6,64 @@
 
 ---
 
-## 1. Hamma repolar (20 ta)
+## 1. Hamma repolar — 2026-10-21 tekshiruvi
 
-| Repo | Ochiq/yopiq | Nima | Oxirgi ish | Holat | Qaror |
+**Abdulmajidkhan007 akkauntida 20 ta repo: 8 public, 12 private.** Bundan
+tashqari ruxsat bor: `nurulloh-coder-dev/learning-center-front` (public,
+jamoaviy — men frontend), `nurulloh-coder-dev/learning-center` (private),
+`goodman113/learning_center` (public, 2026-08-14 dan tegilmagan).
+Avvalgi ro'yxatdagi `social-app` va `chatapp`/`chat-app` endi yo'q (o'chirilgan
+yoki `suhbat`/`uzbek-tg` ga qayta nomlangan). `Atoyo-erp-v2` bu sessiyaga
+ko'rinmadi — u 3-akkauntda tekshiriladi.
+
+"Oxirgi ish" — default branch'dagi oxirgi commit sanasi.
+
+| Repo | Ochiq/yopiq | Default | Oxirgi ish | Holat | Qaror |
 |---|---|---|---|---|---|
-| **atoyo-e-commerce** | public | Santexnika do'koni: sayt + Android 1.5.2 + desktop + TV + botlar | 2026-10-04 | ✅ Ishlayapti (atoyo.uz) | Qo'llab-quvvatlash |
-| **Organick_org** | public | Organik do'kon, Firebase | 2026-09-29 | ✅ Jonli | Tayyor |
-| **telegram-bots** | public | 13 ta bot monorepo, CI | 2026-10-08 | ✅ Ishlayapti | Davom (hosting + hr-bot) |
-| **Abdulmajidkhan007** | public | Profil README + xizmatlar sayti | 2026-10-08 | ✅ | Yuritiladi |
-| **portfolio-3d** | private | 3D portfolio, Firebase Hosting + Functions | 2026-10-09 | ✅ jonli (forma Blaze'ni kutadi) | Tayyor |
-| **rn-r-e-commerce** | public | KidsWear: veb + Android, Payme/Click | 2026-10-09 | 🚧 veb jonli: kids-wear-007.web.app, APK Releases'da | 1-guruh tayyor (veb + mobil); keyingisi 2-guruh |
-| **lumina** | public | Instagram uslubidagi RN ilova (bare); veb jonli: lumina-007app.web.app | 2026-07-27 | 🚧 real foydalanuvchilar bor | **1-navbat (parallel)**: tugatish |
-| **learning-datacenter-tc-project** | private | On-premise o'quv markaz CRM (NestJS) | 2026-08-12 | 🚧 Faza 1 boshlangan | Muzlatish (o'xshash ish: learning-center-front) |
-| **go-uz** | private | Vroom super-app monorepo | 2026-07-12 | 🚧 | Muzlatish |
-| **web-3d** | private | NEBULA, WebGL fon + Higgsfield | 2026-08-01 | 🚧 3 commit | Muzlatish |
-| **ios-asistent** | private | Salom AI, Expo | 2026-05-17 | 🚧 7 commit | Muzlatish |
-| **mythos-uzbek-ai** | private | Noldan Transformer, Termux | 2026-09-15 | tajriba | Muzlatish |
-| **DevCraft-AI** | private | Faqat arxitektura (1 commit) | 2026-08-24 | ❄️ | Muzlatish |
-| **suhbat** (avval chatapp) | private | Telegram'dek mustaqil messenjer; hozir CRA + Firebase veb | 2026-10-11 | 🚧 reja | Monorepo: NestJS + PostgreSQL + WebSocket, veb/desktop/mobil (RN CLI) |
-| **uzbek-tg** (avval chat-app) | private | Telegram mijozi (ghost mode); hozir Expo UI, mock ma'lumot | 2026-10-11 | 🚧 reja | RN CLI + TDLib |
-| **social-app** | private | Lumina'ning Expo prototipi (mock ma'lumot) | 2026-06-01 | o'quv | **O'chirish** — yagona foydali qismi (Welcome ekrani) 2026-10-09 da Lumina'ga ko'chirildi |
-| **bank** | private | o'quv | 2026-05-20 | o'quv | Arxivlash |
-| **taxi** | private | o'quv | 2026-05-19 | o'quv | Arxivlash |
-| **calculator** | private | o'quv | 2026-05-21 | o'quv | Arxivlash |
-| **portfolio-builder** | private | Faqat README (1 fayl) | 2026-05-03 | bo'sh | O'chirish yoki arxivlash |
+| **suhbat** | public | `main` | 2026-10-21 | 🚧 veb jonli (Railway), v0.5.0 chiqarilmagan; telefonda va Railway'da hammasi sinalmagan | Davom (asosiy akkaunt) |
+| **Abdulmajidkhan007** | public | `main` | 2026-10-11 (main) | ✅ | Yuritiladi; 2 ta docs branch main'ga qo'shilmagan (pastda) |
+| **portfolio-3d** | private | `main` | 2026-10-16 | ✅ jonli, faqat Hosting; forma Blaze'ni kutadi | Tayyor |
+| **uzbek-tg** | public | `main` | 2026-10-16 | 🚧 0–1-faza tugagan (TDLib, haqiqiy akkaunt); 2-faza — ko'p narsa "kod yozildi, telefonda sinalmagan" | Davom |
+| **telegram-bots** | public | `main` | 2026-10-13 | ✅ 15 bot, CI; Railway konfiglari tayyor | Qo'llab-quvvatlash |
+| **rn-r-e-commerce** | public | `main` | 2026-10-13 | 🚧 veb jonli; APK 1.0.9 ochiladi (egasi, 2026-10-21) | 2-guruh — Blaze kutadi |
+| **lumina** | public | `main` | 2026-10-12 | 🚧 veb jonli, APK; admin to'lqini tugagan | Egasi sinovi; hisoblagich qoidasi qolgan |
+| **bot-factory** | private | `main` | 2026-10-12 | 🚧 Faza 1+2: skelet va runtime yadro | Yangi qo'shilgan — navbatga hali kiritilmagan |
+| **atoyo-e-commerce** | public | `main` | 2026-10-08 | ✅ Ishlayapti (atoyo.uz), ilova 1.5.2 | Qo'llab-quvvatlash |
+| **Organick_org** | public | `master` | 2026-09-29 | ✅ Jonli | Tayyor |
+| **mythos-uzbek-ai** | private | claude/… | 2026-09-15 | tajriba | 3-akkaunt yoki oxirida |
+| **learning-datacenter-tc-project** | private | claude/… | 2026-08-12 | 🚧 Faza 1 boshlangan | Oxirida |
+| **DevCraft-AI** | private | feat/… | 2026-08-24 | ❄️ faqat arxitektura | 3-akkaunt |
+| **web-3d** | private | claude/… | 2026-08-01 | 🚧 | Oxirida |
+| **go-uz** | private | claude/… | 2026-07-12 | 🚧 | 3-akkaunt |
+| **bank** | private | claude/… | 2026-05-20 | o'quv | 3-akkaunt |
+| **calculator** | private | claude/… | 2026-05-21 | o'quv | 3-akkaunt |
+| **taxi** | private | claude/… | 2026-05-19 | o'quv | 3-akkaunt |
+| **ios-asistent** | private | claude/… | 2026-05-17 | 🚧 7 commit | Oxirida |
+| **portfolio-builder** | private | `main` | 2026-05-03 | bo'sh (faqat README) | 3-akkaunt |
 
 "Arxivlash" — GitHub'da **Settings → Archive this repository**: kod saqlanadi,
 faqat o'qish uchun. O'chirish emas.
 
 ---
 
-## 2. Default branch
+## 2. Default branch va eng oxirgi kod (2026-10-21, git'dan)
 
-`main` hamma repoda bor va eng so'nggi kodni o'z ichiga oladi (2026-10-08 da
-lumina, rn-r-e-commerce, chat-app'ning `main` i yangilandi). Quyidagilarda
-**default hali `main` emas** — egasi Settings → Branches → Default branch da
-almashtiradi:
+**Eng oxirgi kod hamma joyda default branch'da.** Default'i `main` bo'lmagan
+9 ta repoda (`bank`, `calculator`, `taxi`, `mythos-uzbek-ai`, `DevCraft-AI`,
+`learning-datacenter-tc-project`, `web-3d`, `go-uz`, `ios-asistent`) `main`
+default branch bilan **bir xil commit'da** — default'ni `main` ga almashtirsa
+hech narsa yo'qolmaydi. Egasi: Settings → Branches → Default branch → `main`.
 
-portfolio-3d · rn-r-e-commerce · lumina · go-uz · learning-datacenter-tc-project ·
-web-3d · ios-asistent · mythos-uzbek-ai · DevCraft-AI · chatapp · chat-app ·
-bank · taxi · calculator
+Istisno — `main` ga qo'shilmagan ishlar:
+- **learning-datacenter-tc-project:** `claude/monorepo-architecture-setup-fwi0kn`
+  (2026-09-15) — default/main'dan yangiroq, qo'shilmagan.
+- **Abdulmajidkhan007:** `ccr-d15e8802-woh2vc` (2026-10-15, REJA'ga "Telegram
+  Serverless" g'oyasi) va `claude/earshot-audio-effects-v162og` (2026-10-21,
+  `docs/VOSITA-EARSHOT.md`) — ikkalasi faqat hujjat, main'ga qo'shilmagan.
+- **uzbek-tg:** `feature/firebase-auth` (2026-05-31, eski Expo davri) — eskirgan.
 
 **Organick_org — `master` qoladi:** GitHub Actions deploy aynan `master` ga
-push'da ishlaydi. Almashtirilsa, deploy workflow'ini ham o'zgartirish kerak.
+push'da ishlaydi.
 
 ---
 
@@ -58,21 +73,22 @@ push'da ishlaydi. Almashtirilsa, deploy workflow'ini ham o'zgartirish kerak.
 > o'sha repoda; repo ichidagi `CLAUDE.md` + `docs/REJA.md` (yoki
 > `docs/LOYIHA-HAQIDA.md`) holatni saqlaydi. Bu suhbat tarixi kerak emas.
 
-### A. Hozirgi 9 ta loyiha — avval shular tugaydi
+### A. Hozirgi loyihalar — avval shular tugaydi (holat 2026-10-21)
 
-| # | Repo | Holat (2026-10-11) | Keyingi qadam |
+| # | Repo | Holat | Keyingi qadam |
 |---|---|---|---|
-| 1 | **rn-r-e-commerce** (KidsWear) | Veb jonli (kids-wear-007.web.app), 1-guruh funksiyalar veb+mobil; admin = santexnika.atoyo@gmail.com (har deploy'da, faqat tasdiqlangan email); yetkazish narxlari boshlang'ich qiymat bilan yozildi | **APK ochilmayapti** (v1.0.5 da ham). v1.0.7 (apk-7) da crash ekrani bor → egasi xato matnini yuboradi → shu xato tuzatiladi. Keyin 2-guruh (repo `docs/REJA.md`) |
-| 2 | **lumina** | Veb + APK (apk-5) yangilandi: uz/en/ru, video→Reels, aloqa formasi→admin Messages, landing'da haqiqiy ilova ko'rinishi, Admin→Landing'dan skrinshot (Firestore), imzo SHA-1 Firebase'ga | Egasi sinaydi: ilovada Google bilan kirish, skrinshot yuklash. CI'dagi SA Storage qoidalari/indekslarni deploy qila olmaydi (FIREBASE_TOKEN yoki "Firebase Rules Admin" roli kerak) |
-| 3 | **telegram-bots** | 13 bot, CI | **Bitta sessiyada 3 ish:** botlarni doimiy serverga, hr-bot MVP, bot-factory rejasi — prompt pastda (C) |
-| 4 | **atoyo-e-commerce** | ✅ jonli (atoyo.uz) | Qo'llab-quvvatlash: repo `docs/AUDIT-ISHLARI.md` |
+| 1 | **rn-r-e-commerce** (KidsWear) | Veb jonli; APK **1.0.9 ochiladi** (yiqilish PR #4, #5 da tuzatildi) | Keyinroq ko'riladi (egasi). Kartada yurakcha nomni bosib qolgan; ilovada Google kirish va buyurtma oqimi sinalmagan. 2-guruh — Blaze |
+| 2 | **lumina** | Veb + APK; uz/en/ru, Reels, admin (rollar, bloklash, shikoyatlar, e'lon) | Egasi sinaydi; hisoblagichlarni ±1 qoidasi; CI'ga `FIREBASE_TOKEN` |
+| 3 | **telegram-bots** | ✅ 15 bot; 3 ishli sessiya bajarilgan (deploy konfiglari, hr-bot, bot-factory reja) | Bot-factory endi alohida repoda |
+| 4 | **atoyo-e-commerce** | ✅ jonli (atoyo.uz), ilova 1.5.2 | Qo'llab-quvvatlash: repo `docs/AUDIT-ISHLARI.md` (16-band — 3D model) |
 | 5 | **Organick_org** | ✅ jonli | Tayyor; faqat xato chiqsa |
 | 6 | **Abdulmajidkhan007** (profil) | ✅ | Har loyiha o'zgarganda `docs/<repo>.md` + sana |
-| 7 | **portfolio-3d** | ✅ jonli | Aloqa formasi Blaze'ni kutadi (billing) |
-| 8 | **suhbat** (avval chatapp) | Reja tayyor: monorepo, NestJS + PostgreSQL + WebSocket, veb/desktop/RN CLI | Alohida sessiya: repo `docs/REJA.md` → "Keyingi sessiya uchun" |
-| 9 | **uzbek-tg** (avval chat-app) | Reja tayyor: RN CLI + TDLib, ghost mode; `applicationId` = `org.uzbektg.app` | Alohida sessiya: repo `docs/REJA.md` → "Keyingi sessiya uchun"; `TG_API_ID`/`TG_API_HASH` faqat GitHub secret |
+| 7 | **portfolio-3d** | ✅ jonli | Aloqa formasi Blaze'ni kutadi |
+| 8 | **suhbat** | 🚧 boshlangan: 0–4b fazalar `main` da, veb Railway'da jonli, v0.3–v0.5 chiqarilmagan | Repo `docs/REJA.md` → "Keyingi sessiya uchun"; telefonda va Railway'da sinash |
+| 9 | **uzbek-tg** | 🚧 boshlangan: TDLib ulangan, 2-faza UI katta qismi yozilgan | Egasi APK'da ⏳ bandlarni sinaydi → 3-faza (ghost mode) |
+| 10 | **bot-factory** | 🚧 Faza 1+2 (skelet, runtime yadro) | Navbatdagi o'rni egasi bilan kelishiladi |
 
-### B. Keyin — shu tartibda (9 tasi tugagach)
+### B. Eng oxirida yoki 3-akkauntda (egasi qarori, 2026-10-21)
 1. **learning-datacenter-tc-project** — CRM, Faza 1 (guruhlar, jadval, davomat)
 2. **go-uz** — bitta ilovani MVP'gacha
 3. **DevCraft-AI** — hozir faqat arxitektura hujjati
@@ -80,9 +96,12 @@ push'da ishlaydi. Almashtirilsa, deploy workflow'ini ham o'zgartirish kerak.
 5. **web-3d**
 6. **ios-asistent**
 
-Har biri boshlanishidan oldin `suhbat`/`uzbek-tg` dagi kabi reja hujjati yoziladi.
+Hozircha A ro'yxatidagi ishlar tugatiladi. 3-akkaunt ochilsa, bular
+(`go-uz`, `DevCraft-AI`, `bank`, `taxi`, `calculator`, `portfolio-builder`,
+`Atoyo-erp-v2`) o'sha yerda — `docs/ACCOUNT-3-ISHLARI.md`. Har biri
+boshlanishidan oldin `suhbat`/`uzbek-tg` dagi kabi reja hujjati yoziladi.
 
-### C. telegram-bots — bitta sessiya uchun prompt
+### C. telegram-bots — bitta sessiya uchun prompt (✅ bajarilgan, egasi 2026-10-21 tasdiqladi)
 Repo: `telegram-bots`. Yuboriladigan matn:
 
 > CLAUDE.md, docs/REJA.md, docs/HR-BOT-PROMPT.md va docs/BOT-FACTORY-PROMPT.md
@@ -105,13 +124,14 @@ Repo: `telegram-bots`. Yuboriladigan matn:
 
 ## 4. Egasi qiladigan ishlar (kod emas)
 
-- [ ] KidsWear APK v1.0.7 ni o'rnatish; yopilsa "Nusxa olish" → matnni yuborish
+- [x] KidsWear APK — 1.0.9 ochiladi (2026-10-21)
 - [ ] KidsWear: Admin → Yetkazish narxlarini tekshirish (hozir boshlang'ich qiymat)
 - [ ] Lumina: APK'da Google bilan kirishni sinash; Admin → Landing'ga 5 ta skrinshot
-- [ ] GitHub: `chat-app` → `uzbek-tg` nomi; ikkala repoda default branch → `main`
+- [x] GitHub: `chat-app` → `uzbek-tg` nomi; ikkala repoda default branch → `main` (2026-10-21 tekshirildi)
       ("Could not change default branch" chiqsa — sahifani yangilash yoki Desktop site)
 - [x] chatapp → `suhbat` nomi (2026-10-11)
-- [ ] 14 ta repoda default branch → `main` (2-bo'lim)
+- [ ] 9 ta repoda default branch → `main` (2-bo'lim; kod bir xil, xavfsiz)
+- [ ] Profil repoda 2 ta docs branch'ni main'ga qo'shish yoki yopish (2-bo'lim)
 - [ ] Billing: keraksiz loyihadan uzish yoki limit so'rash → portfolio formasi,
       KidsWear to'lov/push, Lumina Storage qoidalari
 - [ ] Lumina CI: `FIREBASE_TOKEN` secret yoki SA'ga "Firebase Rules Admin" roli
@@ -122,4 +142,4 @@ Repo: `telegram-bots`. Yuboriladigan matn:
 
 ---
 
-*Oxirgi yangilanish: 2026-10-11*
+*Oxirgi yangilanish: 2026-10-21*

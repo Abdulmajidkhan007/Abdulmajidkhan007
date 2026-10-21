@@ -311,3 +311,15 @@ qo'yildi. Profil reposiga PDF qo'yilmaydi.
 **Navbat** — `docs/REJA.md` 3-bo'lim (egasi tasdiqlagan tartib).
 
 *Yozilgan: 2026-10-11*
+
+## 13. 2026-10-21 — hujjatlar kod bilan solishtirildi
+
+Hamma 20 ta repoda branch'lar git'dan tekshirildi (natija — `docs/REJA.md` 1–2
+bo'limlar). 9 ta repoda hujjat koddan orqada qolgan joylar tuzatildi:
+atoyo (LOYIHA-HAQIDA: sentyabr–oktyabr), Organick (4 ta Cloud Function,
+psevdo-email blokirovkasi — PR #31), KidsWear (APK 1.0.9 ochiladi), Lumina
+(admin to'lqini, REJA bandlari), portfolio-3d (README: jonli manzil, forma
+Blaze kutadi), telegram-bots (REJA jadvali, 15 bot), suhbat (4a/4b PR holati),
+uzbek-tg (repo public, 2026-10-15 ishlari, keyingi qadam), profil (REJA, 13→15 bot).
+
+*Yozilgan: 2026-10-21*
