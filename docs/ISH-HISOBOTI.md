@@ -323,3 +323,20 @@ Blaze kutadi), telegram-bots (REJA jadvali, 15 bot), suhbat (4a/4b PR holati),
 uzbek-tg (repo public, 2026-10-15 ishlari, keyingi qadam), profil (REJA, 13→15 bot).
 
 *Yozilgan: 2026-10-21*
+
+## 14. 2026-10-21 — freelance: xizmatlar sayti, Atoyo keysi, README
+
+`docs/REJA.md` 0-bo'lim («Asosiy yo'nalish — pullik ish») birinchi haftasi:
+- `docs/KEYS-ATOYO.md` — 1 sahifalik keys (muammo → nima qilindi → natija).
+  Faktlar atoyo-e-commerce README va `docs/LOYIHA-HAQIDA.md` dan. Natija
+  raqamlari yo'q — `<!-- egasi to'ldiradi -->` bilan belgilangan.
+- `site/index.html` — 3 paket (Telegram bot · do'kon sayti + Telegram · landing):
+  kimga, nima kiradi, taxminiy muddat, isbot havolalari; narx yozilmagan.
+  Atoyo keysi bo'limi, 10 ta ochiq bot, ish tartibi (qamrov → 50% → bosqichlar →
+  topshirish + 2 hafta bepul tuzatish). Ariza formasida paket tanlovi, karta
+  tugmasi paketni oldindan tanlaydi. Tema almashtirgich (tizim temasi + qo'lda).
+- `README.md` — eng tepada «Buyurtma qabul qilaman» qatori.
+
+Qolgan (egasi): narxlar, keys natija raqamlari, do'kon egasining sharhi.
+
+*Yozilgan: 2026-10-21*

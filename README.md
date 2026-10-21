@@ -1,3 +1,10 @@
+<p align="center">
+  <b>💼 Buyurtma qabul qilaman:</b> Telegram bot · do'kon sayti · landing →
+  <a href="https://t.me/Abdulloh_77700">@Abdulloh_77700</a> ·
+  <a href="https://abdulmajidkhan007.github.io/Abdulmajidkhan007/">xizmatlar sayti</a> ·
+  <a href="https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/KEYS-ATOYO.md">Atoyo keysi</a>
+</p>
+
 <h1 align="center">Abdulmajid Sharipov</h1>
 <p align="center">
   <b>Frontend Engineer</b> · O'zbekiston<br>
