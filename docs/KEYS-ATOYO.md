@@ -43,8 +43,10 @@ Market'da emas, to'g'ridan-to'g'ri tarqatiladi.
 
 ## Natija
 
-- Do'kon real ishlayapti: mijoz narxni so'rab yozmasdan saytda, botda yoki
-  ilovada o'zi ko'radi va buyurtma beradi.
+- Tizim tayyor va jonli. Do'kon unga asta-sekin o'tyapti: mahsulotlar
+  bosqichma-bosqich kiritilmoqda, foydalanish endi boshlanmoqda.
+- Mijoz narxni so'rab yozmasdan saytda, botda yoki ilovada o'zi ko'radi va
+  buyurtma beradi.
 - Buyurtma sotuvchi kun bo'yi o'tiradigan joyga — Telegram guruhiga — keladi;
   holati bitta tugma bilan yangilanadi.
 - Katalog va narx bitta joyda: kanalda eski narx qolib ketish muammosi yo'q.

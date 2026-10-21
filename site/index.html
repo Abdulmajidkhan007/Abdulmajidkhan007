@@ -226,6 +226,7 @@
   .note { color: var(--muted); font-size: .9rem; margin: 0; }
   .status { font-weight: 600; color: var(--ok); margin: 0; min-height: 1.5em; }
   .status.err { color: var(--err); }
+  .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
 
   footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: .95rem; }
   footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: space-between; }
@@ -254,14 +255,14 @@
   <section class="hero">
     <div class="wrap">
       <h1>Biznesingiz uchun <span>bot va sayt</span></h1>
-      <p>Qo'qondagi santexnika do'koniga sayt, bot va ilova qilib berdim — hozir shu bilan savdo qilishyapti.
+      <p>Qo'qondagi santexnika do'koniga sayt, bot va ilova qilib berdim — do'kon unga asta-sekin o'tyapti.
         Sizga ham shunaqasini qilaman.</p>
       <div class="actions">
         <a class="btn btn-primary" href="#paketlar">Paketni tanlash</a>
         <a class="btn btn-ghost" href="https://t.me/Abdulloh_77700" target="_blank" rel="noopener">Telegram'da yozish</a>
       </div>
       <div class="proof">
-        <span><b>atoyo.uz</b> — ishlab turibdi</span>
+        <span><b>atoyo.uz</b> — jonli sayt</span>
         <span><b>9 ta</b> botim Telegram'da</span>
         <span><b>2 hafta</b> bepul tuzatish</span>
       </div>
@@ -358,9 +359,10 @@
           <p>Mijozlar narxni so'rab yozardi, sotuvchi kun bo'yi javob berardi. Buyurtmalar qo'lda yozilardi,
             kanalda eski narxlar qolib ketardi.</p>
           <span class="tag" style="margin-top:18px">Hozir</span>
-          <p>Mijoz narxni o'zi ko'radi va buyurtma beradi. Buyurtma do'konning Telegram guruhiga tushadi.</p>
+          <p>Hammasi tayyor va ishlaydi. Do'kon mahsulotlarni asta-sekin kiritib, tizimga o'tib boryapti.
+            Mijoz narxni o'zi ko'radi, buyurtma do'konning Telegram guruhiga tushadi.</p>
           <!-- egasi to'ldiradi: natija raqamlari (oylik buyurtma, tashrifchi, tejalgan vaqt) -->
-          <p class="live">● Do'konda ishlayapti</p>
+          <p class="live">● Sayt jonli · do'kon o'tib boryapti</p>
           <div class="chips">
             <a href="https://atoyo.uz" target="_blank" rel="noopener">atoyo.uz →</a>
             <a href="keys-atoyo.html">Batafsil →</a>
@@ -459,8 +461,9 @@
           <label>Qisqacha
             <textarea name="tavsif" maxlength="800" placeholder="Masalan: kiyim do'konimga buyurtma qabul qiladigan bot kerak"></textarea>
           </label>
-          <button class="btn btn-primary" type="submit">Telegram'da yuborish</button>
-          <p class="note">Xabar chiqmasa — u nusxalangan, chatga joylab yuboring.</p>
+          <input class="hp" name="sayt" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn btn-primary" type="submit" id="ariza-btn">Yuborish</button>
+          <p class="note" id="ariza-note">Arizangiz to'g'ridan-to'g'ri menga keladi.</p>
           <p class="status" id="ariza-status" role="status" aria-live="polite"></p>
         </form>
       </div>
@@ -493,13 +496,18 @@
     });
   })();
 
-  // Backend yo'q: ariza matnini yig'ib, Telegram chatini tayyor xabar bilan ochamiz.
-  // Bot tokeni yoki server kerak emas — sahifa GitHub Pages'da statik turadi.
+  // Ariza ARIZA_URL (Cloudflare Worker, ariza-worker/) ga yuboriladi, u bot orqali guruhga tashlaydi.
+  // Bot tokeni saytda yo'q. ARIZA_URL bo'sh yoki xato bo'lsa — Telegram chati tayyor matn bilan ochiladi.
   (function () {
+    var ARIZA_URL = "";
     var USERNAME = "Abdulloh_77700";
     var form = document.getElementById("ariza-form");
     var status = document.getElementById("ariza-status");
     var paket = document.getElementById("paket");
+    if (!ARIZA_URL) {
+      document.getElementById("ariza-btn").textContent = "Telegram'da yuborish";
+      document.getElementById("ariza-note").textContent = "Telegram ochiladi, xabar tayyor turadi — \"Yuborish\" ni bosasiz.";
+    }
 
     // "Shu paketni tanlash" tugmasi formadagi paketni oldindan tanlaydi.
     document.querySelectorAll("[data-paket]").forEach(function (a) {
@@ -522,19 +530,39 @@
         return;
       }
 
+      var btn = document.getElementById("ariza-btn");
       var matn = "Assalomu alaykum! Saytingizdan ariza:\n" +
         "Ism: " + ism + "\n" +
         "Telefon: " + tel + "\n" +
         "Paket: " + tanlov +
         (tavsif ? "\nTavsif: " + tavsif : "");
 
-      if (navigator.clipboard) {
-        navigator.clipboard.writeText(matn).catch(function () { /* nusxalash ixtiyoriy — link baribir ochiladi */ });
+      function openTelegram() {
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(matn).catch(function () { /* nusxalash ixtiyoriy — link baribir ochiladi */ });
+        }
+        status.classList.remove("err");
+        status.textContent = "Telegram ochilmoqda...";
+        window.location.href = "https://t.me/" + USERNAME + "?text=" + encodeURIComponent(matn);
       }
 
+      if (!ARIZA_URL) { openTelegram(); return; }
+
+      btn.disabled = true;
       status.classList.remove("err");
-      status.textContent = "Telegram ochilmoqda...";
-      window.location.href = "https://t.me/" + USERNAME + "?text=" + encodeURIComponent(matn);
+      status.textContent = "Yuborilmoqda...";
+      fetch(ARIZA_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ism: ism, tel: tel, paket: tanlov, tavsif: tavsif, sayt: d.get("sayt") || "" })
+      })
+        .then(function (res) {
+          if (!res.ok) throw new Error("status " + res.status);
+          form.reset();
+          status.textContent = "Rahmat! Arizangiz keldi, tez orada bog'lanaman.";
+        })
+        .catch(function () { openTelegram(); })
+        .finally(function () { btn.disabled = false; });
     });
   })();
 </script>
