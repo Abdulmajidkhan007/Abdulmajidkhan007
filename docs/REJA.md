@@ -21,6 +21,29 @@ ochilgan, jonli havolasi bori bitta edi (atoyo.uz). Muammo — tugatishda.
 README bo'yicha ishga tushira oladi; (5) kamida 1 ta haqiqiy foydalanuvchi.
 «Kod yozildi» ≠ tugallandi.
 
+### Asosiy yo'nalish — pullik ish (freelance), 2026-10-21 qarori
+
+Loyihalar ko'p, daromad yo'q. Shu kundan **birinchi o'rinda — mijoz topish va unga ishlash**.
+
+- **Paketlar (faqat isbotlangan ishdan):** (1) Telegram bot — buyurtma, lid, CRM
+  (isbot: 15 bot, @Atoyo_service_bot); (2) do'kon sayti + Telegram integratsiya
+  (isbot: atoyo.uz); (3) landing / biznes sayt (isbot: portfolio-3d, Organick).
+  Mobil ilova va AI — alohida paket emas, faqat qo'shimcha.
+- **Kanallar tartibi:** mahalliy biznes (to'g'ridan-to'g'ri taklif, atoyo misoli) →
+  Telegram freelance/biznes guruhlari → Kwork → Upwork (2–3 keysdan keyin).
+- **Ish tartibi:** yozma qamrov (nima qilinadi / qilinmaydi / muddat) → 50% oldindan →
+  bosqichlar → deploy + qo'llanma + 2 hafta bepul tuzatish → oylik qo'llab-quvvatlash taklifi.
+  Narx = soat × soatlik stavka; birinchi 2–3 mijozga chegirma evaziga sharh va keys huquqi.
+- **Vaqt:** yangi shaxsiy loyiha yo'q; `suhbat`/`uzbek-tg` — kuniga ≤1 soat; sertifikat
+  kurslari — kuniga 1 soat; qolgani — mijoz.
+- **Birinchi hafta:** xizmatlar sayti (3 paket + atoyo keysi) · README'da "buyurtma qabul
+  qilaman" · `docs/KEYS-ATOYO.md` · 10 ta mahalliy biznesga taklif · Kwork profili + 2 xizmat.
+- **Hisob:** har mijoz shu yerga — sana, ish, holat (taklif / kelishildi / topshirildi / to'landi).
+
+| Sana | Mijoz | Ish | Holat |
+|---|---|---|---|
+| — | — | — | — |
+
 ### Cheklovdan istisnolar (egasi qarori)
 
 | Sana | Loyiha | Hajm |
