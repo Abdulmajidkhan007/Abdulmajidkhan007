@@ -339,4 +339,9 @@ uzbek-tg (repo public, 2026-10-15 ishlari, keyingi qadam), profil (REJA, 13→15
 
 Qolgan (egasi): narxlar, keys natija raqamlari, do'kon egasining sharhi.
 
+Keyin (egasi fikri bo'yicha): sarlavha va hamma matn qisqartirildi, oddiy tilga
+o'tkazildi; isbot havolalari "chip" ko'rinishida; keys alohida sahifa
+`site/keys-atoyo.html` (Telegram ichida tez ochiladi). @Atoyo_service_bot hozir
+to'xtagan (faqat lokal) — sayt, README va keysdan olib turildi.
+
 *Yozilgan: 2026-10-21*

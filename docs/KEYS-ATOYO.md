@@ -3,8 +3,7 @@
 > Qo'qondagi santexnika va isitish tizimlari do'koni uchun sayt, Telegram bot va
 > kanal, Android ilova va admin panel — hammasi bitta bazada.
 
-**Jonli:** https://atoyo.uz · **Botlar:** [@Atoyo_uz_bot](https://t.me/Atoyo_uz_bot),
-[@Atoyo_service_bot](https://t.me/Atoyo_service_bot) · **Kod:** https://github.com/Abdulmajidkhan007/atoyo-e-commerce
+**Jonli:** https://atoyo.uz · **Bot:** [@Atoyo_uz_bot](https://t.me/Atoyo_uz_bot) · **Kod:** https://github.com/Abdulmajidkhan007/atoyo-e-commerce
 
 ---
 
@@ -32,7 +31,7 @@ Ilgari savdo Telegram kanali va telefon orqali ketardi:
 | 📢 | **Telegram kanal** | Yangi mahsulot rasm, narx va tavsif bilan avtomatik e'lon qilinadi. Ko'p mahsulot birdan kiritilsa ham kanal spam bo'lmaydi — postlar navbat bilan chiqadi. |
 | 📱 | **Android ilova** (1.5.2) | Saytdagi hamma narsa telefonda: katalog, savat, buyurtmalar tarixi, bildirishnomalar. Yangi versiya chiqsa, ilova o'zi eslatadi. |
 | 🛠 | **Admin panel** | Mahsulot, narx, qoldiq va buyurtmalarni bitta joydan boshqarish; tushum va eng ko'p sotilganlar. Narx bir joyda o'zgarsa — sayt, ilova, bot va kanalda bir xil. Mahsulotni Telegram guruhidan turib ham kiritish mumkin. |
-| 💬 | **AI yordamchi** — saytda, ilovada va [@Atoyo_service_bot](https://t.me/Atoyo_service_bot) da | "Issiq suv uchun qaysi kran mos?" kabi savollarga javob beradi. Narx va qoldiqni bazadan oladi — taxmin qilmaydi. Mahsulot suratini yuborsangiz, o'xshashini topadi. |
+| 💬 | **AI yordamchi** — saytda va ilovada | "Issiq suv uchun qaysi kran mos?" kabi savollarga javob beradi. Narx va qoldiqni bazadan oladi — taxmin qilmaydi. Mahsulot suratini yuborsangiz, o'xshashini topadi. |
 
 Qo'shimcha: optom mijozlar alohida narxni ko'radi (tannarx va optom narx oddiy
 mijozga hech qachon chiqmaydi), kartaga o'tkazma + chek yuklash, do'kondagi
@@ -59,6 +58,7 @@ Market'da emas, to'g'ridan-to'g'ri tarqatiladi.
 Shunga o'xshash tizim — do'kon sayti + Telegram bot + buyurtmalar guruhga —
 sizning biznesingiz uchun ham qilinadi. Yozing: [@Abdulloh_77700](https://t.me/Abdulloh_77700)
 · Xizmatlar va paketlar: https://abdulmajidkhan007.github.io/Abdulmajidkhan007/
+· Shu keys sayt ko'rinishida: https://abdulmajidkhan007.github.io/Abdulmajidkhan007/keys-atoyo.html
 
 ---
 

@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Abdulloh — Telegram bot, do'kon sayti, landing</title>
-<meta name="description" content="Biznesingiz uchun Telegram bot, do'kon sayti va landing. Isbot: atoyo.uz, 10 ta ochiq Telegram bot. Buyurtma: @Abdulloh_77700">
+<meta name="description" content="Biznesingiz uchun Telegram bot, do'kon sayti va landing. Ishlarim: atoyo.uz va Telegram botlar. Buyurtma: @Abdulloh_77700">
 <meta property="og:title" content="Abdulloh — Telegram bot, do'kon sayti, landing">
-<meta property="og:description" content="Va'da emas — ishlab turgan loyihalar. 3 ta paket: Telegram bot, do'kon sayti + Telegram, landing.">
+<meta property="og:description" content="Telegram bot, do'kon sayti va landing. Ishlab turgan misollar bilan.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#4f46e5">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234f46e5'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='18' font-weight='700' fill='white' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
@@ -167,7 +167,12 @@
   .pkg .meta { display: grid; gap: 6px; padding: 12px 14px; border-radius: 10px; background: var(--bg-soft); font-size: .95rem; }
   .pkg .meta b { color: var(--text); }
   .pkg .meta span { color: var(--muted); }
-  .pkg .proof-links a { display: inline-block; margin: 2px 12px 2px 0; font-weight: 600; text-decoration: none; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chips a {
+    padding: 6px 12px; border-radius: 99px; border: 1px solid var(--line); background: var(--bg-soft);
+    font-weight: 600; font-size: .92rem; text-decoration: none; white-space: nowrap;
+  }
+  .chips a:hover { border-color: var(--accent); }
   .pkg .btn { margin-top: auto; }
   .extra { margin-top: 18px; color: var(--muted); font-size: .95rem; }
 
@@ -183,8 +188,7 @@
   .done { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
   .done li { display: grid; grid-template-columns: 28px 1fr; gap: 8px; color: var(--muted); }
   .done li b { color: var(--text); }
-  .case .links { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 8px 18px; }
-  .case .links a { font-weight: 600; text-decoration: none; }
+  .case .live { margin: 16px 0 10px; }
   .honest { margin-top: 14px; font-size: .9rem; color: var(--muted); }
   .bots { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 10px 16px; margin-top: 8px; }
   .bots a { text-decoration: none; font-weight: 600; overflow-wrap: anywhere; }
@@ -250,15 +254,15 @@
   <section class="hero">
     <div class="wrap">
       <h1>Biznesingiz uchun <span>bot va sayt</span></h1>
-      <p>Va'da emas — ishlab turgan loyihalarimni ko'rsataman. Qo'qondagi santexnika do'koni
-        uchun sayt, bot va ilova qurdim — u bugun real savdoda. Sizga ham shunday qilib beraman.</p>
+      <p>Qo'qondagi santexnika do'koniga sayt, bot va ilova qilib berdim — hozir shu bilan savdo qilishyapti.
+        Sizga ham shunaqasini qilaman.</p>
       <div class="actions">
         <a class="btn btn-primary" href="#paketlar">Paketni tanlash</a>
         <a class="btn btn-ghost" href="https://t.me/Abdulloh_77700" target="_blank" rel="noopener">Telegram'da yozish</a>
       </div>
       <div class="proof">
-        <span><b>atoyo.uz</b> — real do'konda ishlayapti</span>
-        <span><b>10 ta</b> bot Telegram'da ochiq</span>
+        <span><b>atoyo.uz</b> — ishlab turibdi</span>
+        <span><b>9 ta</b> botim Telegram'da</span>
         <span><b>2 hafta</b> bepul tuzatish</span>
       </div>
     </div>
@@ -266,241 +270,195 @@
 
   <section id="paketlar" class="soft">
     <div class="wrap">
-      <h2>3 ta paket</h2>
-      <p class="lead">Har birining isboti bor — ochib ko'ring. Narx ish hajmiga qarab: nima kerakligini yozing,
-        aniq narx va muddatni yozma aytaman.</p>
+      <h2>Nima qilib beraman</h2>
+      <p class="lead">Narx ishning hajmiga qarab. Nima kerakligini yozing — narx va muddatni aytaman.</p>
       <div class="grid grid-3">
 
         <article class="card pkg">
           <div>
             <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg></div>
-            <h3>1. Telegram bot</h3>
-            <p class="who">Buyurtma, lid va mijozlar bazasi — Telegram'ning o'zida.</p>
+            <h3>Telegram bot</h3>
+            <p class="who">Buyurtma va arizalarni Telegram'da qabul qiladi.</p>
           </div>
-          <div>
-            <h4>Kimga kerak</h4>
-            <ul class="list">
-              <li>Do'kon, kafe, xizmat ko'rsatuvchi — buyurtma Telegram'da keladi</li>
-              <li>O'quv markaz, klinika — ariza va yozilishni yig'ish kerak</li>
-            </ul>
-          </div>
-          <div>
-            <h4>Nima kiradi</h4>
-            <ul class="list">
-              <li>Katalog yoki savol-javob menyusi, buyurtma / ariza formasi</li>
-              <li>Ariza darhol xodimlar guruhiga yoki kerakli odamga</li>
-              <li>Mijozlar ro'yxati va holati (oddiy CRM)</li>
-              <li>Admin buyruqlari, serverga joylash, qo'llanma</li>
-            </ul>
-          </div>
+          <ul class="list">
+            <li>Do'kon, kafe, o'quv markaz, xizmat ko'rsatish uchun</li>
+            <li>Mijoz botda tanlaydi yoki ariza qoldiradi</li>
+            <li>Ariza darhol sizning guruhingizga keladi</li>
+            <li>Mijozlar ro'yxati botning o'zida</li>
+          </ul>
           <div class="meta">
-            <div><b>Muddat:</b> <span>taxminan 5–14 kun</span></div>
-            <div><b>Narx:</b> <span>ish hajmiga qarab — yozing</span></div>
+            <div><b>Muddat:</b> <span>5–14 kun</span></div>
+            <div><b>Narx:</b> <span>yozing, kelishamiz</span></div>
           </div>
-          <div class="proof-links">
-            <a href="https://t.me/Atoyo_service_bot" target="_blank" rel="noopener">@Atoyo_service_bot</a>
+          <div class="chips">
             <a href="https://t.me/Atoyo_uz_bot" target="_blank" rel="noopener">@Atoyo_uz_bot</a>
-            <a href="#botlar">yana 8 ta bot ↓</a>
+            <a href="#botlar">Boshqa botlarim ↓</a>
           </div>
-          <a class="btn btn-primary" href="#ariza" data-paket="Telegram bot">Shu paketni tanlash</a>
+          <a class="btn btn-primary" href="#ariza" data-paket="Telegram bot">Tanlash</a>
         </article>
 
         <article class="card pkg">
           <div>
             <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l1.5-5h15L21 9"/><path d="M4 9v11h16V9"/><path d="M3 9h18"/><path d="M9 20v-6h6v6"/></svg></div>
-            <h3>2. Do'kon sayti + Telegram</h3>
-            <p class="who">Mijoz o'zi tanlaydi, buyurtma sizning Telegram guruhingizga tushadi.</p>
+            <h3>Do'kon sayti + Telegram</h3>
+            <p class="who">Mijoz saytda tanlaydi, buyurtma Telegram'ingizga tushadi.</p>
           </div>
-          <div>
-            <h4>Kimga kerak</h4>
-            <ul class="list">
-              <li>Mahsuloti ko'p do'kon — narxni so'rab yozishlar charchatgan</li>
-              <li>Kanal orqali sotadi, lekin tartibli katalog yo'q</li>
-            </ul>
-          </div>
-          <div>
-            <h4>Nima kiradi</h4>
-            <ul class="list">
-              <li>Katalog, filtr, qidiruv, savat, buyurtma</li>
-              <li>Admin panel: mahsulot, narx, qoldiq, buyurtmalar</li>
-              <li>Buyurtma Telegram guruhiga + holat tugmalari</li>
-              <li>Domen, joylash, qo'llanma</li>
-            </ul>
-          </div>
+          <ul class="list">
+            <li>Mahsuloti ko'p do'konlar uchun</li>
+            <li>Katalog, qidiruv, savat, buyurtma</li>
+            <li>Narx va mahsulotni o'zingiz o'zgartirasiz</li>
+            <li>Domen va joylashni ham qilaman</li>
+          </ul>
           <div class="meta">
-            <div><b>Muddat:</b> <span>taxminan 3–6 hafta</span></div>
-            <div><b>Narx:</b> <span>ish hajmiga qarab — yozing</span></div>
+            <div><b>Muddat:</b> <span>3–6 hafta</span></div>
+            <div><b>Narx:</b> <span>yozing, kelishamiz</span></div>
           </div>
-          <div class="proof-links">
+          <div class="chips">
             <a href="https://atoyo.uz" target="_blank" rel="noopener">atoyo.uz</a>
             <a href="https://organick-e1c5a.web.app" target="_blank" rel="noopener">Organick</a>
-            <a href="#keys">Atoyo keysi ↓</a>
           </div>
-          <a class="btn btn-primary" href="#ariza" data-paket="Do'kon sayti + Telegram">Shu paketni tanlash</a>
+          <a class="btn btn-primary" href="#ariza" data-paket="Do'kon sayti + Telegram">Tanlash</a>
         </article>
 
         <article class="card pkg">
           <div>
             <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14h8"/></svg></div>
-            <h3>3. Landing / biznes sayt</h3>
-            <p class="who">Biznesingiz haqida 1 sahifa: kimsiz, nima taklif qilasiz, qanday bog'lanish.</p>
+            <h3>Landing sayt</h3>
+            <p class="who">Biznesingiz haqida bitta chiroyli sahifa.</p>
           </div>
-          <div>
-            <h4>Kimga kerak</h4>
-            <ul class="list">
-              <li>Yangi biznes, xizmat ko'rsatuvchi, mutaxassis</li>
-              <li>Reklamadan keladigan mijozni ariza qoldirishga olib kelish kerak</li>
-            </ul>
-          </div>
-          <div>
-            <h4>Nima kiradi</h4>
-            <ul class="list">
-              <li>Telefon va kompyuterga moslangan sahifa, kunduzgi / tungi ko'rinish</li>
-              <li>Ariza formasi — xabar Telegram'ingizga</li>
-              <li>Google'da topilishi uchun asosiy sozlash</li>
-              <li>Domen va joylash</li>
-            </ul>
-          </div>
+          <ul class="list">
+            <li>Yangi biznes yoki xizmat uchun</li>
+            <li>Telefonda ham, kompyuterda ham yaxshi ko'rinadi</li>
+            <li>Ariza formasi — xabar Telegram'ingizga</li>
+            <li>Google'da topiladigan qilib sozlanadi</li>
+          </ul>
           <div class="meta">
-            <div><b>Muddat:</b> <span>taxminan 3–7 kun</span></div>
-            <div><b>Narx:</b> <span>ish hajmiga qarab — yozing</span></div>
+            <div><b>Muddat:</b> <span>3–7 kun</span></div>
+            <div><b>Narx:</b> <span>yozing, kelishamiz</span></div>
           </div>
-          <div class="proof-links">
-            <a href="https://abdulmajidkhan-portfolio.web.app" target="_blank" rel="noopener">Portfolio (3D)</a>
+          <div class="chips">
+            <a href="https://abdulmajidkhan-portfolio.web.app" target="_blank" rel="noopener">Portfolio</a>
             <a href="https://organick-e1c5a.web.app" target="_blank" rel="noopener">Organick</a>
-            <a href="#">Shu sayt</a>
           </div>
-          <a class="btn btn-primary" href="#ariza" data-paket="Landing / biznes sayt">Shu paketni tanlash</a>
+          <a class="btn btn-primary" href="#ariza" data-paket="Landing sayt">Tanlash</a>
         </article>
 
       </div>
-      <p class="extra">Qo'shimcha sifatida: Android ilova (sayt bilan bitta bazada) va AI yordamchi — mijoz savollariga
-        javob beradi. Muddat aniq qamrovga qarab qo'shiladi.</p>
+      <p class="extra">Kerak bo'lsa Android ilova yoki AI yordamchi ham qo'shib beraman.</p>
     </div>
   </section>
 
   <section id="keys">
     <div class="wrap">
-      <h2>Keys: Atoyo Santexnika</h2>
-      <p class="lead">Qo'qondagi santexnika va isitish tizimlari do'koni. Katalog 10 000 dan ortiq mahsulotga mo'ljallangan.</p>
+      <h2>Misol: Atoyo Santexnika</h2>
+      <p class="lead">Qo'qondagi santexnika do'koni.</p>
       <div class="case">
         <div class="card">
-          <span class="tag">Muammo</span>
-          <p>Savdo Telegram kanali va telefon orqali ketardi. Mijoz narxni so'rab yozardi, sotuvchi kun bo'yi javob
-            berardi. Narx o'zgarsa, kanalda eski post qolib ketardi. Buyurtmalar qo'lda yozilardi — qaysi biri
-            qabul qilingani bir joyda ko'rinmasdi.</p>
-          <span class="tag" style="margin-top:18px">Natija</span>
-          <p>Mijoz narxni o'zi ko'radi va saytda, botda yoki ilovada buyurtma beradi. Buyurtma sotuvchi kun bo'yi
-            o'tiradigan Telegram guruhiga tushadi, holati bitta tugma bilan yangilanadi. Narx bitta joyda —
-            hamma kanalda bir xil.</p>
+          <span class="tag">Oldin</span>
+          <p>Mijozlar narxni so'rab yozardi, sotuvchi kun bo'yi javob berardi. Buyurtmalar qo'lda yozilardi,
+            kanalda eski narxlar qolib ketardi.</p>
+          <span class="tag" style="margin-top:18px">Hozir</span>
+          <p>Mijoz narxni o'zi ko'radi va buyurtma beradi. Buyurtma do'konning Telegram guruhiga tushadi.</p>
           <!-- egasi to'ldiradi: natija raqamlari (oylik buyurtma, tashrifchi, tejalgan vaqt) -->
-          <div class="links">
-            <span class="live">● Do'konda ishlayapti</span>
+          <p class="live">● Do'konda ishlayapti</p>
+          <div class="chips">
             <a href="https://atoyo.uz" target="_blank" rel="noopener">atoyo.uz →</a>
-            <a href="https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/KEYS-ATOYO.md" target="_blank" rel="noopener">To'liq keys →</a>
+            <a href="keys-atoyo.html">Batafsil →</a>
           </div>
         </div>
         <div class="card">
-          <span class="tag">Nima qilindi</span>
+          <span class="tag">Nima qildim</span>
           <ul class="done">
-            <li><span>🌐</span><span><b>Sayt atoyo.uz</b> — katalog, filtr, qidiruv, 1 klikda buyurtma; 3 tilda</span></li>
-            <li><span>📥</span><span><b>Buyurtmalar guruhga</b> — Qabul · Yetkazishda · Yakunlandi tugmalari bilan</span></li>
-            <li><span>🤖</span><span><b>Telegram bot</b> — botning o'zida qidiruv va buyurtma</span></li>
-            <li><span>📢</span><span><b>Telegram kanal</b> — yangi mahsulot avtomatik e'lon qilinadi</span></li>
-            <li><span>📱</span><span><b>Android ilova</b> — katalog, savat, buyurtma tarixi, bildirishnoma</span></li>
-            <li><span>🛠</span><span><b>Admin panel</b> — mahsulot, narx, qoldiq, buyurtma, tushum</span></li>
-            <li><span>💬</span><span><b>AI yordamchi</b> — savolga javob, narxni bazadan oladi, suratdan qidiradi</span></li>
+            <li><span>🌐</span><span><b>Sayt</b> — katalog, qidiruv, buyurtma</span></li>
+            <li><span>📥</span><span><b>Buyurtmalar guruhga</b> — bitta tugma bilan qabul qilinadi</span></li>
+            <li><span>🤖</span><span><b>Telegram bot</b> — botdan ham buyurtma berish mumkin</span></li>
+            <li><span>📢</span><span><b>Kanal</b> — yangi mahsulot o'zi e'lon qilinadi</span></li>
+            <li><span>📱</span><span><b>Android ilova</b></span></li>
+            <li><span>🛠</span><span><b>Admin panel</b> — mahsulot, narx, buyurtmalar</span></li>
           </ul>
-          <p class="honest">Rostini: onlayn to'lov (Payme, Click) hali ulanish jarayonida, katalog to'ldirilmoqda.</p>
+          <p class="honest">Onlayn to'lov (Payme, Click) hali ulanmagan.</p>
         </div>
       </div>
 
-      <h3 id="botlar" style="margin:40px 0 6px">Telegram'da ochiq botlarim</h3>
-      <p class="lead" style="margin-bottom:14px">Hammasi ishlayapti — o'zingiz ochib ko'ring.</p>
+      <h3 id="botlar" style="margin:40px 0 6px">Telegram'dagi botlarim</h3>
+      <p class="lead" style="margin-bottom:14px">Ochib ko'rishingiz mumkin.</p>
       <div class="bots">
-        <a href="https://t.me/Atoyo_service_bot" target="_blank" rel="noopener">@Atoyo_service_bot<span>Do'kon savollariga AI javob, buyurtma qabul qiladi</span></a>
-        <a href="https://t.me/Atoyo_uz_bot" target="_blank" rel="noopener">@Atoyo_uz_bot<span>Saytga ulangan do'kon: qidirish va buyurtma</span></a>
-        <a href="https://t.me/KillSpam_007_Bot" target="_blank" rel="noopener">@KillSpam_007_Bot<span>Guruhni spam va reklamadan tozalaydi</span></a>
-        <a href="https://t.me/COUNTLIST_BOT" target="_blank" rel="noopener">@COUNTLIST_BOT<span>Xarajatlar hisobi — matn yoki ovozli xabar</span></a>
-        <a href="https://t.me/SavolJavob_007_bot" target="_blank" rel="noopener">@SavolJavob_007_bot<span>IT testlari, o'z testingizni yaratish</span></a>
+        <a href="https://t.me/Atoyo_uz_bot" target="_blank" rel="noopener">@Atoyo_uz_bot<span>Do'kon boti: qidirish va buyurtma</span></a>
+        <a href="https://t.me/KillSpam_007_Bot" target="_blank" rel="noopener">@KillSpam_007_Bot<span>Guruhni spamdan tozalaydi</span></a>
+        <a href="https://t.me/COUNTLIST_BOT" target="_blank" rel="noopener">@COUNTLIST_BOT<span>Xarajatlar hisobi</span></a>
+        <a href="https://t.me/SavolJavob_007_bot" target="_blank" rel="noopener">@SavolJavob_007_bot<span>IT testlar</span></a>
         <a href="https://t.me/Anonim_007_bot" target="_blank" rel="noopener">@Anonim_007_bot<span>Anonim savol-javob</span></a>
-        <a href="https://t.me/Uzb_saver_007_bot" target="_blank" rel="noopener">@Uzb_saver_007_bot<span>Instagram, TikTok, YouTube'dan yuklash</span></a>
-        <a href="https://t.me/Tekshiruvchi_07_bot" target="_blank" rel="noopener">@Tekshiruvchi_07_bot<span>Fayl va havolani virusga tekshiradi</span></a>
-        <a href="https://t.me/IDFINDER007BOT" target="_blank" rel="noopener">@IDFINDER007BOT<span>Foydalanuvchi, kanal, guruh ID si</span></a>
-        <a href="https://t.me/arxiv_topadi_bot" target="_blank" rel="noopener">@arxiv_topadi_bot<span>O'chgan xabarlarni qaytarishni o'rgatadi</span></a>
+        <a href="https://t.me/Uzb_saver_007_bot" target="_blank" rel="noopener">@Uzb_saver_007_bot<span>Video va musiqa yuklaydi</span></a>
+        <a href="https://t.me/Tekshiruvchi_07_bot" target="_blank" rel="noopener">@Tekshiruvchi_07_bot<span>Faylni virusga tekshiradi</span></a>
+        <a href="https://t.me/IDFINDER007BOT" target="_blank" rel="noopener">@IDFINDER007BOT<span>ID topadi</span></a>
+        <a href="https://t.me/arxiv_topadi_bot" target="_blank" rel="noopener">@arxiv_topadi_bot<span>O'chgan xabarlar bo'yicha yordam</span></a>
       </div>
     </div>
   </section>
 
   <section id="tartib" class="soft">
     <div class="wrap">
-      <h2>Ish tartibi</h2>
-      <p class="lead">Hammasi yozma kelishiladi — nima qilinadi, nima qilinmaydi va qachon tayyor bo'ladi.</p>
+      <h2>Qanday ishlaymiz</h2>
       <ol class="steps">
-        <li><b>Qamrov</b><span>Nima qilinadi, nima qilinmaydi, muddat va narx — yozma</span></li>
-        <li><b>50% oldindan</b><span>Kelishilgan summaning yarmi — ish boshlanadi</span></li>
-        <li><b>Bosqichlar</b><span>Har bosqichda tayyor qismni ko'rib, fikr bildirasiz</span></li>
-        <li><b>Topshirish</b><span>Joylash + qo'llanma; qolgan 50% shu yerda</span></li>
-        <li><b>2 hafta bepul tuzatish</b><span>Topshirilgandan keyin topilgan xatolar bepul tuzatiladi</span></li>
+        <li><b>Kelishamiz</b><span>Nima qilinadi, muddat va narx — yozma</span></li>
+        <li><b>50% oldindan</b><span>Shundan keyin boshlayman</span></li>
+        <li><b>Ko'rsatib boraman</b><span>Har bosqichda ko'rib turasiz</span></li>
+        <li><b>Topshiraman</b><span>Qolgan 50% shu yerda</span></li>
+        <li><b>2 hafta bepul</b><span>Chiqqan xatolarni tuzataman</span></li>
       </ol>
     </div>
   </section>
 
   <section>
     <div class="wrap">
-      <h2>Ko'p beriladigan savollar</h2>
-      <p class="lead">Javobini topmasangiz — pastda ariza qoldiring yoki Telegram'da yozing.</p>
+      <h2>Savollar</h2>
       <details>
         <summary>Narxi qancha?</summary>
-        <p>Ish hajmiga qarab. Ariza qoldiring — nima kerakligini aniqlab, narx va muddatni yozma aytaman.</p>
+        <p>Ishga qarab. Nima kerakligini yozing, aytaman.</p>
       </details>
       <details>
-        <summary>Muddatlar aniqmi?</summary>
-        <p>Paketlardagi muddat taxminiy. Aniq muddat qamrov kelishilganda yoziladi va shunga amal qilinadi.</p>
-      </details>
-      <details>
-        <summary>Domen va server bilan ham yordam berasizmi?</summary>
-        <p>Ha. Sayt yoki bot ishlab turishi uchun kerak bo'ladigan hamma narsani sozlab beraman.</p>
+        <summary>Domen va serverni ham qilasizmi?</summary>
+        <p>Ha, hammasini sozlab beraman.</p>
       </details>
       <details>
         <summary>To'lov qanday?</summary>
-        <p>Karta orqali (Humo, Uzcard) yoki naqd. 50% oldindan, 50% topshirishda.</p>
+        <p>Karta yoki naqd. Yarmi oldindan, yarmi topshirganda.</p>
       </details>
       <details>
-        <summary>Topshirgandan keyin nima bo'ladi?</summary>
-        <p>2 hafta ichida topilgan xatolar bepul tuzatiladi. Keyin xohlasangiz — oylik qo'llab-quvvatlash kelishiladi.</p>
+        <summary>Keyin muammo chiqsa-chi?</summary>
+        <p>2 hafta bepul tuzataman. Undan keyin ham kerak bo'lsa — oylik kelishamiz.</p>
       </details>
     </div>
   </section>
 
   <section id="ariza" class="soft">
     <div class="wrap">
-      <h2>Ariza qoldirish</h2>
-      <p class="lead">Formani to'ldiring — Telegram ochiladi va arizangiz tayyor xabar bo'lib turadi. Faqat "Yuborish" ni bosasiz.</p>
+      <h2>Ariza</h2>
+      <p class="lead">To'ldiring — Telegram ochiladi, xabar tayyor turadi. "Yuborish" ni bosasiz.</p>
       <div class="card">
         <form id="ariza-form" novalidate>
           <div class="row-2">
             <label>Ismingiz
               <input name="ism" autocomplete="name" required maxlength="60" placeholder="Masalan: Jasur">
             </label>
-            <label>Telefon raqamingiz
+            <label>Telefon
               <input name="tel" type="tel" autocomplete="tel" required maxlength="20" placeholder="+998 90 123 45 67">
             </label>
           </div>
-          <label>Paket
+          <label>Nima kerak?
             <select name="paket" id="paket" required>
               <option value="">Tanlang</option>
               <option>Telegram bot</option>
               <option>Do'kon sayti + Telegram</option>
-              <option>Landing / biznes sayt</option>
-              <option>Bilmayman — maslahat kerak</option>
+              <option>Landing sayt</option>
+              <option>Bilmayman, maslahat kerak</option>
             </select>
           </label>
-          <label>Qisqacha tavsif
-            <textarea name="tavsif" maxlength="800" placeholder="Masalan: kiyim do'konim uchun katalog va buyurtma qabul qiladigan bot kerak"></textarea>
+          <label>Qisqacha
+            <textarea name="tavsif" maxlength="800" placeholder="Masalan: kiyim do'konimga buyurtma qabul qiladigan bot kerak"></textarea>
           </label>
           <button class="btn btn-primary" type="submit">Telegram'da yuborish</button>
-          <p class="note">Telegram ochilmasa yoki xabar avtomatik chiqmasa — u nusxalangan bo'ladi, chatga joylab yuboring.</p>
+          <p class="note">Xabar chiqmasa — u nusxalangan, chatga joylab yuboring.</p>
           <p class="status" id="ariza-status" role="status" aria-live="polite"></p>
         </form>
       </div>

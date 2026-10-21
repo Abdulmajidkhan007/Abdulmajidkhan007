@@ -68,7 +68,6 @@ integratsiyasini qo'shaman — Gemini API, RAG, vektor qidiruv.
 | 🦠 [@Tekshiruvchi_07_bot](https://t.me/Tekshiruvchi_07_bot) | Fayl va havolani ochishdan oldin virusga tekshiradi |
 | 🧠 [@SavolJavob_007_bot](https://t.me/SavolJavob_007_bot) | IT bo'yicha testlar, o'z testingizni ham yaratasiz |
 | 🗂 [@arxiv_topadi_bot](https://t.me/arxiv_topadi_bot) | O'chgan xabarlarni rasmiy yo'l bilan qaytarishni o'rgatadi |
-| 🛠 [@Atoyo_service_bot](https://t.me/Atoyo_service_bot) | Atoyo bo'yicha savollarga AI javob beradi, buyurtma qabul qiladi |
 | 🛒 [@Atoyo_uz_bot](https://t.me/Atoyo_uz_bot) | Saytga ulangan do'kon: mahsulotni topib, shu yerda buyurtma berasiz |
 
 ✅ **[portfolio-3d](https://abdulmajidkhan-portfolio.web.app)** 🔒 — 3D portfolio: React Three Fiber sahnasi, uz/en, rezyume PDF; telefondan GitHub Actions orqali Firebase'ga deploy<br>
