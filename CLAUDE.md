@@ -9,6 +9,8 @@ portfolio xaritasi va rezyume: ish beruvchi 2 daqiqada kimligimni tushunsin.
 - `docs/<repo>.md` — har loyiha sahifasi (namuna `docs/SHABLON.md`)
 - `docs/REJA.md` — repolar xaritasi, navbat, 3 oylik qoida, g'oyalar qutisi
 - `docs/KANALLAR.md` — Telegram kanallar va profil uchun tayyor matnlar, post shabloni
+- `posts/` — kanal postlari, **har post alohida fayl**: `posts/YYYY-MM-DD-<repo>-<mavzu>.md`
+  (yuqorida: kanal — xizmat/blog, holat — qoralama/yuborildi). `docs/` ga post yozilmaydi
 - `docs/ISH-HISOBOTI.md` — sessiyalar xulosasi; `docs/ACCOUNT-3-ISHLARI.md` — 3-akkaunt
 - `site/index.html` — xizmatlar sayti (GitHub Pages, `.github/workflows/pages.yml`);
   `site/keys-atoyo.html` — keys sahifasi. Ariza formasi `ARIZA_URL` ga (`ariza-worker/`,
@@ -42,3 +44,5 @@ oxirgi yangilanish sanasi.
 - Holat bo'rttirilmaydi: tugallanmagan loyiha ✅ deb yozilmaydi.
 - Loyiha o'zgarsa `docs/<repo>.md` yangilanadi + sana; README jadvali va `docs/` doim mos.
 - Taxmin qilinmaydi: holat repodagi kod, README va commit'lardan olinadi.
+- **Har loyihada sezilarli o'zgarish bo'lsa — post qoralamasi yoziladi** (`posts/`, shu repoda),
+  qaysi repoda ishlanayotganidan qat'i nazar. Faqat rost: sinalmagan narsa "ishlaydi" deb yozilmaydi.
