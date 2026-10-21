@@ -61,7 +61,7 @@ emas, "ishlab chiqqanman". Hozirgi tavsifdagi `— " Atoyo.uz " asoschisi` qator
 >
 > abdulmajidkhan007.github.io/Abdulmajidkhan007
 
-Telegram kanal tavsifi 255 belgigacha — bu matn ~240 belgi, sig'adi.
+Telegram kanal tavsifi 255 belgigacha — bu matn 253 belgi, sig'adi (ko'paytirmang).
 
 (Domen olingach — sayt qatori yangi manzilga almashadi.)
 
