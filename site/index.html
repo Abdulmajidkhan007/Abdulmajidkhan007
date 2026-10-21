@@ -228,6 +228,42 @@
   .status.err { color: var(--err); }
   .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
 
+  /* Pastdan chiqadigan oyna (Telegram'dagi fayl ko'rish oynasiga o'xshash) */
+  .sheet {
+    position: fixed; inset: auto 0 0 0; margin: 0 auto; padding: 0; border: 0;
+    width: 100%; max-width: 720px; max-height: 90dvh; border-radius: 20px 20px 0 0;
+    background: var(--bg); color: var(--text); display: none; flex-direction: column;
+    box-shadow: 0 -8px 32px rgba(0, 0, 0, .35);
+  }
+  .sheet[open] { display: flex; animation: sheet-up .25s ease-out; }
+  .sheet::backdrop { background: rgba(0, 0, 0, .55); }
+  @keyframes sheet-up { from { transform: translateY(100%); } to { transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .sheet[open] { animation: none; } }
+  .sheet-handle { width: 40px; height: 4px; border-radius: 99px; background: var(--line); margin: 10px auto 4px; flex: none; }
+  .sheet-body { overflow-y: auto; padding: 8px 20px 24px; overscroll-behavior: contain; }
+  .sheet-body h1 { font-size: 1.6rem; margin: 8px 0; }
+  .sheet-body h2 { font-size: 1.15rem; margin: 24px 0 8px; }
+  .sheet-body p, .sheet-body li { color: var(--muted); }
+  .sheet-body ul.done { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .sheet-body ul.done li { display: grid; grid-template-columns: 28px 1fr; gap: 8px; }
+  .sheet-body ul.done b { color: var(--text); }
+  .sheet-body .back { display: none; }
+  .sheet-body .live { color: var(--ok); font-weight: 600; }
+  .sheet-body .note { padding: 12px 14px; border-radius: 10px; background: var(--bg-soft); border: 1px solid var(--line); font-size: .95rem; }
+  .sheet-body .cta {
+    display: block; text-align: center; margin-top: 24px; padding: 14px 20px; border-radius: 10px;
+    background: var(--accent); color: var(--accent-ink); font-weight: 600; text-decoration: none;
+  }
+  .sheet-bar {
+    flex: none; display: flex; align-items: center; gap: 12px; padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+    border-top: 1px solid var(--line); background: var(--bg-soft);
+  }
+  .sheet-close {
+    width: 40px; height: 40px; border-radius: 50%; border: 0; background: transparent; color: var(--text);
+    font-size: 1.2rem; cursor: pointer; flex: none;
+  }
+  .sheet-title { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
   footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: .95rem; }
   footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: space-between; }
   footer a { text-decoration: none; }
@@ -254,9 +290,9 @@
 <main>
   <section class="hero">
     <div class="wrap">
-      <h1>Biznesingiz uchun <span>bot va sayt</span></h1>
-      <p>Qo'qondagi santexnika do'koniga sayt, bot va ilova qilib berdim — do'kon unga asta-sekin o'tyapti.
-        Sizga ham shunaqasini qilaman.</p>
+      <h1>Biznesingizni <span>avtomatlashtiraman</span></h1>
+      <p>Biznesingizga kerakli dasturni xohishingizga qarab qilib beraman: CRM tizim, buyurtma sayti,
+        landing, portfolio sayt, Telegram bot, Android ilova va boshqalar.</p>
       <div class="actions">
         <a class="btn btn-primary" href="#paketlar">Paketni tanlash</a>
         <a class="btn btn-ghost" href="https://t.me/Abdulloh_77700" target="_blank" rel="noopener">Telegram'da yozish</a>
@@ -365,7 +401,7 @@
           <p class="live">● Sayt jonli · do'kon o'tib boryapti</p>
           <div class="chips">
             <a href="https://atoyo.uz" target="_blank" rel="noopener">atoyo.uz →</a>
-            <a href="keys-atoyo.html">Batafsil →</a>
+            <a href="keys-atoyo.html" data-sheet>Batafsil →</a>
           </div>
         </div>
         <div class="card">
@@ -471,6 +507,15 @@
   </section>
 </main>
 
+<dialog class="sheet" id="sheet" aria-labelledby="sheet-title">
+  <div class="sheet-handle" aria-hidden="true"></div>
+  <div class="sheet-body" id="sheet-body"></div>
+  <div class="sheet-bar">
+    <button type="button" class="sheet-close" id="sheet-close" aria-label="Yopish">✕</button>
+    <span class="sheet-title" id="sheet-title"></span>
+  </div>
+</dialog>
+
 <footer>
   <div class="wrap">
     <span>© Abdulmajid (Abdulloh) — Telegram bot, do'kon sayti, landing</span>
@@ -483,6 +528,44 @@
 </footer>
 
 <script>
+  // "Batafsil" — sahifani tark etmasdan pastdan chiqadigan oynada ochiladi.
+  // Kontent keys-atoyo.html dan olinadi; olinmasa oddiy havola sifatida ochiladi.
+  (function () {
+    var sheet = document.getElementById("sheet");
+    var body = document.getElementById("sheet-body");
+    var title = document.getElementById("sheet-title");
+    if (typeof sheet.showModal !== "function") return;
+
+    function close() { sheet.close(); }
+    document.getElementById("sheet-close").addEventListener("click", close);
+    sheet.addEventListener("click", function (e) { if (e.target === sheet) close(); });
+    sheet.addEventListener("close", function () { document.body.style.overflow = ""; });
+
+    document.querySelectorAll("a[data-sheet]").forEach(function (a) {
+      a.addEventListener("click", function (e) {
+        e.preventDefault();
+        var url = a.getAttribute("href");
+        fetch(url)
+          .then(function (res) {
+            if (!res.ok) throw new Error("status " + res.status);
+            return res.text();
+          })
+          .then(function (html) {
+            var doc = new DOMParser().parseFromString(html, "text/html");
+            var article = doc.querySelector("article");
+            if (!article) throw new Error("article yo'q");
+            body.replaceChildren.apply(body, Array.prototype.slice.call(article.childNodes));
+            var h1 = body.querySelector("h1");
+            title.textContent = h1 ? h1.textContent : "";
+            body.scrollTop = 0;
+            document.body.style.overflow = "hidden";
+            sheet.showModal();
+          })
+          .catch(function () { window.location.href = url; });
+      });
+    });
+  })();
+
   // Kunduzgi / tungi ko'rinish: tanlov localStorage'da, bo'lmasa tizim temasi.
   (function () {
     var root = document.documentElement;
