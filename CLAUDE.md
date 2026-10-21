@@ -11,7 +11,7 @@ portfolio xaritasi va rezyume: ish beruvchi 2 daqiqada kimligimni tushunsin.
 - `docs/ISH-HISOBOTI.md` — sessiyalar xulosasi; `docs/ACCOUNT-3-ISHLARI.md` — 3-akkaunt
 - `site/index.html` — xizmatlar sayti (GitHub Pages, `.github/workflows/pages.yml`);
   `site/keys-atoyo.html` — keys sahifasi. Ariza formasi `ARIZA_URL` ga (`ariza-worker/`,
-  Cloudflare Worker — token faqat Worker secret'ida) yuboradi; URL bo'sh/xato bo'lsa
+  Cloudflare Worker — token GitHub Secrets → `.github/workflows/ariza-worker.yml` → Worker secret) yuboradi; URL bo'sh/xato bo'lsa
   Telegram chatini tayyor matn bilan ochadi
 
 ## README qoidalari
