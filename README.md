@@ -25,8 +25,8 @@
 
 React va TypeScript bilan veb interfeyslar quraman — O'zbek bozori uchun veb,
 mobil, Telegram botlar va AI bilan ishlaydigan mahsulotlar. Asosiy ishim —
-[atoyo.uz](https://atoyo.uz): Next.js asosidagi e-commerce, bugun real do'konda
-ishlatilmoqda; shu bitta baza ustida Android, desktop va TV ekrani ham ishlaydi.
+[atoyo.uz](https://atoyo.uz): Next.js asosidagi e-commerce, jonli; do'kon unga
+asta-sekin o'tmoqda (mahsulotlar kiritilmoqda); shu bitta baza ustida Android, desktop va TV ekrani ham ishlaydi.
 Backendni o'zim yopaman (Node.js, NestJS, Python) va kerak bo'lganda LLM
 integratsiyasini qo'shaman — Gemini API, RAG, vektor qidiruv.
 

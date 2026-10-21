@@ -1,0 +1,9 @@
+# Cloudflare Worker: saytdagi ariza formasini qabul qilib, bot orqali guruhga yuboradi.
+# Token bu yerda YO'Q — `npx wrangler secret put TELEGRAM_BOT_TOKEN` bilan qo'yiladi.
+name = "ariza-worker"
+main = "src/index.ts"
+compatibility_date = "2026-10-01"
+
+[vars]
+# Faqat shu manbadan kelgan so'rov qabul qilinadi (CORS).
+ALLOWED_ORIGIN = "https://abdulmajidkhan007.github.io"

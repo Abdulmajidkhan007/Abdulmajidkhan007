@@ -10,7 +10,9 @@ portfolio xaritasi va rezyume: ish beruvchi 2 daqiqada kimligimni tushunsin.
 - `docs/REJA.md` — repolar xaritasi, navbat, 3 oylik qoida, g'oyalar qutisi
 - `docs/ISH-HISOBOTI.md` — sessiyalar xulosasi; `docs/ACCOUNT-3-ISHLARI.md` — 3-akkaunt
 - `site/index.html` — xizmatlar sayti (GitHub Pages, `.github/workflows/pages.yml`);
-  backend yo'q, ariza formasi Telegram chatini tayyor matn bilan ochadi
+  `site/keys-atoyo.html` — keys sahifasi. Ariza formasi `ARIZA_URL` ga (`ariza-worker/`,
+  Cloudflare Worker — token faqat Worker secret'ida) yuboradi; URL bo'sh/xato bo'lsa
+  Telegram chatini tayyor matn bilan ochadi
 
 ## README qoidalari
 - Profil sahifasida nisbiy havola ishonchsiz → ichki havolalar TO'LIQ URL:

@@ -345,3 +345,8 @@ o'tkazildi; isbot havolalari "chip" ko'rinishida; keys alohida sahifa
 to'xtagan (faqat lokal) — sayt, README va keysdan olib turildi.
 
 *Yozilgan: 2026-10-21*
+
+**Davomi (2026-10-21):** server va domen ijrochida, xarajati oylik xizmatga
+qo'shiladi (sayt FAQ, 6-bosqich). Ariza formasi bot orqali guruhga yuborishga
+tayyorlandi: `ariza-worker/` (Cloudflare Worker, token secret'da). Egasi deploy
+qilib `ARIZA_URL` ni bermaguncha forma Telegram chatini ochadi.
