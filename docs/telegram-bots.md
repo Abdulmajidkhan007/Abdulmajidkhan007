@@ -99,7 +99,7 @@ tugaydi. Sekin test yozilmaydi va ishlatilmaydi.
 | [@Tekshiruvchi_07_bot](https://t.me/Tekshiruvchi_07_bot) | `malware-bot` | Fayl va havolani VirusTotal orqali tekshiradi |
 | [@SavolJavob_007_bot](https://t.me/SavolJavob_007_bot) | `quiz-bot` | IT bo'yicha testlar, o'z testingizni yaratish |
 | [@arxiv_topadi_bot](https://t.me/arxiv_topadi_bot) | `arxiv-topadi-bot` | O'chgan xabarlarni rasmiy yo'l bilan qaytarishni o'rgatadi |
-| [@Atoyo_service_bot](https://t.me/Atoyo_service_bot) | `atoyo-rag-bot` | Atoyo savollariga AI javob, buyurtma (lid) qabul qiladi |
+| [@Atoyo_service_bot](https://t.me/Atoyo_service_bot) | `atoyo-rag-bot` | Atoyo savollariga AI javob, buyurtma (lid) qabul qiladi. ⚠️ 2026-10-21: faqat lokal ishlaydi, hozir to'xtagan — sayt va README'dan olib turildi |
 | [@Atoyo_uz_bot](https://t.me/Atoyo_uz_bot) | atoyo-e-commerce repo | Saytga ulangan do'kon: qidirish va buyurtma |
 
 @Atoyo_uz_bot kodi bu repoda emas, atoyo-e-commerce ichida. Repodagi qolgan
