@@ -8,6 +8,7 @@ portfolio xaritasi va rezyume: ish beruvchi 2 daqiqada kimligimni tushunsin.
 - `README.md` — profil: rezyume + loyihalar jadvali
 - `docs/<repo>.md` — har loyiha sahifasi (namuna `docs/SHABLON.md`)
 - `docs/REJA.md` — repolar xaritasi, navbat, 3 oylik qoida, g'oyalar qutisi
+- `docs/KANALLAR.md` — Telegram kanallar va profil uchun tayyor matnlar, post shabloni
 - `docs/ISH-HISOBOTI.md` — sessiyalar xulosasi; `docs/ACCOUNT-3-ISHLARI.md` — 3-akkaunt
 - `site/index.html` — xizmatlar sayti (GitHub Pages, `.github/workflows/pages.yml`);
   `site/keys-atoyo.html` — keys sahifasi. Ariza formasi `ARIZA_URL` ga (`ariza-worker/`,
