@@ -3,7 +3,22 @@
 Saytdagi ariza formasi → shu Worker → bot → Telegram guruh.
 Bot tokeni saytda emas, Cloudflare'da (secret) turadi.
 
-## Bir martalik sozlash (~10 daqiqa, bepul, karta kerak emas)
+## Variant A — GitHub Secrets orqali (kompyuter shart emas, tavsiya)
+
+1. **Bot:** [@BotFather](https://t.me/BotFather) → `/newbot` → token. Guruh oching, botni qo'shing,
+   guruh ID sini [@IDFINDER007BOT](https://t.me/IDFINDER007BOT) bilan toping (`-100...`).
+2. **Cloudflare** (https://dash.cloudflare.com, bepul):
+   - Account ID: bosh sahifada o'ng tomonda yoki Workers & Pages → o'ng panel.
+   - API token: My Profile → API Tokens → Create Token → **Edit Cloudflare Workers** shabloni.
+   - Workers & Pages'ni bir marta ochib, `workers.dev` subdomenini tanlang.
+3. **GitHub:** repo → Settings → Secrets and variables → Actions → New repository secret:
+   `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`.
+4. Actions → **Ariza worker (Cloudflare)** → Run workflow. Log oxirida manzil chiqadi:
+   `https://ariza-worker.<nom>.workers.dev` — uni `site/index.html` dagi `ARIZA_URL` ga yozing.
+
+Token yangilansa — secret'ni almashtirib, workflow'ni qayta ishga tushirish kifoya.
+
+## Variant B — kompyuterdan (wrangler)
 
 1. **Bot:** [@BotFather](https://t.me/BotFather) → `/newbot` → token oling
    (yoki mavjud botingiz tokeni).
