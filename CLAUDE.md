@@ -1,129 +1,41 @@
-Bu repo ikki vazifani bajaradi:
-1. Nomi GitHub username bilan bir xil (Abdulmajidkhan007), ya'ni uning
-   README.md si GITHUB PROFIL SAHIFAMDA ko'rinadi
-2. Ayni paytda portfolio xaritam va rezyumem — ish beruvchi/hamkor
-   ochib 2 daqiqada men kim ekanimni tushunsin
+# Abdulmajidkhan007 — profil repo qoidalari
 
-=== PROFIL README'ning TEXNIK SHARTLARI ===
-- README.md ildizda turadi, GitHub uni profil sahifasida render qiladi
-- Profil sahifasida NISBIY havolalar ishonchsiz hal bo'ladi. Shuning
-  uchun README dagi BARCHA ichki havolalar TO'LIQ URL bo'lsin:
-  https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/<fayl>.md
-- JavaScript va ko'p HTML render bo'lmaydi. Markdown jadval, badge,
-  rasm, <img align> ishlaydi — shulardan foydalaning
-- README qisqa va skanerlanadigan bo'lsin: profilga kirgan odam
-  pastga uzoq aylantirmaydi. Batafsili docs/ da
+Repo nomi = GitHub username → `README.md` profil sahifasida chiqadi. Ayni paytda
+portfolio xaritasi va rezyume: ish beruvchi 2 daqiqada kimligimni tushunsin.
+**Yangi sessiya `docs/REJA.md` dan boshlaydi** (hamma repolar xaritasi, navbat, umumiy qoida).
 
-=== TUZILISH ===
-README.md              — profil sahifasi: rezyume + loyihalar jadvali
-docs/<repo-nomi>.md    — har loyiha uchun alohida sahifa
-docs/SHABLON.md        — yangi loyiha qo'shish uchun namuna
-docs/REJA.md           — hamma repolar xaritasi va tugatish navbati (yangi sessiya shundan boshlaydi)
-CLAUDE.md              — shu reponi yuritish qoidalari
-site/index.html        — xizmatlar sayti (buyurtmachilar uchun), GitHub Pages'da
-                         .github/workflows/pages.yml orqali chiqadi. Backend yo'q:
-                         ariza formasi Telegram chatini tayyor matn bilan ochadi
+## Tuzilish
+- `README.md` — profil: rezyume + loyihalar jadvali
+- `docs/<repo>.md` — har loyiha sahifasi (namuna `docs/SHABLON.md`)
+- `docs/REJA.md` — repolar xaritasi, navbat, 3 oylik qoida, g'oyalar qutisi
+- `docs/ISH-HISOBOTI.md` — sessiyalar xulosasi; `docs/ACCOUNT-3-ISHLARI.md` — 3-akkaunt
+- `site/index.html` — xizmatlar sayti (GitHub Pages, `.github/workflows/pages.yml`);
+  backend yo'q, ariza formasi Telegram chatini tayyor matn bilan ochadi
 
-=== README.md tarkibi ===
-1. Kim: Abdulmajid Sharipov (Abdullohkhan)
-   Frontend Engineer · O'zbekiston
-   Aloqa: @Abdulloh_77700 · kanal: (nomi keyin beriladi)
-2. Bir paragraf: nima qilaman va kim uchun —
-   "O'zbek bozori uchun mahsulot quraman: veb, mobil, Telegram
-   botlar, AI bilan ishlaydigan narsalar."
-3. Stack — faqat HAQIQATAN ishlatganlarim, guruhlab:
-   Frontend: React 19, Next.js 16, TypeScript, Tailwind v4,
-     Redux Toolkit, TanStack Query, Zustand, Vite
-   Mobil: React Native, Expo SDK 53, Expo Router, Reanimated
-   Backend: NestJS 11, FastAPI, Express, Prisma 7, SQLAlchemy
-   Baza: PostgreSQL, Firestore, Redis, MinIO
-   3D: React Three Fiber, three.js, GSAP
-   AI: Gemini, Anthropic SDK, Whisper
-   DevOps: Docker Compose, Caddy, GitHub Actions, Firebase Hosting
-   Botlar: node-telegram-bot-api, Telethon, aiogram
-4. Loyihalar jadvali: nomi | nima qiladi | stack | holat | havola
-   Holat FAQAT shu uchtadan biri:
-     ✅ Ishlayapti   🚧 Qurilmoqda   ❄️ Muzlatilgan
-   "Rejalashtirilgan" degan holat YO'Q — u bo'sh va'da.
-   Jadval ✅ lardan boshlansin — eng kuchlisi birinchi ko'rinsin.
+## README qoidalari
+- Profil sahifasida nisbiy havola ishonchsiz → ichki havolalar TO'LIQ URL:
+  `https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/<fayl>.md`
+- JS va ko'p HTML ishlamaydi: markdown jadval, badge, rasm, `<img align>`.
+- Qisqa va skanerlanadigan; batafsili `docs/` da.
+- Tarkib: kim (Abdulmajid Sharipov, Frontend Engineer, O'zbekiston, @Abdulloh_77700) →
+  bir paragraf → stack (faqat haqiqatan ishlatilgan, guruhlab) → loyihalar.
+- Loyihalar (2026-10-04 qarori, shu tartibda): atoyo-e-commerce (atoyo.uz), Organick_org,
+  telegram-bots (ochiq botlar username bilan), portfolio-3d, learning-center-front
+  (nurulloh-coder-dev, jamoaviy — men frontend), lumina, rn-r-e-commerce, go-uz.
+  lumina va go-uz — bare React Native CLI, Expo emas.
+- Holat faqat: ✅ Ishlayapti · 🚧 Qurilmoqda · ❄️ Muzlatilgan. "Rejalashtirilgan" yo'q.
+  ✅ lar birinchi.
+- Stack'da versiya faqat hozirgi major bo'lsa (React 19, Next.js 16, Tailwind v4, Vite 8,
+  Prisma 7); aks holda versiyasiz. `docs/` da aniq versiya — fakt sifatida.
 
-=== docs/<repo>.md — har biri uchun ===
-- Bir qatorli tavsif
-- Muammo: nima uchun qurilgan, kim uchun
-- Stack (aniq versiyalar bilan)
-- Arxitektura: 3-5 ta ASOSIY qaror va NEGA shunday qilingani
-- Holat: nima ishlaydi, nima yo'q — rostini
-- Havolalar: repo, jonli sayt (bo'lsa)
-- Oxirgi yangilanish sanasi
+## docs/<repo>.md
+Bir qatorli tavsif · muammo (kim uchun) · stack (aniq versiyalar) · arxitektura: 3–5 asosiy
+qaror va **NEGA** (eng muhimi) · holat: nima ishlaydi, nima yo'q — rostini · havolalar ·
+oxirgi yangilanish sanasi.
 
-"Nega" qismi eng muhimi. Stack ro'yxatini hamma yozadi; qaror
-sababini yozgan odam ajralib turadi.
-
-=== LOYIHALAR (boshlang'ich ro'yxat, tekshirilgan) ===
-2026-10-04 yangilanishi (shu ro'yxatdan ustun turadi):
-  README da faqat shular, shu tartibda: atoyo-e-commerce (havola —
-  atoyo.uz), Organick_org, telegram-bots (ochiq botlar username bilan),
-  portfolio-3d, learning-center-front (nurulloh-coder-dev, jamoaviy —
-  men frontend), lumina, rn-r-e-commerce, go-uz.
-  learning-datacenter-tc-project README dan olindi.
-  web-3d, ios-asistent, countlist, DevCraft-AI va o'quv loyihalari
-  README dan olindi. lumina va go-uz — Expo emas, bare React Native CLI.
-  Stack'da eskirgan major versiya yozilmaydi: versiya faqat u hozirgi
-  major bo'lsa (React 19, Next.js 16, Tailwind v4, Vite 8, Prisma 7 ...);
-  aks holda versiyasiz yoziladi. docs/ ichida aniq versiya — fakt sifatida.
-
-✅ Ishlayapti:
-  atoyo-e-commerce — Next.js 16 + Firebase + Telegram integratsiya,
-    10 000+ mahsulot, jonli: atoyo.uz
-  telegram-bots — 11 ta bot monorepo (7 Node, 3 Python, 1 TS),
-    bitta clone bilan hammasi, npm start bilan birdan ishga tushadi
-
-🚧 Qurilmoqda:
-  learning-datacenter-tc-project — on-premise maktab/o'quv markaz CRM.
-    NestJS 11 + Prisma 7 + Next.js 16, 46 jadval, RBAC (rol emas —
-    ruxsat), multi-tenancy, Docker + install.sh. Faza 0 tugagan
-  portfolio-3d — R3F + GSAP + Lenis. Lighthouse desktop 97,
-    mobil 65-71 (o'lchangan), Vitest invariant testlar
-  rn-r-e-commerce (KidsWear) — web + Expo mobil monorepo, umumiy
-    design token, uz/en/ru legal, SEO. Phase 8a
-  go-uz (Vroom) — ride-hailing + kuryer super-app. Turborepo + pnpm,
-    9 ta umumiy paket qurilgan, ilovalar in progress
-  web-3d (NEBULA) — to'liq ekranli WebGL fon + Higgsfield AI.
-    Bitta kodbaza uch rejimda: LIVE / MOCK / BROWSER
-  lumina — Expo SDK 53 social app
-  ios-asistent (Salom AI) — o'zbekcha ovozli AI yordamchi
-  countlist — aiogram + FastAPI + Whisper xarajat boti
-
-❄️ Muzlatilgan:
-  DevCraft-AI — BYOK zero-knowledge (AES-256-GCM, PBKDF2),
-    WebContainers sandbox. Hozircha faqat arxitektura hujjati
-
-O'quv loyihalari (alohida bo'limda, kam joy bilan):
-  bank, taxi, chat-app, social-app, calculator, chatapp,
-  e-commerce-platform, atoyo
-
-Arxivlanadi (README ga kiritilmaydi):
-  first-bot, asistent-bot, portfolio-builder — bo'sh
-
-Bu ro'yxat boshlang'ich nuqta. Har biri uchun repodagi README va
-package.json ni o'qib aniqlashtiring — taxmin qilmang.
-
-=== QOIDALAR (CLAUDE.md ga yozing) ===
-- Til: o'zbekcha. Texnik atamalar inglizcha qolaveradi
-- Hech qanday kalit, token, .env fayl bu repoda BO'LMAYDI
-- Holatni bo'rttirmaslik: tugallanmagan loyiha "✅ Ishlayapti" deb
-  yozilmaydi. Ishonch yo'qotishning eng tez yo'li — shu
-- README dagi havolalar to'liq URL (profil sahifasi uchun)
-- Har loyiha o'zgarganda docs/<repo>.md yangilanadi + sana qo'yiladi
-- README jadvali bilan docs/ papkasi doim mos bo'lishi kerak
-
-=== BIRINCHI VAZIFA ===
-1. Tuzilishni yarating, docs/SHABLON.md yozing
-2. README.md ni to'liq yozing (profil sahifasi sifatida ishlashini
-   hisobga olib)
-3. Eng kuchli 5 tasi uchun to'liq docs sahifasi:
-   atoyo-e-commerce, learning-datacenter-tc-project, portfolio-3d,
-   telegram-bots, web-3d
-4. Qolganlari uchun qisqa sahifa — keyin to'ldiriladi
-
-Ishni shoxchada qiling va PR oching.
+## Qoidalar
+- Til o'zbekcha, texnik atamalar inglizcha.
+- Kalit, token, `.env` bu repoda BO'LMAYDI.
+- Holat bo'rttirilmaydi: tugallanmagan loyiha ✅ deb yozilmaydi.
+- Loyiha o'zgarsa `docs/<repo>.md` yangilanadi + sana; README jadvali va `docs/` doim mos.
+- Taxmin qilinmaydi: holat repodagi kod, README va commit'lardan olinadi.

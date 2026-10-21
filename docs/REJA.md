@@ -6,6 +6,52 @@
 
 ---
 
+## 0. Umumiy qoida — 3 oylik reja (2026-09-11 → 2026-12-11)
+
+> 2026-10-21 da `telegram-bots/docs/REJA.md` dan shu yerga ko'chirildi —
+> reja hamma loyihalar uchun, shuning uchun profil repoda turadi.
+> Har repoda faqat o'z holati (`docs/HOLAT.md`, `docs/LOYIHA-HAQIDA.md` yoki `docs/REJA.md`).
+
+**Bu muddat ichida yangi repo ochilmaydi.** Yangi g'oya — pastdagi «G'oyalar
+qutisi»ga, kod yozilmaydi. Sabab: 2026-05-03 → 2026-09-11 da 30 ta repo
+ochilgan, jonli havolasi bori bitta edi (atoyo.uz). Muammo — tugatishda.
+
+**«Tugallandi» = beshtasi ham:** (1) deploy qilingan, ishlaydigan havola bor;
+(2) README to'g'ri; (3) `.env.example` bor, sirlar repoda yo'q; (4) begona odam
+README bo'yicha ishga tushira oladi; (5) kamida 1 ta haqiqiy foydalanuvchi.
+«Kod yozildi» ≠ tugallandi.
+
+### Cheklovdan istisnolar (egasi qarori)
+
+| Sana | Loyiha | Hajm |
+|---|---|---|
+| 2026-10-11 | `suhbat`, `uzbek-tg` | O'z reja hujjatlari bilan, alohida sessiyalarda |
+| 2026-10-11 | `telegram-bots/bots/hr-bot` | MVP (1–3) + to'lov, Business, deploy fayllari — 2026-10-12 tayyor |
+| 2026-10-11 | `telegram-bots/bots/ovoz-bot` | Faqat 1-faza (STT + TTS); `/myvoice` boshlanmagan |
+| 2026-10-12 | `bot-factory` (alohida repo, `@Yovuzhackerbot`) | Faza 1–2 qilingan |
+
+### Arxivlash / tozalash
+
+- 2026-10-21 holati: `first-bot`, `asistent-bot`, `atoyo`, `e-commerce-platform`,
+  `social-app` akkauntda **yo'q** (o'chirilgan). `chatapp` → `suhbat`,
+  `chat-app` → `uzbek-tg` qayta nomlangan.
+- Qolgani: `portfolio-builder` (bo'sh) — o'chirish yoki 3-akkauntda reja;
+  `bank`, `taxi`, `calculator` — o'quv: README'ga «o'quv loyihasi» yoki arxivlash.
+- Arxivlash ≠ o'chirish: Settings → Archive this repository.
+
+### G'oyalar qutisi (2026-12-11 dan keyin qaraladi)
+
+- 2026-10-07 — hr-bot → 2026-10-11 istisno sifatida boshlandi.
+- 2026-10-07 — bot-factory → 2026-10-12 alohida repo.
+- 2026-10-15 — Telegram Serverless → 5-bo'lim.
+
+### Har dushanba
+
+1) O'tgan haftada navbatdagi loyihada nima tugadi? 2) Nima to'sqinlik qildi?
+3) Shu haftada qaysi bitta narsa tugaydi?
+
+---
+
 ## 1. Hamma repolar — 2026-10-21 tekshiruvi
 
 **Abdulmajidkhan007 akkauntida 20 ta repo: 8 public, 12 private.** Bundan
@@ -24,7 +70,7 @@ ko'rinmadi — u 3-akkauntda tekshiriladi.
 | **Abdulmajidkhan007** | public | `main` | 2026-10-11 (main) | ✅ | Yuritiladi; 2 ta docs branch main'ga qo'shilmagan (pastda) |
 | **portfolio-3d** | private | `main` | 2026-10-16 | ✅ jonli, faqat Hosting; forma Blaze'ni kutadi | Tayyor |
 | **uzbek-tg** | public | `main` | 2026-10-16 | 🚧 0–1-faza tugagan (TDLib, haqiqiy akkaunt); 2-faza — ko'p narsa "kod yozildi, telefonda sinalmagan" | Davom |
-| **telegram-bots** | public | `main` | 2026-10-13 | ✅ 15 bot, CI; Railway konfiglari tayyor | Qo'llab-quvvatlash |
+| **telegram-bots** | public | `main` | 2026-10-21 | ✅ 15 bot, CI; Railway konfiglari tayyor | Qo'llab-quvvatlash |
 | **rn-r-e-commerce** | public | `main` | 2026-10-13 | 🚧 veb jonli; APK 1.0.9 ochiladi (egasi, 2026-10-21) | 2-guruh — Blaze kutadi |
 | **lumina** | public | `main` | 2026-10-12 | 🚧 veb jonli, APK; admin to'lqini tugagan | Egasi sinovi; hisoblagich qoidasi qolgan |
 | **bot-factory** | private | `main` | 2026-10-12 | 🚧 Faza 1+2: skelet va runtime yadro | Yangi qo'shilgan — navbatga hali kiritilmagan |
@@ -101,20 +147,8 @@ Hozircha A ro'yxatidagi ishlar tugatiladi. 3-akkaunt ochilsa, bular
 `Atoyo-erp-v2`) o'sha yerda — `docs/ACCOUNT-3-ISHLARI.md`. Har biri
 boshlanishidan oldin `suhbat`/`uzbek-tg` dagi kabi reja hujjati yoziladi.
 
-### C. telegram-bots — bitta sessiya uchun prompt (✅ bajarilgan, egasi 2026-10-21 tasdiqladi)
-Repo: `telegram-bots`. Yuboriladigan matn:
-
-> CLAUDE.md, docs/REJA.md, docs/HR-BOT-PROMPT.md va docs/BOT-FACTORY-PROMPT.md
-> ni o'qi. Shu sessiyada uchta ishni tartib bilan tugat:
-> 1) 2–3 ommaviy botni (save-video-downloader-bot, kino-bot, anonim-bot)
->    doimiy serverga chiqarish: Railway (yoki men tanlagan VPS) uchun konfig,
->    kino-bot uchun Volume (`DATA_DIR=/data`), har bot uchun qisqa deploy
->    qo'llanmasi — men telefondan bajaraman. Tokenlar faqat platforma
->    Variables'ida, repoda yo'q.
-> 2) hr-bot MVP — HR-BOT-PROMPT.md dagi fazalar bo'yicha, testlar bilan.
-> 3) bot-factory — BOT-FACTORY-PROMPT.md bo'yicha reja va skelet (alohida repo
->    kerak bo'lsa, avval menga ayt).
-> Har bosqichdan keyin `npm test` va `npm run scan`, commit + push.
+### C. telegram-bots — 3 ishli sessiya ✅ bajarilgan (egasi 2026-10-21 tasdiqladi)
+Repo holati: `telegram-bots/docs/HOLAT.md`.
 
 ### Kod emas — egasi keyinroq qiladi
 - bank, taxi, calculator — private, arxivlash keyin.
