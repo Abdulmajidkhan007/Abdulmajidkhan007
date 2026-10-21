@@ -20,7 +20,7 @@ portfolio xaritasi va rezyume: ish beruvchi 2 daqiqada kimligimni tushunsin.
   `https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/<fayl>.md`
 - JS va ko'p HTML ishlamaydi: markdown jadval, badge, rasm, `<img align>`.
 - Qisqa va skanerlanadigan; batafsili `docs/` da.
-- Tarkib: kim (Abdulmajid Sharipov, Frontend Engineer, O'zbekiston, @Abdulloh_77700) →
+- Tarkib: kim (Abdulmajid Sharipov, Middle Frontend Engineer, O'zbekiston, @Abdulloh_77700) →
   bir paragraf → stack (faqat haqiqatan ishlatilgan, guruhlab) → loyihalar.
 - Loyihalar (2026-10-04 qarori, shu tartibda): atoyo-e-commerce (atoyo.uz), Organick_org,
   telegram-bots (ochiq botlar username bilan), portfolio-3d, learning-center-front

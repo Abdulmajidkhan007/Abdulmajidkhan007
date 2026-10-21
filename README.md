@@ -7,7 +7,7 @@
 
 <h1 align="center">Abdulmajid Sharipov</h1>
 <p align="center">
-  <b>Frontend Engineer</b> · O'zbekiston<br>
+  <b>Middle Frontend Engineer</b> · O'zbekiston<br>
   Veb · Mobil · Telegram botlar · AI
 </p>
 
