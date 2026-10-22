@@ -357,6 +357,11 @@ qilib `ARIZA_URL` ni bermaguncha forma Telegram chatini ochadi.
 - KidsWear nazoratchi: `session_01Jyx7chtRj4d8os4JJWx3Hr` — Faza 5 (sharhlar) dan keyin TO'XTAYDI
   (haftalik limit). Faza 1–4 ✅ (PR #7, #9, #11, #13). Davomi: `rn-r-e-commerce/docs/FAZALAR.md`.
 - marshrutchi-bot: `session_012VfbRZHTamn4uW54qinh6h` — Faza 0 + MVP. Talablar: `docs/MARSHRUTCHI-BOT.md`.
+- Instagram avto-javob A (qo'llanma boti, `telegram-bots/bots/insta-avtojavob-bot`, Sonnet):
+  `session_01XRjFeprbgm5JpDbaz6fJjM` — egasi Chatplace.txt ni shu sessiyaga yuboradi.
+- Instagram avto-javob B (reja, `telegram-bots/docs/INSTA-AVTOJAVOB-B.md`, Sonnet):
+  `session_01TNNRDdY9HkZK1NhEvVTJVX`.
+- KidsWear: Faza 5 ✅ (PR #15), nazoratchi to'xtadi — Faza 6 haftalik limit yangilangach.
 
 **Navbat (egasi qarori):** Faza 5 tugagach — Instagram AI avto-javob: A (qo'llanma boti,
 `telegram-bots`, narxlar REJA 0-bo'limda) va B (Meta API, o'z mahsulot) — B uchun repo joyi
