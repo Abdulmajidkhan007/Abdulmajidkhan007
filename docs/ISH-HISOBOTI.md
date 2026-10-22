@@ -351,7 +351,7 @@ qo'shiladi (sayt FAQ, 6-bosqich). Ariza formasi bot orqali guruhga yuborishga
 tayyorlandi: `ariza-worker/` (Cloudflare Worker, token secret'da). Egasi deploy
 qilib `ARIZA_URL` ni bermaguncha forma Telegram chatini ochadi.
 
-## 14. 2026-10-22 — navigatsiya sessiyasi xulosasi (yangi sessiya shundan boshlaydi)
+## 15. 2026-10-22 — navigatsiya sessiyasi xulosasi (yangi sessiya shundan boshlaydi)
 
 **Faol sessiyalar:**
 - KidsWear nazoratchi: `session_01Jyx7chtRj4d8os4JJWx3Hr` — Faza 5 (sharhlar) dan keyin TO'XTAYDI
@@ -371,6 +371,20 @@ egasi bilan kelishiladi. Egasi Chatplace.txt faylini A sessiyasiga beradi.
 Faza 2, 3 ishchi sessiyalarini qo'lda arxivlash; postlar (`posts/`) — qoralama, egasi tekshiradi.
 
 **Limit:** shu navigatsiya sessiyasi konteksti ~630k tokenga yetdi — har xabar qimmat. Yangi
-navigatsiya sessiyasi: "CLAUDE.md, docs/REJA.md va ISH-HISOBOTI.md 14-bo'limni o'qi".
+navigatsiya sessiyasi: "CLAUDE.md, docs/REJA.md va ISH-HISOBOTI.md 15-bo'limni o'qi".
 
 *Yozilgan: 2026-10-22*
+
+**Holat yangilandi (2026-10-22 kechqurun, sessiyalardan tekshirildi):**
+- KidsWear: Faza 1–5 `main` da (PR #16), ishchi sessiyalar arxivlandi. Limit yangilangach
+  nazoratchiga "Faza 6 dan davom et".
+- marshrutchi-bot: Faza 0 + MVP PR ochiq (`claude/faza-0-1`), CI GitHub billing sababli to'xtagan.
+- Insta A: `insta-avtojavob-bot` main'da (telegram-bots PR #56), 38 test yashil; haqiqiy
+  Telegram'da sinalmagan (token yo'q).
+- Insta B: faqat reja (`docs/INSTA-AVTOJAVOB-B.md`, PR #55); repo joyi va narx — egasi.
+- **Yangi — countlist nazoratchi:** `session_01DFgdWZcdXTkRyu6bFzSCsK` (telegram-bots, Opus).
+  Raqobatchi "Shaxsiy Moliya" boti bilan solishtirish (ovoz → matn, bitta xabarda ko'p
+  tranzaksiya, hisoblar tanlovi, transfer) + Free/Plus/Pro/Max paketlar rejasi (AI/STT bepul
+  limiti tugagani uchun — pullik limit foydalanuvchidan qoplanadi). Kichik ishni o'zi qiladi,
+  kattasiga ishchi sessiya ochadi. Narxlarni egasi tasdiqlaydi.
+
