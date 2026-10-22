@@ -67,6 +67,17 @@ Loyihalar ko'p, daromad yo'q. Shu kundan **birinchi o'rinda — mijoz topish va 
 - 2026-10-07 — hr-bot → 2026-10-11 istisno sifatida boshlandi.
 - 2026-10-07 — bot-factory → 2026-10-12 alohida repo.
 - 2026-10-15 — Telegram Serverless → 5-bo'lim.
+- 2026-10-22 — **Dead Man's Switch** (raqamli vasiyatnoma): har 30 kunda "hammasi joyidami?";
+  3 marta javob bo'lmasa — oldindan tayyorlangan xat/arxiv belgilangan odamlarga.
+  Kuchli: haqiqiy ehtiyoj, texnik jihatdan o'tkir (zero-knowledge shifrlash — DevCraft'dagi
+  AES-256-GCM g'oyasi). Xavf: ishonch (parollarni notanish xizmatga berish), noto'g'ri
+  ishga tushish (safarda javob bermagan odam sirlarini yuborib qo'yish), raqobatchilar bor
+  (Google Inactive Account Manager, Bitwarden Emergency Access). MVP: faqat xatlar, parol emas.
+- 2026-10-22 — **Unsent Letters** (yuborilmagan xabarlar, anonim, laykisiz, "men ham his
+  qilganman" tugmasi). Kuchli: MVP oddiy, o'zbek tilida bo'sh joy. Xavf: moderatsiya shart
+  (o'z joniga qasd, zo'ravonlik, real ism-familiya, tuhmat); o'xshashi bor (The Unsent Project).
+- 2026-10-22 — **Failure Network** (omadsizliklar tarmog'i). Eng zaif: daromad modeli va
+  "bo'sh tarmoq" muammosi; alohida platforma emas, boshqa mahsulotning bo'limi bo'la oladi.
 
 ### Har dushanba
 
