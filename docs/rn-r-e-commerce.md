@@ -119,12 +119,21 @@ tema tanlash, bosh sahifa dizayni tuzatildi. **2026-10-21:** egasi APK **1.0.9**
 ni telefonda ochdi — bosh sahifa, katalog, Blog, Aloqa ishlaydi. Ilovada Google
 bilan kirish va to'liq buyurtma oqimi hali sinalmagan.
 
+**2026-10-21/22:** mahsulot rasmi Spark'da Firestore'ga siqib yoziladi (loyihada
+Storage bucket yo'q); APK 1.0.10 dan chiqqan karta nuqsonlari (rasm eni,
+yurakcha/nishon, karta eni) tuzatildi. **Mahsulot turlari:** zaxira va narx endi
+har o'lcham × rang uchun alohida; tugagan kombinatsiyani tanlab bo'lmaydi; eski
+mahsulot va savatlar buzilmaydi. Vebda emulyatorda to'liq oqim sinaldi, qoidalar
+testlari 61 ta; Android'da bu o'zgarishlar telefonda hali sinalmagan. Spark'da
+buyurtmada zaxira hali kamaymaydi — keyingi bosqich (ombor). Fazalar rejasi:
+repoda `docs/FAZALAR.md`.
+
 ## Havolalar
 
 - Repo: https://github.com/Abdulmajidkhan007/rn-r-e-commerce
 - Jonli sayt: https://kids-wear-007.web.app (Spark: demo katalog, test to'lov)
-- Repo ichidagi to'liq tavsif: `docs/LOYIHA-HAQIDA.md`; atoyo funksiyalari rejasi: `docs/REJA.md`
+- Repo ichidagi to'liq tavsif: `docs/LOYIHA-HAQIDA.md`; funksiyalar xaritasi: `docs/FUNKSIYALAR.md`; fazalar: `docs/FAZALAR.md`
 
 ---
 
-*Oxirgi yangilanish: 2026-10-21*
+*Oxirgi yangilanish: 2026-10-22*
