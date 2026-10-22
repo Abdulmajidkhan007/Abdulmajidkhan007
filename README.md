@@ -12,6 +12,13 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/vizitka/vizitka.pdf">
+    <img src="https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/raw/main/vizitka/vizitka-old.png" width="360" alt="Vizitka — old tomon">
+    <img src="https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/raw/main/vizitka/vizitka-orqa.png" width="360" alt="Vizitka — orqa tomon">
+  </a>
+</p>
+
+<p align="center">
   <a href="https://t.me/Abdulloh_77700">
     <img src="https://img.shields.io/badge/Telegram-@Abdulloh__77700-2CA5E0?style=flat&logo=telegram&logoColor=white" alt="Telegram">
   </a>

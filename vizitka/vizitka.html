@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<title>Abdulmajid Sharipov — vizitka</title>
+<style>
+  @page { size: 90mm 50mm; margin: 0; }
+  :root { --navy: #0b1220; --navy-2: #13203a; --accent: #38bdf8; --muted: #94a3b8; --ink: #0f172a; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #fff; }
+  body { font-family: Inter, sans-serif; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .card { width: 90mm; height: 50mm; overflow: hidden; position: relative; page-break-after: always; }
+  .card:last-child { page-break-after: auto; }
+
+  /* Old tomon */
+  .front { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 100%); color: #fff; padding: 5.5mm 6mm; }
+  .front::after { content: ""; position: absolute; right: -14mm; top: -14mm; width: 40mm; height: 40mm;
+    border-radius: 50%; border: 0.6mm solid rgba(56, 189, 248, .25); }
+  .name { font-family: "Inter Display", Inter, sans-serif; font-weight: 700; font-size: 15pt; letter-spacing: -0.2pt; }
+  .role { color: var(--accent); font-weight: 600; font-size: 7.6pt; margin-top: 0.8mm; letter-spacing: .3pt; }
+  .services { margin-top: 3.2mm; font-size: 6.8pt; color: #e2e8f0; line-height: 1.45; }
+  .services b { color: #fff; font-weight: 600; }
+  .contacts { position: absolute; left: 6mm; right: 6mm; bottom: 5mm; font-size: 6.6pt; line-height: 1.55; color: #e2e8f0; }
+  .contacts span { color: var(--muted); display: inline-block; width: 13mm; }
+  .bar { position: absolute; left: 0; bottom: 0; width: 100%; height: 1.2mm; background: var(--accent); }
+
+  /* Orqa tomon */
+  .back { background: #fff; color: var(--ink); display: flex; align-items: center; gap: 5mm; padding: 5.5mm 6mm; }
+  .qr { width: 27mm; height: 27mm; flex: none; }
+  .qr img { width: 100%; height: 100%; display: block; }
+  .pitch { font-family: "Inter Display", Inter, sans-serif; font-weight: 700; font-size: 11pt; line-height: 1.15; }
+  .list { margin-top: 2mm; font-size: 6.8pt; line-height: 1.5; color: #334155; }
+  .proof { margin-top: 2mm; font-size: 6.4pt; color: #0369a1; font-weight: 600; }
+  .scan { margin-top: 1.2mm; font-size: 6pt; color: #64748b; }
+  .back .bar { background: var(--navy); }
+</style>
+</head>
+<body>
+
+<section class="card front">
+  <div class="name">Abdulmajid Sharipov</div>
+  <div class="role">DASTURCHI · MIDDLE FRONTEND ENGINEER</div>
+  <div class="services">
+    <b>Sayt</b> · <b>Telegram bot</b> · <b>Android ilova</b> · <b>CRM</b><br>
+    Biznesingizni avtomatlashtiraman
+  </div>
+  <div class="contacts">
+    <div><span>Telefon</span>+998 90 854 56 03</div>
+    <div><span>Telegram</span>@Abdulloh_77700</div>
+  </div>
+  <div class="bar"></div>
+</section>
+
+<section class="card back">
+  <div class="qr"><img src="qr-sayt.svg" alt="QR — xizmatlar sayti"></div>
+  <div>
+    <div class="pitch">Biznesingiz uchun<br>dastur kerakmi?</div>
+    <div class="list">
+      Do'kon sayti va katalog<br>
+      Buyurtma, yetkazish boti<br>
+      Admin panel va hisobotlar
+    </div>
+    <div class="proof">Ishlarim: atoyo.uz</div>
+    <div class="scan">QR — xizmatlar va ishlarim</div>
+  </div>
+  <div class="bar"></div>
+</section>
+
+</body>
+</html>
