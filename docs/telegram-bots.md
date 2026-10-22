@@ -83,7 +83,7 @@ tugaydi. Sekin test yozilmaydi va ishlatilmaydi.
 | `xulosa-ai-bot` | Python | Guruh/kanal yozishmalarini Gemini bilan xulosalaydi, ovozli xabarni matnga o'giradi |
 | `atoyo-ai-bot` | Python | Mahsulot rasmini Gemini Vision bilan katalog kartochkasiga aylantiradi (pHash dublikat filtri) |
 | `atoyo-rag-bot` | Python | Katalog ustida RAG savol-javob, lid → admin guruh + n8n |
-| `countlist-ts-node` | TypeScript | Xarajat boti (matn yoki ovozli xabar) + NestJS API + React dashboard; 2026-10-13 dan Mini App «Tarix», hisoblar va daromad |
+| `countlist-ts-node` | TypeScript | Xarajat boti (matn yoki ovozli xabar) + NestJS API + React dashboard; 2026-10-13 dan Mini App «Tarix», hisoblar va daromad; 2026-10-22: bir xabardan ko'p tranzaksiya, hisoblar orasida transfer, Plus/Pro/Max paketlari + Stars/karta to'lovi (kodda, o'chiq — narx tasdig'ini kutadi, Telegram'da sinalmagan) |
 | `hr-bot` | Python | Multi-tenant HR bot: PDF CV qabul, Gemini ball, SQLite; to'lov va Business fazalari kodi bor (2026-10-12) |
 | `ovoz-bot` | Python | Gemini bilan ovoz → matn (STT) va matn → ovoz (TTS), 1-faza |
 
@@ -131,4 +131,4 @@ uchtasi ommaga e'lon qilinmagan: `gemini-qa-bot`, hamda `xulosa-ai-bot` va
 
 ---
 
-*Oxirgi yangilanish: 2026-10-21*
+*Oxirgi yangilanish: 2026-10-22*
