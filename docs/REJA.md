@@ -181,8 +181,8 @@ Pastdagi A/B jadvallari — holat ma'lumotnomasi, tartib emas.
 | **2** | `nurulloh-coder-dev/learning-center-front` (+ `learning-center` backend, faqat o'qish/tahlil) — jamoaviy, men frontend team lead | Asosiy |
 | **3** | `suhbat` · `marshrutchi-bot` | Referal akkaunt 1 |
 | **4** | `lumina` · `rn-r-e-commerce` (KidsWear, Faza 6 dan) · `uzbek-tg` · `bot-factory` · `portfolio-builder` | Referal akkaunt 2 |
-| **5** | `atoyo-e-commerce` · `Organick_org` · `telegram-bots` (deyarli tayyor) · `mythos-uzbek-ai` | Biriktirilmagan — xato chiqsa |
-| **6 (oxirgi)** | `DevCraft-AI` · `calculator` · `taxi` · `bank` · `learning-datacenter-tc-project` · `go-uz` · `web-3d` · `ios-asistent` | Biriktirilmagan |
+| **5** | `atoyo-e-commerce` · `Organick_org` · `telegram-bots` (deyarli tayyor) · `mythos-uzbek-ai` | Oxirida — birinchi bo'shagan referal akkaunt |
+| **6 (oxirgi)** | `DevCraft-AI` · `calculator` · `taxi` · `bank` · `learning-datacenter-tc-project` · `go-uz` · `web-3d` · `ios-asistent` | Oxirida — birinchi bo'shagan referal akkaunt |
 
 **Akkauntlar va limit (2026-10-22):**
 - **Asosiy akkaunt** — faqat 1- va 2-daraja (learning-center jamoaviy: limit tugasa jamoa kutib
@@ -192,6 +192,8 @@ Pastdagi A/B jadvallari — holat ma'lumotnomasi, tartib emas.
 - **Referal akkaunt 1** — 0 + 3-daraja. **Referal akkaunt 2** — 4-daraja.
 - **abdullohkhan (eski akkaunt)** — undagi repolar public qilinadi, egasi ko'rsatgan yangi
   repolarga birin-ketin ko'chiriladi (manba → manzil jadvalini egasi beradi).
+- 5–6-daraja oxirida hal qilinadi: qaysi referal akkaunt o'z darajalarini birinchi
+  tugatsa, shunga beriladi (egasi qarori, 2026-10-22).
 - Har akkauntga GitHub (Abdulmajidkhan007) ulanadi, aks holda private repolar ko'rinmaydi.
 - Asosiy akkauntdagi 0/3/4-daraja sessiyalari (countlist, Insta A/B, marshrutchi, KidsWear)
   2026-10-22 dan **to'xtatilgan** — davomi tegishli akkauntda, holat repolardagi hujjatlardan.
