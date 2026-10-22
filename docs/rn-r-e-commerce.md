@@ -126,7 +126,9 @@ har o'lcham × rang uchun alohida; tugagan kombinatsiyani tanlab bo'lmaydi; eski
 mahsulot va savatlar buzilmaydi. Vebda emulyatorda to'liq oqim sinaldi, qoidalar
 testlari 61 ta; Android'da bu o'zgarishlar telefonda hali sinalmagan. Spark'da
 buyurtmada zaxira avtomatik kamaymasdi — endi admin tasdiqlaganda tranzaksiyada kamayadi, jurnal va "Ombor" sahifasi bor; mijoz to'lanmagan buyurtmasini bekor qila oladi (vebda emulyatorda sinalgan, Android'da sinalmagan). Fazalar rejasi:
-repoda `docs/FAZALAR.md`.
+repoda `docs/FAZALAR.md`. **Kartaga o'tkazma:** mijoz chek rasmini yuklaydi, admin
+tasdiqlaydi → buyurtma to'langan (vebda emulyatorda sinalgan; telefonda va haqiqiy
+o'tkazma bilan sinalmagan).
 
 ## Havolalar
 
