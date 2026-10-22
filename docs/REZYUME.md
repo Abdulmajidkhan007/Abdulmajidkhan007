@@ -77,11 +77,11 @@ bo'lganda LLM integratsiyalarini qo'shaman — lekin asosiy yo'nalishim frontend
 - Playwright e2e testlari; `master` ga push bo'lganda GitHub Actions Firebase Hosting'ga
   avtomatik deploy qiladi.
 
-### telegram-bots — 13 ta botning monorepo'si
+### telegram-bots — 15 ta botning monorepo'si
 [github.com/Abdulmajidkhan007/telegram-bots](https://github.com/Abdulmajidkhan007/telegram-bots)
 `Node.js · Python · TypeScript · Gemini API · PostgreSQL · SQLite · Docker`
 
-- 13 ta mustaqil bot bitta repoda. Boshqaruv uchun o'z CLI mni yozdim: JSON reestr
+- 15 ta mustaqil bot bitta repoda. Boshqaruv uchun o'z CLI mni yozdim: JSON reestr
   asosida hammasini ro'yxatlaydi, o'rnatadi, sozlaydi va bittada ishga tushiradi.
 - Ichida: Gemini savol-javob va yozishmalarni xulosalovchi botlar; do'kon katalogi ustida
   RAG qidiruv (LangChain + ChromaDB); rasmdan katalog kartochkasi yasovchi userbot;
@@ -95,13 +95,17 @@ bo'lganda LLM integratsiyalarini qo'shaman — lekin asosiy yo'nalishim frontend
 
 ---
 
-**Boshqa loyihalar.** Yuqoridagilar — production'da ishlayotgani va chiqishga tayyori.
-React Three Fiber portfolio — [abdulmajidkhan-portfolio.web.app](https://abdulmajidkhan-portfolio.web.app).
-Qolganlari (veb+mobil monorepo, o'quv markazlar uchun CRM) GitHub profilimda.
+**Boshqa loyihalar.**
+**KidsWear** — bolalar kiyimi do'koni, veb + Android monorepo (Turborepo, umumiy Zod va dizayn tokenlari) —
+[kids-wear-007.web.app](https://kids-wear-007.web.app).
+**Lumina** — Instagram uslubidagi tarmoq (bare React Native + veb), real foydalanuvchilar bilan —
+[lumina-007app.web.app](https://lumina-007app.web.app).
+**Suhbat** — messenjer: NestJS + PostgreSQL + WebSocket, WebRTC qo'ng'iroqlar (beta).
+[3D portfolio](https://abdulmajidkhan-portfolio.web.app) (React Three Fiber).
 
 > Manba: portfolio-3d reposidagi `scripts/resume/resume.html` — saytdagi PDF shundan
 > yig'iladi. Bu sahifa o'sha bilan bir vaqtda yangilanadi.
 
 ---
 
-*Oxirgi yangilanish: 2026-10-04*
+*Oxirgi yangilanish: 2026-10-22*
