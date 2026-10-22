@@ -350,3 +350,22 @@ to'xtagan (faqat lokal) — sayt, README va keysdan olib turildi.
 qo'shiladi (sayt FAQ, 6-bosqich). Ariza formasi bot orqali guruhga yuborishga
 tayyorlandi: `ariza-worker/` (Cloudflare Worker, token secret'da). Egasi deploy
 qilib `ARIZA_URL` ni bermaguncha forma Telegram chatini ochadi.
+
+## 14. 2026-10-22 — navigatsiya sessiyasi xulosasi (yangi sessiya shundan boshlaydi)
+
+**Faol sessiyalar:**
+- KidsWear nazoratchi: `session_01Jyx7chtRj4d8os4JJWx3Hr` — Faza 5 (sharhlar) dan keyin TO'XTAYDI
+  (haftalik limit). Faza 1–4 ✅ (PR #7, #9, #11, #13). Davomi: `rn-r-e-commerce/docs/FAZALAR.md`.
+- marshrutchi-bot: `session_012VfbRZHTamn4uW54qinh6h` — Faza 0 + MVP. Talablar: `docs/MARSHRUTCHI-BOT.md`.
+
+**Navbat (egasi qarori):** Faza 5 tugagach — Instagram AI avto-javob: A (qo'llanma boti,
+`telegram-bots`, narxlar REJA 0-bo'limda) va B (Meta API, o'z mahsulot) — B uchun repo joyi
+egasi bilan kelishiladi. Egasi Chatplace.txt faylini A sessiyasiga beradi.
+
+**Egasi qiladi:** KidsWear admin → to'lov sozlamalari → karta + "Kartaga o'tkazma"ni yoqish;
+Faza 2, 3 ishchi sessiyalarini qo'lda arxivlash; postlar (`posts/`) — qoralama, egasi tekshiradi.
+
+**Limit:** shu navigatsiya sessiyasi konteksti ~630k tokenga yetdi — har xabar qimmat. Yangi
+navigatsiya sessiyasi: "CLAUDE.md, docs/REJA.md va ISH-HISOBOTI.md 14-bo'limni o'qi".
+
+*Yozilgan: 2026-10-22*
