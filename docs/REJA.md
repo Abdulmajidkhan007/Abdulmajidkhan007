@@ -169,6 +169,29 @@ push'da ishlaydi.
 > o'sha repoda; repo ichidagi `CLAUDE.md` + `docs/REJA.md` (yoki
 > `docs/LOYIHA-HAQIDA.md`) holatni saqlaydi. Bu suhbat tarixi kerak emas.
 
+### Ustuvorlik darajalari (egasi qarori, 2026-10-22) — ish SHU tartibda tugatiladi
+
+Yuqori daraja tugamaguncha (yoki to'siqda turmaguncha) pastkisiga o'tilmaydi.
+Pastdagi A/B jadvallari — holat ma'lumotnomasi, tartib emas.
+
+| Daraja | Loyihalar | Izoh |
+|---|---|---|
+| **1** | Pullik ishlar (freelance mijozlar) · `portfolio-3d` · `Abdulmajidkhan007` (profil, xizmatlar sayti) | Daromad va mijozga ko'rinadigan narsalar |
+| **2** | `nurulloh-coder-dev/learning-center-front` (+ `learning-center` backend, faqat o'qish/tahlil) | Jamoaviy startup, men frontend team lead |
+| **3** | `suhbat` · `marshrutchi-bot` | |
+| **4** | `lumina` · `rn-r-e-commerce` (KidsWear) · `uzbek-tg` · `bot-factory` · `portfolio-builder` | |
+| **5** | `atoyo-e-commerce` · `Organick_org` · `telegram-bots` (deyarli tayyor) · `mythos-uzbek-ai` | Qo'llab-quvvatlash, xato chiqsa |
+| **6 (oxirgi)** | `DevCraft-AI` · `calculator` · `taxi` · `bank` · `learning-datacenter-tc-project` · `go-uz` · `web-3d` · `ios-asistent` | 3-akkaunt yoki oxirida |
+
+Ro'yxatdan tashqari (2026-10-22 tekshiruvi, `list_repos`): `goodman113/learning_center`
+(2026-08-14 dan tegilmagan, eski), `Atoyo-erp-v2` (3-akkaunt). Akkauntdagi 21 repo hammasi
+darajalarga kirgan.
+
+**Ochiq savol (egasi hal qiladi):** `telegram-bots` 5-darajada, lekin undagi pullik
+mahsulotlar — Instagram avto-javob A/B va countlist paketlari (Plus/Pro/Max) — daromad
+keltiradi: ular 1-darajaga o'tadimi? KidsWear (4-daraja) Faza 6 ni kutyapti — darajaga ko'ra
+1–3 tugaguncha to'xtab turadi.
+
 ### A. Hozirgi loyihalar — avval shular tugaydi (holat 2026-10-21)
 
 | # | Repo | Holat | Keyingi qadam |
@@ -238,4 +261,4 @@ Repo holati: `telegram-bots/docs/HOLAT.md`.
 
 ---
 
-*Oxirgi yangilanish: 2026-10-21*
+*Oxirgi yangilanish: 2026-10-22*
