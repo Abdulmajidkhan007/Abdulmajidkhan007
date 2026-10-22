@@ -128,7 +128,8 @@ testlari 61 ta; Android'da bu o'zgarishlar telefonda hali sinalmagan. Spark'da
 buyurtmada zaxira avtomatik kamaymasdi — endi admin tasdiqlaganda tranzaksiyada kamayadi, jurnal va "Ombor" sahifasi bor; mijoz to'lanmagan buyurtmasini bekor qila oladi (vebda emulyatorda sinalgan, Android'da sinalmagan). Fazalar rejasi:
 repoda `docs/FAZALAR.md`. **Kartaga o'tkazma:** mijoz chek rasmini yuklaydi, admin
 tasdiqlaydi → buyurtma to'langan (vebda emulyatorda sinalgan; telefonda va haqiqiy
-o'tkazma bilan sinalmagan).
+o'tkazma bilan sinalmagan). **Sharhlar:** faqat yetkazilgan buyurtma egasi yozadi,
+admin moderatsiya qiladi, bosh sahifada "Mijozlar fikri" (vebda emulyatorda sinalgan, Android'da sinalmagan).
 
 ## Havolalar
 
