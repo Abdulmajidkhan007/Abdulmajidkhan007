@@ -125,7 +125,7 @@ yurakcha/nishon, karta eni) tuzatildi. **Mahsulot turlari:** zaxira va narx endi
 har o'lcham × rang uchun alohida; tugagan kombinatsiyani tanlab bo'lmaydi; eski
 mahsulot va savatlar buzilmaydi. Vebda emulyatorda to'liq oqim sinaldi, qoidalar
 testlari 61 ta; Android'da bu o'zgarishlar telefonda hali sinalmagan. Spark'da
-buyurtmada zaxira hali kamaymaydi — keyingi bosqich (ombor). Fazalar rejasi:
+buyurtmada zaxira avtomatik kamaymasdi — endi admin tasdiqlaganda tranzaksiyada kamayadi, jurnal va "Ombor" sahifasi bor; mijoz to'lanmagan buyurtmasini bekor qila oladi (vebda emulyatorda sinalgan, Android'da sinalmagan). Fazalar rejasi:
 repoda `docs/FAZALAR.md`.
 
 ## Havolalar
