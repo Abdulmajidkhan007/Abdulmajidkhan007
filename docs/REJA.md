@@ -40,6 +40,18 @@ Loyihalar ko'p, daromad yo'q. Shu kundan **birinchi o'rinda — mijoz topish va 
   qilaman" · `docs/KEYS-ATOYO.md` · 10 ta mahalliy biznesga taklif · Kwork profili + 2 xizmat.
 - **Hisob:** har mijoz shu yerga — sana, ish, holat (taklif / kelishildi / topshirildi / to'landi).
 
+**Instagram AI avto-javob — narxlar (2026-10-22, egasi ma'qulladi):**
+
+| Mahsulot | Narx |
+|---|---|
+| A: qo'llanma (bot orqali, pullik qism) | 49 000 so'm |
+| A: "o'zim sozlab beraman" xizmati | 300 000 so'm bir martalik + 100 000 so'm/oy |
+| B: o'z mahsulotimiz (Meta API) | A narxlaridan kelib chiqib, keyin belgilanadi |
+
+**Qoida:** bir narx o'zgarsa — A va B birga qayta ko'riladi (bir-biriga mos bo'lsin);
+botdagi narx admin paneldan o'zgartiriladi. Bepul qism — xizmat kanaliga majburiy obuna
+bilan; pullik qismda obuna talab qilinmaydi.
+
 | Sana | Mijoz | Ish | Holat |
 |---|---|---|---|
 | — | — | — | — |
@@ -76,6 +88,10 @@ Loyihalar ko'p, daromad yo'q. Shu kundan **birinchi o'rinda — mijoz topish va 
 - 2026-10-22 — **Unsent Letters** (yuborilmagan xabarlar, anonim, laykisiz, "men ham his
   qilganman" tugmasi). Kuchli: MVP oddiy, o'zbek tilida bo'sh joy. Xavf: moderatsiya shart
   (o'z joniga qasd, zo'ravonlik, real ism-familiya, tuhmat); o'xshashi bor (The Unsent Project).
+- 2026-10-22 — **AI avatar video** (egasi o'zi ijtimoiy tarmoqda chiqmaydi): egasining
+  rasmi + ovoz namunasi + matn → u gapirayotgandek video. `telegram-bots/bots/ovoz-bot` ning
+  2-fazasi (`/myvoice` — ovoz klonlash, rejada bor) ustiga quriladi. Avval botsiz,
+  Higgsfield orqali qo'lda sinab ko'riladi. Instagram'da AI-video belgisi qo'yiladi.
 - 2026-10-22 — **Failure Network** (omadsizliklar tarmog'i). Eng zaif: daromad modeli va
   "bo'sh tarmoq" muammosi; alohida platforma emas, boshqa mahsulotning bo'limi bo'la oladi.
 
