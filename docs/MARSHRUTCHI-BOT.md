@@ -51,3 +51,13 @@ nusxalar ham shifrlangan; kirishlar jurnali. Baza o'g'irlansa ham ma'lumot o'qil
 TypeScript monorepo (pnpm + Turborepo): `apps/bot` (grammY), keyin `apps/web` (Next.js),
 `apps/mobile` (bare React Native); `packages/core` (havola o'qish, tartib, marshrut, qoldiq —
 sof, testli), `packages/db` (Prisma 7 + PostgreSQL), `packages/i18n`.
+
+## Zaxira (egasi qarori, 2026-10-22)
+- Asosiy baza — O'zbekistondagi serverda (pilotdan keyin).
+- Har kuni **22:00** (Toshkent) server shifrlangan zaxira yaratadi (`backup-YYYY-MM-DD.zip`,
+  ichida DB dump; parol/kalit faqat egasida).
+- Egasining telefonidagi (Termux/Kali) yordamchi skript yoki bot zaxirani yuklab oladi va
+  Android **Downloads** papkasiga ko'chiradi (`termux-setup-storage` → `~/storage/downloads`);
+  Termux/Kali ichida nusxa qolmaydi. Serverda oxirgi 7 kunlik zaxira saqlanadi.
+- Tiklash tartibi `docs/` da yoziladi va kamida bir marta sinaladi (zaxira tiklanmasa — zaxira emas).
+- Litsenziya: repo hozir private; tayyor bo'lgach litsenziya bilan public qilinadi (egasi tanlaydi).
