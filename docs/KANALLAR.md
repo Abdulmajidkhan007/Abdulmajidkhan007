@@ -186,3 +186,51 @@ Manba — shu repodagi `docs/<repo>.md` va `docs/ISH-HISOBOTI.md`. Holat bo'rtti
 ---
 
 *Oxirgi yangilanish: 2026-10-21*
+
+---
+
+## hh.uz profili (2026-10-22)
+
+**Lavozim:** Middle Frontend Engineer (React / React Native)
+
+**Ko'nikmalar (teglar):** React · Next.js · TypeScript · JavaScript · Redux Toolkit ·
+TanStack Query · Tailwind CSS · Material UI · React Native · Firebase · Node.js · NestJS ·
+REST API · Git · Docker · Vite · Vitest · Playwright · Telegram Bot API
+
+**O'zim haqimda (uz):**
+
+> Assalomu alaykum! Men Middle Frontend Engineer'man — React va React Native bilan veb va
+> mobil ilovalar quraman.
+>
+> Asosiy stack: React, Next.js, TypeScript, Redux Toolkit, TanStack Query, Tailwind CSS,
+> Material UI; mobilda — React Native (bare CLI). Backend tomonini ham o'zim yopaman
+> (Node.js, NestJS, Firebase) va kerak bo'lganda AI (Gemini, Claude) integratsiyasini qo'shaman.
+>
+> Asosiy ishim — atoyo.uz: Qo'qondagi santexnika do'koni uchun e-commerce platforma.
+> Sayt (Next.js), Android ilova, desktop ilova va Telegram bot bitta baza ustida ishlaydi;
+> do'kon har kuni ishlatadi. Shuningdek: 6 ta jonli sayt, 15 ta Telegram bot (monorepo),
+> veb + Android ilovalar (KidsWear, Lumina).
+>
+> Toza kod, to'liq type-safety, responsive va dark/light interfeyslarga e'tibor beraman.
+> Har o'zgarishni test va CI bilan tekshiraman.
+>
+> Portfolio: abdulmajidkhan-portfolio.web.app · GitHub: github.com/Abdulmajidkhan007
+
+**О себе (ru):**
+
+> Здравствуйте! Я Middle Frontend Engineer — разрабатываю веб- и мобильные приложения на
+> React и React Native.
+>
+> Основной стек: React, Next.js, TypeScript, Redux Toolkit, TanStack Query, Tailwind CSS,
+> Material UI; мобильная разработка — React Native (bare CLI). Бэкенд закрываю сам
+> (Node.js, NestJS, Firebase), при необходимости подключаю AI (Gemini, Claude).
+>
+> Главный проект — atoyo.uz: e-commerce платформа для магазина сантехники в Коканде.
+> Сайт (Next.js), Android-приложение, десктоп-приложение и Telegram-бот работают на одной
+> базе; магазин пользуется ежедневно. Также: 6 живых сайтов, 15 Telegram-ботов (монорепо),
+> веб + Android приложения (KidsWear, Lumina).
+>
+> Уделяю внимание чистому коду, строгой типизации, адаптивности и dark/light темам.
+> Каждое изменение проверяю тестами и CI.
+>
+> Портфолио: abdulmajidkhan-portfolio.web.app · GitHub: github.com/Abdulmajidkhan007
