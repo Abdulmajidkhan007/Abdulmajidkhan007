@@ -402,3 +402,21 @@ rus so'zlari (kartochka, optom) o'zbekchaga almashtirildi; shrift Times New Roma
 PDF nomi `Abdulmajid_Sharipov_Frontend_CV.pdf`, eski `/resume.pdf` 301 bilan yo'naltiriladi.
 
 *Yozilgan: 2026-10-25*
+
+---
+
+## 17. 2026-10-25 — 4-daraja nazoratchi sessiyasi (referal akkaunt 2)
+
+| Repo | Qilindi | Holat (rost) |
+|---|---|---|
+| rn-r-e-commerce | Faza 6 — katalog boshqaruvi (PR #17, Sonnet ishchi), FAZALAR (PR #18) | CI yashil; admin UI brauzerda/telefonda sinalmagan; Faza 7 ishchida (Opus, egasi merge qiladi) |
+| lumina | Hisoblagichlar ±1 + yangi hujjat 0 dan (PR #6) | Emulyatorda 56/56; qoidalar jonli bazaga deploy bo'ldi; ilovada sinalmagan. `FIREBASE_TOKEN` yo'qligi sababli indeks (409) va Storage (403) deploy'i yiqiladi |
+| uzbek-tg | Telefonda sinash ro'yxati (PR #11); ghost mode (PR #12, Sonnet ishchi) | Kod yozildi, telefonda sinalmagan |
+| bot-factory | Faza 3: anon, guard, «Mening botlarim» (PR #2, Sonnet ishchi) | Lokal: 82 test, ruff, mypy, skaner toza; CI runner olmayapti (billing) — kod sababi emas; haqiqiy botda sinalmagan |
+| portfolio-builder | Egasi qarori: g'oyalar qutisi, 2026-12-11 dan keyin | — |
+
+Postlar (qoralama): `posts/2026-10-25-lumina-hisoblagichlar.md`,
+`…-rn-r-e-commerce-katalog-boshqaruvi.md`, `…-uzbek-tg-ghost-mode.md`, `…-bot-factory-faza-3.md`.
+Egasi qiladiganlar — `docs/REJA.md` 4-bo'lim.
+
+*Yozilgan: 2026-10-25*
