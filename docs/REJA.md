@@ -124,7 +124,7 @@ ko'rinmadi — u 3-akkauntda tekshiriladi.
 | **telegram-bots** | public | `main` | 2026-10-21 | ✅ 15 bot, CI; Railway konfiglari tayyor | Qo'llab-quvvatlash |
 | **rn-r-e-commerce** | public | `main` | 2026-10-25 | 🚧 veb jonli; Faza 1–6 merge (Faza 6 — PR #17) | Faza 7 PR #19 — egasi merge qiladi |
 | **lumina** | public | `main` | 2026-10-25 | 🚧 veb jonli, APK; hisoblagich ±1 qoidasi jonli bazada (PR #6) | Egasi sinovi; `FIREBASE_TOKEN` |
-| **bot-factory** | private | `main` | 2026-10-25 | 🚧 Faza 1–4 (Faza 4: sinov muddati, Stars obunasi, limitlar — PR #3); haqiqiy bot va Stars bilan sinalmagan; CI Actions billing sababli ishlamayapti | Faza 5: Railway deploy |
+| **bot-factory** | private | `main` | 2026-10-25 | 🚧 Faza 1–5 (Faza 5: Dockerfile, Alembic, zaxira, monitoring — PR #4); Railway'ga hali deploy qilinmagan, haqiqiy bot/Stars bilan sinalmagan; CI Actions billing sababli ishlamayapti | Egasi Railway'ga deploy qiladi (`docs/DEPLOY.md`) → Faza 6 |
 | **atoyo-e-commerce** | public | `main` | 2026-10-08 | ✅ Ishlayapti (atoyo.uz), ilova 1.5.2 | Qo'llab-quvvatlash |
 | **Organick_org** | public | `master` | 2026-09-29 | ✅ Jonli | Tayyor |
 | **mythos-uzbek-ai** | private | claude/… | 2026-09-15 | tajriba | 3-akkaunt yoki oxirida |
@@ -219,7 +219,7 @@ tegilmagan), `Atoyo-erp-v2` (3-akkaunt). Akkauntdagi 21 repo hammasi darajalarga
 | 7 | **portfolio-3d** | ✅ jonli | Aloqa formasi Blaze'ni kutadi |
 | 8 | **suhbat** | 🚧 boshlangan: 0–4b fazalar `main` da, veb Railway'da jonli, v0.3–v0.5 chiqarilmagan | Repo `docs/REJA.md` → "Keyingi sessiya uchun"; telefonda va Railway'da sinash |
 | 9 | **uzbek-tg** | 🚧 boshlangan: TDLib ulangan, 2-faza UI katta qismi yozilgan | 3-faza (ghost mode) kodi merge (2026-10-25); egasi APK'da `docs/SINOV-ROYXATI.md` + ghost sinovini qiladi |
-| 10 | **bot-factory** | 🚧 Faza 1–4 (2026-10-25) | Faza 5: Railway deploy (Dockerfile, Alembic, zaxira, monitoring) |
+| 10 | **bot-factory** | 🚧 Faza 1–5 (2026-10-25), deploy fayllari tayyor | Egasi: Railway deploy (`docs/DEPLOY.md`); keyin Faza 6 — premium (HR bot, AI FAQ, katalog) |
 
 ### B. Eng oxirida yoki 3-akkauntda (egasi qarori, 2026-10-21)
 1. **learning-datacenter-tc-project** — CRM, Faza 1 (guruhlar, jadval, davomat)
@@ -264,6 +264,8 @@ Repo holati: `telegram-bots/docs/HOLAT.md`.
       Settings → Billing → Actions limiti / to'lov usuli
 - [ ] uzbek-tg: APK'da `docs/SINOV-ROYXATI.md` va ghost mode sinovi (2-akkaunt bilan)
 - [ ] KidsWear: Faza 6 admin amallarini vebda sinash; Faza 7 PR #19 ni ko'rib merge qilish
+- [ ] bot-factory: Railway'ga deploy — repo `docs/DEPLOY.md` (Postgres, Variables, domen, tekshiruv ro'yxati);
+      zaxira uchun Actions secret'lari `BACKUP_DATABASE_URL`, `BACKUP_PASSPHRASE`; `MASTER_KEY` ni parol menejerida saqlash
 - [ ] bot-factory: Stars narxini o'zgartirishdan oldin — eski avto-yangilanuvchi obunalar (PR #3 izohi)
 - [ ] Postlar: `posts/2026-10-25-*` qoralamalarini ko'rib, kanalga yuborish
 - [ ] @Yovuzhackerbot (va Atoyo Service, agar yoqilgan bo'lsa): BotFather'da
