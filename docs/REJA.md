@@ -169,6 +169,38 @@ push'da ishlaydi.
 > o'sha repoda; repo ichidagi `CLAUDE.md` + `docs/REJA.md` (yoki
 > `docs/LOYIHA-HAQIDA.md`) holatni saqlaydi. Bu suhbat tarixi kerak emas.
 
+### Ustuvorlik darajalari (egasi qarori, 2026-10-22) — ish SHU tartibda tugatiladi
+
+Yuqori daraja tugamaguncha (yoki to'siqda turmaguncha) pastkisiga o'tilmaydi.
+Pastdagi A/B jadvallari — holat ma'lumotnomasi, tartib emas.
+
+| Daraja | Loyihalar | Akkaunt |
+|---|---|---|
+| **0** | Instagram avto-javob **A** (`telegram-bots/bots/insta-avtojavob-bot`) · **B** (alohida repo — egasi ochadi, fazalari bor; reja hozir `telegram-bots/docs/INSTA-AVTOJAVOB-B.md`) · countlist Plus/Pro/Max paketlari | Referal akkaunt 1 |
+| **1** | Pullik ishlar (freelance mijozlar) · `portfolio-3d` · `Abdulmajidkhan007` (profil, xizmatlar sayti) | Asosiy |
+| **2** | `nurulloh-coder-dev/learning-center-front` (+ `learning-center` backend, faqat o'qish/tahlil) — jamoaviy, men frontend team lead | Asosiy |
+| **3** | `suhbat` · `marshrutchi-bot` | Referal akkaunt 1 |
+| **4** | `lumina` · `rn-r-e-commerce` (KidsWear, Faza 6 dan) · `uzbek-tg` · `bot-factory` · `portfolio-builder` | Referal akkaunt 2 |
+| **5** | `atoyo-e-commerce` · `Organick_org` · `telegram-bots` (deyarli tayyor) · `mythos-uzbek-ai` | Oxirida — birinchi bo'shagan referal akkaunt |
+| **6 (oxirgi)** | `DevCraft-AI` · `calculator` · `taxi` · `bank` · `learning-datacenter-tc-project` · `go-uz` · `web-3d` · `ios-asistent` | Oxirida — birinchi bo'shagan referal akkaunt |
+
+**Akkauntlar va limit (2026-10-22):**
+- **Asosiy akkaunt** — faqat 1- va 2-daraja (learning-center jamoaviy: limit tugasa jamoa kutib
+  qoladi). Haftalik limit 2026-10-22 da 67%, yangilanishiga 5 kun. O'tgan hafta limit
+  yetmay 13$ qo'shimcha ketgan — takrorlanmasin. Qoida: ishchi sessiya faqat egasi
+  aytganda, iloji boricha Sonnet, keraksiz qayta o'qish yo'q.
+- **Referal akkaunt 1** — 0 + 3-daraja. **Referal akkaunt 2** — 4-daraja.
+- **abdullohkhan (eski akkaunt)** — undagi repolar public qilinadi, egasi ko'rsatgan yangi
+  repolarga birin-ketin ko'chiriladi (manba → manzil jadvalini egasi beradi).
+- 5–6-daraja oxirida hal qilinadi: qaysi referal akkaunt o'z darajalarini birinchi
+  tugatsa, shunga beriladi (egasi qarori, 2026-10-22).
+- Har akkauntga GitHub (Abdulmajidkhan007) ulanadi, aks holda private repolar ko'rinmaydi.
+- Asosiy akkauntdagi 0/3/4-daraja sessiyalari (countlist, Insta A/B, marshrutchi, KidsWear)
+  2026-10-22 dan **to'xtatilgan** — davomi tegishli akkauntda, holat repolardagi hujjatlardan.
+
+Ro'yxatdan tashqari (`list_repos`, 2026-10-22): `goodman113/learning_center` (2026-08-14 dan
+tegilmagan), `Atoyo-erp-v2` (3-akkaunt). Akkauntdagi 21 repo hammasi darajalarga kirgan.
+
 ### A. Hozirgi loyihalar — avval shular tugaydi (holat 2026-10-21)
 
 | # | Repo | Holat | Keyingi qadam |
@@ -238,4 +270,4 @@ Repo holati: `telegram-bots/docs/HOLAT.md`.
 
 ---
 
-*Oxirgi yangilanish: 2026-10-21*
+*Oxirgi yangilanish: 2026-10-22*
