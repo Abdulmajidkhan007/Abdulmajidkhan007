@@ -36,7 +36,7 @@ xizmat kanalini biriktiring.
 
 > IT, AI va shaxsiy fikrlar.
 >
-> Abdulmajid Sharipov (Abdulloh) — Middle Frontend Engineer.\
+> Abdulmajid Sharipov (Abdulloh) — Strong Junior Frontend Developer.\
 > atoyo.uz dasturini ishlab chiqqanman: sayt, bot, ilova.
 >
 > Buyurtma: @abdulmajid_it_xizmati\
@@ -191,7 +191,7 @@ Manba — shu repodagi `docs/<repo>.md` va `docs/ISH-HISOBOTI.md`. Holat bo'rtti
 
 ## hh.uz profili (2026-10-22)
 
-**Lavozim:** Middle Frontend Engineer (React / React Native)
+**Lavozim:** Strong Junior Frontend Developer (React / React Native)
 
 **Ko'nikmalar (teglar):** React · Next.js · TypeScript · JavaScript · Redux Toolkit ·
 TanStack Query · Tailwind CSS · Material UI · React Native · Firebase · Node.js · NestJS ·
@@ -199,7 +199,7 @@ REST API · Git · Docker · Vite · Vitest · Playwright · Telegram Bot API
 
 **O'zim haqimda (uz):**
 
-> Assalomu alaykum! Men Middle Frontend Engineer'man — React va React Native bilan veb va
+> Assalomu alaykum! Men Strong Junior Frontend Developer'man — React va React Native bilan veb va
 > mobil ilovalar quraman.
 >
 > Asosiy stack: React, Next.js, TypeScript, Redux Toolkit, TanStack Query, Tailwind CSS,
@@ -218,7 +218,7 @@ REST API · Git · Docker · Vite · Vitest · Playwright · Telegram Bot API
 
 **О себе (ru):**
 
-> Здравствуйте! Я Middle Frontend Engineer — разрабатываю веб- и мобильные приложения на
+> Здравствуйте! Я Strong Junior Frontend Developer — разрабатываю веб- и мобильные приложения на
 > React и React Native.
 >
 > Основной стек: React, Next.js, TypeScript, Redux Toolkit, TanStack Query, Tailwind CSS,

@@ -12,4 +12,4 @@
 **Bosmaxonaga:** standart 90 × 50 mm. Bosmaxona chekka (bleed) so'rasa — 2 mm qo'shib
 (94 × 54 mm) qayta chiqariladi. Qog'oz: 300 g/m², mat laminatsiya tavsiya etiladi.
 
-*Oxirgi yangilanish: 2026-10-22*
+*Oxirgi yangilanish: 2026-10-25*

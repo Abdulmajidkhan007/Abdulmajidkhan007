@@ -1,6 +1,6 @@
 # Abdulmajid Sharipov
 
-**Middle Frontend Engineer**
+**Strong Junior Frontend Developer**
 
 +998 90 854 56 03 · [abdulmajidsharipovlc@gmail.com](mailto:abdulmajidsharipovlc@gmail.com) ·
 Telegram: [@Abdulloh_77700](https://t.me/Abdulloh_77700) · Qo'qon, O'zbekiston
@@ -102,7 +102,7 @@ o'zim yopaman (Node.js, Python) va kerak bo'lganda AI integratsiyasini qo'shaman
 ## Ta'lim
 
 **Umumta'lim maktabi** — *2015-yil sentabr – 2026-yil may* · umumiy o'rta ta'lim
-**Proteach o'quv markazi** — *2024-yil sentabr – 2025-yil avgust* · frontend dasturlash kursi (maktab bilan parallel)
+**Proteach o'quv markazi, Qo'qon** — *2024-yil sentabr – 2025-yil avgust* · dasturlash yo'nalishi (maktab bilan parallel)
 
 ## Qo'shimcha
 
