@@ -12,11 +12,79 @@ Telegram: [@Abdulloh_77700](https://t.me/Abdulloh_77700) · Qo'qon, O'zbekiston
 
 ## Profil
 
-React va TypeScript bilan veb interfeyslar quraman. So'nggi yildagi asosiy ishim —
-Next.js asosidagi e-commerce platformasi: katalog, admin panel va buyurtma oqimi;
-u bugun ham real do'konda ishlatilmoqda, shu bitta baza ustida Android va desktop
-ilovalarini ham yig'dim. Backend tomonini o'zim yopaman (Node.js, Python) va kerak
-bo'lganda LLM integratsiyalarini qo'shaman — lekin asosiy yo'nalishim frontend.
+React va TypeScript bilan veb va mobil interfeyslar quraman. 2025-yil oktabrdan beri
+mustaqil ishlayman: amaliy loyihalarni real ishlatiladigan holatga keltiraman. Asosiy
+ishim — Qo'qondagi santexnika do'konida ishlatilayotgan e-commerce platformasi
+(sayt, Android, desktop, TV ekran va Telegram bot — bitta baza ustida). Backendni
+o'zim yopaman (Node.js, Python) va kerak bo'lganda AI integratsiyasini qo'shaman.
+
+---
+
+## Ish tajribasi
+
+### Learning Center — o'quv markazlarini avtomatlashtirish startapi
+*2026-yil avgustdan hozirgacha* · Frontend team lead (jamoaviy, 4 kishi) ·
+[kod](https://github.com/nurulloh-coder-dev/learning-center-front)
+
+- Butun frontendni JSX'dan strict TypeScript'ga o'tkazdim — tip xatolari endi build
+  bosqichida ushlanadi; 75 ta commit.
+- Backend kodini tahlil qilib, jamoa e'tibordan chetda qoldirgan bir nechta xatoni
+  topdim — backend dasturchilar tuzatdi.
+- Jamoa uchun umumiy qoidalar va hujjatlar yozdim (`CLAUDE.md`, `docs/`) —
+  frontendchilar bir uslubda kod yozadi.
+- Ikki bosqichli login, developer va super-admin panellar, telefon bo'yicha dublikat
+  tekshiruvi, o'qituvchi KPI ekranlari.
+
+### Mustaqil dasturchi, frilanser
+*2025-yil oktabrdan hozirgacha*
+
+- 2025-yil oktabr — 2026-yil iyul: amaliy loyihalar (e-commerce, ijtimoiy tarmoq,
+  messenjer, Telegram botlar).
+- 2026-yil iyuldan: loyihalarni production holatiga keltirish — deploy, testlar, CI,
+  xavfsizlik qoidalari.
+- 2026-yil oktabrdan: buyurtmaga ishlayman — Telegram bot, do'kon sayti, landing.
+
+---
+
+## Loyihalar
+
+### Atoyo — e-commerce platformasi
+[atoyo.uz](https://atoyo.uz) · [kod](https://github.com/Abdulmajidkhan007/atoyo-e-commerce)
+`Next.js 16 · React 19 · TypeScript · Tailwind CSS · Firebase · React Native · Electron · Gemini API`
+
+- Qo'qondagi santexnika do'konida ishlatilmoqda; katalogga 500 ga yaqin mahsulot kiritildi.
+- **Bitta baza — besh kanal:** sayt, Android ilova, do'kon kompyuteri ilovasi, televizor
+  ekrani va Telegram bot bir xil Firestore ma'lumotida — narx bir joyda o'zgarsa, hamma
+  kanalda yangilanadi.
+- Mahsulot kirimini AI bilan avtomatlashtirdim: admin rasm tashlaydi, Gemini Vision tayyor
+  katalog kartasini (nomi, kodi, kategoriya, narx, tavsif) qaytaradi — kartani qo'lda
+  yozish shart emas; bir xil rasm ikki marta ishlanmaydi (pHash).
+- Buyurtmalar Telegram guruhida boshqariladi — operator saytga kirmaydi; e'lonlar bot,
+  email va kanalga bir vaqtda tarqatiladi. Ulgurji narx va tannarx mijozga umuman
+  uzatilmaydi.
+
+### telegram-bots — 15 ta botning monorepo'si
+[kod](https://github.com/Abdulmajidkhan007/telegram-bots)
+`Node.js · Python · TypeScript · Gemini API · PostgreSQL · SQLite · Docker`
+
+- 15 ta bot bitta repoda, o'zim yozgan CLI bilan bitta buyruqda ishga tushadi; har commit
+  oldidan test va kalit skaneri ishlaydi.
+- Ochiq ishlaydi: [@KillSpam_007_Bot](https://t.me/KillSpam_007_Bot) (spam filtri),
+  [@COUNTLIST_BOT](https://t.me/COUNTLIST_BOT) (xarajat hisobi, ovozli xabar),
+  [@Uzb_saver_007_bot](https://t.me/Uzb_saver_007_bot) (video yuklovchi),
+  [@Tekshiruvchi_07_bot](https://t.me/Tekshiruvchi_07_bot) (virus tekshiruvi) va yana 5 ta.
+
+### Organick — organik oziq-ovqat do'koni
+[organick-e1c5a.web.app](https://organick-e1c5a.web.app)
+`React 19 · TypeScript · Vite · Redux Toolkit · Tailwind CSS v4 · Firebase · i18next · Playwright`
+
+- Uch tilli interfeys, dark/light rejim, admin panel; Firebase Auth uch usulda (Google,
+  email, SMS); Playwright e2e va GitHub Actions orqali avtomatik deploy.
+
+**Boshqa loyihalar:** **KidsWear** — veb + Android do'kon ([kids-wear-007.web.app](https://kids-wear-007.web.app));
+**Lumina** — Instagram uslubidagi tarmoq, React Native ([lumina-007app.web.app](https://lumina-007app.web.app));
+**Suhbat** — messenjer, NestJS + WebSocket + WebRTC (beta);
+[3D portfolio](https://abdulmajidkhan-portfolio.web.app) (React Three Fiber).
 
 ---
 
@@ -31,81 +99,19 @@ bo'lganda LLM integratsiyalarini qo'shaman — lekin asosiy yo'nalishim frontend
 
 ---
 
-## Loyihalar
+## Ta'lim
 
-### Atoyo — e-commerce platformasi
-[atoyo.uz](https://atoyo.uz) · [kod](https://github.com/Abdulmajidkhan007/atoyo-e-commerce)
-`Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS · Firebase (Auth, Firestore, Storage) · React Native · Electron`
+**Umumta'lim maktabi** — *2015-yil sentabr – 2026-yil may* · umumiy o'rta ta'lim
+**Proteach o'quv markazi** — *2024-yil sentabr – 2025-yil avgust* · frontend dasturlash kursi (maktab bilan parallel)
 
-- Qo'qondagi santexnika do'koni uchun qurdim; bugun do'konda ishlatilmoqda. Katalogni
-  adminlar o'zlari to'ldirmoqda — hozirgacha 500 ga yaqin mahsulot kiritildi.
-- **Bitta baza — besh kanal.** Sayt, Android ilova, do'kon kompyuteri uchun ilova,
-  televizor ekrani va Telegram bot bir xil Firestore ma'lumoti ustida ishlaydi: admin
-  narxni bir joyda o'zgartiradi, hamma kanalda yangilanadi.
-- **Android ilova** (`mobile/`) — React Native, @react-native-firebase
-  (Auth, Firestore, Messaging), Google Sign-In, React Navigation 7,
-  Redux Toolkit + redux-persist. Push bildirishnomalar FCM orqali.
-- **Do'kon kompyuteri uchun ilova** (`desktop/`) — Electron + electron-builder;
-  Windows, Linux va macOS uchun yig'iladi, internet uzilganda offline sahifa
-  ko'rsatiladi.
-- **Do'kon televizori** — `/tv` sahifasi. Alohida ilova kerak emas: Smart TV brauzeri
-  yoki Android TV box kiosk rejimida shu manzilni ochadi. Avtomatik slayder, katta narx
-  va QR kod; nima ko'rsatilishi admin panelda sozlanadi.
-- Katalog: cursor-based pagination va infinite scroll, kompozit indeksli filtrlar,
-  xatoga chidamli qidiruv (Firestore prefiks + Fuse.js).
-- Mahsulot kirimini tezlashtirish uchun alohida Telegram userbot yozdim: admin guruh
-  topic'iga mahsulot rasmini tashlaydi, bot uni Gemini Vision bilan tahlil qilib tayyor
-  katalog kartochkasini (nomi, kodi, kategoriya, narx, tavsif) qaytaradi. pHash bilan
-  bir xil rasm ikki marta ishlanmaydi.
-- Buyurtma Telegram guruhining forum topic'iga tushadi; xabar ostidagi tugmalar webhook
-  orqali Firestore statusini yangilaydi — operator saytga kirmaydi. Admin yo'llari ikki
-  qatlamda tekshiriladi, optom narx va tannarx mijozga umuman uzatilmaydi.
-- E'lonlar (broadcast): admin paneldan yoki guruhdagi `/elon` buyrug'idan bot
-  mijozlariga Telegram'da, sayt foydalanuvchilariga email'da va ochiq kanalga bir
-  vaqtda tarqatiladi; bitta xato butun ro'yxatni to'xtatmaydi.
+## Qo'shimcha
 
-### Organick — organik oziq-ovqat do'koni
-[organick-e1c5a.web.app](https://organick-e1c5a.web.app) ·
-[kod](https://github.com/Abdulmajidkhan007/organick_org)
-`React 19 · TypeScript · Vite · Redux Toolkit · Tailwind CSS v4 · Firebase · i18next · Playwright`
+**Tillar:** o'zbek — ona tili; ingliz — texnik hujjatlarni o'qiy olaman; rus — boshlang'ich.
+**Ish formati:** masofaviy ishga tayyorman; Toshkentga ko'chish — kelishuv asosida.
 
-- Uch tilli interfeys (o'zbek, ingliz, rus), dark/light rejim, mobile-first layout.
-- Katalog (filtr, qidiruv, saralash), savat, mahsulot sahifasi; admin panelda mahsulot
-  va blog CRUD, reyting boshqaruvi.
-- Firebase Auth uch usulda: Google, email/parol va SMS OTP; aloqa formasi va obuna
-  Telegram guruhiga boradi.
-- Playwright e2e testlari; `master` ga push bo'lganda GitHub Actions Firebase Hosting'ga
-  avtomatik deploy qiladi.
-
-### telegram-bots — 15 ta botning monorepo'si
-[github.com/Abdulmajidkhan007/telegram-bots](https://github.com/Abdulmajidkhan007/telegram-bots)
-`Node.js · Python · TypeScript · Gemini API · PostgreSQL · SQLite · Docker`
-
-- 15 ta mustaqil bot bitta repoda. Boshqaruv uchun o'z CLI mni yozdim: JSON reestr
-  asosida hammasini ro'yxatlaydi, o'rnatadi, sozlaydi va bittada ishga tushiradi.
-- Ichida: Gemini savol-javob va yozishmalarni xulosalovchi botlar; do'kon katalogi ustida
-  RAG qidiruv (LangChain + ChromaDB); rasmdan katalog kartochkasi yasovchi userbot;
-  spam filtri; VirusTotal tekshiruvi; video yuklovchi; xarajat hisobi (NestJS API +
-  React dashboard).
-- Telegram'da ochiq ishlaydi: [@KillSpam_007_Bot](https://t.me/KillSpam_007_Bot) (spam filtri),
-  [@COUNTLIST_BOT](https://t.me/COUNTLIST_BOT) (xarajat hisobi, ovozli xabar ham),
-  [@Uzb_saver_007_bot](https://t.me/Uzb_saver_007_bot) (video yuklovchi),
-  [@Tekshiruvchi_07_bot](https://t.me/Tekshiruvchi_07_bot) (virus tekshiruvi) va yana 5 ta.
-  Repo ochiq: har commit oldidan kalit skaneri ishlaydi.
+> Manba: portfolio-3d reposidagi `scripts/resume/resume.html` — saytdagi PDF
+> (`Abdulmajid_Sharipov_Frontend_CV.pdf`) shundan yig'iladi. Bu sahifa o'sha bilan bir vaqtda yangilanadi.
 
 ---
 
-**Boshqa loyihalar.**
-**KidsWear** — bolalar kiyimi do'koni, veb + Android monorepo (Turborepo, umumiy Zod va dizayn tokenlari) —
-[kids-wear-007.web.app](https://kids-wear-007.web.app).
-**Lumina** — Instagram uslubidagi tarmoq (bare React Native + veb), real foydalanuvchilar bilan —
-[lumina-007app.web.app](https://lumina-007app.web.app).
-**Suhbat** — messenjer: NestJS + PostgreSQL + WebSocket, WebRTC qo'ng'iroqlar (beta).
-[3D portfolio](https://abdulmajidkhan-portfolio.web.app) (React Three Fiber).
-
-> Manba: portfolio-3d reposidagi `scripts/resume/resume.html` — saytdagi PDF shundan
-> yig'iladi. Bu sahifa o'sha bilan bir vaqtda yangilanadi.
-
----
-
-*Oxirgi yangilanish: 2026-10-22*
+*Oxirgi yangilanish: 2026-10-25*

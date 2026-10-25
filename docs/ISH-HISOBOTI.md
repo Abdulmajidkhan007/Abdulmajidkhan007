@@ -396,5 +396,9 @@ portfolio-3d: `src/data/content.ts`, `scripts/resume/resume.html`, `public/resum
 qayta yig'ildi, testdagi "eskirgan ma'lumot" ro'yxati yangilandi; 451 test yashil.
 Yuqoridagi tarixiy yozuvlardagi eski email o'zgartirilmadi (o'sha kungi holat).
 
-*Yozilgan: 2026-10-25*
+**Davomi:** rezyume "Ideal rezyume formulasi" (Mohirdev) bo'yicha qayta tuzildi: Ish tajribasi
+(Learning Center startapi, mustaqil ishlash), Ta'lim, Qo'shimcha (tillar, ish formati);
+rus so'zlari (kartochka, optom) o'zbekchaga almashtirildi; shrift Times New Roman; 2 sahifa.
+PDF nomi `Abdulmajid_Sharipov_Frontend_CV.pdf`, eski `/resume.pdf` 301 bilan yo'naltiriladi.
 
+*Yozilgan: 2026-10-25*
