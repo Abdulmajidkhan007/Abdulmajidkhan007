@@ -135,6 +135,9 @@ admin moderatsiya qiladi, bosh sahifada "Mijozlar fikri" (vebda emulyatorda sina
 rasmsizlarni yashirish, CSV eksport/import (import nofaol holda). CI yashil, CSV
 import→eksport testi o'tadi; admin UI brauzerda va telefonda hali sinalmagan,
 mobil adminda bu amallar yo'q (faqat veb).
+**Faza 7 (PR #19, egasi merge qilishini kutadi):** yopiq tannarx (faqat admin o'qiydi),
+tasdiqlangan buyurtmada tannarx snapshot'i, foyda hisoboti, «Foydalanuvchilar» ro'yxati.
+Vebda emulyatorda 13/13 oqim sinalgan; jonli bazada va telefonda sinalmagan.
 
 ## Havolalar
 
