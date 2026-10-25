@@ -45,7 +45,7 @@ foydalanuvchiga e'lon (veb va ilovada). E'lonning push'i Functions deploy
 **2026-10-25:** hisoblagichlar (follower, like, izoh, ulashish soni) qoidada
 cheklandi: bir yozuvda faqat ±1, yangi profil/post 0 dan; avval profil yoki
 post egasi o'z sonini ixtiyoriy yozishi mumkin edi. Emulyatorda 9 ta yangi test
-(56/56), PR #6. Jonli bazada deploy'dan keyin sinalmagan; ±1 ni ko'p marta
+(56/56), PR #6; qoidalar jonli bazaga deploy qilindi (CI logi), ilovada qo'lda sinalmagan; ±1 ni ko'p marta
 takrorlash hali mumkin — to'liq yechim Function (Blaze).
 **Hali yo'q:** Play Store, CI'da `FIREBASE_TOKEN` (egasi qo'yadi). To'liq tavsif va reja — repo ichida `docs/LOYIHA-HAQIDA.md`,
 `docs/REJA.md`.
