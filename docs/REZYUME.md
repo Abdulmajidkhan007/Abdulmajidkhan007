@@ -2,7 +2,7 @@
 
 **Middle Frontend Engineer**
 
-+998 90 854 56 03 · [abdullohhacker007@gmail.com](mailto:abdullohhacker007@gmail.com) ·
++998 90 854 56 03 · [abdulmajidsharipovlc@gmail.com](mailto:abdulmajidsharipovlc@gmail.com) ·
 Telegram: [@Abdulloh_77700](https://t.me/Abdulloh_77700) · Qo'qon, O'zbekiston
 [github.com/Abdulmajidkhan007](https://github.com/Abdulmajidkhan007) ·
 [linkedin.com/in/abdulmajid-sharipov-profile](https://linkedin.com/in/abdulmajid-sharipov-profile) ·

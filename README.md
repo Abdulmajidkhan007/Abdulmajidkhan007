@@ -22,8 +22,8 @@
   <a href="https://t.me/Abdulloh_77700">
     <img src="https://img.shields.io/badge/Telegram-@Abdulloh__77700-2CA5E0?style=flat&logo=telegram&logoColor=white" alt="Telegram">
   </a>
-  <a href="mailto:abdullohhacker007@gmail.com">
-    <img src="https://img.shields.io/badge/Email-abdullohhacker007@gmail.com-EA4335?style=flat&logo=gmail&logoColor=white" alt="Email">
+  <a href="mailto:abdulmajidsharipovlc@gmail.com">
+    <img src="https://img.shields.io/badge/Email-abdulmajidsharipovlc@gmail.com-EA4335?style=flat&logo=gmail&logoColor=white" alt="Email">
   </a>
   <img src="https://img.shields.io/badge/Qo'qon-O'zbekiston-1f6feb?style=flat" alt="Manzil">
 </p>

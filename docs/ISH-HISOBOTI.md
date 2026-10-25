@@ -388,3 +388,13 @@ navigatsiya sessiyasi: "CLAUDE.md, docs/REJA.md va ISH-HISOBOTI.md 15-bo'limni o
   limiti tugagani uchun — pullik limit foydalanuvchidan qoplanadi). Kichik ishni o'zi qiladi,
   kattasiga ishchi sessiya ochadi. Narxlarni egasi tasdiqlaydi.
 
+## 16. 2026-10-25 — email almashtirildi
+
+Egasi qarori: yagona email — `abdulmajidsharipovlc@gmail.com` (oldingi
+`abdullohhacker007@gmail.com` o'rniga). Profil repo: README, `docs/REZYUME.md`.
+portfolio-3d: `src/data/content.ts`, `scripts/resume/resume.html`, `public/resume.pdf`
+qayta yig'ildi, testdagi "eskirgan ma'lumot" ro'yxati yangilandi; 451 test yashil.
+Yuqoridagi tarixiy yozuvlardagi eski email o'zgartirilmadi (o'sha kungi holat).
+
+*Yozilgan: 2026-10-25*
+
