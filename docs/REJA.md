@@ -70,7 +70,7 @@ bilan; pullik qismda obuna talab qilinmaydi.
 - 2026-10-21 holati: `first-bot`, `asistent-bot`, `atoyo`, `e-commerce-platform`,
   `social-app` akkauntda **yo'q** (o'chirilgan). `chatapp` → `suhbat`,
   `chat-app` → `uzbek-tg` qayta nomlangan.
-- Qolgani: `portfolio-builder` (bo'sh) — o'chirish yoki 3-akkauntda reja;
+- Qolgani: `portfolio-builder` (bo'sh) — 2026-10-25 egasi qarori: repo turadi, g'oyalar qutisida, reja 2026-12-11 dan keyin;
   `bank`, `taxi`, `calculator` — o'quv: README'ga «o'quv loyihasi» yoki arxivlash.
 - Arxivlash ≠ o'chirish: Settings → Archive this repository.
 
@@ -79,6 +79,7 @@ bilan; pullik qismda obuna talab qilinmaydi.
 - 2026-10-07 — hr-bot → 2026-10-11 istisno sifatida boshlandi.
 - 2026-10-07 — bot-factory → 2026-10-12 alohida repo.
 - 2026-10-15 — Telegram Serverless → 5-bo'lim.
+- 2026-10-25 — `portfolio-builder` (bo'sh repo, portfolio yaratuvchi veb-ilova g'oyasi) — egasi qarori: o'chirilmaydi, 2026-12-11 dan keyin reja yoziladi.
 - 2026-10-22 — **Dead Man's Switch** (raqamli vasiyatnoma): har 30 kunda "hammasi joyidami?";
   3 marta javob bo'lmasa — oldindan tayyorlangan xat/arxiv belgilangan odamlarga.
   Kuchli: haqiqiy ehtiyoj, texnik jihatdan o'tkir (zero-knowledge shifrlash — DevCraft'dagi
@@ -135,7 +136,7 @@ ko'rinmadi — u 3-akkauntda tekshiriladi.
 | **calculator** | private | claude/… | 2026-05-21 | o'quv | 3-akkaunt |
 | **taxi** | private | claude/… | 2026-05-19 | o'quv | 3-akkaunt |
 | **ios-asistent** | private | claude/… | 2026-05-17 | 🚧 7 commit | Oxirida |
-| **portfolio-builder** | private | `main` | 2026-05-03 | bo'sh (faqat README) | 3-akkaunt |
+| **portfolio-builder** | private | `main` | 2026-05-03 | bo'sh (faqat README) | G'oyalar qutisi, 2026-12-11 dan keyin (2026-10-25) |
 
 "Arxivlash" — GitHub'da **Settings → Archive this repository**: kod saqlanadi,
 faqat o'qish uchun. O'chirish emas.
