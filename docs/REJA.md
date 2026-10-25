@@ -195,6 +195,10 @@ Pastdagi A/B jadvallari — holat ma'lumotnomasi, tartib emas.
   repolarga birin-ketin ko'chiriladi (manba → manzil jadvalini egasi beradi).
 - 5–6-daraja oxirida hal qilinadi: qaysi referal akkaunt o'z darajalarini birinchi
   tugatsa, shunga beriladi (egasi qarori, 2026-10-22).
+- **Ishchi sessiyalar (egasi qarori, 2026-10-25):** nazoratchi ochgan har ishchi promptiga
+  shart qo'yiladi — ish tugasa hisobot oxirgi qatori: «✅ Tugatdim — men endi keraksizman, bu
+  sessiyani arxivlashingiz mumkin.» Shu qatorni ko'rgan sessiyalarni egasi o'zi arxivlaydi;
+  nazoratchi faqat egasi so'raganda arxivlaydi.
 - Har akkauntga GitHub (Abdulmajidkhan007) ulanadi, aks holda private repolar ko'rinmaydi.
 - Asosiy akkauntdagi 0/3/4-daraja sessiyalari (countlist, Insta A/B, marshrutchi, KidsWear)
   2026-10-22 dan **to'xtatilgan** — davomi tegishli akkauntda, holat repolardagi hujjatlardan.
