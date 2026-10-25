@@ -1,60 +1,38 @@
-<p align="center">
-  <b>💼 Buyurtma qabul qilaman:</b> Telegram bot · do'kon sayti · landing →
-  <a href="https://t.me/Abdulloh_77700">@Abdulloh_77700</a> ·
-  <a href="https://abdulmajidkhan007.github.io/Abdulmajidkhan007/">xizmatlar sayti</a> ·
-  <a href="https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/KEYS-ATOYO.md">Atoyo keysi</a>
-</p>
+Abdulmajid Sharipov
+===================
 
-<h1 align="center">Abdulmajid Sharipov</h1>
-<p align="center">
-  <b>Strong Junior Frontend Developer</b> · O'zbekiston<br>
-  Veb · Mobil · Telegram botlar · AI
-</p>
+### Strong Junior Frontend Developer · Qo'qon, O'zbekiston
 
-<p align="center">
-  <a href="https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/vizitka/vizitka.pdf">
-    <img src="https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/raw/main/vizitka/vizitka-old.png" width="360" alt="Vizitka — old tomon">
-    <img src="https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/raw/main/vizitka/vizitka-orqa.png" width="360" alt="Vizitka — orqa tomon">
-  </a>
-</p>
+[GitHub](https://github.com/Abdulmajidkhan007) | [LinkedIn](https://linkedin.com/in/abdulmajid-sharipov-profile) | [Portfolio](https://abdulmajidkhan-portfolio.web.app) | [Telegram](https://t.me/Abdulloh_77700) | abdulmajidsharipovlc@gmail.com | [Rezyume (PDF)](https://abdulmajidkhan-portfolio.web.app/Abdulmajid_Sharipov_Frontend_CV.pdf)
 
-<p align="center">
-  <a href="https://t.me/Abdulloh_77700">
-    <img src="https://img.shields.io/badge/Telegram-@Abdulloh__77700-2CA5E0?style=flat&logo=telegram&logoColor=white" alt="Telegram">
-  </a>
-  <a href="mailto:abdulmajidsharipovlc@gmail.com">
-    <img src="https://img.shields.io/badge/Email-abdulmajidsharipovlc@gmail.com-EA4335?style=flat&logo=gmail&logoColor=white" alt="Email">
-  </a>
-  <img src="https://img.shields.io/badge/Qo'qon-O'zbekiston-1f6feb?style=flat" alt="Manzil">
-</p>
+React va TypeScript bilan veb va mobil interfeyslar quraman; backendni o'zim yopaman va kerak bo'lganda AI integratsiyasini qo'shaman.
 
----
+💼 **Buyurtma qabul qilaman:** Telegram bot · do'kon sayti · landing — [xizmatlar sayti](https://abdulmajidkhan007.github.io/Abdulmajidkhan007/) · [Atoyo keysi](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/KEYS-ATOYO.md)
 
-React va TypeScript bilan veb interfeyslar quraman — O'zbek bozori uchun veb,
-mobil, Telegram botlar va AI bilan ishlaydigan mahsulotlar. Asosiy ishim —
-[atoyo.uz](https://atoyo.uz): Next.js asosidagi e-commerce, jonli; do'kon unga
-asta-sekin o'tmoqda (mahsulotlar kiritilmoqda); shu bitta baza ustida Android, desktop va TV ekrani ham ishlaydi.
-Backendni o'zim yopaman (Node.js, NestJS, Python) va kerak bo'lganda LLM
-integratsiyasini qo'shaman — Gemini API, RAG, vektor qidiruv.
 
----
+ISH TAJRIBASI
+-------------
 
-## 🧰 Stack
+**Learning Center (startap) | 2026-yil avgust – hozirgacha**<br>
+**Frontend team lead — jamoaviy loyiha, 4 kishi**<br>
+O'quv markazlarini avtomatlashtiruvchi CRM.
 
-| | |
-|---|---|
-| **Frontend** | React 19 · Next.js 16 · TypeScript · Tailwind CSS v4 · Redux Toolkit 2 · TanStack Query · Zustand · MUI 9 · Vite 8 |
-| **Mobil va desktop** | React Native (bare CLI) · React Navigation 7 · React Native Paper · Reanimated · Electron |
-| **Backend** | Node.js · NestJS · Express · FastAPI · Prisma 7 · SQLAlchemy 2 |
-| **Baza** | Firestore · PostgreSQL · Redis · SQLite · MinIO |
-| **3D va animatsiya** | React Three Fiber · three.js · GSAP · Lenis |
-| **AI** | Gemini API · Anthropic SDK · Whisper · LangChain · ChromaDB |
-| **Test va DevOps** | Vitest · Playwright · Docker Compose · GitHub Actions · Firebase Hosting / Functions |
-| **Botlar** | node-telegram-bot-api · Telegraf · aiogram 3 · Telethon |
+* Butun frontendni JSX'dan strict TypeScript'ga o'tkazdim — tip xatolari endi build bosqichida ushlanadi; 75 ta commit.
+* Backend kodini tahlil qilib, jamoa e'tibordan chetda qoldirgan bir nechta xatoni topdim — backend dasturchilar tuzatdi.
+* Jamoa uchun umumiy qoidalar va hujjatlar yozdim (`CLAUDE.md`, `docs/`) — frontendchilar bir uslubda kod yozadi.
+* Ikki bosqichli login, developer va super-admin panellar, telefon bo'yicha dublikat tekshiruvi, o'qituvchi KPI ekranlari.
 
----
+**Mustaqil dasturchi, frilanser | 2025-yil oktabr – hozirgacha**<br>
+**Veb, mobil va Telegram botlar**
 
-## 📦 Loyihalar
+* Atoyo santexnika do'koni uchun e-commerce platforma qurdim — [atoyo.uz](https://atoyo.uz): sayt, Android ilova, desktop, do'kon TV ekrani va Telegram bot bitta baza ustida; katalogga 500 ga yaqin mahsulot kiritildi.
+* Mahsulot kirimini AI bilan avtomatlashtirdim: admin rasm tashlaydi, Gemini Vision tayyor katalog kartasini qaytaradi — kartani qo'lda yozish shart emas.
+* 15 ta Telegram botni bitta monorepoga yig'dim, o'z CLI bilan bitta buyruqda ishga tushadi; har commit oldidan test va kalit skaneri.
+* 2026-yil iyuldan loyihalarni production holatiga keltiryapman (deploy, testlar, CI); 2026-yil oktabrdan buyurtmaga ishlayman.
+
+
+LOYIHALAR
+---------
 
 ✅ **[atoyo-e-commerce](https://atoyo.uz)** — santexnika do'koni uchun e-commerce: veb, Android, desktop va TV ekrani bitta baza ustida<br>
 <sub>Next.js 16 · React 19 · Firebase · TypeScript · [🌐 atoyo.uz](https://atoyo.uz) · [💻 kod](https://github.com/Abdulmajidkhan007/atoyo-e-commerce) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/atoyo-e-commerce.md)</sub>
@@ -94,8 +72,35 @@ integratsiyasini qo'shaman — Gemini API, RAG, vektor qidiruv.
 
 <sub>✅ Ishlayapti · 🚧 Qurilmoqda · 🔒 repo yopiq, so'rasangiz ko'rsataman</sub>
 
----
 
-<p align="center">
-  <sub>Rezyume: <a href="https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/REZYUME.md">docs/REZYUME.md</a> · Aloqa: <a href="https://t.me/Abdulloh_77700">@Abdulloh_77700</a></sub>
-</p>
+STACK
+-----
+
+| | |
+|---|---|
+| **Frontend** | React 19 · Next.js 16 · TypeScript · Tailwind CSS v4 · Redux Toolkit 2 · TanStack Query · Zustand · MUI 9 · Vite 8 |
+| **Mobil va desktop** | React Native (bare CLI) · React Navigation 7 · React Native Paper · Reanimated · Electron |
+| **Backend** | Node.js · NestJS · Express · FastAPI · Prisma 7 · SQLAlchemy 2 |
+| **Baza** | Firestore · PostgreSQL · Redis · SQLite · MinIO |
+| **3D va animatsiya** | React Three Fiber · three.js · GSAP · Lenis |
+| **AI** | Gemini API · Anthropic SDK · Whisper · LangChain · ChromaDB |
+| **Test va DevOps** | Vitest · Playwright · Docker Compose · GitHub Actions · Firebase Hosting / Functions |
+| **Botlar** | node-telegram-bot-api · Telegraf · aiogram 3 · Telethon |
+
+
+TA'LIM
+------
+
+**Proteach o'quv markazi, Qo'qon | 2024-yil sentabr – 2025-yil avgust**<br>
+Dasturlash yo'nalishi (maktab bilan parallel)
+
+**Umumta'lim maktabi | 2015-yil sentabr – 2026-yil may**<br>
+Umumiy o'rta ta'lim
+
+
+QO'SHIMCHA
+----------
+
+* **Tillar:** o'zbek — ona tili; ingliz — texnik hujjatlarni o'qiy olaman; rus — boshlang'ich.
+* **Ish formati:** masofaviy ishga tayyorman; Toshkentga ko'chish — kelishuv asosida.
+* [Batafsil rezyume](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/REZYUME.md) · [Vizitka](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/vizitka/vizitka.pdf)
