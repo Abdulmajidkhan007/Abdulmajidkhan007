@@ -1,6 +1,7 @@
 # marshrutchi-bot — boshlang'ich talablar (egasi bilan kelishilgan, 2026-10-22)
 
-> Repo hali ochilmagan. Ochilgach bu fayl o'sha repoga `docs/TALABLAR.md` bo'lib ko'chadi.
+> Repo ochilgan (private). Faza 0–1 — PR #1: 2026-10-25 lokal tekshiruv yashil (typecheck, lint,
+> 84 test); GitHub CI billing sabab to'xtagan. Haqiqiy Telegram'da sinalmagan. Talablar repoda `docs/TALABLAR.md`.
 > Birinchi mijoz — Atoyo (yuk yetkazish: Oltiariq, Bag'dod, Rishton, Pop, Chust, Namangan...).
 
 ## Muammo
