@@ -77,6 +77,9 @@ hisobining loyiha limiti to'lgan (`FIREBASE_PLAN=spark` rejimida forma
 xato o'rniga Telegram havolasini ko'rsatadi). Mobil unumdorlik 90+ ga
 chiqarilmagan; Lighthouse jonli saytda qayta o'lchanmagan; domen ulanmagan.
 
+**2026-10-25:** email `abdulmajidsharipovlc@gmail.com` ga qaytarildi (sayt, rezyume
+HTML+PDF, test) — branch `claude/email-update`, `main` ga qo'shilmaguncha saytda eski email.
+
 **2026-10-09:** Firebase'ga chiqdi (`abdulmajidkhan-portfolio`). Statistika
 kartalari halol raqamlarga almashtirildi (2 yil dasturlashda, 4 jonli sayt,
 13 bot, 1 real do'kon); email — abdullohhacker007@gmail.com, Telegram qo'shildi.

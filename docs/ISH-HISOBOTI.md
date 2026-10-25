@@ -351,7 +351,7 @@ qo'shiladi (sayt FAQ, 6-bosqich). Ariza formasi bot orqali guruhga yuborishga
 tayyorlandi: `ariza-worker/` (Cloudflare Worker, token secret'da). Egasi deploy
 qilib `ARIZA_URL` ni bermaguncha forma Telegram chatini ochadi.
 
-## 14. 2026-10-22 — navigatsiya sessiyasi xulosasi (yangi sessiya shundan boshlaydi)
+## 15. 2026-10-22 — navigatsiya sessiyasi xulosasi (yangi sessiya shundan boshlaydi)
 
 **Faol sessiyalar:**
 - KidsWear nazoratchi: `session_01Jyx7chtRj4d8os4JJWx3Hr` — Faza 5 (sharhlar) dan keyin TO'XTAYDI
@@ -371,6 +371,52 @@ egasi bilan kelishiladi. Egasi Chatplace.txt faylini A sessiyasiga beradi.
 Faza 2, 3 ishchi sessiyalarini qo'lda arxivlash; postlar (`posts/`) — qoralama, egasi tekshiradi.
 
 **Limit:** shu navigatsiya sessiyasi konteksti ~630k tokenga yetdi — har xabar qimmat. Yangi
-navigatsiya sessiyasi: "CLAUDE.md, docs/REJA.md va ISH-HISOBOTI.md 14-bo'limni o'qi".
+navigatsiya sessiyasi: "CLAUDE.md, docs/REJA.md va ISH-HISOBOTI.md 15-bo'limni o'qi".
 
 *Yozilgan: 2026-10-22*
+
+**Holat yangilandi (2026-10-22 kechqurun, sessiyalardan tekshirildi):**
+- KidsWear: Faza 1–5 `main` da (PR #16), ishchi sessiyalar arxivlandi. Limit yangilangach
+  nazoratchiga "Faza 6 dan davom et".
+- marshrutchi-bot: Faza 0 + MVP PR ochiq (`claude/faza-0-1`), CI GitHub billing sababli to'xtagan.
+- Insta A: `insta-avtojavob-bot` main'da (telegram-bots PR #56), 38 test yashil; haqiqiy
+  Telegram'da sinalmagan (token yo'q).
+- Insta B: faqat reja (`docs/INSTA-AVTOJAVOB-B.md`, PR #55); repo joyi va narx — egasi.
+- **Yangi — countlist nazoratchi:** `session_01DFgdWZcdXTkRyu6bFzSCsK` (telegram-bots, Opus).
+  Raqobatchi "Shaxsiy Moliya" boti bilan solishtirish (ovoz → matn, bitta xabarda ko'p
+  tranzaksiya, hisoblar tanlovi, transfer) + Free/Plus/Pro/Max paketlar rejasi (AI/STT bepul
+  limiti tugagani uchun — pullik limit foydalanuvchidan qoplanadi). Kichik ishni o'zi qiladi,
+  kattasiga ishchi sessiya ochadi. Narxlarni egasi tasdiqlaydi.
+
+## 16. 2026-10-25 — email almashtirildi
+
+Egasi qarori: yagona email — `abdulmajidsharipovlc@gmail.com` (oldingi
+`abdullohhacker007@gmail.com` o'rniga). Profil repo: README, `docs/REZYUME.md`.
+portfolio-3d: `src/data/content.ts`, `scripts/resume/resume.html`, `public/resume.pdf`
+qayta yig'ildi, testdagi "eskirgan ma'lumot" ro'yxati yangilandi; 451 test yashil.
+Yuqoridagi tarixiy yozuvlardagi eski email o'zgartirilmadi (o'sha kungi holat).
+
+**Davomi:** rezyume "Ideal rezyume formulasi" (Mohirdev) bo'yicha qayta tuzildi: Ish tajribasi
+(Learning Center startapi, mustaqil ishlash), Ta'lim, Qo'shimcha (tillar, ish formati);
+rus so'zlari (kartochka, optom) o'zbekchaga almashtirildi; shrift Times New Roman; 2 sahifa.
+PDF nomi `Abdulmajid_Sharipov_Frontend_CV.pdf`, eski `/resume.pdf` 301 bilan yo'naltiriladi.
+
+*Yozilgan: 2026-10-25*
+
+---
+
+## 17. 2026-10-25 — 4-daraja nazoratchi sessiyasi (referal akkaunt 2)
+
+| Repo | Qilindi | Holat (rost) |
+|---|---|---|
+| rn-r-e-commerce | Faza 6 — katalog boshqaruvi (PR #17, Sonnet ishchi), FAZALAR (PR #18) | CI yashil; admin UI brauzerda/telefonda sinalmagan; Faza 7 ishchida (Opus, egasi merge qiladi) |
+| lumina | Hisoblagichlar ±1 + yangi hujjat 0 dan (PR #6) | Emulyatorda 56/56; qoidalar jonli bazaga deploy bo'ldi; ilovada sinalmagan. `FIREBASE_TOKEN` yo'qligi sababli indeks (409) va Storage (403) deploy'i yiqiladi |
+| uzbek-tg | Telefonda sinash ro'yxati (PR #11); ghost mode (PR #12, Sonnet ishchi) | Kod yozildi, telefonda sinalmagan |
+| bot-factory | Faza 3: anon, guard, «Mening botlarim» (PR #2, Sonnet ishchi) | Lokal: 82 test, ruff, mypy, skaner toza; CI runner olmayapti (billing) — kod sababi emas; haqiqiy botda sinalmagan |
+| portfolio-builder | Egasi qarori: g'oyalar qutisi, 2026-12-11 dan keyin | — |
+
+Postlar (qoralama): `posts/2026-10-25-lumina-hisoblagichlar.md`,
+`…-rn-r-e-commerce-katalog-boshqaruvi.md`, `…-uzbek-tg-ghost-mode.md`, `…-bot-factory-faza-3.md`.
+Egasi qiladiganlar — `docs/REJA.md` 4-bo'lim.
+
+*Yozilgan: 2026-10-25*

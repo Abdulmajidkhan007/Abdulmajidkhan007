@@ -70,7 +70,7 @@ bilan; pullik qismda obuna talab qilinmaydi.
 - 2026-10-21 holati: `first-bot`, `asistent-bot`, `atoyo`, `e-commerce-platform`,
   `social-app` akkauntda **yo'q** (o'chirilgan). `chatapp` → `suhbat`,
   `chat-app` → `uzbek-tg` qayta nomlangan.
-- Qolgani: `portfolio-builder` (bo'sh) — o'chirish yoki 3-akkauntda reja;
+- Qolgani: `portfolio-builder` (bo'sh) — 2026-10-25 egasi qarori: repo turadi, g'oyalar qutisida, reja 2026-12-11 dan keyin;
   `bank`, `taxi`, `calculator` — o'quv: README'ga «o'quv loyihasi» yoki arxivlash.
 - Arxivlash ≠ o'chirish: Settings → Archive this repository.
 
@@ -79,6 +79,7 @@ bilan; pullik qismda obuna talab qilinmaydi.
 - 2026-10-07 — hr-bot → 2026-10-11 istisno sifatida boshlandi.
 - 2026-10-07 — bot-factory → 2026-10-12 alohida repo.
 - 2026-10-15 — Telegram Serverless → 5-bo'lim.
+- 2026-10-25 — `portfolio-builder` (bo'sh repo, portfolio yaratuvchi veb-ilova g'oyasi) — egasi qarori: o'chirilmaydi, 2026-12-11 dan keyin reja yoziladi.
 - 2026-10-22 — **Dead Man's Switch** (raqamli vasiyatnoma): har 30 kunda "hammasi joyidami?";
   3 marta javob bo'lmasa — oldindan tayyorlangan xat/arxiv belgilangan odamlarga.
   Kuchli: haqiqiy ehtiyoj, texnik jihatdan o'tkir (zero-knowledge shifrlash — DevCraft'dagi
@@ -119,11 +120,11 @@ ko'rinmadi — u 3-akkauntda tekshiriladi.
 | **suhbat** | public | `main` | 2026-10-21 | 🚧 veb jonli (Railway), v0.5.0 chiqarilmagan; telefonda va Railway'da hammasi sinalmagan | Davom (asosiy akkaunt) |
 | **Abdulmajidkhan007** | public | `main` | 2026-10-11 (main) | ✅ | Yuritiladi; 2 ta docs branch main'ga qo'shilmagan (pastda) |
 | **portfolio-3d** | private | `main` | 2026-10-16 | ✅ jonli, faqat Hosting; forma Blaze'ni kutadi | Tayyor |
-| **uzbek-tg** | public | `main` | 2026-10-16 | 🚧 0–1-faza tugagan (TDLib, haqiqiy akkaunt); 2-faza — ko'p narsa "kod yozildi, telefonda sinalmagan" | Davom |
+| **uzbek-tg** | public | `main` | 2026-10-25 | 🚧 0–1-faza tugagan; 2-faza va 3-faza (ghost mode, PR #12) — kod yozildi, telefonda sinalmagan | Egasi sinaydi (`docs/SINOV-ROYXATI.md`) |
 | **telegram-bots** | public | `main` | 2026-10-21 | ✅ 15 bot, CI; Railway konfiglari tayyor | Qo'llab-quvvatlash |
-| **rn-r-e-commerce** | public | `main` | 2026-10-13 | 🚧 veb jonli; APK 1.0.9 ochiladi (egasi, 2026-10-21) | 2-guruh — Blaze kutadi |
-| **lumina** | public | `main` | 2026-10-12 | 🚧 veb jonli, APK; admin to'lqini tugagan | Egasi sinovi; hisoblagich qoidasi qolgan |
-| **bot-factory** | private | `main` | 2026-10-12 | 🚧 Faza 1+2: skelet va runtime yadro | Yangi qo'shilgan — navbatga hali kiritilmagan |
+| **rn-r-e-commerce** | public | `main` | 2026-10-25 | 🚧 veb jonli; Faza 1–6 merge (Faza 6 — PR #17) | Faza 7 PR #19 — egasi merge qiladi |
+| **lumina** | public | `main` | 2026-10-25 | 🚧 veb jonli, APK; hisoblagich ±1 qoidasi jonli bazada (PR #6) | Egasi sinovi; `FIREBASE_TOKEN` |
+| **bot-factory** | private | `main` | 2026-10-25 | 🚧 Faza 1–4 (Faza 4: sinov muddati, Stars obunasi, limitlar — PR #3); haqiqiy bot va Stars bilan sinalmagan; CI Actions billing sababli ishlamayapti | Faza 5: Railway deploy |
 | **atoyo-e-commerce** | public | `main` | 2026-10-08 | ✅ Ishlayapti (atoyo.uz), ilova 1.5.2 | Qo'llab-quvvatlash |
 | **Organick_org** | public | `master` | 2026-09-29 | ✅ Jonli | Tayyor |
 | **mythos-uzbek-ai** | private | claude/… | 2026-09-15 | tajriba | 3-akkaunt yoki oxirida |
@@ -135,7 +136,7 @@ ko'rinmadi — u 3-akkauntda tekshiriladi.
 | **calculator** | private | claude/… | 2026-05-21 | o'quv | 3-akkaunt |
 | **taxi** | private | claude/… | 2026-05-19 | o'quv | 3-akkaunt |
 | **ios-asistent** | private | claude/… | 2026-05-17 | 🚧 7 commit | Oxirida |
-| **portfolio-builder** | private | `main` | 2026-05-03 | bo'sh (faqat README) | 3-akkaunt |
+| **portfolio-builder** | private | `main` | 2026-05-03 | bo'sh (faqat README) | G'oyalar qutisi, 2026-12-11 dan keyin (2026-10-25) |
 
 "Arxivlash" — GitHub'da **Settings → Archive this repository**: kod saqlanadi,
 faqat o'qish uchun. O'chirish emas.
@@ -169,20 +170,56 @@ push'da ishlaydi.
 > o'sha repoda; repo ichidagi `CLAUDE.md` + `docs/REJA.md` (yoki
 > `docs/LOYIHA-HAQIDA.md`) holatni saqlaydi. Bu suhbat tarixi kerak emas.
 
+### Ustuvorlik darajalari (egasi qarori, 2026-10-22) — ish SHU tartibda tugatiladi
+
+Yuqori daraja tugamaguncha (yoki to'siqda turmaguncha) pastkisiga o'tilmaydi.
+Pastdagi A/B jadvallari — holat ma'lumotnomasi, tartib emas.
+
+| Daraja | Loyihalar | Akkaunt |
+|---|---|---|
+| **0** | Instagram avto-javob **A** (`telegram-bots/bots/insta-avtojavob-bot`) · **B** (alohida repo — egasi ochadi, fazalari bor; reja hozir `telegram-bots/docs/INSTA-AVTOJAVOB-B.md`) · countlist Plus/Pro/Max paketlari | Referal akkaunt 1 |
+| **1** | Pullik ishlar (freelance mijozlar) · `portfolio-3d` · `Abdulmajidkhan007` (profil, xizmatlar sayti) | Asosiy |
+| **2** | `nurulloh-coder-dev/learning-center-front` (+ `learning-center` backend, faqat o'qish/tahlil) — jamoaviy, men frontend team lead | Asosiy |
+| **3** | `suhbat` · `marshrutchi-bot` | Referal akkaunt 1 |
+| **4** | `lumina` · `rn-r-e-commerce` (KidsWear, Faza 7 dan) · `uzbek-tg` · `bot-factory` · `portfolio-builder` | Referal akkaunt 2 |
+| **5** | `atoyo-e-commerce` · `Organick_org` · `telegram-bots` (deyarli tayyor) · `mythos-uzbek-ai` | Oxirida — birinchi bo'shagan referal akkaunt |
+| **6 (oxirgi)** | `DevCraft-AI` · `calculator` · `taxi` · `bank` · `learning-datacenter-tc-project` · `go-uz` · `web-3d` · `ios-asistent` | Oxirida — birinchi bo'shagan referal akkaunt |
+
+**Akkauntlar va limit (2026-10-22):**
+- **Asosiy akkaunt** — faqat 1- va 2-daraja (learning-center jamoaviy: limit tugasa jamoa kutib
+  qoladi). Haftalik limit 2026-10-22 da 67%, yangilanishiga 5 kun. O'tgan hafta limit
+  yetmay 13$ qo'shimcha ketgan — takrorlanmasin. Qoida: ishchi sessiya faqat egasi
+  aytganda, iloji boricha Sonnet, keraksiz qayta o'qish yo'q.
+- **Referal akkaunt 1** — 0 + 3-daraja. **Referal akkaunt 2** — 4-daraja.
+- **abdullohkhan (eski akkaunt)** — undagi repolar public qilinadi, egasi ko'rsatgan yangi
+  repolarga birin-ketin ko'chiriladi (manba → manzil jadvalini egasi beradi).
+- 5–6-daraja oxirida hal qilinadi: qaysi referal akkaunt o'z darajalarini birinchi
+  tugatsa, shunga beriladi (egasi qarori, 2026-10-22).
+- **Ishchi sessiyalar (egasi qarori, 2026-10-25):** nazoratchi ochgan har ishchi promptiga
+  shart qo'yiladi — ish tugasa hisobot oxirgi qatori: «✅ Tugatdim — men endi keraksizman, bu
+  sessiyani arxivlashingiz mumkin.» Shu qatorni ko'rgan sessiyalarni egasi o'zi arxivlaydi;
+  nazoratchi faqat egasi so'raganda arxivlaydi.
+- Har akkauntga GitHub (Abdulmajidkhan007) ulanadi, aks holda private repolar ko'rinmaydi.
+- Asosiy akkauntdagi 0/3/4-daraja sessiyalari (countlist, Insta A/B, marshrutchi, KidsWear)
+  2026-10-22 dan **to'xtatilgan** — davomi tegishli akkauntda, holat repolardagi hujjatlardan.
+
+Ro'yxatdan tashqari (`list_repos`, 2026-10-22): `goodman113/learning_center` (2026-08-14 dan
+tegilmagan), `Atoyo-erp-v2` (3-akkaunt). Akkauntdagi 21 repo hammasi darajalarga kirgan.
+
 ### A. Hozirgi loyihalar — avval shular tugaydi (holat 2026-10-21)
 
 | # | Repo | Holat | Keyingi qadam |
 |---|---|---|---|
 | 1 | **rn-r-e-commerce** (KidsWear) | Veb jonli; APK **1.0.9 ochiladi** (yiqilish PR #4, #5 da tuzatildi) | Keyinroq ko'riladi (egasi). Kartada yurakcha nomni bosib qolgan; ilovada Google kirish va buyurtma oqimi sinalmagan. 2-guruh — Blaze |
-| 2 | **lumina** | Veb + APK; uz/en/ru, Reels, admin (rollar, bloklash, shikoyatlar, e'lon) | Egasi sinaydi; hisoblagichlarni ±1 qoidasi; CI'ga `FIREBASE_TOKEN` |
+| 2 | **lumina** | Veb + APK; uz/en/ru, Reels, admin (rollar, bloklash, shikoyatlar, e'lon) | Egasi sinaydi; ±1 qoidasi ✅ (2026-10-25); CI'ga `FIREBASE_TOKEN` |
 | 3 | **telegram-bots** | ✅ 15 bot; 3 ishli sessiya bajarilgan (deploy konfiglari, hr-bot, bot-factory reja) | Bot-factory endi alohida repoda |
 | 4 | **atoyo-e-commerce** | ✅ jonli (atoyo.uz), ilova 1.5.2 | Qo'llab-quvvatlash: repo `docs/AUDIT-ISHLARI.md` (16-band — 3D model) |
 | 5 | **Organick_org** | ✅ jonli | Tayyor; faqat xato chiqsa |
 | 6 | **Abdulmajidkhan007** (profil) | ✅ | Har loyiha o'zgarganda `docs/<repo>.md` + sana |
 | 7 | **portfolio-3d** | ✅ jonli | Aloqa formasi Blaze'ni kutadi |
 | 8 | **suhbat** | 🚧 boshlangan: 0–4b fazalar `main` da, veb Railway'da jonli, v0.3–v0.5 chiqarilmagan | Repo `docs/REJA.md` → "Keyingi sessiya uchun"; telefonda va Railway'da sinash |
-| 9 | **uzbek-tg** | 🚧 boshlangan: TDLib ulangan, 2-faza UI katta qismi yozilgan | Egasi APK'da ⏳ bandlarni sinaydi → 3-faza (ghost mode) |
-| 10 | **bot-factory** | 🚧 Faza 1+2 (skelet, runtime yadro) | Navbatdagi o'rni egasi bilan kelishiladi |
+| 9 | **uzbek-tg** | 🚧 boshlangan: TDLib ulangan, 2-faza UI katta qismi yozilgan | 3-faza (ghost mode) kodi merge (2026-10-25); egasi APK'da `docs/SINOV-ROYXATI.md` + ghost sinovini qiladi |
+| 10 | **bot-factory** | 🚧 Faza 1–4 (2026-10-25) | Faza 5: Railway deploy (Dockerfile, Alembic, zaxira, monitoring) |
 
 ### B. Eng oxirida yoki 3-akkauntda (egasi qarori, 2026-10-21)
 1. **learning-datacenter-tc-project** — CRM, Faza 1 (guruhlar, jadval, davomat)
@@ -223,6 +260,12 @@ Repo holati: `telegram-bots/docs/HOLAT.md`.
 - [ ] countlist'dan oqib ketgan eski bot tokenini BotFather'da bekor qilish
       (agar hali qilinmagan bo'lsa)
 - [x] social-app o'chirildi; rezyume yangilandi (2026-10-09)
+- [ ] bot-factory CI: private repo'da Actions job runner olmay yiqilyapti (2026-10-25) —
+      Settings → Billing → Actions limiti / to'lov usuli
+- [ ] uzbek-tg: APK'da `docs/SINOV-ROYXATI.md` va ghost mode sinovi (2-akkaunt bilan)
+- [ ] KidsWear: Faza 6 admin amallarini vebda sinash; Faza 7 PR #19 ni ko'rib merge qilish
+- [ ] bot-factory: Stars narxini o'zgartirishdan oldin — eski avto-yangilanuvchi obunalar (PR #3 izohi)
+- [ ] Postlar: `posts/2026-10-25-*` qoralamalarini ko'rib, kanalga yuborish
 - [ ] @Yovuzhackerbot (va Atoyo Service, agar yoqilgan bo'lsa): BotFather'da
       Serverless'ni o'chirish — handler'siz yoqilgan Serverless update'larni yutadi
 
@@ -238,4 +281,4 @@ Repo holati: `telegram-bots/docs/HOLAT.md`.
 
 ---
 
-*Oxirgi yangilanish: 2026-10-21*
+*Oxirgi yangilanish: 2026-10-25*

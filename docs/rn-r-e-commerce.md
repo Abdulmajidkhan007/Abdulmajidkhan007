@@ -130,6 +130,14 @@ repoda `docs/FAZALAR.md`. **Kartaga o'tkazma:** mijoz chek rasmini yuklaydi, adm
 tasdiqlaydi → buyurtma to'langan (vebda emulyatorda sinalgan; telefonda va haqiqiy
 o'tkazma bilan sinalmagan). **Sharhlar:** faqat yetkazilgan buyurtma egasi yozadi,
 admin moderatsiya qiladi, bosh sahifada "Mijozlar fikri" (vebda emulyatorda sinalgan, Android'da sinalmagan).
+**2026-10-25 — katalog boshqaruvi (Faza 6, PR #17):** chernovik, «O'chirilganlar»
+(tiklash, 30 kundan keyin admin tozalaydi), ommaviy yashirish/ko'chirish/o'chirish,
+rasmsizlarni yashirish, CSV eksport/import (import nofaol holda). CI yashil, CSV
+import→eksport testi o'tadi; admin UI brauzerda va telefonda hali sinalmagan,
+mobil adminda bu amallar yo'q (faqat veb).
+**Faza 7 (PR #19, egasi merge qilishini kutadi):** yopiq tannarx (faqat admin o'qiydi),
+tasdiqlangan buyurtmada tannarx snapshot'i, foyda hisoboti, «Foydalanuvchilar» ro'yxati.
+Vebda emulyatorda 13/13 oqim sinalgan; jonli bazada va telefonda sinalmagan.
 
 ## Havolalar
 
@@ -139,4 +147,4 @@ admin moderatsiya qiladi, bosh sahifada "Mijozlar fikri" (vebda emulyatorda sina
 
 ---
 
-*Oxirgi yangilanish: 2026-10-22*
+*Oxirgi yangilanish: 2026-10-25*
