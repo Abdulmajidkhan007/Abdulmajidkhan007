@@ -36,15 +36,15 @@ xizmat kanalini biriktiring.
 
 > IT, AI va shaxsiy fikrlar.
 >
-> Abdulmajid Sharipov (Abdulloh) — Middle Frontend Engineer.\
-> atoyo.uz dasturini ishlab chiqqanman: sayt, bot, ilova.
+> Abdulmajid Sharipov (Abdulloh) — Strong Junior Frontend Developer.\
+> atoyo (do'kon platformasi) dasturini ishlab chiqqanman: sayt, bot, ilova.
 >
 > Buyurtma: @abdulmajid_it_xizmati\
 > Shaxsiy blog: @Abdulloh_thoughts
 
 Do'kon boshqa odamniki — men dasturni ishlab chiquvchiman. Shuning uchun "asoschisi"
 emas, "ishlab chiqqanman". Hozirgi tavsifdagi `— " Atoyo.uz " asoschisi` qatori o'rniga:
-`— atoyo.uz dasturini ishlab chiqqanman`
+`— atoyo do'kon platformasini ishlab chiqqanman`
 
 ### Xizmat kanali — @abdulmajid_it_xizmati
 
@@ -56,7 +56,7 @@ emas, "ishlab chiqqanman". Hozirgi tavsifdagi `— " Atoyo.uz " asoschisi` qator
 >
 > Telegram bot, do'kon sayti, landing, CRM, Android ilova.
 >
-> Ishlarim: atoyo.uz va 9 ta Telegram bot.\
+> Ishlarim: do'kon platformasi (atoyo) va 9 ta Telegram bot.\
 > Narx ishga qarab: @Abdulloh_77700
 >
 > abdulmajidkhan007.github.io/Abdulmajidkhan007
@@ -96,13 +96,15 @@ Telegram kanal tavsifi 255 belgigacha — bu matn 253 belgi, sig'adi (ko'paytirm
 
 **Post 2 — Atoyo misoli**
 
+⚠️ *2026-10-26: atoyo.uz to'xtatilgan. Yuborishdan oldin o'tgan zamonga o'tkaz yoki "hozir to'xtatilgan, repo private" deb yoz.*
+
 > Misol: Qo'qondagi santexnika do'koni 🔧
 >
 > Oldin: mijozlar narxni so'rab yozardi, sotuvchi kun bo'yi javob berardi.\
 > Buyurtmalar qo'lda yozilardi, kanalda eski narxlar qolib ketardi.
 >
 > Nima qildim:\
-> • atoyo.uz — katalog, qidiruv, savat, 1 klikda buyurtma\
+> • sayt — katalog, qidiruv, savat, 1 klikda buyurtma\
 > • Buyurtma xodimlar guruhiga tushadi, "Qabul qilish" tugmasi bilan\
 > • Telegram bot — botdan ham buyurtma berish mumkin\
 > • Kanalga yangi mahsulot o'zi chiqadi\
@@ -122,7 +124,7 @@ Telegram kanal tavsifi 255 belgigacha — bu matn 253 belgi, sig'adi (ko'paytirm
 > ✅ Buyurtma darhol guruhingizga tushadi, yo'qolmaydi\
 > ✅ Mijozlar ro'yxati bir joyda — kim, qachon, nima so'radi
 >
-> Ishlab turgan botim: @Atoyo_uz_bot — kirib ko'ring.
+> Ishlab turgan botim: @COUNTLIST_BOT — kirib ko'ring.
 >
 > Narx ishga qarab. Nima kerakligini yozing: @Abdulloh_77700
 
@@ -132,7 +134,7 @@ Telegram kanal tavsifi 255 belgigacha — bu matn 253 belgi, sig'adi (ko'paytirm
 
 > Bir narsani tan olaman 🙂
 >
-> May–sentyabr oralig'ida 30 ta repo ochibman. O'shanda jonli ishlaydigani bittagina edi — atoyo.uz.\
+> May–sentyabr oralig'ida 30 ta repo ochibman. O'shanda jonli ishlaydigani bittagina edi — atoyo.uz (u 2026-10-26 da to'xtatildi).\
 > Muammo kod yozishda emas, tugatishda ekan.
 >
 > Shuning uchun qaror qildim: yangi loyiha yo'q. Boshlanganini tugataman va\
@@ -161,7 +163,9 @@ Telegram kanal tavsifi 255 belgigacha — bu matn 253 belgi, sig'adi (ko'paytirm
 
 **Post 3 — Atoyo qanday qurilgan (texnik)**
 
-> atoyo.uz ichida nima bor? 🛠
+⚠️ *2026-10-26: atoyo.uz to'xtatilgan. Yuborishdan oldin o'tgan zamonga o'tkaz yoki "hozir to'xtatilgan, repo private" deb yoz.*
+
+> atoyo ichida nima bor? 🛠
 >
 > • Next.js 16 + TypeScript — sayt va admin panel bitta kodda\
 > • Firebase — baza, auth, fayllar; alohida server ushlamaslik uchun\
@@ -191,7 +195,7 @@ Manba — shu repodagi `docs/<repo>.md` va `docs/ISH-HISOBOTI.md`. Holat bo'rtti
 
 ## hh.uz profili (2026-10-22)
 
-**Lavozim:** Middle Frontend Engineer (React / React Native)
+**Lavozim:** Strong Junior Frontend Developer (React / React Native)
 
 **Ko'nikmalar (teglar):** React · Next.js · TypeScript · JavaScript · Redux Toolkit ·
 TanStack Query · Tailwind CSS · Material UI · React Native · Firebase · Node.js · NestJS ·
@@ -199,14 +203,14 @@ REST API · Git · Docker · Vite · Vitest · Playwright · Telegram Bot API
 
 **O'zim haqimda (uz):**
 
-> Assalomu alaykum! Men Middle Frontend Engineer'man — React va React Native bilan veb va
+> Assalomu alaykum! Men Strong Junior Frontend Developer'man — React va React Native bilan veb va
 > mobil ilovalar quraman.
 >
 > Asosiy stack: React, Next.js, TypeScript, Redux Toolkit, TanStack Query, Tailwind CSS,
 > Material UI; mobilda — React Native (bare CLI). Backend tomonini ham o'zim yopaman
 > (Node.js, NestJS, Firebase) va kerak bo'lganda AI (Gemini, Claude) integratsiyasini qo'shaman.
 >
-> Asosiy ishim — atoyo.uz: Qo'qondagi santexnika do'koni uchun e-commerce platforma.
+> Asosiy ishim — atoyo: Qo'qondagi santexnika do'koni uchun e-commerce platforma (2026-yil oktabrgacha do'konda ishlatildi; hozir to'xtatilgan, repo private).
 > Sayt (Next.js), Android ilova, desktop ilova va Telegram bot bitta baza ustida ishlaydi;
 > do'kon har kuni ishlatadi. Shuningdek: 6 ta jonli sayt, 15 ta Telegram bot (monorepo),
 > veb + Android ilovalar (KidsWear, Lumina).
@@ -218,14 +222,14 @@ REST API · Git · Docker · Vite · Vitest · Playwright · Telegram Bot API
 
 **О себе (ru):**
 
-> Здравствуйте! Я Middle Frontend Engineer — разрабатываю веб- и мобильные приложения на
+> Здравствуйте! Я Strong Junior Frontend Developer — разрабатываю веб- и мобильные приложения на
 > React и React Native.
 >
 > Основной стек: React, Next.js, TypeScript, Redux Toolkit, TanStack Query, Tailwind CSS,
 > Material UI; мобильная разработка — React Native (bare CLI). Бэкенд закрываю сам
 > (Node.js, NestJS, Firebase), при необходимости подключаю AI (Gemini, Claude).
 >
-> Главный проект — atoyo.uz: e-commerce платформа для магазина сантехники в Коканде.
+> Главный проект — atoyo: e-commerce платформа для магазина сантехники в Коканде (до октября 2026 работала в магазине; сейчас остановлена, репозиторий приватный).
 > Сайт (Next.js), Android-приложение, десктоп-приложение и Telegram-бот работают на одной
 > базе; магазин пользуется ежедневно. Также: 6 живых сайтов, 15 Telegram-ботов (монорепо),
 > веб + Android приложения (KidsWear, Lumina).

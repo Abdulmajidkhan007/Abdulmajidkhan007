@@ -1,6 +1,6 @@
 # Abdulmajid Sharipov
 
-**Middle Frontend Engineer**
+**Strong Junior Frontend Developer**
 
 +998 90 854 56 03 · [abdulmajidsharipovlc@gmail.com](mailto:abdulmajidsharipovlc@gmail.com) ·
 Telegram: [@Abdulloh_77700](https://t.me/Abdulloh_77700) · Qo'qon, O'zbekiston
@@ -49,10 +49,10 @@ o'zim yopaman (Node.js, Python) va kerak bo'lganda AI integratsiyasini qo'shaman
 ## Loyihalar
 
 ### Atoyo — e-commerce platformasi
-[kod](https://github.com/Abdulmajidkhan007/atoyo-e-commerce)
+repo private — so'rasangiz ko'rsataman
 `Next.js 16 · React 19 · TypeScript · Tailwind CSS · Firebase · React Native · Electron · Gemini API`
 
-- Qo'qondagi santexnika do'konida 2026-yil oktabrgacha ishlatildi (katalogga 500 ga yaqin mahsulot kiritilgan); server xarajati sababli 2026-10-26 da to'xtatilgan, kod ochiq.
+- Qo'qondagi santexnika do'konida 2026-yil oktabrgacha ishlatildi (katalogga 500 ga yaqin mahsulot kiritilgan); 2026-10-26 da to'xtatilgan: do'kon xodimlarining saytni boshqarishga vaqti yo'q, server uchun to'lash imkoni ham yo'q; repo private.
 - **Bitta baza — besh kanal:** sayt, Android ilova, do'kon kompyuteri ilovasi, televizor
   ekrani va Telegram bot bir xil Firestore ma'lumotida — narx bir joyda o'zgarsa, hamma
   kanalda yangilanadi.
@@ -102,7 +102,7 @@ o'zim yopaman (Node.js, Python) va kerak bo'lganda AI integratsiyasini qo'shaman
 ## Ta'lim
 
 **Umumta'lim maktabi** — *2015-yil sentabr – 2026-yil may* · umumiy o'rta ta'lim
-**Proteach o'quv markazi** — *2024-yil sentabr – 2025-yil avgust* · frontend dasturlash kursi (maktab bilan parallel)
+**Proteach o'quv markazi, Qo'qon** — *2024-yil sentabr – 2025-yil avgust* · dasturlash yo'nalishi (maktab bilan parallel)
 
 ## Qo'shimcha
 

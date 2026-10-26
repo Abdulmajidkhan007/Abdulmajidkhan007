@@ -10,12 +10,12 @@
 
 | Bor ✅ | Isbot |
 |---|---|
-| Do'kon / katalog sayti + admin panel | https://atoyo.uz (10 000+ mahsulot) |
+| Do'kon / katalog sayti + admin panel | atoyo kodi (2026-10-26 dan to'xtatilgan; demo — keyin) |
 | Telegram bot: buyurtma, lid, katalog, avto-javob | @Atoyo_service_bot, @COUNTLIST_BOT va boshqa botlar |
-| Buyurtma → Telegram guruhga, tugma bilan holat | atoyo.uz |
+| Buyurtma → Telegram guruhga, tugma bilan holat | atoyo kodi |
 | Landing / biznes sayt, uz/ru/en, dark/light, mobil | https://abdulmajidkhan-portfolio.web.app |
 | Android ilova (do'kon uchun) | atoyo ilovasi 1.5.2 |
-| Domen ulash, hosting, SEO asoslari | atoyo.uz |
+| Domen ulash, hosting, SEO asoslari | atoyo.uz (Ahost) — to'xtatilgan |
 
 | Yo'q ❌ — va'da qilinmaydi |
 |---|
@@ -31,7 +31,7 @@
       shikoyat qilishadi? (navbat, telefon javob bermaydi, narx noma'lum, menyu yo'q)
 - [ ] Sayti haqiqatan yo'qligini tekshir (Google'da nomi + "Qo'qon").
 - [ ] Bitta jumla tayyorla: "Sizda X muammo bor, men Y qilib beraman, natijada Z".
-- [ ] Telefonda ochiq tursin: atoyo.uz, @Atoyo_service_bot, portfolio, xizmatlar sayti.
+- [ ] Telefonda ochiq tursin: atoyo demo (tayyor bo'lganda), portfolio, xizmatlar sayti.
 - [ ] Narx oralig'ini oldindan bil (o'zing belgilagan) — joyida o'ylab topma.
 
 ### Biznes turiga qarab taklif
@@ -40,7 +40,7 @@
 |---|---|---|---|
 | Restoran / oshxona | Abu Dhabi Restaurant, Qo'qon Zamin osh, Kabob House | Menyu sayti + QR menyu (stolga), Telegram bot orqali buyurtma / yetkazish | Stol band qilish, Maps profilini to'ldirish |
 | Kiyim / savdo | Bursa, Milano Kokand, Premium outlets | Katalog sayt (rasm, o'lcham, narx), Telegram kanalga avtomatik post | Yangi kolleksiya e'loni boti |
-| Qurilish / santexnika / elektro | Toyyib santexnika, STROY HOUSE, Prime Elektro Market, Smart Home Kokand | **atoyo.uz kabi** katalog + qidiruv + buyurtma guruhga + bot | Optom narx, Excel'dan import, ilova |
+| Qurilish / santexnika / elektro | Toyyib santexnika, STROY HOUSE, Prime Elektro Market, Smart Home Kokand | **atoyo kabi** katalog + qidiruv + buyurtma guruhga + bot | Optom narx, Excel'dan import, ilova |
 | Aniqlash kerak | Megamix | Borishdan oldin turini aniqla | — |
 
 **Qurilish / santexnika — eng kuchli joy:** atoyo xuddi shu soha. "Sizning raqobatchingiz
