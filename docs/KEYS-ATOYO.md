@@ -3,7 +3,7 @@
 > Qo'qondagi santexnika va isitish tizimlari do'koni uchun sayt, Telegram bot va
 > kanal, Android ilova va admin panel — hammasi bitta bazada.
 
-**Holat:** 2026-10-26 dan to'xtatilgan (server xarajati), kod ochiq · **Bot:** [@Atoyo_uz_bot](https://t.me/Atoyo_uz_bot) · **Kod:** https://github.com/Abdulmajidkhan007/atoyo-e-commerce
+**Holat:** 2026-10-26 dan to'xtatilgan (do'kon xodimlarida boshqarishga vaqt yo'q; server uchun to'lash imkoni yo'q), repo private · **Bot:** [@Atoyo_uz_bot](https://t.me/Atoyo_uz_bot)
 
 ---
 

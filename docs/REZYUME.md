@@ -49,10 +49,10 @@ o'zim yopaman (Node.js, Python) va kerak bo'lganda AI integratsiyasini qo'shaman
 ## Loyihalar
 
 ### Atoyo — e-commerce platformasi
-[kod](https://github.com/Abdulmajidkhan007/atoyo-e-commerce)
+repo private — so'rasangiz ko'rsataman
 `Next.js 16 · React 19 · TypeScript · Tailwind CSS · Firebase · React Native · Electron · Gemini API`
 
-- Qo'qondagi santexnika do'konida 2026-yil oktabrgacha ishlatildi (katalogga 500 ga yaqin mahsulot kiritilgan); server xarajati sababli 2026-10-26 da to'xtatilgan, kod ochiq.
+- Qo'qondagi santexnika do'konida 2026-yil oktabrgacha ishlatildi (katalogga 500 ga yaqin mahsulot kiritilgan); 2026-10-26 da to'xtatilgan: do'kon xodimlarining saytni boshqarishga vaqti yo'q, server uchun to'lash imkoni ham yo'q; repo private.
 - **Bitta baza — besh kanal:** sayt, Android ilova, do'kon kompyuteri ilovasi, televizor
   ekrani va Telegram bot bir xil Firestore ma'lumotida — narx bir joyda o'zgarsa, hamma
   kanalda yangilanadi.

@@ -4,23 +4,12 @@ loyiha: atoyo-e-commerce
 
 ---
 
-⏸ atoyo.uz pauzada — endi boshqa do'konlar uchun
+Atoyo haqida savol ko'p keldi: "Nega to'xtatding? Hech kim foydalanmadimi?" deb.
 
-Qo'qondagi santexnika do'koni uchun qurgan platformam — atoyo.uz (sayt, Android ilova,
-Telegram bot, mahsulot kirimini Gemini Vision bilan avtomatlashtirish) — hozircha
-ishlamayapti: server xarajati oyiga taxminan 10–13 dollar chiqdi, do'kon egalari
-hozir uni to'lamaymiz, kerak bo'lsa o'zimiz aloqaga chiqamiz dedi. Men yolg'iz ko'tara
-olmayman.
+Javobi shu: asosiy sabab boshqa. Atoyo.uz dagi xodimlarning hozir saytni boshqarishga vaqti yo'q ekan. Mahsulot kiritish, buyurtmalarni ko'rish. Buni kimdir doim qilib turishi kerak edi, ularning esa asosiy ishidan ortmayapti.
 
-Kod joyida: github.com/Abdulmajidkhan007/atoyo-e-commerce. Endi uni boshqa santexnika
-va qurilish do'konlariga ko'rsataman — har biri o'z serveri va domeni bilan, xarajat
-oldindan kelishilgan holda.
+Ustiga-ustak server uchun pul to'lash imkoni ham yo'q. Sayt boshqarilmasa, pul to'lab turishning foydasi yo'q. Shuning uchun hozircha to'xtatdim.
 
-Nimani o'rgandim:
-• To'lov va xarajat kelishuvi — ish boshlanishidan oldin, yozma.
-• Firebase Blaze'da kichik loyiha ham har oy hisob keltiradi — budjet ogohlantirishi
-  (budget alert) boshidan qo'yilishi shart.
+Reponi private qilib qo'ydim. Kod o'zimda turibdi. Kerak bo'lsa boshqa do'konga moslab beraman.
 
-Do'koningiz uchun shunday sayt, ilova yoki bot kerak bo'lsa: @Abdulloh_77700
-
-#atoyo #Firebase #freelance
+#atoyo #freelance

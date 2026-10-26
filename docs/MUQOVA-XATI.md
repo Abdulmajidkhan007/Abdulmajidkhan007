@@ -17,7 +17,7 @@ Rezyume: [Abdulmajid_Sharipov_Frontend_CV.pdf](https://abdulmajidkhan-portfolio.
 >
 > React va TypeScript bilan veb va mobil interfeyslar quraman. Asosiy ishim — atoyo:
 > Qo'qondagi santexnika do'koni uchun e-commerce platforma (2026-yil oktabrgacha do'konda
-> ishlatildi, hozir to'xtatilgan, kod ochiq: github.com/Abdulmajidkhan007/atoyo-e-commerce).
+> ishlatildi, hozir to'xtatilgan; repo private, so'rasangiz kodni ko'rsataman).
 > Sayt, Android ilova, desktop, do'kon TV ekrani va Telegram bot bitta baza ustida; mahsulot
 > kirimini Gemini Vision bilan avtomatlashtirganman. 2026-yil avgustdan o'quv markazlarini
 > avtomatlashtiruvchi startapda frontend team lead'man: loyihani strict TypeScript'ga
@@ -51,7 +51,7 @@ Bitta xabar, keyin alohida PDF fayl (forward emas):
 > bo'yicha yozyapman.
 >
 > React, TypeScript va Next.js bilan ishlayman. Asosiy ishim — atoyo (santexnika do'koni
-> uchun e-commerce: sayt, Android ilova, Telegram bot; ochiq kod, hozir to'xtatilgan); hozir startapda
+> uchun e-commerce: sayt, Android ilova, Telegram bot; hozir to'xtatilgan, repo private); hozir startapda
 > frontend team lead'man. E'londagi [talablar] bo'yicha tajribam bor.
 >
 > Portfolio: abdulmajidkhan-portfolio.web.app

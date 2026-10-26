@@ -439,3 +439,9 @@ KANALLAR, MIJOZ-JARAYONI va MUQOVA-XATI dagi atoyo matnlari ham shu PR'da to'g'r
 
 *Yozilgan: 2026-10-26*
 
+**Aniqlashtirish (2026-10-26, egasi):** atoyo.uz ni to'xtatishning ASOSIY sababi — do'kon
+xodimlarining saytni boshqarishga vaqti yo'qligi; ikkinchisi — server uchun to'lash imkoni
+yo'qligi. Repo private qilindi, shuning uchun README, rezyume, sayt, keys, muqova xatidan
+repo havolasi olindi ("repo private — so'rasangiz ko'rsataman"). `docs/atoyo-e-commerce.md`
+to'xtatilish bo'limi shunga yozildi.
+

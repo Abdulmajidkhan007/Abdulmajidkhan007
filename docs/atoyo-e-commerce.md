@@ -2,7 +2,7 @@
 
 > Qo'qondagi santexnika do'koni uchun e-commerce platformasi: veb, Android ilova, do'kon kompyuteri, televizor ekrani va Telegram bot — bitta baza ustida.
 
-**Repo:** https://github.com/Abdulmajidkhan007/atoyo-e-commerce · ~~Jonli: atoyo.uz~~ (to'xtatilgan)
+**Repo:** private (Abdulmajidkhan007/atoyo-e-commerce, 2026-10-26 dan) · ~~Jonli: atoyo.uz~~ (to'xtatilgan)
 **Holat:** ❄️ Muzlatilgan — 2026-10-26 da to'xtatildi
 
 ---
@@ -78,20 +78,24 @@ tezligi yetarli. VPS ushlab turish va sertifikat yangilash ishi qolmaydi.
 
 ## Havolalar
 
-- Repo: https://github.com/Abdulmajidkhan007/atoyo-e-commerce
+- Repo: private — so'rasangiz ko'rsataman
 - Jonli sayt: yo'q (2026-10-26 dan atoyo.uz vaqtincha sahifaga yo'naltiriladi)
 
 ---
 
 ## To'xtatilishi (2026-10-26)
 
-**Nima bo'ldi:** server va bulut xarajati (Firebase Blaze) oyiga taxminan 10–13 dollar
-chiqdi (avgust 10.70, sentabr 13.44, oktabr 10.85); do'kon egalariga xarajatni ulashish
-taklif qilindi — ular "loyiha hozir foyda bermayapti, kerak bo'lsa o'zimiz aloqaga
-chiqamiz" dedi. Shuning uchun 2026-10-26 da Firebase loyihasi (`atoyo-uz`) o'chirildi.
+**Asosiy sabab (egasi, 2026-10-26):** atoyo.uz dagi do'kon xodimlarining saytni
+boshqarishga hozir vaqti yo'q (mahsulot kiritish, buyurtmalarni ko'rish — buni kimdir doim
+qilib turishi kerak). Buning ustiga, do'kon tomonida server uchun to'lash imkoni yo'q.
+
+**Xarajat:** Firebase Blaze oyiga taxminan 10–13 dollar chiqdi (avgust 10.70, sentabr 13.44,
+oktabr 10.85). Do'kon egalariga xarajatni ulashish taklif qilindi — ular "loyiha hozir foyda
+bermayapti, kerak bo'lsa o'zimiz aloqaga chiqamiz" dedi. Shuning uchun 2026-10-26 da Firebase
+loyihasi (`atoyo-uz`) o'chirildi, repo private qilindi.
 
 **Holat (rost):**
-- Kod GitHub'da, o'zgarishsiz.
+- Kod GitHub'da (private repo), o'zgarishsiz.
 - Firebase loyihasi o'chirilgan: Google Cloud'da 30 kun ichida (taxminan 2026-11-25 gacha)
   qayta tiklash mumkin. Firestore (≈500 mahsulot), Storage va Auth ma'lumoti **hali
   eksport qilinmagan** — buning uchun avval tiklash va Google Cloud hisobidagi ≈30$ qarzni

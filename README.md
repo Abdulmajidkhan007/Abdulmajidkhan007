@@ -25,7 +25,7 @@ O'quv markazlarini avtomatlashtiruvchi CRM.
 **Mustaqil dasturchi, frilanser | 2025-yil oktabr – hozirgacha**<br>
 **Veb, mobil va Telegram botlar**
 
-* Atoyo santexnika do'koni uchun e-commerce platforma qurdim ([kod](https://github.com/Abdulmajidkhan007/atoyo-e-commerce)): sayt, Android ilova, desktop, do'kon TV ekrani va Telegram bot bitta baza ustida; 2026-yil oktabrgacha do'konda ishlatildi (katalogga 500 ga yaqin mahsulot), server xarajati sababli 2026-10-26 da to'xtatilgan.
+* Atoyo santexnika do'koni uchun e-commerce platforma qurdim (repo private — so'rasangiz ko'rsataman): sayt, Android ilova, desktop, do'kon TV ekrani va Telegram bot bitta baza ustida; 2026-yil oktabrgacha do'konda ishlatildi (katalogga 500 ga yaqin mahsulot), 2026-10-26 da to'xtatilgan: do'kon xodimlarining saytni boshqarishga vaqti yo'q, server uchun to'lash imkoni ham yo'q.
 * Mahsulot kirimini AI bilan avtomatlashtirdim: admin rasm tashlaydi, Gemini Vision tayyor katalog kartasini qaytaradi — kartani qo'lda yozish shart emas.
 * 15 ta Telegram botni bitta monorepoga yig'dim, o'z CLI bilan bitta buyruqda ishga tushadi; har commit oldidan test va kalit skaneri.
 * 2026-yil iyuldan loyihalarni production holatiga keltiryapman (deploy, testlar, CI); 2026-yil oktabrdan buyurtmaga ishlayman.
@@ -34,8 +34,8 @@ O'quv markazlarini avtomatlashtiruvchi CRM.
 LOYIHALAR
 ---------
 
-❄️ **[atoyo-e-commerce](https://github.com/Abdulmajidkhan007/atoyo-e-commerce)** — santexnika do'koni uchun e-commerce: veb, Android, desktop va TV ekrani bitta baza ustida; 2026-10-26 dan to'xtatilgan (server xarajati), kod ochiq<br>
-<sub>Next.js 16 · React 19 · Firebase · TypeScript · [💻 kod](https://github.com/Abdulmajidkhan007/atoyo-e-commerce) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/atoyo-e-commerce.md)</sub>
+❄️ **atoyo-e-commerce** 🔒 — santexnika do'koni uchun e-commerce: veb, Android, desktop va TV ekrani bitta baza ustida; 2026-10-26 dan to'xtatilgan, repo private<br>
+<sub>Next.js 16 · React 19 · Firebase · TypeScript · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/atoyo-e-commerce.md)</sub>
 
 ✅ **[Organick](https://organick-e1c5a.web.app)** — organik oziq-ovqat do'koni: uch til, admin panel, Google / email / SMS orqali kirish, buyurtma Telegram'ga<br>
 <sub>React 19 · Vite 8 · Tailwind v4 · Redux Toolkit 2 · Firebase · Playwright · [🌐 jonli](https://organick-e1c5a.web.app) · [💻 kod](https://github.com/Abdulmajidkhan007/Organick_org) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/organick_org.md)</sub>

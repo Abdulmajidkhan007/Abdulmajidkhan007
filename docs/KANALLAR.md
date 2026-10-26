@@ -96,7 +96,7 @@ Telegram kanal tavsifi 255 belgigacha — bu matn 253 belgi, sig'adi (ko'paytirm
 
 **Post 2 — Atoyo misoli**
 
-⚠️ *2026-10-26: atoyo.uz to'xtatilgan. Yuborishdan oldin o'tgan zamonga o'tkaz yoki "ochiq kod, hozir to'xtatilgan" deb yoz.*
+⚠️ *2026-10-26: atoyo.uz to'xtatilgan. Yuborishdan oldin o'tgan zamonga o'tkaz yoki "hozir to'xtatilgan, repo private" deb yoz.*
 
 > Misol: Qo'qondagi santexnika do'koni 🔧
 >
@@ -163,7 +163,7 @@ Telegram kanal tavsifi 255 belgigacha — bu matn 253 belgi, sig'adi (ko'paytirm
 
 **Post 3 — Atoyo qanday qurilgan (texnik)**
 
-⚠️ *2026-10-26: atoyo.uz to'xtatilgan. Yuborishdan oldin o'tgan zamonga o'tkaz yoki "ochiq kod, hozir to'xtatilgan" deb yoz.*
+⚠️ *2026-10-26: atoyo.uz to'xtatilgan. Yuborishdan oldin o'tgan zamonga o'tkaz yoki "hozir to'xtatilgan, repo private" deb yoz.*
 
 > atoyo ichida nima bor? 🛠
 >
@@ -210,7 +210,7 @@ REST API · Git · Docker · Vite · Vitest · Playwright · Telegram Bot API
 > Material UI; mobilda — React Native (bare CLI). Backend tomonini ham o'zim yopaman
 > (Node.js, NestJS, Firebase) va kerak bo'lganda AI (Gemini, Claude) integratsiyasini qo'shaman.
 >
-> Asosiy ishim — atoyo: Qo'qondagi santexnika do'koni uchun e-commerce platforma (2026-yil oktabrgacha do'konda ishlatildi; hozir to'xtatilgan, kod ochiq).
+> Asosiy ishim — atoyo: Qo'qondagi santexnika do'koni uchun e-commerce platforma (2026-yil oktabrgacha do'konda ishlatildi; hozir to'xtatilgan, repo private).
 > Sayt (Next.js), Android ilova, desktop ilova va Telegram bot bitta baza ustida ishlaydi;
 > do'kon har kuni ishlatadi. Shuningdek: 6 ta jonli sayt, 15 ta Telegram bot (monorepo),
 > veb + Android ilovalar (KidsWear, Lumina).
@@ -229,7 +229,7 @@ REST API · Git · Docker · Vite · Vitest · Playwright · Telegram Bot API
 > Material UI; мобильная разработка — React Native (bare CLI). Бэкенд закрываю сам
 > (Node.js, NestJS, Firebase), при необходимости подключаю AI (Gemini, Claude).
 >
-> Главный проект — atoyo: e-commerce платформа для магазина сантехники в Коканде (до октября 2026 работала в магазине; сейчас остановлена, код открыт).
+> Главный проект — atoyo: e-commerce платформа для магазина сантехники в Коканде (до октября 2026 работала в магазине; сейчас остановлена, репозиторий приватный).
 > Сайт (Next.js), Android-приложение, десктоп-приложение и Telegram-бот работают на одной
 > базе; магазин пользуется ежедневно. Также: 6 живых сайтов, 15 Telegram-ботов (монорепо),
 > веб + Android приложения (KidsWear, Lumina).
