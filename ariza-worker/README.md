@@ -52,3 +52,13 @@ Guruhga xabar tushsa — tayyor.
 - Faqat `ALLOWED_ORIGIN` (sayt manzili) dan kelgan so'rov qabul qilinadi.
 - Maydon uzunligi cheklangan, telefon formati tekshiriladi, HTML qochiriladi.
 - Yashirin `sayt` maydoni: oddiy spam botlar uni to'ldiradi — bunday ariza yuborilmaydi.
+
+## Portfolio formasi (`/contact`)
+
+Xuddi shu Worker portfolio saytining aloqa formasini ham qabul qiladi
+(`POST https://ariza-worker.<nom>.workers.dev/contact`, maydonlar: `name`, `email`, `message`,
+yashirin `botField`). Firebase Blaze kerak emas — Cloudflare bepul tarif yetadi.
+Ruxsat etilgan manbalar `wrangler.toml` dagi `ALLOWED_ORIGIN` ro'yxatida (vergul bilan).
+Saytga manzil `portfolio-3d` reposida GitHub Variable `CONTACT_URL` orqali beriladi
+(`docs/FIREBASE.md` → "Aloqa formasi: Cloudflare Worker").
+
