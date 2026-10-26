@@ -32,8 +32,8 @@
 
 React va TypeScript bilan veb interfeyslar quraman — O'zbek bozori uchun veb,
 mobil, Telegram botlar va AI bilan ishlaydigan mahsulotlar. Asosiy ishim —
-[atoyo.uz](https://atoyo.uz): Next.js asosidagi e-commerce, jonli; do'kon unga
-asta-sekin o'tmoqda (mahsulotlar kiritilmoqda); shu bitta baza ustida Android, desktop va TV ekrani ham ishlaydi.
+atoyo.uz: Next.js asosidagi e-commerce (2026-yil oktabrgacha do'konda ishlatildi; hozir
+to'xtatilgan, kod ochiq); shu bitta baza ustida Android, desktop va TV ekrani ham ishlaydi.
 Backendni o'zim yopaman (Node.js, NestJS, Python) va kerak bo'lganda LLM
 integratsiyasini qo'shaman — Gemini API, RAG, vektor qidiruv.
 
@@ -56,8 +56,8 @@ integratsiyasini qo'shaman — Gemini API, RAG, vektor qidiruv.
 
 ## 📦 Loyihalar
 
-✅ **[atoyo-e-commerce](https://atoyo.uz)** — santexnika do'koni uchun e-commerce: veb, Android, desktop va TV ekrani bitta baza ustida<br>
-<sub>Next.js 16 · React 19 · Firebase · TypeScript · [🌐 atoyo.uz](https://atoyo.uz) · [💻 kod](https://github.com/Abdulmajidkhan007/atoyo-e-commerce) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/atoyo-e-commerce.md)</sub>
+❄️ **[atoyo-e-commerce](https://github.com/Abdulmajidkhan007/atoyo-e-commerce)** — santexnika do'koni uchun e-commerce: veb, Android, desktop va TV ekrani bitta baza ustida; 2026-10-26 dan to'xtatilgan (server xarajati), kod ochiq<br>
+<sub>Next.js 16 · React 19 · Firebase · TypeScript · [💻 kod](https://github.com/Abdulmajidkhan007/atoyo-e-commerce) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/atoyo-e-commerce.md)</sub>
 
 ✅ **[Organick](https://organick-e1c5a.web.app)** — organik oziq-ovqat do'koni: uch til, admin panel, Google / email / SMS orqali kirish, buyurtma Telegram'ga<br>
 <sub>React 19 · Vite 8 · Tailwind v4 · Redux Toolkit 2 · Firebase · Playwright · [🌐 jonli](https://organick-e1c5a.web.app) · [💻 kod](https://github.com/Abdulmajidkhan007/Organick_org) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/organick_org.md)</sub>
@@ -75,7 +75,6 @@ integratsiyasini qo'shaman — Gemini API, RAG, vektor qidiruv.
 | 🦠 [@Tekshiruvchi_07_bot](https://t.me/Tekshiruvchi_07_bot) | Fayl va havolani ochishdan oldin virusga tekshiradi |
 | 🧠 [@SavolJavob_007_bot](https://t.me/SavolJavob_007_bot) | IT bo'yicha testlar, o'z testingizni ham yaratasiz |
 | 🗂 [@arxiv_topadi_bot](https://t.me/arxiv_topadi_bot) | O'chgan xabarlarni rasmiy yo'l bilan qaytarishni o'rgatadi |
-| 🛒 [@Atoyo_uz_bot](https://t.me/Atoyo_uz_bot) | Saytga ulangan do'kon: mahsulotni topib, shu yerda buyurtma berasiz |
 
 ✅ **[portfolio-3d](https://abdulmajidkhan-portfolio.web.app)** 🔒 — 3D portfolio: React Three Fiber sahnasi, uz/en, rezyume PDF; telefondan GitHub Actions orqali Firebase'ga deploy<br>
 <sub>React Three Fiber · three.js · GSAP · Vite 8 · Firebase · [🌐 jonli](https://abdulmajidkhan-portfolio.web.app) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/portfolio-3d.md)</sub>

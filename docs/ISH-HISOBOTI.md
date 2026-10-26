@@ -420,3 +420,18 @@ Postlar (qoralama): `posts/2026-10-25-lumina-hisoblagichlar.md`,
 Egasi qiladiganlar — `docs/REJA.md` 4-bo'lim.
 
 *Yozilgan: 2026-10-25*
+
+## 17. 2026-10-26 — atoyo.uz to'xtatildi
+
+Egasi qarori: server xarajati (Firebase Blaze ≈10–13$/oy; Google hisobida ≈30$ qarz) sababli
+atoyo.uz to'xtatildi, Firebase `atoyo-uz` loyihasi o'chirildi (30 kunda tiklash mumkin).
+Do'kon egalari xarajatni ulashmadi. Kod o'zgarishsiz; reja — boshqa do'konlarga taklif.
+Yangilandi: README, `docs/atoyo-e-commerce.md` (❄️ + to'xtatilish bo'limi), `docs/REJA.md`,
+`docs/REZYUME.md`, xizmatlar sayti (`site/`), keys, vizitka; portfolio-3d: statistika
+(jonli sayt 6→5), atoyo kartasi, rezyume PDF. Vaqtincha sahifa: `site/atoyo-pauza/`.
+Post qoralamasi: `posts/2026-10-26-atoyo-e-commerce-toxtatildi.md`.
+Qoldi (egasi): Firebase tiklab ma'lumot eksporti, ≈30$ to'lov, Mahost'da domenni
+vaqtincha sahifaga yo'naltirish, KANALLAR.md dagi eski matnlar (atoyo.uz "jonli") — keyin.
+
+*Yozilgan: 2026-10-26*
+
