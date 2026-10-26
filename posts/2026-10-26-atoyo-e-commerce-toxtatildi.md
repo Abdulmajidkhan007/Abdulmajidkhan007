@@ -4,28 +4,23 @@ loyiha: atoyo-e-commerce
 
 ---
 
-⏸ atoyo.uz to'xtatildi
+⏸ atoyo.uz pauzada — endi boshqa do'konlar uchun
 
-Qo'qondagi santexnika do'koni uchun qurgan platformam — atoyo.uz (sayt, Android
-ilova, Telegram bot, mahsulot kirimini Gemini Vision bilan avtomatlashtirish) —
-ishlashdan to'xtatildi.
+Qo'qondagi santexnika do'koni uchun qurgan platformam — atoyo.uz (sayt, Android ilova,
+Telegram bot, mahsulot kirimini Gemini Vision bilan avtomatlashtirish) — hozircha
+ishlamayapti: server xarajati oyiga taxminan 10–13 dollar chiqdi, do'kon egalari
+hozir uni to'lamaymiz, kerak bo'lsa o'zimiz aloqaga chiqamiz dedi. Men yolg'iz ko'tara
+olmayman.
 
-Nega: server va bulut xarajati oyiga taxminan 10–13 dollar chiqardi. Do'kon egalariga
-xarajatni ulashishni taklif qildim; ular hozir loyiha foyda bermayapti, kerak bo'lsa
-o'zlari aloqaga chiqishini aytishdi. Pulini men yolg'iz ko'tara olmayman, shuning uchun
-serverni o'chirdim.
-
-Nima qoladi: kod ochiq — github.com/Abdulmajidkhan007/atoyo-e-commerce. Loyiha
-rezyumeimdagi ishim sifatida qoladi, faqat "jonli" emas.
+Kod joyida: github.com/Abdulmajidkhan007/atoyo-e-commerce. Endi uni boshqa santexnika
+va qurilish do'konlariga ko'rsataman — har biri o'z serveri va domeni bilan, xarajat
+oldindan kelishilgan holda.
 
 Nimani o'rgandim:
-• Mijoz bilan xarajat kelishuvini boshidanoq, yozma qilish kerak ekan.
-• Firebase Blaze'da kichik ish ham har oy hisob keltiradi — byudjet ogohlantirishi
+• To'lov va xarajat kelishuvi — ish boshlanishidan oldin, yozma.
+• Firebase Blaze'da kichik loyiha ham har oy hisob keltiradi — budjet ogohlantirishi
   (budget alert) boshidan qo'yilishi shart.
-• Loyiha foydalanuvchi uchun yoqilgan bo'lsa-yu, to'lovchi bo'lmasa — u mahsulot emas,
-  xarajat.
 
-Kelajakda do'kon yoki biznes uchun sayt/bot kerak bo'lsa — to'lov shartlari oldindan
-kelishilgan holda ishlayman: @Abdulloh_77700
+Do'koningiz uchun shunday sayt, ilova yoki bot kerak bo'lsa: @Abdulloh_77700
 
 #atoyo #Firebase #freelance
