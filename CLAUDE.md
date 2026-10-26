@@ -12,6 +12,7 @@ portfolio xaritasi va rezyume: ish beruvchi 2 daqiqada kimligimni tushunsin.
 - `posts/` — kanal postlari, **har post alohida fayl**: `posts/YYYY-MM-DD-<repo>-<mavzu>.md`
   (yuqorida: kanal — xizmat/blog, holat — qoralama/yuborildi). `docs/` ga post yozilmaydi
 - `vizitka/` — vizitka (manba HTML, bosma PDF, PNG); lavozim/telefon o'zgarsa yangilanadi
+- `docs/MUQOVA-XATI.md` — muqova xati va Telegram xabar shablonlari
 - `docs/ISH-HISOBOTI.md` — sessiyalar xulosasi; `docs/ACCOUNT-3-ISHLARI.md` — 3-akkaunt
 - `site/index.html` — xizmatlar sayti (GitHub Pages, `.github/workflows/pages.yml`);
   `site/keys-atoyo.html` — keys sahifasi. Ariza formasi `ARIZA_URL` ga (`ariza-worker/`,
@@ -23,8 +24,10 @@ portfolio xaritasi va rezyume: ish beruvchi 2 daqiqada kimligimni tushunsin.
   `https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/<fayl>.md`
 - JS va ko'p HTML ishlamaydi: markdown jadval, badge, rasm, `<img align>`.
 - Qisqa va skanerlanadigan; batafsili `docs/` da.
-- Tarkib: kim (Abdulmajid Sharipov, Middle Frontend Engineer, O'zbekiston, @Abdulloh_77700) →
-  bir paragraf → stack (faqat haqiqatan ishlatilgan, guruhlab) → loyihalar.
+- Tarkib (2026-10-25, rezyume uslubi — darhonbek gist namunasi, o'zbekcha): ism (setext H1) →
+  H3 lavozim (Strong Junior Frontend Developer) · shahar → kontaktlar bir qatorda `|` bilan →
+  bir gap → buyurtma qatori → ISH TAJRIBASI → LOYIHALAR → STACK → TA'LIM → QO'SHIMCHA.
+  Bo'lim sarlavhalari katta harf, setext H2. Rezyume (`docs/REZYUME.md`, portfolio-3d PDF) bilan mos.
 - Loyihalar (2026-10-04 qarori, shu tartibda): atoyo-e-commerce (atoyo.uz), Organick_org,
   telegram-bots (ochiq botlar username bilan), portfolio-3d, learning-center-front
   (nurulloh-coder-dev, jamoaviy — men frontend), lumina, rn-r-e-commerce, go-uz.
