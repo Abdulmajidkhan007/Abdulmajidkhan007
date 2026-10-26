@@ -430,7 +430,7 @@ Yangilandi: README, `docs/atoyo-e-commerce.md` (❄️ + to'xtatilish bo'limi), 
 `docs/REZYUME.md`, xizmatlar sayti (`site/`), keys, vizitka; portfolio-3d: statistika
 (jonli sayt 6→5), atoyo kartasi, rezyume PDF. Vaqtincha sahifa: `site/atoyo-pauza/`.
 Post qoralamasi: `posts/2026-10-26-atoyo-e-commerce-toxtatildi.md`.
-Qoldi (egasi): Firebase tiklab ma'lumot eksporti, ≈30$ to'lov, Mahost'da domenni
+Qoldi (egasi): Firebase tiklab ma'lumot eksporti, ≈30$ to'lov, Ahost'da domenni
 vaqtincha sahifaga yo'naltirish, KANALLAR.md dagi eski matnlar (atoyo.uz "jonli") — keyin.
 
 *Yozilgan: 2026-10-26*

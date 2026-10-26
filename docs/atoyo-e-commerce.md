@@ -96,7 +96,7 @@ chiqamiz" dedi. Shuning uchun 2026-10-26 da Firebase loyihasi (`atoyo-uz`) o'chi
   qayta tiklash mumkin. Firestore (≈500 mahsulot), Storage va Auth ma'lumoti **hali
   eksport qilinmagan** — buning uchun avval tiklash va Google Cloud hisobidagi ≈30$ qarzni
   to'lash kerak.
-- Mahost'dagi atoyo.uz domeni egasida; vaqtincha sahifa:
+- Ahost'dagi atoyo.uz domeni egasida; vaqtincha sahifa:
   `site/atoyo-pauza/` (GitHub Pages).
 - @Atoyo_uz_bot sayt bazasiga ulangan — Firebase'siz ishlamaydi deb hisoblanadi
   (tekshirilmagan).
