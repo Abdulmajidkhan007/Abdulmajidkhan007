@@ -14,7 +14,7 @@ Telegram: [@Abdulloh_77700](https://t.me/Abdulloh_77700) · Qo'qon, O'zbekiston
 
 React va TypeScript bilan veb va mobil interfeyslar quraman. 2025-yil oktabrdan beri
 mustaqil ishlayman: amaliy loyihalarni real ishlatiladigan holatga keltiraman. Asosiy
-ishim — Qo'qondagi santexnika do'konida ishlatilayotgan e-commerce platformasi
+ishim — Qo'qondagi santexnika do'koni uchun qurgan e-commerce platformasi
 (sayt, Android, desktop, TV ekran va Telegram bot — bitta baza ustida). Backendni
 o'zim yopaman (Node.js, Python) va kerak bo'lganda AI integratsiyasini qo'shaman.
 
@@ -49,10 +49,10 @@ o'zim yopaman (Node.js, Python) va kerak bo'lganda AI integratsiyasini qo'shaman
 ## Loyihalar
 
 ### Atoyo — e-commerce platformasi
-[atoyo.uz](https://atoyo.uz) · [kod](https://github.com/Abdulmajidkhan007/atoyo-e-commerce)
+[kod](https://github.com/Abdulmajidkhan007/atoyo-e-commerce)
 `Next.js 16 · React 19 · TypeScript · Tailwind CSS · Firebase · React Native · Electron · Gemini API`
 
-- Qo'qondagi santexnika do'konida ishlatilmoqda; katalogga 500 ga yaqin mahsulot kiritildi.
+- Qo'qondagi santexnika do'konida 2026-yil oktabrgacha ishlatildi (katalogga 500 ga yaqin mahsulot kiritilgan); server xarajati sababli 2026-10-26 da to'xtatilgan, kod ochiq.
 - **Bitta baza — besh kanal:** sayt, Android ilova, do'kon kompyuteri ilovasi, televizor
   ekrani va Telegram bot bir xil Firestore ma'lumotida — narx bir joyda o'zgarsa, hamma
   kanalda yangilanadi.

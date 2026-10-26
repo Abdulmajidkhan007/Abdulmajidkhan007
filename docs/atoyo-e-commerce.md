@@ -2,8 +2,8 @@
 
 > Qo'qondagi santexnika do'koni uchun e-commerce platformasi: veb, Android ilova, do'kon kompyuteri, televizor ekrani va Telegram bot — bitta baza ustida.
 
-**Repo:** https://github.com/Abdulmajidkhan007/atoyo-e-commerce · **Jonli:** https://atoyo.uz
-**Holat:** ✅ Ishlayapti
+**Repo:** https://github.com/Abdulmajidkhan007/atoyo-e-commerce · ~~Jonli: atoyo.uz~~ (to'xtatilgan)
+**Holat:** ❄️ Muzlatilgan — 2026-10-26 da to'xtatildi
 
 ---
 
@@ -79,8 +79,33 @@ tezligi yetarli. VPS ushlab turish va sertifikat yangilash ishi qolmaydi.
 ## Havolalar
 
 - Repo: https://github.com/Abdulmajidkhan007/atoyo-e-commerce
-- Jonli sayt: https://atoyo.uz
+- Jonli sayt: yo'q (2026-10-26 dan atoyo.uz vaqtincha sahifaga yo'naltiriladi)
 
 ---
 
-*Oxirgi yangilanish: 2026-10-03*
+## To'xtatilishi (2026-10-26)
+
+**Nima bo'ldi:** server va bulut xarajati (Firebase Blaze) oyiga taxminan 10–13 dollar
+chiqdi (avgust 10.70, sentabr 13.44, oktabr 10.85); do'kon egalariga xarajatni ulashish
+taklif qilindi — ular "loyiha hozir foyda bermayapti, kerak bo'lsa o'zimiz aloqaga
+chiqamiz" dedi. Shuning uchun 2026-10-26 da Firebase loyihasi (`atoyo-uz`) o'chirildi.
+
+**Holat (rost):**
+- Kod GitHub'da, o'zgarishsiz.
+- Firebase loyihasi o'chirilgan: Google Cloud'da 30 kun ichida (taxminan 2026-11-25 gacha)
+  qayta tiklash mumkin. Firestore (≈500 mahsulot), Storage va Auth ma'lumoti **hali
+  eksport qilinmagan** — buning uchun avval tiklash va Google Cloud hisobidagi ≈30$ qarzni
+  to'lash kerak.
+- Ahost'dagi atoyo.uz domeni egasida; vaqtincha sahifa:
+  `site/atoyo-pauza/` (GitHub Pages).
+- @Atoyo_uz_bot sayt bazasiga ulangan — Firebase'siz ishlamaydi deb hisoblanadi
+  (tekshirilmagan).
+
+**Reja:** kodni boshqa santexnika do'konlariga taklif qilish — har biriga o'z Firebase
+loyihasi va domeni, xarajat mijoz tomonida yoki oylik xizmatga qo'shilgan holda, yozma
+kelishuv bilan.
+
+**Saboq:** to'lov va xarajat kelishuvi ishdan oldin yozma bo'lishi kerak; Firebase'da
+budjet ogohlantirishi (budget alert) boshidan qo'yilishi shart.
+
+*Oxirgi yangilanish: 2026-10-26*

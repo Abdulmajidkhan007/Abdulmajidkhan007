@@ -27,7 +27,7 @@ Loyihalar ko'p, daromad yo'q. Shu kundan **birinchi o'rinda — mijoz topish va 
 
 - **Paketlar (faqat isbotlangan ishdan):** (1) Telegram bot — buyurtma, lid, CRM
   (isbot: 15 bot, @Atoyo_service_bot); (2) do'kon sayti + Telegram integratsiya
-  (isbot: atoyo.uz); (3) landing / biznes sayt (isbot: portfolio-3d, Organick).
+  (isbot: atoyo.uz kodi — 2026-10-26 dan to'xtatilgan; ochiq kod va portfolio); (3) landing / biznes sayt (isbot: portfolio-3d, Organick).
   Mobil ilova va AI — alohida paket emas, faqat qo'shimcha.
 - **Kanallar tartibi:** mahalliy biznes (to'g'ridan-to'g'ri taklif, atoyo misoli) →
   Telegram freelance/biznes guruhlari → Kwork → Upwork (2–3 keysdan keyin).
@@ -125,7 +125,7 @@ ko'rinmadi — u 3-akkauntda tekshiriladi.
 | **rn-r-e-commerce** | public | `main` | 2026-10-25 | 🚧 veb jonli; Faza 1–6 merge (Faza 6 — PR #17) | Faza 7 PR #19 — egasi merge qiladi |
 | **lumina** | public | `main` | 2026-10-25 | 🚧 veb jonli, APK; hisoblagich ±1 qoidasi jonli bazada (PR #6) | Egasi sinovi; `FIREBASE_TOKEN` |
 | **bot-factory** | private | `main` | 2026-10-25 | 🚧 Faza 1–5 (Faza 5: Dockerfile, Alembic, zaxira, monitoring — PR #4); Railway'ga hali deploy qilinmagan, haqiqiy bot/Stars bilan sinalmagan; CI Actions billing sababli ishlamayapti | Egasi Railway'ga deploy qiladi (`docs/DEPLOY.md`) → Faza 6 |
-| **atoyo-e-commerce** | public | `main` | 2026-10-08 | ✅ Ishlayapti (atoyo.uz), ilova 1.5.2 | Qo'llab-quvvatlash |
+| **atoyo-e-commerce** | public | `main` | 2026-10-08 | ❄️ 2026-10-26 to'xtatilgan (server xarajati); kod bor | Boshqa do'konlarga taklif |
 | **Organick_org** | public | `master` | 2026-09-29 | ✅ Jonli | Tayyor |
 | **mythos-uzbek-ai** | private | claude/… | 2026-09-15 | tajriba | 3-akkaunt yoki oxirida |
 | **learning-datacenter-tc-project** | private | claude/… | 2026-08-12 | 🚧 Faza 1 boshlangan | Oxirida |
@@ -213,7 +213,7 @@ tegilmagan), `Atoyo-erp-v2` (3-akkaunt). Akkauntdagi 21 repo hammasi darajalarga
 | 1 | **rn-r-e-commerce** (KidsWear) | Veb jonli; APK **1.0.9 ochiladi** (yiqilish PR #4, #5 da tuzatildi) | Keyinroq ko'riladi (egasi). Kartada yurakcha nomni bosib qolgan; ilovada Google kirish va buyurtma oqimi sinalmagan. 2-guruh — Blaze |
 | 2 | **lumina** | Veb + APK; uz/en/ru, Reels, admin (rollar, bloklash, shikoyatlar, e'lon) | Egasi sinaydi; ±1 qoidasi ✅ (2026-10-25); CI'ga `FIREBASE_TOKEN` |
 | 3 | **telegram-bots** | ✅ 15 bot; 3 ishli sessiya bajarilgan (deploy konfiglari, hr-bot, bot-factory reja) | Bot-factory endi alohida repoda |
-| 4 | **atoyo-e-commerce** | ✅ jonli (atoyo.uz), ilova 1.5.2 | Qo'llab-quvvatlash: repo `docs/AUDIT-ISHLARI.md` (16-band — 3D model) |
+| 4 | **atoyo-e-commerce** | ❄️ to'xtatilgan 2026-10-26 (Firebase o'chirilgan, 30 kunda tiklash mumkin) | Avval ma'lumot eksporti; keyin: repo `docs/AUDIT-ISHLARI.md` (16-band — 3D model) |
 | 5 | **Organick_org** | ✅ jonli | Tayyor; faqat xato chiqsa |
 | 6 | **Abdulmajidkhan007** (profil) | ✅ | Har loyiha o'zgarganda `docs/<repo>.md` + sana |
 | 7 | **portfolio-3d** | ✅ jonli | Aloqa formasi Blaze'ni kutadi |
