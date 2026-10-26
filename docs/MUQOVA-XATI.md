@@ -15,9 +15,10 @@ Rezyume: [Abdulmajid_Sharipov_Frontend_CV.pdf](https://abdulmajidkhan-portfolio.
 > [Kompaniya] dagi [lavozim] vakansiyasi bo'yicha murojaat qilyapman. [Kompaniyaning
 > mahsuloti / qiladigan ishi haqida 1 gap — nega aynan shu yer qiziq].
 >
-> React va TypeScript bilan veb va mobil interfeyslar quraman. Asosiy ishim — atoyo.uz:
-> Qo'qondagi santexnika do'konida ishlatilayotgan e-commerce platforma. Sayt, Android
-> ilova, desktop, do'kon TV ekrani va Telegram bot bitta baza ustida ishlaydi; mahsulot
+> React va TypeScript bilan veb va mobil interfeyslar quraman. Asosiy ishim — atoyo:
+> Qo'qondagi santexnika do'koni uchun e-commerce platforma (2026-yil oktabrgacha do'konda
+> ishlatildi, hozir to'xtatilgan, kod ochiq: github.com/Abdulmajidkhan007/atoyo-e-commerce).
+> Sayt, Android ilova, desktop, do'kon TV ekrani va Telegram bot bitta baza ustida; mahsulot
 > kirimini Gemini Vision bilan avtomatlashtirganman. 2026-yil avgustdan o'quv markazlarini
 > avtomatlashtiruvchi startapda frontend team lead'man: loyihani strict TypeScript'ga
 > o'tkazdim va jamoa uchun kod qoidalarini yozdim.
@@ -49,8 +50,8 @@ Bitta xabar, keyin alohida PDF fayl (forward emas):
 > Assalomu alaykum! Ismim Abdulmajid Sharipov. [Kanal nomi] dagi [lavozim] e'loni
 > bo'yicha yozyapman.
 >
-> React, TypeScript va Next.js bilan ishlayman. Asosiy ishim — atoyo.uz (do'konda
-> ishlatiladigan e-commerce: sayt, Android ilova, Telegram bot); hozir startapda
+> React, TypeScript va Next.js bilan ishlayman. Asosiy ishim — atoyo (santexnika do'koni
+> uchun e-commerce: sayt, Android ilova, Telegram bot; ochiq kod, hozir to'xtatilgan); hozir startapda
 > frontend team lead'man. E'londagi [talablar] bo'yicha tajribam bor.
 >
 > Portfolio: abdulmajidkhan-portfolio.web.app

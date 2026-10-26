@@ -431,7 +431,11 @@ Yangilandi: README, `docs/atoyo-e-commerce.md` (❄️ + to'xtatilish bo'limi), 
 (jonli sayt 6→5), atoyo kartasi, rezyume PDF. Vaqtincha sahifa: `site/atoyo-pauza/`.
 Post qoralamasi: `posts/2026-10-26-atoyo-e-commerce-toxtatildi.md`.
 Qoldi (egasi): Firebase tiklab ma'lumot eksporti, ≈30$ to'lov, Ahost'da domenni
-vaqtincha sahifaga yo'naltirish, KANALLAR.md dagi eski matnlar (atoyo.uz "jonli") — keyin.
+vaqtincha sahifaga yo'naltirish.
+
+**Tuzatish:** PR #13 `main` ga Strong Junior, gist uslubidagi README va `docs/MUQOVA-XATI.md`
+dan OLDINGI holatda qo'shilgan ekan — bu uchtasi PR #20 orqali `main` ga tushadi.
+KANALLAR, MIJOZ-JARAYONI va MUQOVA-XATI dagi atoyo matnlari ham shu PR'da to'g'rilandi.
 
 *Yozilgan: 2026-10-26*
 

@@ -25,7 +25,7 @@ O'quv markazlarini avtomatlashtiruvchi CRM.
 **Mustaqil dasturchi, frilanser | 2025-yil oktabr – hozirgacha**<br>
 **Veb, mobil va Telegram botlar**
 
-* Atoyo santexnika do'koni uchun e-commerce platforma qurdim — [atoyo.uz](https://atoyo.uz): sayt, Android ilova, desktop, do'kon TV ekrani va Telegram bot bitta baza ustida; katalogga 500 ga yaqin mahsulot kiritildi.
+* Atoyo santexnika do'koni uchun e-commerce platforma qurdim ([kod](https://github.com/Abdulmajidkhan007/atoyo-e-commerce)): sayt, Android ilova, desktop, do'kon TV ekrani va Telegram bot bitta baza ustida; 2026-yil oktabrgacha do'konda ishlatildi (katalogga 500 ga yaqin mahsulot), server xarajati sababli 2026-10-26 da to'xtatilgan.
 * Mahsulot kirimini AI bilan avtomatlashtirdim: admin rasm tashlaydi, Gemini Vision tayyor katalog kartasini qaytaradi — kartani qo'lda yozish shart emas.
 * 15 ta Telegram botni bitta monorepoga yig'dim, o'z CLI bilan bitta buyruqda ishga tushadi; har commit oldidan test va kalit skaneri.
 * 2026-yil iyuldan loyihalarni production holatiga keltiryapman (deploy, testlar, CI); 2026-yil oktabrdan buyurtmaga ishlayman.
@@ -34,8 +34,8 @@ O'quv markazlarini avtomatlashtiruvchi CRM.
 LOYIHALAR
 ---------
 
-✅ **[atoyo-e-commerce](https://atoyo.uz)** — santexnika do'koni uchun e-commerce: veb, Android, desktop va TV ekrani bitta baza ustida<br>
-<sub>Next.js 16 · React 19 · Firebase · TypeScript · [🌐 atoyo.uz](https://atoyo.uz) · [💻 kod](https://github.com/Abdulmajidkhan007/atoyo-e-commerce) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/atoyo-e-commerce.md)</sub>
+❄️ **[atoyo-e-commerce](https://github.com/Abdulmajidkhan007/atoyo-e-commerce)** — santexnika do'koni uchun e-commerce: veb, Android, desktop va TV ekrani bitta baza ustida; 2026-10-26 dan to'xtatilgan (server xarajati), kod ochiq<br>
+<sub>Next.js 16 · React 19 · Firebase · TypeScript · [💻 kod](https://github.com/Abdulmajidkhan007/atoyo-e-commerce) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/atoyo-e-commerce.md)</sub>
 
 ✅ **[Organick](https://organick-e1c5a.web.app)** — organik oziq-ovqat do'koni: uch til, admin panel, Google / email / SMS orqali kirish, buyurtma Telegram'ga<br>
 <sub>React 19 · Vite 8 · Tailwind v4 · Redux Toolkit 2 · Firebase · Playwright · [🌐 jonli](https://organick-e1c5a.web.app) · [💻 kod](https://github.com/Abdulmajidkhan007/Organick_org) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/organick_org.md)</sub>
@@ -53,7 +53,6 @@ LOYIHALAR
 | 🦠 [@Tekshiruvchi_07_bot](https://t.me/Tekshiruvchi_07_bot) | Fayl va havolani ochishdan oldin virusga tekshiradi |
 | 🧠 [@SavolJavob_007_bot](https://t.me/SavolJavob_007_bot) | IT bo'yicha testlar, o'z testingizni ham yaratasiz |
 | 🗂 [@arxiv_topadi_bot](https://t.me/arxiv_topadi_bot) | O'chgan xabarlarni rasmiy yo'l bilan qaytarishni o'rgatadi |
-| 🛒 [@Atoyo_uz_bot](https://t.me/Atoyo_uz_bot) | Saytga ulangan do'kon: mahsulotni topib, shu yerda buyurtma berasiz |
 
 ✅ **[portfolio-3d](https://abdulmajidkhan-portfolio.web.app)** 🔒 — 3D portfolio: React Three Fiber sahnasi, uz/en, rezyume PDF; telefondan GitHub Actions orqali Firebase'ga deploy<br>
 <sub>React Three Fiber · three.js · GSAP · Vite 8 · Firebase · [🌐 jonli](https://abdulmajidkhan-portfolio.web.app) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/portfolio-3d.md)</sub>
