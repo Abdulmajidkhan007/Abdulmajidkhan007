@@ -351,7 +351,7 @@ qo'shiladi (sayt FAQ, 6-bosqich). Ariza formasi bot orqali guruhga yuborishga
 tayyorlandi: `ariza-worker/` (Cloudflare Worker, token secret'da). Egasi deploy
 qilib `ARIZA_URL` ni bermaguncha forma Telegram chatini ochadi.
 
-## 15. 2026-10-22 — navigatsiya sessiyasi xulosasi (yangi sessiya shundan boshlaydi)
+## 15. 2026-10-22 — navigatsiya sessiyasi xulosasi
 
 **Faol sessiyalar:**
 - KidsWear nazoratchi: `session_01Jyx7chtRj4d8os4JJWx3Hr` — Faza 5 (sharhlar) dan keyin TO'XTAYDI
@@ -421,7 +421,7 @@ Egasi qiladiganlar — `docs/REJA.md` 4-bo'lim.
 
 *Yozilgan: 2026-10-25*
 
-## 17. 2026-10-26 — atoyo.uz to'xtatildi
+## 18. 2026-10-26 — atoyo.uz to'xtatildi
 
 Egasi qarori: server xarajati (Firebase Blaze ≈10–13$/oy; Google hisobida ≈30$ qarz) sababli
 atoyo.uz to'xtatildi, Firebase `atoyo-uz` loyihasi o'chirildi (30 kunda tiklash mumkin).
@@ -444,4 +444,57 @@ xodimlarining saytni boshqarishga vaqti yo'qligi; ikkinchisi — server uchun to
 yo'qligi. Repo private qilindi, shuning uchun README, rezyume, sayt, keys, muqova xatidan
 repo havolasi olindi ("repo private — so'rasangiz ko'rsataman"). `docs/atoyo-e-commerce.md`
 to'xtatilish bo'limi shunga yozildi.
+
+## 19. 2026-10-27 — umumiy holat (yangi navigatsiya sessiyasi shundan boshlaydi)
+
+Yangi sessiya: "CLAUDE.md, docs/REJA.md va docs/ISH-HISOBOTI.md 19-bo'limni o'qi".
+Eski navigatsiya sessiyasi konteksti 64% ga yetdi — yopiladi.
+
+**Limit qoidasi (egasi):** haftalik limit seshanba 17:00 da yangilanadi; kuniga ≤12%
+(7 × 12 = 84%, 16% zaxira). Usage credits o'chiq. Oddiy ishlar — Sonnet, murakkab kod — Opus.
+
+**Referal akkauntlar natijasi (profil repodagi hujjat va postlardan, 2026-10-24…25):**
+
+| Daraja | Loyiha | Qilindi | Holat (rost) |
+|---|---|---|---|
+| 0 | Insta A (telegram-bots) | Qo'llanma-bot: bepul qadamlar, pullik 7 bo'lim, 7 ta AI shablon, "o'zim sozlab beraman" arizasi; 29 test | Telegram'da ishga tushirilmagan |
+| 0 | Insta B (`instagram-avto-javob`, private) | Repo va reja | Faza 0 — Meta Developer + Business Verification (egasi); kod yo'q |
+| 0 | countlist | Ko'p tranzaksiya, transfer, paketlar | Narx va API kalit egasidan |
+| 3 | marshrutchi-bot | PR #1 lokal tekshirildi | CI — billing |
+| 3 | suhbat | 2026-10-25 da push bor | Profil repoda hujjat/post yo'q — aniqlanmagan |
+| 4 | rn-r-e-commerce | Faza 6 (katalog boshqaruvi), Faza 7 PR | Faza 7 ni egasi merge qiladi; admin UI telefonda sinalmagan |
+| 4 | lumina | Hisoblagichlar ±1 | Emulyatorda 56/56; ilovada sinalmagan; `FIREBASE_TOKEN` yo'q |
+| 4 | uzbek-tg | Ghost mode, sinash ro'yxati | Telefonda sinalmagan |
+| 4 | bot-factory | Faza 3–5 (Docker, migratsiya, shifrlangan zaxira) | Lokal testlar o'tgan; CI — billing; haqiqiy botda sinalmagan |
+| 4 | portfolio-builder | — | G'oyalar qutisi (2026-12-11 dan keyin) |
+
+**Umumiy to'siq:** GitHub Actions billing — marshrutchi, bot-factory CI va portfolio-3d
+deploy (yangi rezyume, email, aloqa formasi saytga chiqmagan).
+
+**Freelance (1-daraja) — mijoz qidirish:** Google Maps'dan 11 ta Qo'qon biznesi (sayti
+topilmagan, Maps AI xulosasi — tekshirilmagan): qurilish/santexnika/elektro — Prime Elektro
+Market, Toyyib santexnika, STROY HOUSE, Megamix (eng kuchli soha, birinchi); Smart Home Kokand;
+kiyim — Bursa, Milano Kokand, Premium outlets; restoran — Kabob House, Qoqon Zamin osh, Abu
+Dhabi Restaurant. Tartib: Telegram'da alohida, qisqa xabar (umumiy ramka + soha taklifi +
+shaxsiy qator), kuniga 3–4 ta; qiziqsa — qo'ng'iroq yoki uchrashuv. Va'da qilinmaydi: 1C,
+CRM, sodiqlik tizimi. Tegilmaydi: o'quv markazlari (jamoaviy startap bilan to'qnashadi),
+klinikalar. Natijalar `docs/REJA.md` 0-bo'lim mijozlar jadvaliga yoziladi.
+
+**Help Desk (ISHONCH, Qo'qon):** HR qayta qo'ng'iroq qildi. Egasi rasmiy tajriba uchun
+ko'rib chiqmoqda. Maosh: e'londagi pastki chegara — 6 mln so'm, sinov davri maoshi va 3–6
+oydan keyin ko'rib chiqishni so'rash. Talab bo'shliqlari: Active Directory, 1 yillik
+tajriba, o'rta maxsus ma'lumot (HR'dan aniqlash).
+
+**Portfolio aloqa formasi (Worker, Blaze'siz) — egasi qiladi:** Cloudflare akkaunt → Account
+ID + API token → profil repo Secrets (`CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`,
+`TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`) → "Ariza worker" workflow → portfolio-3d Variable
+`CONTACT_URL=https://ariza-worker.<nom>.workers.dev/contact` → Deploy.
+
+**atoyo:** Firebase `atoyo-uz` 30 kunda (≈2026-11-25 gacha) tiklanadi — avval ≈30$ to'lov,
+keyin eksport (`docs/atoyo-e-commerce.md`). Ahost domeni — vaqtincha sahifaga yo'naltirish.
+
+**Eski branchlar (keraksiz, o'chirsa bo'ladi):** `claude/insta-avtojavob-post`,
+`ccr-b8c07f50-1szuj2`.
+
+*Yozilgan: 2026-10-27*
 
