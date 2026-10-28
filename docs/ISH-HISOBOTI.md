@@ -498,3 +498,11 @@ keyin eksport (`docs/atoyo-e-commerce.md`). Ahost domeni — vaqtincha sahifaga 
 
 *Yozilgan: 2026-10-27*
 
+## 20. 2026-10-28 — freelance: mijozlarga xabarlar tayyorlandi
+
+`docs/MIJOZ-XABARLARI.md`: 11 ta Qo'qon biznesi uchun alohida qisqa Telegram xabari (ramka + soha
+taklifi + shaxsiy qator), 3 kunlik yuborish jadvali (3–4 ta/kun, 2026-10-29…31; avval qurilish/
+santexnika/elektro, keyin kiyim, restoran), qo'ng'iroq savollari (20 ta), yozma qamrov shabloni
+(qilinadi / qilinmaydi / muddat, 50% oldindan, 2 hafta bepul tuzatish). `docs/REJA.md` 0-bo'lim
+mijozlar jadvali to'ldirildi. Hech kimga yuborilmagan — egasi yuboradi.
+Eslatma: `docs/KEYS-ATOYO.md` dagi «tizim jonli» iborasi 2026-10-26 dan eskirgan (xabarlarda ishlatilmadi).

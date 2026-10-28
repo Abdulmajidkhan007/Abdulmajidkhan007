@@ -52,9 +52,22 @@ Loyihalar ko'p, daromad yo'q. Shu kundan **birinchi o'rinda — mijoz topish va 
 botdagi narx admin paneldan o'zgartiriladi. Bepul qism — xizmat kanaliga majburiy obuna
 bilan; pullik qismda obuna talab qilinmaydi.
 
+Xabar matnlari, yuborish jadvali, savollar va qamrov shabloni — `docs/MIJOZ-XABARLARI.md`.
+Sana — **rejalashtirilgan** yuborish kuni; yuborilgach holat «taklif»ga o'zgaradi (2026-10-28: hech biriga yuborilmagan).
+
 | Sana | Mijoz | Ish | Holat |
 |---|---|---|---|
-| — | — | — | — |
+| 2026-10-29 | Prime Elektro Market | katalog sayt + bot | xabar tayyor, yuborilmagan |
+| 2026-10-29 | Toyyib santexnika | katalog sayt + bot | xabar tayyor, yuborilmagan |
+| 2026-10-29 | STROY HOUSE | katalog sayt + bot | xabar tayyor, yuborilmagan |
+| 2026-10-29 | Megamix | turi aniqlanadi | xabar tayyor, yuborilmagan |
+| 2026-10-30 | Smart Home Kokand | katalog sayt + bot | xabar tayyor, yuborilmagan |
+| 2026-10-30 | Bursa | katalog sayt | xabar tayyor, yuborilmagan |
+| 2026-10-30 | Milano Kokand | katalog sayt | xabar tayyor, yuborilmagan |
+| 2026-10-31 | Premium outlets | katalog sayt | xabar tayyor, yuborilmagan |
+| 2026-10-31 | Kabob House | menyu sayti + bot | xabar tayyor, yuborilmagan |
+| 2026-10-31 | Qoqon Zamin osh | menyu sayti + bot | xabar tayyor, yuborilmagan |
+| 2026-10-31 | Abu Dhabi Restaurant | menyu sayti + bot | xabar tayyor, yuborilmagan |
 
 ### Cheklovdan istisnolar (egasi qarori)
 
