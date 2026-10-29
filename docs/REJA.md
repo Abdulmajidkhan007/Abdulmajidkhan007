@@ -199,6 +199,10 @@ Pastdagi A/B jadvallari — holat ma'lumotnomasi, tartib emas.
   shart qo'yiladi — ish tugasa hisobot oxirgi qatori: «✅ Tugatdim — men endi keraksizman, bu
   sessiyani arxivlashingiz mumkin.» Shu qatorni ko'rgan sessiyalarni egasi o'zi arxivlaydi;
   nazoratchi faqat egasi so'raganda arxivlaydi.
+- **2026-10-29 (egasi qarori):** referal akkaunt 1 — abdullohkhan akkauntini ulab, kompyuterdagi
+  70+ loyihani yuklash (band). Referal akkaunt 2 — 0/3/4-darajaning to'siqsiz kod ishlari, keyin
+  5–6-daraja (`learning-datacenter-tc-project`, `mythos-uzbek-ai` dan boshlab). Asosiy akkaunt —
+  1–2-daraja; freelance alohida sessiyada (2026-10-28).
 - Har akkauntga GitHub (Abdulmajidkhan007) ulanadi, aks holda private repolar ko'rinmaydi.
 - Asosiy akkauntdagi 0/3/4-daraja sessiyalari (countlist, Insta A/B, marshrutchi, KidsWear)
   2026-10-22 dan **to'xtatilgan** — davomi tegishli akkauntda, holat repolardagi hujjatlardan.
@@ -283,4 +287,4 @@ Repo holati: `telegram-bots/docs/HOLAT.md`.
 
 ---
 
-*Oxirgi yangilanish: 2026-10-25*
+*Oxirgi yangilanish: 2026-10-29*
