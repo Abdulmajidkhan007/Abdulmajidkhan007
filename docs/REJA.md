@@ -95,6 +95,22 @@ bilan; pullik qismda obuna talab qilinmaydi.
   Higgsfield orqali qo'lda sinab ko'riladi. Instagram'da AI-video belgisi qo'yiladi.
 - 2026-10-22 — **Failure Network** (omadsizliklar tarmog'i). Eng zaif: daromad modeli va
   "bo'sh tarmoq" muammosi; alohida platforma emas, boshqa mahsulotning bo'limi bo'la oladi.
+- 2026-10-29 — **Poyezd chiptasi kuzatuvchi bot** (namuna: Chiptatopar — bo'sh joy chiqsa
+  xabar beradi va joyni o'zi band qiladi; to'lov: chipta olinganda 27 000 so'm yoki
+  97 000 so'm / 30 kun). Kuchli: og'riq aniq (bayram va Afrosiyob chiptalari tez tugaydi),
+  pul to'lashga tayyor auditoriya bor, `telegram-bots` tajribasiga mos.
+  Zaif: bozor kichik va mavsumiy — namunaning o'z statistikasi 397 buyurtma, 580 chipta va
+  24 ta faol foydalanuvchi; demak bu alohida startup emas, kichik qo'shimcha daromad.
+  Raqib allaqachon bor, farq qilish kerak.
+  Xavf: (1) butunlay railway.uz saytiga bog'liq — sayt o'zgarsa yoki botlarni bloklasa,
+  xizmat to'xtaydi; (2) joyni avtomatik band qilish uchun foydalanuvchining pasport
+  ma'lumoti va railway.uz akkaunti kerak — shaxsiy ma'lumot, katta mas'uliyat;
+  (3) pul qabul qilish uchun yuridik shaxs va soliq kerak; (4) chipta "ushlab turish"
+  qoidaga zid deb topilishi mumkin.
+  MVP (xavfsizi): faqat **xabar berish**, avtomatik band qilishsiz — joy chiqsa havola
+  yuboriladi, odam o'zi oladi. Farq qilish yo'li: poyezd + avtobus + avia bitta botda,
+  yoki narx tushganda ogohlantirish. Avval bitta yo'nalishda (Toshkent–Samarqand)
+  2 hafta o'zimiz uchun sinab ko'riladi.
 
 ### Har dushanba
 
