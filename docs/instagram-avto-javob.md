@@ -17,6 +17,9 @@ TypeScript, Node 22+, Fastify, Zod, PostgreSQL, grammY, Railway.
 - **Webhook faqat tekshiradi va saqlaydi, AI ishchida** — Meta tez javob kutadi; qayta
   yuborilgan xabar `message id` bo'yicha dedupe.
 - **Navbat Postgres'da** (`SKIP LOCKED`) — dastlab Redis kerak emas.
+- **Prompt injection — 5 qoida** (REJA 7.1, 2026-10-29): AI'da tool yo'q, mijoz matni
+  ko'rsatma emas, FAQ ham ishonchsiz, eng kam ruxsat, chiqish tekshiruvi — F2 da ≥20
+  hujum testi. Sabab: mijoz DM'i to'g'ridan-to'g'ri modelga boradi.
 - **Alohida private repo** — tijorat mantig'i (shablon, prompt, narx) public `telegram-bots` da turmasin.
 
 ## Holat (rostini)
@@ -26,4 +29,4 @@ Reja 2026-10-24 da `telegram-bots` dan repo ichidagi `docs/REJA.md` ga ko'chiril
 ## Havolalar
 Repo private: `Abdulmajidkhan007/instagram-avto-javob`.
 
-*Oxirgi yangilanish: 2026-10-24*
+*Oxirgi yangilanish: 2026-10-29*

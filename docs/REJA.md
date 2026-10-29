@@ -96,6 +96,11 @@ bilan; pullik qismda obuna talab qilinmaydi.
 - 2026-10-22 — **Failure Network** (omadsizliklar tarmog'i). Eng zaif: daromad modeli va
   "bo'sh tarmoq" muammosi; alohida platforma emas, boshqa mahsulotning bo'limi bo'la oladi.
 
+- 2026-10-29 — **OSAI (OffSec AI Red Teamer)**: AI agent, RAG, MCP va AI infratuzilmasiga
+  hujum; 24 soatlik amaliy imtihon, kurs AI-300 ($1 749 dan), OSCP darajasi kutiladi.
+  Hozir emas — freelance birinchi. Shu orada amaliy qismi: Insta B REJA 7.1 (prompt
+  injection — 5 qoida) va post qoralamasi.
+
 ### Har dushanba
 
 1) O'tgan haftada navbatdagi loyihada nima tugadi? 2) Nima to'sqinlik qildi?
