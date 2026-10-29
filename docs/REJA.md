@@ -128,7 +128,7 @@ ko'rinmadi — u 3-akkauntda tekshiriladi.
 | **atoyo-e-commerce** | public | `main` | 2026-10-08 | ❄️ 2026-10-26 to'xtatilgan (server xarajati); kod bor | Boshqa do'konlarga taklif |
 | **Organick_org** | public | `master` | 2026-09-29 | ✅ Jonli | Tayyor |
 | **mythos-uzbek-ai** | private | claude/… | 2026-10-29 | tajriba: 12 qatorli datasetni yodlagan model; pytest 98 ✅, ruff 20 ❌ (repo `docs/REJA.md`) | Egasi variant tanlaydi (tavsiya: ❄️ muzlatish) |
-| **learning-datacenter-tc-project** | private | claude/… | 2026-10-29 | 🚧 Faza 0 (lint, testlar, toza build) merge — PR #2; Faza 1 (jadval, davomat) ishchida | Faza 1 PR tekshiruvi |
+| **learning-datacenter-tc-project** | private | claude/… | 2026-10-29 | 🚧 Faza 0 (PR #2) va Faza 1 — jadval, davomat (PR #3) merge; mijozga o'rnatilmagan | Faza 2 — baholar (egasi aytganda) |
 | **DevCraft-AI** | private | feat/… | 2026-08-24 | ❄️ faqat arxitektura | 3-akkaunt |
 | **web-3d** | private | claude/… | 2026-08-01 | 🚧 | Oxirida |
 | **go-uz** | private | claude/… | 2026-07-12 | 🚧 | 3-akkaunt |

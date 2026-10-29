@@ -43,8 +43,12 @@ yo'qolmasligi testlangan.
 **Bor (kod + lokal testlar):** 9 API modul (auth, tashkilot, filial/xona, o'quvchi, ota-ona, xodim,
 kurs, guruh, enrollment), veb (login, dashboard, o'quvchilar). **2026-10-29 — Faza 0:** ESLint,
 testlar (shared 54, api 10, e2e 16), toza klonda build, CI workflow (PR #2).
-**Qurilmoqda:** Faza 1 — dars jadvali va davomat.
-**Hali yo'q:** baholar, moliya, maosh, ota-onalar portali, Telegram bot; birorta mijozga o'rnatilmagan;
+**2026-10-29 — Faza 1 (PR #3):** haftalik dars jadvali (xona va o'qituvchi to'qnashuvi rad etiladi),
+slotlardan darslar yaratish (qayta chaqirsa dublikat yo'q), dars bekor qilish/ko'chirish, davomat
+(keldi/kelmadi/kechikdi/sababli, audit'ga yoziladi), vebda guruh jadvali, «Bugungi darslar» va davomat
+varag'i (uz/ru/en). Testlar: shared 73, api 10, e2e 36 (PostgreSQL 16); vebda Playwright bilan 11 qadamli
+oqim (ishchi sessiyada). Haqiqiy foydalanuvchi va mijoz serverida sinalmagan.
+**Hali yo'q:** baholar (Faza 2), moliya, maosh, ota-onalar portali, Telegram bot; birorta mijozga o'rnatilmagan;
 GitHub CI billing sababli ishlamaydi (tekshiruv lokal).
 
 ## Havolalar
