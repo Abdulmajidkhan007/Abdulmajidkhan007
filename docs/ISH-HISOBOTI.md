@@ -498,3 +498,21 @@ keyin eksport (`docs/atoyo-e-commerce.md`). Ahost domeni — vaqtincha sahifaga 
 
 *Yozilgan: 2026-10-27*
 
+
+---
+
+## 20. 2026-10-29 — 0/3/4-daraja to'siqsiz ishlar + 5–6-daraja (referal akkaunt 2)
+
+| Daraja | Loyiha | Qilindi | Holat (rost) |
+|---|---|---|---|
+| 3 | suhbat | v0.3–v0.5 allaqachon chiqarilgan ekan (profil REJA eskirgan edi). 4c-1 → **v0.6.0 relizi** (PR #29, release workflow ✅). `docs/suhbat.md` noldan yozildi, post | 4c-1 qurilmada sinalmagan |
+| 3 | marshrutchi-bot | — | PR #1 egasi merge qilishini kutadi → Faza 2 kutmoqda |
+| 4 | rn-r-e-commerce | Faza 6 amallari mobil adminga (PR #20, Sonnet) | CI yashil, PR #19 bilan ziddiyat yo'q; telefonda sinalmagan |
+| 6 | learning-datacenter-tc-project | monorepo branch hujjatlari + `docs/REJA.md` main'ga (PR #1); **Faza 0** — ESLint, testlar, toza klonda build, CI (PR #2, Sonnet); **Faza 1** — jadval va davomat (PR #3, Opus) | Toza klonda typecheck/lint/test/build ✅, e2e 36/36 (PostgreSQL 16); pul parse xatosi topilib tuzatildi; mijozga o'rnatilmagan |
+| 5 | mythos-uzbek-ai | Tekshiruv: pytest 98 ✅, node ✅, ruff 20 ❌; `docs/REJA.md` (PR #1) — 3 variant | Egasi tanlaydi (tavsiya: muzlatish) |
+
+Usul: kichik ishlar o'zim; KidsWear mobil va CRM Faza 0 — Sonnet, CRM Faza 1 — Opus.
+Har PR toza klonda lokal tekshirildi (private repolarda CI billing sababli ishlamaydi —
+natija PR izohida). KidsWear #19 va marshrutchi #1 ga tegilmadi.
+
+*Yozilgan: 2026-10-29*

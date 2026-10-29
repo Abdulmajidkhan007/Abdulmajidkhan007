@@ -117,18 +117,18 @@ ko'rinmadi — u 3-akkauntda tekshiriladi.
 
 | Repo | Ochiq/yopiq | Default | Oxirgi ish | Holat | Qaror |
 |---|---|---|---|---|---|
-| **suhbat** | public | `main` | 2026-10-21 | 🚧 veb jonli (Railway), v0.5.0 chiqarilmagan; telefonda va Railway'da hammasi sinalmagan | Davom (asosiy akkaunt) |
+| **suhbat** | public | `main` | 2026-10-29 | 🚧 veb jonli (Railway); relizlar v0.1.0–v0.6.0 chiqarilgan (v0.6.0 — 4c-1, 2026-10-29); telefonda va Railway'da hammasi sinalmagan | Davom; 4c-2 — qurilma kerak |
 | **Abdulmajidkhan007** | public | `main` | 2026-10-11 (main) | ✅ | Yuritiladi; 2 ta docs branch main'ga qo'shilmagan (pastda) |
 | **portfolio-3d** | private | `main` | 2026-10-16 | ✅ jonli, faqat Hosting; forma Blaze'ni kutadi | Tayyor |
 | **uzbek-tg** | public | `main` | 2026-10-25 | 🚧 0–1-faza tugagan; 2-faza va 3-faza (ghost mode, PR #12) — kod yozildi, telefonda sinalmagan | Egasi sinaydi (`docs/SINOV-ROYXATI.md`) |
 | **telegram-bots** | public | `main` | 2026-10-21 | ✅ 15 bot, CI; Railway konfiglari tayyor | Qo'llab-quvvatlash |
-| **rn-r-e-commerce** | public | `main` | 2026-10-25 | 🚧 veb jonli; Faza 1–6 merge (Faza 6 — PR #17) | Faza 7 PR #19 — egasi merge qiladi |
+| **rn-r-e-commerce** | public | `main` | 2026-10-29 | 🚧 veb jonli; Faza 1–6 merge (Faza 6 — PR #17, mobil admin — PR #20) | Faza 7 PR #19 — egasi merge qiladi |
 | **lumina** | public | `main` | 2026-10-25 | 🚧 veb jonli, APK; hisoblagich ±1 qoidasi jonli bazada (PR #6) | Egasi sinovi; `FIREBASE_TOKEN` |
 | **bot-factory** | private | `main` | 2026-10-25 | 🚧 Faza 1–5 (Faza 5: Dockerfile, Alembic, zaxira, monitoring — PR #4); Railway'ga hali deploy qilinmagan, haqiqiy bot/Stars bilan sinalmagan; CI Actions billing sababli ishlamayapti | Egasi Railway'ga deploy qiladi (`docs/DEPLOY.md`) → Faza 6 |
 | **atoyo-e-commerce** | public | `main` | 2026-10-08 | ❄️ 2026-10-26 to'xtatilgan (server xarajati); kod bor | Boshqa do'konlarga taklif |
 | **Organick_org** | public | `master` | 2026-09-29 | ✅ Jonli | Tayyor |
-| **mythos-uzbek-ai** | private | claude/… | 2026-09-15 | tajriba | 3-akkaunt yoki oxirida |
-| **learning-datacenter-tc-project** | private | claude/… | 2026-08-12 | 🚧 Faza 1 boshlangan | Oxirida |
+| **mythos-uzbek-ai** | private | claude/… | 2026-10-29 | tajriba: 12 qatorli datasetni yodlagan model; pytest 98 ✅, ruff 20 ❌ (repo `docs/REJA.md`) | Egasi variant tanlaydi (tavsiya: ❄️ muzlatish) |
+| **learning-datacenter-tc-project** | private | claude/… | 2026-10-29 | 🚧 Faza 0 (PR #2) va Faza 1 — jadval, davomat (PR #3) merge; mijozga o'rnatilmagan | Faza 2 — baholar (egasi aytganda) |
 | **DevCraft-AI** | private | feat/… | 2026-08-24 | ❄️ faqat arxitektura | 3-akkaunt |
 | **web-3d** | private | claude/… | 2026-08-01 | 🚧 | Oxirida |
 | **go-uz** | private | claude/… | 2026-07-12 | 🚧 | 3-akkaunt |
@@ -217,7 +217,7 @@ tegilmagan), `Atoyo-erp-v2` (3-akkaunt). Akkauntdagi 21 repo hammasi darajalarga
 | 5 | **Organick_org** | ✅ jonli | Tayyor; faqat xato chiqsa |
 | 6 | **Abdulmajidkhan007** (profil) | ✅ | Har loyiha o'zgarganda `docs/<repo>.md` + sana |
 | 7 | **portfolio-3d** | ✅ jonli | Aloqa formasi Blaze'ni kutadi |
-| 8 | **suhbat** | 🚧 boshlangan: 0–4b fazalar `main` da, veb Railway'da jonli, v0.3–v0.5 chiqarilmagan | Repo `docs/REJA.md` → "Keyingi sessiya uchun"; telefonda va Railway'da sinash |
+| 8 | **suhbat** | 🚧 0–4c-1 fazalar `main` da, veb Railway'da jonli, relizlar v0.1.0–v0.6.0 chiqarilgan (`docs/suhbat.md`) | Repo `docs/REJA.md` → "Keyingi sessiya uchun"; telefonda va Railway'da sinash |
 | 9 | **uzbek-tg** | 🚧 boshlangan: TDLib ulangan, 2-faza UI katta qismi yozilgan | 3-faza (ghost mode) kodi merge (2026-10-25); egasi APK'da `docs/SINOV-ROYXATI.md` + ghost sinovini qiladi |
 | 10 | **bot-factory** | 🚧 Faza 1–5 (2026-10-25), deploy fayllari tayyor | Egasi: Railway deploy (`docs/DEPLOY.md`); keyin Faza 6 — premium (HR bot, AI FAQ, katalog) |
 
@@ -283,4 +283,4 @@ Repo holati: `telegram-bots/docs/HOLAT.md`.
 
 ---
 
-*Oxirgi yangilanish: 2026-10-25*
+*Oxirgi yangilanish: 2026-10-29*
