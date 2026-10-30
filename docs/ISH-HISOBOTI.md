@@ -516,3 +516,29 @@ Har PR toza klonda lokal tekshirildi (private repolarda CI billing sababli ishla
 natija PR izohida). KidsWear #19 va marshrutchi #1 ga tegilmadi.
 
 *Yozilgan: 2026-10-29*
+
+---
+
+## 21. 2026-10-30 — public tayyorligi, KidsWear F8, marshrutchi F2, CRM F2, mythos E0 (referal akkaunt 2)
+
+**Public qilishga tayyorlik** (gitleaks 8.24.3, butun tarix, barcha branch'lar; kod o'zgarmadi):
+
+| Repo | Commit / branch | Kalit skaneri | Tarixda `.env`/kalit fayl | README / hujjat |
+|---|---|---|---|---|
+| bot-factory | 11 / 5 | 1 topilma — soxta: `tests/test_scan_secrets.py` (`280f5fc2`) skaner testidagi `MASTER_KEY=haqiqiy-uzun-qiymat-123` | faqat `.env.example` (bo'sh) | @Yovuzhackerbot, t.me/Abdulloh_77700 — ommaviy |
+| marshrutchi-bot | 3 / 3 (skan vaqtida) | toza | faqat `.env.example` | «Atoyo» — mijoz nomi (README, TALABLAR, misollar); egasining ochiq keysi |
+| learning-datacenter-tc-project | 20 / 6 | toza | `.env.example`: faqat lokal dev qiymatlar | standart admin `admin@startupimiz.uz` / `Admin12345` hujjatda — o'rnatishda almashtirish shart |
+| mythos-uzbek-ai | 5 / 3 | toza | faqat `.env.example` | toza |
+
+Bekor qilinadigan haqiqiy kalit yo'q; tarixni qayta yozish kerak emas.
+
+| Loyiha | Qilindi | Holat (rost) |
+|---|---|---|
+| rn-r-e-commerce | PR #19 merge'dan keyin CI/deploy/APK ✅; Faza 8 — FAQ, Yetkazib berish, yagona yetkazish funksiyasi (PR #21, Sonnet) | CI yashil; telefonda sinalmagan |
+| marshrutchi-bot | Faza 2 — PostgreSQL, AES-256-GCM, HMAC qidiruv, rollar, jurnal, qarz (PR #2, Opus) | Toza klon + PG16: core 81, i18n 6, bot 22 ✅; Telegram'da sinalmagan; egasiga 4 savol |
+| learning-datacenter-tc-project | Faza 2 — baholar, jurnal, uy vazifalari (PR #4, Opus) | Toza klon: shared 102, api 10, e2e 69 ✅ |
+| mythos-uzbek-ai | E0 — `ruff.toml` + 20 lint tuzatish, 104 savollik baholash to'plami, `ai_eval.py`, E0–E3 reja (PR #2, o'zim) | O'z modeli 0/104; 103 test ✅ |
+
+Konteyner eslatmasi: marshrutchi'da `turbo` bola jarayonni ishga tushirmaydi (`Exec format error`) — `pnpm -r` ishlatildi.
+
+*Yozilgan: 2026-10-30*
