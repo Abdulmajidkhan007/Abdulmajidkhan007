@@ -3,6 +3,7 @@
 **Frontend / Full-stack Developer · AI-native workflow**
 
 Kokand, Uzbekistan · open to remote, relocation to Tashkent negotiable
+
 [abdulmajidsharipovlc@gmail.com](mailto:abdulmajidsharipovlc@gmail.com) ·
 Telegram [@Abdulloh_77700](https://t.me/Abdulloh_77700) ·
 [GitHub](https://github.com/Abdulmajidkhan007) ·
