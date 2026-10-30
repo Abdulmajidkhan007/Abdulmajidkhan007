@@ -100,6 +100,12 @@ bilan; pullik qismda obuna talab qilinmaydi.
   hujum; 24 soatlik amaliy imtihon, kurs AI-300 ($1 749 dan), OSCP darajasi kutiladi.
   Hozir emas — freelance birinchi. Shu orada amaliy qismi: Insta B REJA 7.1 (prompt
   injection — 5 qoida) va post qoralamasi.
+  **5 ko'nikma xaritasi (2026-10-30):** 1) tarmoq/Linux/web/pentest — 🔴 (Linux yangi
+  boshlandi, pentest yo'q); 2) Python + API — 🟢 (15 bot, bot-factory); 3) LLM/RAG/agent
+  — 🟢/🟡 (atoyo-rag-bot, xulosa-ai-bot, Insta A/B); 4) AI hujumlari (OWASP LLM Top 10,
+  MITRE ATLAS) — 🟡 (Insta B 7.1); 5) Cloud/Kubernetes — 🔴 (Railway, Docker). Hozir
+  bepul: Xubuntu'da kundalik Linux, PortSwigger «LLM attacks», Lakera Gandalf, OWASP LLM
+  Top 10; freelance'ga «AI botni prompt injection'ga tekshirish» qo'shimcha xizmati.
 
 ### Har dushanba
 
@@ -292,4 +298,4 @@ Repo holati: `telegram-bots/docs/HOLAT.md`.
 
 ---
 
-*Oxirgi yangilanish: 2026-10-29*
+*Oxirgi yangilanish: 2026-10-30*
