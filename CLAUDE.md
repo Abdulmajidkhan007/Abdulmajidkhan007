@@ -30,7 +30,8 @@ portfolio xaritasi va rezyume: ish beruvchi 2 daqiqada kimligimni tushunsin.
   Bo'lim sarlavhalari katta harf, setext H2. Rezyume (`docs/REZYUME.md`, portfolio-3d PDF) bilan mos.
 - Loyihalar (2026-10-04 qarori, shu tartibda): atoyo-e-commerce (atoyo.uz), Organick_org,
   telegram-bots (ochiq botlar username bilan), portfolio-3d, learning-center-front
-  (nurulloh-coder-dev, jamoaviy — men frontend), lumina, rn-r-e-commerce, go-uz.
+  (nurulloh-coder-dev, jamoaviy — men frontend), lumina, rn-r-e-commerce, suhbat (2026-10-30
+  qo'shildi), go-uz.
   lumina va go-uz — bare React Native CLI, Expo emas.
 - Holat faqat: ✅ Ishlayapti · 🚧 Qurilmoqda · ❄️ Muzlatilgan. "Rejalashtirilgan" yo'q.
   ✅ lar birinchi.
