@@ -48,7 +48,10 @@ slotlardan darslar yaratish (qayta chaqirsa dublikat yo'q), dars bekor qilish/ko
 (keldi/kelmadi/kechikdi/sababli, audit'ga yoziladi), vebda guruh jadvali, «Bugungi darslar» va davomat
 varag'i (uz/ru/en). Testlar: shared 73, api 10, e2e 36 (PostgreSQL 16); vebda Playwright bilan 11 qadamli
 oqim (ishchi sessiyada). Haqiqiy foydalanuvchi va mijoz serverida sinalmagan.
-**Hali yo'q:** baholar (Faza 2), moliya, maosh, ota-onalar portali, Telegram bot; birorta mijozga o'rnatilmagan;
+**2026-10-30 — Faza 2 (PR #4):** baholar (ommaviy kiritish, guruh jurnali, o'rtacha baho — string,
+yaxlitlash testlangan), uy vazifalari va topshiriqlarni baholash, veb sahifalar (uz/ru/en). Testlar:
+shared 102, api 10, e2e 69 (PostgreSQL 16).
+**Hali yo'q: moliya, maosh, ota-onalar portali, Telegram bot; birorta mijozga o'rnatilmagan;
 GitHub CI billing sababli ishlamaydi (tekshiruv lokal).
 
 ## Havolalar
@@ -57,4 +60,4 @@ GitHub CI billing sababli ishlamaydi (tekshiruv lokal).
 
 ---
 
-*Oxirgi yangilanish: 2026-10-29*
+*Oxirgi yangilanish: 2026-10-30*

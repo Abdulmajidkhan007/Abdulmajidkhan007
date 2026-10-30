@@ -138,7 +138,10 @@ mobil adminda bu amallar yo'q (faqat veb).
 **2026-10-29 — Faza 6 amallari mobil adminda (PR #20):** chernovik, «O'chirilganlar» (tiklash,
 butunlay o'chirish), uzun bosib tanlash + ommaviy amallar, rasmsizlarni yashirish — veb bilan bir xil
 umumiy hook'lar. CI yashil; telefonda/emulyatorda sinalmagan (mobil CSV yo'q).
-**Faza 7 (PR #19, egasi merge qilishini kutadi):** yopiq tannarx (faqat admin o'qiydi),
+**2026-10-30 — Faza 8, kontent sahifalari (PR #21):** FAQ (admin tahrirlaydi, uz/en/ru), «Yetkazib
+berish» sahifasi `settings/delivery` dan, yetkazish narxi/matni bitta umumiy funksiyada (veb, mobil,
+checkout, savat), checkout'da ko'rsatma. CI yashil; telefonda va jonli bazada sinalmagan.
+**Faza 7 (PR #19, egasi 2026-10-30 da merge qildi; CI, deploy, APK yashil):** yopiq tannarx (faqat admin o'qiydi),
 tasdiqlangan buyurtmada tannarx snapshot'i, foyda hisoboti, «Foydalanuvchilar» ro'yxati.
 Vebda emulyatorda 13/13 oqim sinalgan; jonli bazada va telefonda sinalmagan.
 
@@ -150,4 +153,4 @@ Vebda emulyatorda 13/13 oqim sinalgan; jonli bazada va telefonda sinalmagan.
 
 ---
 
-*Oxirgi yangilanish: 2026-10-29*
+*Oxirgi yangilanish: 2026-10-30*
