@@ -138,6 +138,9 @@ mobil adminda bu amallar yo'q (faqat veb).
 **2026-10-29 — Faza 6 amallari mobil adminda (PR #20):** chernovik, «O'chirilganlar» (tiklash,
 butunlay o'chirish), uzun bosib tanlash + ommaviy amallar, rasmsizlarni yashirish — veb bilan bir xil
 umumiy hook'lar. CI yashil; telefonda/emulyatorda sinalmagan (mobil CSV yo'q).
+**2026-10-31 — Faza 9, qidiruv va filtrlar (PR #22):** kirillcha qidiruv lotin nomli mahsulotni topadi,
+o'zbek apostroflari bir xil ko'rinishga keltiriladi; o'lcham/yosh/jins/narx filtrlari va «O'xshashlar»
+(veb + mobil, umumiy hook). Vebda emulyatorda sinalgan; telefonda va jonli bazadagi indekslar bilan sinalmagan.
 **2026-10-30 — Faza 8, kontent sahifalari (PR #21):** FAQ (admin tahrirlaydi, uz/en/ru), «Yetkazib
 berish» sahifasi `settings/delivery` dan, yetkazish narxi/matni bitta umumiy funksiyada (veb, mobil,
 checkout, savat), checkout'da ko'rsatma. CI yashil; telefonda va jonli bazada sinalmagan.
@@ -153,4 +156,4 @@ Vebda emulyatorda 13/13 oqim sinalgan; jonli bazada va telefonda sinalmagan.
 
 ---
 
-*Oxirgi yangilanish: 2026-10-30*
+*Oxirgi yangilanish: 2026-10-31*
