@@ -189,6 +189,8 @@ Keyin tizimdan chiqib qayta kirish yoki `sudo reboot`. Ikki barmoq bilan tegish 
 
 - Egasi qarori: Xubuntu butunlay o'chiriladi → 118 GB ga **Linux Mint Cinnamon**. «Malumot» (NTFS) ga tegilmaydi.
 - Tartib (egasi tanlovi): **1) Kali** — 512 GB diskdagi 80 GB bo'sh joyga; **2) Mint** — 118 GB ga.
-- Kali o'zining **alohida EFI bo'limini** (512 MB, 80 GB ichida) oladi — 118 GB disk tozalanganda Kali yuklanishi buzilmasligi uchun.
+- Disklar: **AXLE** = 118 GB (Xubuntu, keyin Mint) · **KingFast** = 476 GB (0.1 GB EFI + «Malumot» NTFS + 80 GB bo'sh).
+- Kali yuklovchisi **KingFast'dagi mavjud 0.1 GB EFI** bo'limiga yoziladi (formatlanmaydi) — AXLE tozalanganda Kali buzilmaydi.
+- Kali bo'limlari: 80 GB ichida 4 GB swap + qolgani Ext4 `/`. Kali ISO Ventoy fleshkada (kali-linux-2026.3-installer).
 - BIOS (rasm, InsydeH2O): Boot Mode **UEFI**, Secure Boot **Disabled**, Fast Boot Disabled, USB Boot Enabled.
   Boot ro'yxati: `ubuntu (AXLE-SSD)`, `Windows Boot Manager (KingFast)` (eski yozuv bo'lishi mumkin — Mint o'rnatishda tekshiriladi).
