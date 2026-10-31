@@ -1,7 +1,10 @@
 # marshrutchi-bot — boshlang'ich talablar (egasi bilan kelishilgan, 2026-10-22)
 
-> Repo ochilgan (private). Faza 0–1 — PR #1: 2026-10-25 lokal tekshiruv yashil (typecheck, lint,
-> 84 test); GitHub CI billing sabab to'xtagan. Haqiqiy Telegram'da sinalmagan. Talablar repoda `docs/TALABLAR.md`.
+> Repo ochilgan (private). Faza 0–1 — PR #1 (egasi 2026-10-30 da merge qildi). **Faza 2 — PR #2
+> (2026-10-30):** PostgreSQL, shaxsiy maydonlar AES-256-GCM bilan shifrlangan (kalit env'da, versiyali;
+> qidiruv HMAC indeks), rollar, o'zgartirib bo'lmaydigan kirishlar jurnali, `/narx` `/qarz` `/mijoz`.
+> Lokal: core 81, i18n 6, bot 22 test (13 tasi haqiqiy PostgreSQL'da). GitHub CI billing sabab to'xtagan.
+> Haqiqiy Telegram'da sinalmagan. Egasi javobi kerak: narx manbai, rollar ruxsatlari, kompaniyani kim yaratadi, qidiruv turi. Talablar repoda `docs/TALABLAR.md`.
 > Birinchi mijoz — Atoyo (yuk yetkazish: Oltiariq, Bag'dod, Rishton, Pop, Chust, Namangan...).
 
 ## Muammo
