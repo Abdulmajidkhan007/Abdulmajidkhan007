@@ -184,3 +184,11 @@ EndSection
 CONF
 ```
 Keyin tizimdan chiqib qayta kirish yoki `sudo reboot`. Ikki barmoq bilan tegish — o'ng tugma.
+
+## 10. Qaror va reja (2026-11-01)
+
+- Egasi qarori: Xubuntu butunlay o'chiriladi → 118 GB ga **Linux Mint Cinnamon**. «Malumot» (NTFS) ga tegilmaydi.
+- Tartib (egasi tanlovi): **1) Kali** — 512 GB diskdagi 80 GB bo'sh joyga; **2) Mint** — 118 GB ga.
+- Kali o'zining **alohida EFI bo'limini** (512 MB, 80 GB ichida) oladi — 118 GB disk tozalanganda Kali yuklanishi buzilmasligi uchun.
+- BIOS (rasm, InsydeH2O): Boot Mode **UEFI**, Secure Boot **Disabled**, Fast Boot Disabled, USB Boot Enabled.
+  Boot ro'yxati: `ubuntu (AXLE-SSD)`, `Windows Boot Manager (KingFast)` (eski yozuv bo'lishi mumkin — Mint o'rnatishda tekshiriladi).
