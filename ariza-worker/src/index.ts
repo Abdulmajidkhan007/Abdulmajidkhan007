@@ -77,11 +77,17 @@ function message(a: Ariza): string {
 interface Contact {
   name: string;
   email: string;
+  /** Ixtiyoriy; bo'sh satr — kiritilmagan. */
+  phone: string;
+  /** `@username` yoki bo'sh satr. */
+  telegram: string;
   message: string;
 }
 type ContactResult = { ok: true; data: Contact } | { ok: false; error: string; field?: keyof Contact };
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+// Telegram qoidasi: harf bilan boshlanadi, 5–32 belgi (harf, raqam, _).
+const TELEGRAM_RE = /^@?[A-Za-z][A-Za-z0-9_]{4,31}$/;
 const CONTACT_LIMITS = { name: 100, email: 254, message: 4000, messageMin: 10 } as const;
 
 function clean(value: unknown): string {
@@ -95,15 +101,23 @@ function parseContact(body: unknown): ContactResult | "bot" {
   if (clean(b.botField) || clean(b["bot-field"])) return "bot";
   const name = clean(b.name);
   const email = clean(b.email);
+  const phone = clean(b.phone);
+  const telegramRaw = clean(b.telegram);
   const message = clean(b.message);
   if (!name) return { ok: false, error: "Ism kiritilmagan", field: "name" };
   if (name.length > CONTACT_LIMITS.name) return { ok: false, error: `Ism ${CONTACT_LIMITS.name} belgidan uzun`, field: "name" };
   if (!email) return { ok: false, error: "Email kiritilmagan", field: "email" };
   if (email.length > CONTACT_LIMITS.email || !EMAIL_RE.test(email)) return { ok: false, error: "Email formati noto'g'ri", field: "email" };
+  if (phone) {
+    const digits = phone.replace(/\D/g, "").length;
+    if (!PHONE_RE.test(phone) || digits < 7 || digits > 15) return { ok: false, error: "Telefon raqami noto'g'ri", field: "phone" };
+  }
+  if (telegramRaw && !TELEGRAM_RE.test(telegramRaw)) return { ok: false, error: "Telegram username noto'g'ri", field: "telegram" };
+  const telegram = telegramRaw ? `@${telegramRaw.replace(/^@/, "")}` : "";
   if (!message) return { ok: false, error: "Xabar kiritilmagan", field: "message" };
   if (message.length < CONTACT_LIMITS.messageMin) return { ok: false, error: `Xabar kamida ${CONTACT_LIMITS.messageMin} belgi bo'lsin`, field: "message" };
   if (message.length > CONTACT_LIMITS.message) return { ok: false, error: `Xabar ${CONTACT_LIMITS.message} belgidan uzun`, field: "message" };
-  return { ok: true, data: { name, email, message } };
+  return { ok: true, data: { name, email, phone, telegram, message } };
 }
 
 function contactMessage(c: Contact): string {
@@ -112,6 +126,8 @@ function contactMessage(c: Contact): string {
     "",
     `<b>Ism:</b> ${escapeHtml(c.name)}`,
     `<b>Email:</b> ${escapeHtml(c.email)}`,
+    ...(c.phone ? [`<b>Telefon:</b> ${escapeHtml(c.phone)}`] : []),
+    ...(c.telegram ? [`<b>Telegram:</b> ${escapeHtml(c.telegram)}`] : []),
     "",
     escapeHtml(c.message),
   ].join("\n");

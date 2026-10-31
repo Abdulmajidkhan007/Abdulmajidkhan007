@@ -542,3 +542,23 @@ Bekor qilinadigan haqiqiy kalit yo'q; tarixni qayta yozish kerak emas.
 Konteyner eslatmasi: marshrutchi'da `turbo` bola jarayonni ishga tushirmaydi (`Exec format error`) — `pnpm -r` ishlatildi.
 
 *Yozilgan: 2026-10-30*
+
+## 22. 2026-10-28 → 31 — navigatsiya sessiyasi (asosiy akkaunt)
+
+**Akkauntlar:** referal 1 — abdullohkhan loyihalarini yuklash; referal 2 — 0/3/4 to'siqsiz
+ishlar + 5–6-daraja (promptlar shu sessiyadan). Freelance — alohida Sonnet sessiya (2026-10-28).
+
+| Joy | Qilindi | Holat (rost) |
+|---|---|---|
+| instagram-avto-javob | REJA 7.1 — prompt injection: 5 qoida, F2 da ≥20 hujum testi | Faqat reja, kod yo'q |
+| Profil repo | README'ga suhbat (🚧); REJA: akkauntlar taqsimoti, OSAI va 5 ko'nikma xaritasi (g'oyalar qutisi); post: prompt injection | ✅ |
+| Rezyume | `docs/REZYUME-EN-AI.md` + 1 sahifali PDF (inglizcha, AI-native) — EPAM referral uchun; 3 yil talab ochiq aytildi | ✅ |
+| rn-r-e-commerce, marshrutchi-bot | PR #19 (Faza 7) va PR #1 (Faza 0–1) — egasi aytgani bilan merge | ✅ merge |
+| Organick_org | PR #32: banner kontrasti, tugma matni bir qatorda. PR #33: deploy 2026-10-21 dan beri yiqilardi — `functions/.env` (PHONE_AUTH_DOMAIN) va Node 20 → 22 | ✅ deploy (2026-10-30), egasi saytda ko'rdi |
+| ariza-worker + portfolio-3d | Worker birinchi marta deploy (Secrets egasidan); portfolio `CONTACT_URL`; forma ishlaydi — egasi Telegram'da xabar oldi. Keyin ixtiyoriy telefon va Telegram username (PR #6, #7) | ✅; telefon/username bilan jonli sinov — egasida |
+
+**Topilma:** public repolarda Actions ishlaydi — billing faqat private repolarga ta'sir qiladi.
+
+**Shaxsiy (repo emas):** noutbuk yangilandi (RAM 8 GB, SSD 512 GB; 1,755 mln), Xubuntu o'rnatildi.
+
+*Yozilgan: 2026-10-31*

@@ -66,6 +66,9 @@ LOYIHALAR
 🚧 **[rn-r-e-commerce](https://kids-wear-007.web.app)** — KidsWear: bolalar kiyimi do'koni, veb + Android bitta monorepoda; veb jonli (demo katalog, test to'lov), Android APK GitHub Releases'da<br>
 <sub>React 19 · Vite 8 · MUI 9 · React Native (bare) · Turborepo · Firebase · [🌐 jonli](https://kids-wear-007.web.app) · [📱 APK](https://github.com/Abdulmajidkhan007/rn-r-e-commerce/releases/latest/download/kidswear.apk) · [💻 kod](https://github.com/Abdulmajidkhan007/rn-r-e-commerce) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/rn-r-e-commerce.md)</sub>
 
+🚧 **[suhbat](https://suhbatweb-production.up.railway.app)** — o'zbekcha messenjer: shaxsiy chat, guruh, kanal, 1:1 qo'ng'iroq (WebRTC, o'z TURN serveri); veb jonli, desktop va Android relizlari GitHub'da (beta)<br>
+<sub>NestJS · Prisma 7 · PostgreSQL · Socket.IO · React 19 · Electron · React Native (bare) · [🌐 jonli](https://suhbatweb-production.up.railway.app) · [📦 reliz](https://github.com/Abdulmajidkhan007/suhbat/releases/latest) · [💻 kod](https://github.com/Abdulmajidkhan007/suhbat) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/suhbat.md)</sub>
+
 🚧 **go-uz 🔒** — Vroom — ride-hailing va kuryer super-app, 9 ta umumiy paket qurilgan<br>
 <sub>React Native · React · Turborepo · pnpm · Firebase · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/go-uz.md)</sub>
 

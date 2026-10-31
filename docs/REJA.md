@@ -112,6 +112,17 @@ bilan; pullik qismda obuna talab qilinmaydi.
   yoki narx tushganda ogohlantirish. Avval bitta yo'nalishda (Toshkent–Samarqand)
   2 hafta o'zimiz uchun sinab ko'riladi.
 
+- 2026-10-29 — **OSAI (OffSec AI Red Teamer)**: AI agent, RAG, MCP va AI infratuzilmasiga
+  hujum; 24 soatlik amaliy imtihon, kurs AI-300 ($1 749 dan), OSCP darajasi kutiladi.
+  Hozir emas — freelance birinchi. Shu orada amaliy qismi: Insta B REJA 7.1 (prompt
+  injection — 5 qoida) va post qoralamasi.
+  **5 ko'nikma xaritasi (2026-10-30):** 1) tarmoq/Linux/web/pentest — 🔴 (Linux yangi
+  boshlandi, pentest yo'q); 2) Python + API — 🟢 (15 bot, bot-factory); 3) LLM/RAG/agent
+  — 🟢/🟡 (atoyo-rag-bot, xulosa-ai-bot, Insta A/B); 4) AI hujumlari (OWASP LLM Top 10,
+  MITRE ATLAS) — 🟡 (Insta B 7.1); 5) Cloud/Kubernetes — 🔴 (Railway, Docker). Hozir
+  bepul: Xubuntu'da kundalik Linux, PortSwigger «LLM attacks», Lakera Gandalf, OWASP LLM
+  Top 10; freelance'ga «AI botni prompt injection'ga tekshirish» qo'shimcha xizmati.
+
 ### Har dushanba
 
 1) O'tgan haftada navbatdagi loyihada nima tugadi? 2) Nima to'sqinlik qildi?
@@ -215,6 +226,10 @@ Pastdagi A/B jadvallari — holat ma'lumotnomasi, tartib emas.
   shart qo'yiladi — ish tugasa hisobot oxirgi qatori: «✅ Tugatdim — men endi keraksizman, bu
   sessiyani arxivlashingiz mumkin.» Shu qatorni ko'rgan sessiyalarni egasi o'zi arxivlaydi;
   nazoratchi faqat egasi so'raganda arxivlaydi.
+- **2026-10-29 (egasi qarori):** referal akkaunt 1 — abdullohkhan akkauntini ulab, kompyuterdagi
+  70+ loyihani yuklash (band). Referal akkaunt 2 — 0/3/4-darajaning to'siqsiz kod ishlari, keyin
+  5–6-daraja (`learning-datacenter-tc-project`, `mythos-uzbek-ai` dan boshlab). Asosiy akkaunt —
+  1–2-daraja; freelance alohida sessiyada (2026-10-28).
 - Har akkauntga GitHub (Abdulmajidkhan007) ulanadi, aks holda private repolar ko'rinmaydi.
 - Asosiy akkauntdagi 0/3/4-daraja sessiyalari (countlist, Insta A/B, marshrutchi, KidsWear)
   2026-10-22 dan **to'xtatilgan** — davomi tegishli akkauntda, holat repolardagi hujjatlardan.
