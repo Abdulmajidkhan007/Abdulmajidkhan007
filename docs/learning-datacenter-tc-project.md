@@ -51,7 +51,15 @@ oqim (ishchi sessiyada). Haqiqiy foydalanuvchi va mijoz serverida sinalmagan.
 **2026-10-30 — Faza 2 (PR #4):** baholar (ommaviy kiritish, guruh jurnali, o'rtacha baho — string,
 yaxlitlash testlangan), uy vazifalari va topshiriqlarni baholash, veb sahifalar (uz/ru/en). Testlar:
 shared 102, api 10, e2e 69 (PostgreSQL 16).
-**Hali yo'q: moliya, maosh, ota-onalar portali, Telegram bot; birorta mijozga o'rnatilmagan;
+**2026-10-31 — xavfsizlik (PR #5):** ommaga ma'lum standart parol olib tashlandi. Boshlang'ich
+parol `ADMIN_INITIAL_PASSWORD` dan yoki tasodifiy (bir marta konsolga); birinchi kirishda almashtirish
+majburiy — server tomonda global guard, almashtirilmaguncha boshqa API 403 qaytaradi; yangi parol
+10+ belgi. Eski o'rnatishda parol hali standart bo'lsa, almashtirish talab qilinadi.
+**2026-10-31 — Faza 3, moliya (PR #6):** oylik hisob-faktura (muzlatilgan narxdan, bir oyga bitta),
+to'liq/qisman to'lov (eng eski qarzdan), storno (o'chirish emas — teskari yozuv), kassa, xarajat,
+qarzdorlar, hisobot; pul tiyinda butun son, har o'zgarish audit'ga. Testlar: shared 137, api 13,
+e2e 111 (PostgreSQL 16).
+**Hali yo'q: maosh, ota-onalar portali, Telegram bot; birorta mijozga o'rnatilmagan;
 GitHub CI billing sababli ishlamaydi (tekshiruv lokal).
 
 ## Havolalar
@@ -60,4 +68,4 @@ GitHub CI billing sababli ishlamaydi (tekshiruv lokal).
 
 ---
 
-*Oxirgi yangilanish: 2026-10-30*
+*Oxirgi yangilanish: 2026-10-31*

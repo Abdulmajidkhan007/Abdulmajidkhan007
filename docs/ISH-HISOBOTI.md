@@ -562,3 +562,16 @@ ishlar + 5–6-daraja (promptlar shu sessiyadan). Freelance — alohida Sonnet s
 **Shaxsiy (repo emas):** noutbuk yangilandi (RAM 8 GB, SSD 512 GB; 1,755 mln), Xubuntu o'rnatildi.
 
 *Yozilgan: 2026-10-31*
+
+---
+
+## 23. 2026-10-31 — CRM xavfsizlik va moliya, KidsWear qidiruv (referal akkaunt 2)
+
+| Loyiha | Qilindi | Holat (rost) |
+|---|---|---|
+| learning-datacenter-tc-project | **Xavfsizlik (PR #5, Opus):** standart `Admin12345` olib tashlandi; boshlang'ich parol env'dan yoki tasodifiy (bir marta konsolga), birinchi kirishda majburiy almashtirish — global guard, ruxsat etilganlar alohida ro'yxatda (`me`, `change-password`), qolgani 403 `PASSWORD_CHANGE_REQUIRED`; parol 10+ belgi; eski o'rnatishlar ham ushlanadi | Toza klon: shared 113, api 10, e2e 86 ✅ |
+| learning-datacenter-tc-project | **Faza 3, moliya (PR #6, Opus):** hisob-faktura (idempotent), qisman/FIFO to'lov, storno, kassa, xarajat, hisobot, qarzdorlar; audit | PR #5 bilan ziddiyat (hujjatlar, index.ts) nazoratchi hal qildi; birlashgan kod: shared 137, api 13, e2e 111 ✅; `1.005 → 101` testi saqlangan |
+| rn-r-e-commerce | **Faza 9 (PR #22, Sonnet):** kirill→lotin qidiruv, apostrof normalizatsiyasi, filtrlar, o'xshashlar (umumiy hook); indekslar 19 → 43; FAZALAR yangilandi (PR #23) | CI yashil; telefonda va jonli indekslar bilan sinalmagan |
+| marshrutchi-bot | Neytral nom uchun PR #4 ochildi, keyin **yopildi**: PR #3 (02:32) nomni allaqachon olib tashlagan edi | `main` da mijoz nomi yo'q; nom git tarixida qoladi |
+
+*Yozilgan: 2026-10-31*

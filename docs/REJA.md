@@ -149,13 +149,13 @@ ko'rinmadi — u 3-akkauntda tekshiriladi.
 | **portfolio-3d** | private | `main` | 2026-10-16 | ✅ jonli, faqat Hosting; forma Blaze'ni kutadi | Tayyor |
 | **uzbek-tg** | public | `main` | 2026-10-25 | 🚧 0–1-faza tugagan; 2-faza va 3-faza (ghost mode, PR #12) — kod yozildi, telefonda sinalmagan | Egasi sinaydi (`docs/SINOV-ROYXATI.md`) |
 | **telegram-bots** | public | `main` | 2026-10-21 | ✅ 15 bot, CI; Railway konfiglari tayyor | Qo'llab-quvvatlash |
-| **rn-r-e-commerce** | public | `main` | 2026-10-30 | 🚧 veb jonli; Faza 1–8 merge (7 — PR #19, 8 — PR #21) | Faza 9 — qidiruv va filtrlar |
+| **rn-r-e-commerce** | public | `main` | 2026-10-31 | 🚧 veb jonli; Faza 1–9 merge (9 — qidiruv, PR #22) | Faza 10 — SEO va a11y |
 | **lumina** | public | `main` | 2026-10-25 | 🚧 veb jonli, APK; hisoblagich ±1 qoidasi jonli bazada (PR #6) | Egasi sinovi; `FIREBASE_TOKEN` |
 | **bot-factory** | private | `main` | 2026-10-25 | 🚧 Faza 1–5 (Faza 5: Dockerfile, Alembic, zaxira, monitoring — PR #4); Railway'ga hali deploy qilinmagan, haqiqiy bot/Stars bilan sinalmagan; CI Actions billing sababli ishlamayapti | Egasi Railway'ga deploy qiladi (`docs/DEPLOY.md`) → Faza 6 |
 | **atoyo-e-commerce** | public | `main` | 2026-10-08 | ❄️ 2026-10-26 to'xtatilgan (server xarajati); kod bor | Boshqa do'konlarga taklif |
 | **Organick_org** | public | `master` | 2026-09-29 | ✅ Jonli | Tayyor |
 | **mythos-uzbek-ai** | private | `main` | 2026-10-30 | 🚧 E0 ✅: 104 savollik baholash to'plami, o'z modeli 0/104 (repo `docs/REJA.md` E0–E3) | E1 — API asosida (kalit egasidan) |
-| **learning-datacenter-tc-project** | private | claude/… | 2026-10-30 | 🚧 Faza 0–2 merge (jadval, davomat, baholar — PR #2–#4); mijozga o'rnatilmagan | Faza 3 — moliya (egasi aytganda) |
+| **learning-datacenter-tc-project** | private | claude/… | 2026-10-31 | 🚧 Faza 0–3 merge (jadval, davomat, baholar, moliya — PR #2–#6) + majburiy parol almashtirish (PR #5); mijozga o'rnatilmagan | Keyingi faza — egasi aytganda (maosh / ota-onalar portali) |
 | **DevCraft-AI** | private | feat/… | 2026-08-24 | ❄️ faqat arxitektura | 3-akkaunt |
 | **web-3d** | private | claude/… | 2026-08-01 | 🚧 | Oxirida |
 | **go-uz** | private | claude/… | 2026-07-12 | 🚧 | 3-akkaunt |
@@ -314,4 +314,4 @@ Repo holati: `telegram-bots/docs/HOLAT.md`.
 
 ---
 
-*Oxirgi yangilanish: 2026-10-30*
+*Oxirgi yangilanish: 2026-10-31*
