@@ -4,8 +4,11 @@
 > (2026-10-30):** PostgreSQL, shaxsiy maydonlar AES-256-GCM bilan shifrlangan (kalit env'da, versiyali;
 > qidiruv HMAC indeks), rollar, o'zgartirib bo'lmaydigan kirishlar jurnali, `/narx` `/qarz` `/mijoz`.
 > Lokal: core 81, i18n 6, bot 22 test (13 tasi haqiqiy PostgreSQL'da). GitHub CI billing sabab to'xtagan.
-> Haqiqiy Telegram'da sinalmagan. Egasi javobi kerak: narx manbai, rollar ruxsatlari, kompaniyani kim yaratadi, qidiruv turi. Talablar repoda `docs/TALABLAR.md`.
-> Birinchi mijoz — Atoyo (yuk yetkazish: Oltiariq, Bag'dod, Rishton, Pop, Chust, Namangan...).
+> Haqiqiy Telegram'da sinalmagan. Egasi javob berdi (2026-10-31, repo PR #3): narxni rahbar kiritadi; rollar —
+> sotuvchi safar, agent mijoz/qarz, shofyor o'z marshruti; kompaniyani egasi yaratadi. Ochiq: qidiruv turi.
+> Mijoz nomi repodan olib tashlandi. Talablar repoda `docs/TALABLAR.md`.
+> Umumiy loyiha (2026-10-31): istalgan yuk yetkazuvchi kompaniya yoki yakka ishlovchi uchun.
+> Kompaniya — egasi yaratadi, bot guruhda ishlaydi; yakka — odam botni o'zi ishlatadi.
 
 ## Muammo
 Bir safarda bir yo'nalishga 5–10 mijozga yuk. Begona shofyor va yangi ishchi manzillarni
@@ -46,7 +49,7 @@ Agent · Yuk olib boruvchi (ishchi) · Shofyor. Keyin: yuk chiqaruvchi, yuk teks
 O'zbekcha (standart), ruscha, inglizcha.
 
 ## Server va maxfiylik
-Pilot (faqat Atoyo, 2–3 hafta) — Railway; haqiqiy mijozlar ma'lumoti to'plana boshlasa —
+Pilot (bitta kompaniya, 2–3 hafta) — Railway; haqiqiy mijozlar ma'lumoti to'plana boshlasa —
 O'zbekistondagi VPS (shaxsiy ma'lumotlar qonuni). Docker bilan — ko'chirish oson.
 Telefon, ism, manzil, summa — ilova darajasida shifrlanadi (kalit DB'dan alohida); zaxira
 nusxalar ham shifrlangan; kirishlar jurnali. Baza o'g'irlansa ham ma'lumot o'qilmasin.
