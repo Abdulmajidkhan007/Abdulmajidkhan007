@@ -194,3 +194,10 @@ Keyin tizimdan chiqib qayta kirish yoki `sudo reboot`. Ikki barmoq bilan tegish 
 - Kali bo'limlari: 80 GB ichida 4 GB swap + qolgani Ext4 `/`. Kali ISO Ventoy fleshkada (kali-linux-2026.3-installer).
 - BIOS (rasm, InsydeH2O): Boot Mode **UEFI**, Secure Boot **Disabled**, Fast Boot Disabled, USB Boot Enabled.
   Boot ro'yxati: `ubuntu (AXLE-SSD)`, `Windows Boot Manager (KingFast)` (eski yozuv bo'lishi mumkin — Mint o'rnatishda tekshiriladi).
+
+## 11. Kali o'rnatildi (2026-11-01)
+
+- Kali (Xfce, top10 + default) — KingFast: #4 swap 4 GB, #5 ext4 `/` 81.9 GB. Format faqat shu ikkisi; Malumot va AXLE tegilmagan.
+- O'rnatish internetsiz (USB modemni o'rnatuvchi tanimadi) → `large` va yangilanishlar keyin, internet bilan.
+- Wi-Fi: ath10k `cal-pci` fayllari yo'q deb ogohlantirdi (shart emas). Wi-Fi Windows'da ham ishlamagan — alohida tekshiriladi.
+- Ish stoli ochildi, login ishlaydi. Keyingi: internet (USB modem), `/boot/efi` qaysi diskdaligini tekshirish, keyin AXLE'ga Mint Cinnamon.
