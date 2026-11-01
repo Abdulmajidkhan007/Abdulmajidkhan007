@@ -178,13 +178,11 @@ faqat o'qish uchun. O'chirish emas.
 default branch bilan **bir xil commit'da** — default'ni `main` ga almashtirsa
 hech narsa yo'qolmaydi. Egasi: Settings → Branches → Default branch → `main`.
 
-Istisno — `main` ga qo'shilmagan ishlar:
-- **learning-datacenter-tc-project:** `claude/monorepo-architecture-setup-fwi0kn`
-  (2026-09-15) — default/main'dan yangiroq, qo'shilmagan.
-- **Abdulmajidkhan007:** `ccr-d15e8802-woh2vc` (2026-10-15, REJA'ga "Telegram
-  Serverless" g'oyasi) va `claude/earshot-audio-effects-v162og` (2026-10-21,
-  `docs/VOSITA-EARSHOT.md`) — ikkalasi faqat hujjat, main'ga qo'shilmagan.
-- **uzbek-tg:** `feature/firebase-auth` (2026-05-31, eski Expo davri) — eskirgan.
+**2026-11-01 yangilanishi:** endi **`learning-datacenter-tc-project` va `mythos-uzbek-ai` da
+default branch ESKI**: yangi kod (PR'lar) `main` da. Default → `main` shart.
+`main` ga qo'shilmagan 6 ta branch va har loyihada qolgan ish — `docs/QOLGAN-ISHLAR.md`.
+(2026-10-21 dagi ro'yxatdagi `monorepo-architecture-setup`, `ccr-d15e8802`, `earshot`
+branch'lari endi `main` da.)
 
 **Organick_org — `master` qoladi:** GitHub Actions deploy aynan `master` ga
 push'da ishlaydi.
@@ -230,6 +228,9 @@ Pastdagi A/B jadvallari — holat ma'lumotnomasi, tartib emas.
   70+ loyihani yuklash (band). Referal akkaunt 2 — 0/3/4-darajaning to'siqsiz kod ishlari, keyin
   5–6-daraja (`learning-datacenter-tc-project`, `mythos-uzbek-ai` dan boshlab). Asosiy akkaunt —
   1–2-daraja; freelance alohida sessiyada (2026-10-28).
+- **2026-11-01: ikkala referal akkaunt Pro → Free.** Free'da Claude Code yo'q. 0/3/4 va 5–6-daraja
+  ishlari to'xtadi. Kod GitHub'da, ochiq PR yo'q. Qayerda nima qolgani — `docs/QOLGAN-ISHLAR.md`.
+  Bu ishlarni asosiy akkauntga o'tkazish yoki kutish — egasi qarori.
 - Har akkauntga GitHub (Abdulmajidkhan007) ulanadi, aks holda private repolar ko'rinmaydi.
 - Asosiy akkauntdagi 0/3/4-daraja sessiyalari (countlist, Insta A/B, marshrutchi, KidsWear)
   2026-10-22 dan **to'xtatilgan** — davomi tegishli akkauntda, holat repolardagi hujjatlardan.
@@ -282,7 +283,10 @@ Repo holati: `telegram-bots/docs/HOLAT.md`.
 - [x] GitHub: `chat-app` → `uzbek-tg` nomi; ikkala repoda default branch → `main` (2026-10-21 tekshirildi)
       ("Could not change default branch" chiqsa — sahifani yangilash yoki Desktop site)
 - [x] chatapp → `suhbat` nomi (2026-10-11)
-- [ ] 9 ta repoda default branch → `main` (2-bo'lim; kod bir xil, xavfsiz)
+- [ ] **Avval:** `learning-datacenter-tc-project` va `mythos-uzbek-ai` da default → `main` (eski branch'da turibdi)
+- [ ] Qolgan 8 ta repoda default branch → `main` (2-bo'lim; kod bir xil, xavfsiz)
+- [ ] `instagram-avto-javob`: `claude/read-docs-section-19-wo6wtw` (REJA 7.1) ni merge qilish
+- [ ] `hujjatlar` — bo'sh private repo: maqsadi yoki o'chirish
 - [ ] Profil repoda 2 ta docs branch'ni main'ga qo'shish yoki yopish (2-bo'lim)
 - [ ] Billing: keraksiz loyihadan uzish yoki limit so'rash → portfolio formasi,
       KidsWear to'lov/push, Lumina Storage qoidalari
@@ -314,4 +318,4 @@ Repo holati: `telegram-bots/docs/HOLAT.md`.
 
 ---
 
-*Oxirgi yangilanish: 2026-10-31*
+*Oxirgi yangilanish: 2026-11-01*

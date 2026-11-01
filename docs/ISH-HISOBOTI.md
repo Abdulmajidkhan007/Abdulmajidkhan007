@@ -575,3 +575,18 @@ ishlar + 5–6-daraja (promptlar shu sessiyadan). Freelance — alohida Sonnet s
 | marshrutchi-bot | Neytral nom uchun PR #4 ochildi, keyin **yopildi**: PR #3 (02:32) nomni allaqachon olib tashlagan edi | `main` da mijoz nomi yo'q; nom git tarixida qoladi |
 
 *Yozilgan: 2026-10-31*
+
+## 24. 2026-11-01 — referal akkauntlar Free bo'ldi; hamma repolar tekshiruvi (nazoratchi)
+
+Ikkala referal akkaunt Pro → Free (Claude Code yo'q). 26 repo tekshirildi: branch'lar, PR'lar,
+har branch `main` bilan solishtirildi. Kod o'zgarmadi. Natija — `docs/QOLGAN-ISHLAR.md`.
+
+| Topilma | Holat (rost) |
+|---|---|
+| Ochiq PR | 0 ta, hamma repoda |
+| `main` ga qo'shilmagan ish | 6 branch: instagram-avto-javob REJA 7.1 (22-bo'limda «qilindi» deyilgan, lekin `main` da yo'q), profil — 3 xavfsizlik posti va MIJOZ-XABARLARI, Organick CLAUDE.md qisqartmasi, uzbek-tg eski Expo auth, Kompyuter sessiyasi branch'i |
+| Default branch eski | learning-datacenter-tc-project, mythos-uzbek-ai — yangi kod `main` da |
+| 3-akkaunt repolari | default = `main`, ochiq PR yo'q, yo'qolgan ish yo'q |
+| `hujjatlar` | yangi private repo, bo'sh |
+
+*Yozilgan: 2026-11-01*
