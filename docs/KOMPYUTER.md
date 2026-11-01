@@ -201,3 +201,11 @@ Keyin tizimdan chiqib qayta kirish yoki `sudo reboot`. Ikki barmoq bilan tegish 
 - O'rnatish internetsiz (USB modemni o'rnatuvchi tanimadi) → `large` va yangilanishlar keyin, internet bilan.
 - Wi-Fi: ath10k `cal-pci` fayllari yo'q deb ogohlantirdi (shart emas). Wi-Fi Windows'da ham ishlamagan — alohida tekshiriladi.
 - Ish stoli ochildi, login ishlaydi. Keyingi: internet (USB modem), `/boot/efi` qaysi diskdaligini tekshirish, keyin AXLE'ga Mint Cinnamon.
+
+## 12. Linux Mint 22.3 Cinnamon o'rnatildi (2026-11-01)
+
+- AXLE (sda): sda1 EFI (Mint yuklovchisi), sda2 ext4 `/` — Xubuntu o'rnida. KingFast (sdb) installer'da qulflangan («Unmount? → No»), tegilmagan.
+- Oddiy yoqish → Mint. Kali — GRUB menyusidan tanlanadi.
+- Parol tiklash usuli (Mint): GRUB → Advanced options → recovery mode → root shell →
+  `mount -o remount,rw /` → `passwd <login>`. Kali: GRUB'da `e` → `rw init=/bin/bash` → `passwd`.
+- Keyingi: Update Manager, Driver Manager, Timeshift, touchpad, GRUB'da Kali tekshiruvi, tema (shaffof panel).
