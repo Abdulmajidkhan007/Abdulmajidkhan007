@@ -588,5 +588,6 @@ har branch `main` bilan solishtirildi. Kod o'zgarmadi. Natija — `docs/QOLGAN-I
 | Default branch eski | learning-datacenter-tc-project, mythos-uzbek-ai — yangi kod `main` da |
 | 3-akkaunt repolari | default = `main`, ochiq PR yo'q, yo'qolgan ish yo'q |
 | `hujjatlar` | yangi private repo, bo'sh |
+| Merge (egasi ruxsati) | profil hujjatlari va instagram-avto-javob REJA 7.1 — `main` ga fast-forward |
 
 *Yozilgan: 2026-11-01*

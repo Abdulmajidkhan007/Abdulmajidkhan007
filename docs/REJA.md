@@ -285,7 +285,7 @@ Repo holati: `telegram-bots/docs/HOLAT.md`.
 - [x] chatapp → `suhbat` nomi (2026-10-11)
 - [ ] **Avval:** `learning-datacenter-tc-project` va `mythos-uzbek-ai` da default → `main` (eski branch'da turibdi)
 - [ ] Qolgan 8 ta repoda default branch → `main` (2-bo'lim; kod bir xil, xavfsiz)
-- [ ] `instagram-avto-javob`: `claude/read-docs-section-19-wo6wtw` (REJA 7.1) ni merge qilish
+- [x] `instagram-avto-javob`: REJA 7.1 branch'i `main` ga qo'shildi (2026-11-01)
 - [ ] `hujjatlar` — bo'sh private repo: maqsadi yoki o'chirish
 - [ ] Profil repoda 2 ta docs branch'ni main'ga qo'shish yoki yopish (2-bo'lim)
 - [ ] Billing: keraksiz loyihadan uzish yoki limit so'rash → portfolio formasi,

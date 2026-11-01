@@ -25,7 +25,7 @@
 
 | Repo | Branch | Nima bor | Qaror (taklif) |
 |---|---|---|---|
-| **instagram-avto-javob** | `claude/read-docs-section-19-wo6wtw` (2026-10-29) | REJA 7.1 — prompt injection himoyasi: 5 qoida, F2 da ≥20 hujum testi | **Merge kerak.** ISH-HISOBOTI 22-bo'limda «qilindi» deyilgan, lekin `main` da yo'q |
+| **instagram-avto-javob** | `claude/read-docs-section-19-wo6wtw` (2026-10-29) | REJA 7.1 — prompt injection himoyasi: 5 qoida, F2 da ≥20 hujum testi | ✅ 2026-11-01 egasi ruxsati bilan `main` ga qo'shildi (fast-forward) |
 | **Abdulmajidkhan007** | `ccr-43d866c8-3q0lvw` (2026-10-28) | 3 ta xavfsizlik post qoralamasi (probiv bot, proxy bot tuzog'i, Safe Road leak) | Egasi ko'rib chiqadi: kerak bo'lsa `posts/` ga merge |
 | **Abdulmajidkhan007** | `claude/mijoz-xabarlari-2026-10-28` | `docs/MIJOZ-XABARLARI.md` (11 biznesga xabar, qamrov shabloni) | `main` da `MIJOZ-JARAYONI.md` bor. 💼 Freelance sessiyasi qaror qiladi |
 | **Organick_org** | `claude/docs-holat-2026-10-21` | `CLAUDE.md` 36 KB → 5 KB, qoidalar `docs/QOIDALAR.md` ga | Foydali (limit tejaydi). `master` o'zgargan, qayta asoslab (rebase) PR qilish kerak |
@@ -52,7 +52,7 @@ Yo'l: repo → Settings → General → Default branch → ⇄ → `main` → Up
 
 | Daraja | Repo | Tugagan | Qolgan / keyingi qadam | Kim |
 |---|---|---|---|---|
-| 0 | instagram-avto-javob | Reja (A/B yo'llar) | 2-bo'limdagi branch'ni merge qilish; 13-bo'lim «Ochiq savollar»; kod hali yo'q | Kod — referal (to'xtadi) |
+| 0 | instagram-avto-javob | Reja (A/B yo'llar), 7.1 `main` da | 13-bo'lim «Ochiq savollar»; kod hali yo'q | Kod — referal (to'xtadi) |
 | 0 | telegram-bots (insta-avtojavob-bot, countlist) | 15 bot, CI | Insta A pullik qismi, countlist Plus/Pro/Max | Referal (to'xtadi) |
 | 1 | portfolio-3d | Jonli, forma Worker orqali ishlaydi | Telefon/username bilan jonli sinov | Egasi |
 | 1 | Abdulmajidkhan007 | README, sayt, ariza-worker | 2-bo'limdagi profil branch'lari; postlarni yuborish | Nazoratchi + egasi |
