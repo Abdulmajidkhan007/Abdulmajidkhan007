@@ -7,7 +7,7 @@ Abdulmajid Sharipov
 
 React va TypeScript bilan veb va mobil interfeyslar quraman; backendni o'zim yopaman va kerak bo'lganda AI integratsiyasini qo'shaman.
 
-💼 **Buyurtma qabul qilaman:** Telegram bot · do'kon sayti · landing — [xizmatlar sayti](https://abdulmajidkhan007.github.io/Abdulmajidkhan007/) · [Atoyo keysi](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/KEYS-ATOYO.md)
+💼 **Buyurtma qabul qilaman:** Telegram bot · do'kon sayti · landing — [xizmatlar sayti](https://abdulmajidkhan007.github.io/Abdulmajidkhan007/) · [Atoyo keysi](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/KEYS-ATOYO.md) · kanal: [@NafiDastur](https://t.me/NafiDastur)
 
 
 ISH TAJRIBASI
