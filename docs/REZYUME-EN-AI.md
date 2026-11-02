@@ -26,8 +26,7 @@ that plans phases, delegates them to worker sessions and verifies every PR in a 
 ## Experience
 
 ### Learning Center — school-automation CRM startup
-*Frontend Team Lead · Aug 2026 – present · team of 4* ·
-[code](https://github.com/nurulloh-coder-dev/learning-center-front)
+*Frontend Team Lead · Aug 2026 – present*
 
 - Migrated the whole frontend from JSX to strict TypeScript, so type errors are caught at build
   time (75 commits).
@@ -58,7 +57,7 @@ that plans phases, delegates them to worker sessions and verifies every PR in a 
 
 ## AI projects
 
-- **telegram-bots** ([code](https://github.com/Abdulmajidkhan007/telegram-bots)): 15 bots in one
+- **telegram-bots:** 15 bots in one
   monorepo with a custom CLI, tests and a secret scanner before every commit. Includes a RAG
   bot (LangChain, ChromaDB) and Gemini-based assistants. Public bots:
   [@KillSpam_007_Bot](https://t.me/KillSpam_007_Bot) and
@@ -71,14 +70,13 @@ that plans phases, delegates them to worker sessions and verifies every PR in a 
 
 ## Other projects
 
-- **Suhbat** ([live](https://suhbatweb-production.up.railway.app) ·
-  [code](https://github.com/Abdulmajidkhan007/suhbat)): messenger with chats, groups, channels and
+- **Suhbat:** messenger with chats, groups, channels and
   1:1 calls. Built with NestJS, Prisma, PostgreSQL, Socket.IO and WebRTC with its own TURN server.
   Web, desktop (Electron) and Android clients. Beta, v0.6.0.
-- **KidsWear** ([live](https://kids-wear-007.web.app)): web and Android store in a Turborepo monorepo
+- **KidsWear:** web and Android store in a Turborepo monorepo
   (React 19, MUI, React Native). Admin catalog management and a profit report, with Firestore
   rules covered by tests.
-- **Organick** ([live](https://organick-e1c5a.web.app)): React 19, Redux Toolkit, Tailwind v4,
+- **Organick:** React 19, Redux Toolkit, Tailwind v4,
   three languages, Playwright e2e tests and CI deploy.
 
 ---
