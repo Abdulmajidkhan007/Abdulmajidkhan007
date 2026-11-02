@@ -14,7 +14,7 @@ ISH TAJRIBASI
 -------------
 
 **Learning Center (startap) | 2026-yil avgust – hozirgacha**<br>
-**Frontend team lead — jamoaviy loyiha, 4 kishi**<br>
+**Frontend team lead**<br>
 O'quv markazlarini avtomatlashtiruvchi CRM.
 
 * Butun frontendni JSX'dan strict TypeScript'ga o'tkazdim — tip xatolari endi build bosqichida ushlanadi; 75 ta commit.

@@ -23,8 +23,7 @@ o'zim yopaman (Node.js, Python) va kerak bo'lganda AI integratsiyasini qo'shaman
 ## Ish tajribasi
 
 ### Learning Center — o'quv markazlarini avtomatlashtirish startapi
-*2026-yil avgustdan hozirgacha* · Frontend team lead (jamoaviy, 4 kishi) ·
-[kod](https://github.com/nurulloh-coder-dev/learning-center-front)
+*2026-yil avgustdan hozirgacha* · Frontend team lead
 
 - Butun frontendni JSX'dan strict TypeScript'ga o'tkazdim — tip xatolari endi build
   bosqichida ushlanadi; 75 ta commit.
@@ -49,7 +48,6 @@ o'zim yopaman (Node.js, Python) va kerak bo'lganda AI integratsiyasini qo'shaman
 ## Loyihalar
 
 ### Atoyo — e-commerce platformasi
-repo private — so'rasangiz ko'rsataman
 `Next.js 16 · React 19 · TypeScript · Tailwind CSS · Firebase · React Native · Electron · Gemini API`
 
 - Qo'qondagi santexnika do'konida 2026-yil oktabrgacha ishlatildi (katalogga 500 ga yaqin mahsulot kiritilgan); 2026-10-26 da to'xtatilgan: do'kon xodimlarining saytni boshqarishga vaqti yo'q, server uchun to'lash imkoni ham yo'q; repo private.
@@ -64,7 +62,6 @@ repo private — so'rasangiz ko'rsataman
   uzatilmaydi.
 
 ### telegram-bots — 15 ta botning monorepo'si
-[kod](https://github.com/Abdulmajidkhan007/telegram-bots)
 `Node.js · Python · TypeScript · Gemini API · PostgreSQL · SQLite · Docker`
 
 - 15 ta bot bitta repoda, o'zim yozgan CLI bilan bitta buyruqda ishga tushadi; har commit
@@ -75,16 +72,15 @@ repo private — so'rasangiz ko'rsataman
   [@Tekshiruvchi_07_bot](https://t.me/Tekshiruvchi_07_bot) (virus tekshiruvi) va yana 5 ta.
 
 ### Organick — organik oziq-ovqat do'koni
-[organick-e1c5a.web.app](https://organick-e1c5a.web.app)
 `React 19 · TypeScript · Vite · Redux Toolkit · Tailwind CSS v4 · Firebase · i18next · Playwright`
 
 - Uch tilli interfeys, dark/light rejim, admin panel; Firebase Auth uch usulda (Google,
   email, SMS); Playwright e2e va GitHub Actions orqali avtomatik deploy.
 
-**Boshqa loyihalar:** **KidsWear** — veb + Android do'kon ([kids-wear-007.web.app](https://kids-wear-007.web.app));
-**Lumina** — Instagram uslubidagi tarmoq, React Native ([lumina-007app.web.app](https://lumina-007app.web.app));
+**Boshqa loyihalar:** **KidsWear** — veb + Android do'kon;
+**Lumina** — Instagram uslubidagi tarmoq, React Native;
 **Suhbat** — messenjer, NestJS + WebSocket + WebRTC (beta);
-[3D portfolio](https://abdulmajidkhan-portfolio.web.app) (React Three Fiber).
+3D portfolio (React Three Fiber).
 
 ---
 
