@@ -105,4 +105,4 @@ QO'SHIMCHA
 
 * **Tillar:** o'zbek — ona tili; ingliz — texnik hujjatlarni o'qiy olaman; rus — boshlang'ich.
 * **Ish formati:** masofaviy ishga tayyorman; Toshkentga ko'chish — kelishuv asosida.
-* [Batafsil rezyume](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/REZYUME.md) · [Vizitka](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/vizitka/vizitka.pdf)
+* [Rezyume (PDF)](https://abdulmajidkhan-portfolio.web.app/Abdulmajid_Sharipov_Frontend_CV.pdf) · [Vizitka](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/vizitka/vizitka.pdf)

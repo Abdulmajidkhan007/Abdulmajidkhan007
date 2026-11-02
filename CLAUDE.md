@@ -10,7 +10,8 @@ kompyuter, kanal matnlari, post qoralamalari) — yopiq **`Abdulmajidkhan007/huj
 ## Tuzilish
 - `README.md` — profil: rezyume + loyihalar jadvali
 - `docs/<repo>.md` — har loyiha sahifasi (namuna `docs/SHABLON.md`)
-- `docs/REZYUME.md`, `docs/REZYUME-EN-AI.md`, `docs/KEYS-ATOYO.md` — rezyume va keys
+- `docs/KEYS-ATOYO.md` — keys. **Rezyume bu repoda yo'q** — eng oxirgisi `hujjatlar/rezyume/`,
+  barqaror PDF — portfolio-3d «Rezyume yuklab olish»
 - `vizitka/` — vizitka (manba HTML, bosma PDF, PNG); lavozim/telefon o'zgarsa yangilanadi
 - `hujjatlar` repoda: `docs/REJA.md`, `docs/ISH-HISOBOTI.md`, `docs/SESSIYALAR.md`,
   `docs/KANALLAR.md`, `docs/MUQOVA-XATI.md`, `docs/KOMPYUTER.md`, `docs/MIJOZ-*.md`,
@@ -28,7 +29,7 @@ kompyuter, kanal matnlari, post qoralamalari) — yopiq **`Abdulmajidkhan007/huj
 - Tarkib (2026-10-25, rezyume uslubi — darhonbek gist namunasi, o'zbekcha): ism (setext H1) →
   H3 lavozim (Strong Junior Frontend Developer) · shahar → kontaktlar bir qatorda `|` bilan →
   bir gap → buyurtma qatori → ISH TAJRIBASI → LOYIHALAR → STACK → TA'LIM → QO'SHIMCHA.
-  Bo'lim sarlavhalari katta harf, setext H2. Rezyume (`docs/REZYUME.md`, portfolio-3d PDF) bilan mos.
+  Bo'lim sarlavhalari katta harf, setext H2. Rezyume (`hujjatlar/rezyume/`, portfolio-3d PDF) bilan mos.
 - Loyihalar (2026-10-04 qarori, shu tartibda): atoyo-e-commerce (atoyo.uz), Organick_org,
   telegram-bots (ochiq botlar username bilan), portfolio-3d, learning-center-front
   (nurulloh-coder-dev, jamoaviy — men frontend), lumina, rn-r-e-commerce, suhbat (2026-10-30
