@@ -138,6 +138,8 @@ mobil adminda bu amallar yo'q (faqat veb).
 **2026-10-29 — Faza 6 amallari mobil adminda (PR #20):** chernovik, «O'chirilganlar» (tiklash,
 butunlay o'chirish), uzun bosib tanlash + ommaviy amallar, rasmsizlarni yashirish — veb bilan bir xil
 umumiy hook'lar. CI yashil; telefonda/emulyatorda sinalmagan (mobil CSV yo'q).
+**2026-11-03 — Faza 10, SEO va a11y (PR #24):** deploy paytida `sitemap.xml` va `robots.txt`, har sahifada meta teglar va JSON-LD (mahsulot narxi, mavjudligi), WCAG AA kontrast; axe-core auditi 9 sahifa × light/dark — 0 xato (lokal emulyatorda). Jonli saytda va Google Search Console'da hali tekshirilmagan.
+
 **2026-10-31 — Faza 9, qidiruv va filtrlar (PR #22):** kirillcha qidiruv lotin nomli mahsulotni topadi,
 o'zbek apostroflari bir xil ko'rinishga keltiriladi; o'lcham/yosh/jins/narx filtrlari va «O'xshashlar»
 (veb + mobil, umumiy hook). Vebda emulyatorda sinalgan; telefonda va jonli bazadagi indekslar bilan sinalmagan.
@@ -156,4 +158,4 @@ Vebda emulyatorda 13/13 oqim sinalgan; jonli bazada va telefonda sinalmagan.
 
 ---
 
-*Oxirgi yangilanish: 2026-10-31*
+*Oxirgi yangilanish: 2026-11-03*
