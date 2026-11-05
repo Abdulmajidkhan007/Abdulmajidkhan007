@@ -2,7 +2,7 @@
 
 > Qo'qondagi santexnika do'koni uchun e-commerce platformasi: veb, Android ilova, do'kon kompyuteri, televizor ekrani va Telegram bot — bitta baza ustida.
 
-**Repo:** private (Abdulmajidkhan007/atoyo-e-commerce, 2026-10-26 dan) · ~~Jonli: atoyo.uz~~ (to'xtatilgan)
+**Repo:** 🔒 Private repo — ko'rish uchun so'rang (2026-10-26 dan) · ~~Jonli: atoyo.uz~~ (to'xtatilgan)
 **Holat:** ❄️ Muzlatilgan — 2026-10-26 da to'xtatildi
 
 ---
@@ -78,7 +78,7 @@ tezligi yetarli. VPS ushlab turish va sertifikat yangilash ishi qolmaydi.
 
 ## Havolalar
 
-- Repo: private — so'rasangiz ko'rsataman
+- Repo: 🔒 Private repo — ko'rish uchun so'rang
 - Jonli sayt: yo'q (2026-10-26 dan atoyo.uz vaqtincha sahifaga yo'naltiriladi)
 
 ---
