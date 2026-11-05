@@ -85,21 +85,16 @@ tezligi yetarli. VPS ushlab turish va sertifikat yangilash ishi qolmaydi.
 
 ## To'xtatilishi (2026-10-26)
 
-**Asosiy sabab (egasi, 2026-10-26):** atoyo.uz dagi do'kon xodimlarining saytni
-boshqarishga hozir vaqti yo'q (mahsulot kiritish, buyurtmalarni ko'rish — buni kimdir doim
-qilib turishi kerak). Buning ustiga, do'kon tomonida server uchun to'lash imkoni yo'q.
-
-**Xarajat:** Firebase Blaze oyiga taxminan 10–13 dollar chiqdi (avgust 10.70, sentabr 13.44,
-oktabr 10.85). Do'kon egalariga xarajatni ulashish taklif qilindi — ular "loyiha hozir foyda
-bermayapti, kerak bo'lsa o'zimiz aloqaga chiqamiz" dedi. Shuning uchun 2026-10-26 da Firebase
-loyihasi (`atoyo-uz`) o'chirildi, repo private qilindi.
+**Asosiy sabab (egasi, 2026-10-26):** atoyo.uz dagi do'kon xodimlarining butun tizimni
+boshqarishga vaqti yo'q (mahsulot kiritish, buyurtmalarni ko'rish — buni kimdir doim
+qilib turishi kerak). Shuning uchun 2026-10-26 da Firebase loyihasi (`atoyo-uz`) o'chirildi,
+repo private qilindi.
 
 **Holat (rost):**
 - Kod GitHub'da (private repo), o'zgarishsiz.
 - Firebase loyihasi o'chirilgan: Google Cloud'da 30 kun ichida (taxminan 2026-11-25 gacha)
   qayta tiklash mumkin. Firestore (≈500 mahsulot), Storage va Auth ma'lumoti **hali
-  eksport qilinmagan** — buning uchun avval tiklash va Google Cloud hisobidagi ≈30$ qarzni
-  to'lash kerak.
+  eksport qilinmagan** — buning uchun avval loyihani tiklash kerak.
 - Ahost'dagi atoyo.uz domeni egasida; vaqtincha sahifa:
   `site/atoyo-pauza/` (GitHub Pages).
 - @Atoyo_uz_bot sayt bazasiga ulangan — Firebase'siz ishlamaydi deb hisoblanadi
@@ -109,7 +104,7 @@ loyihasi (`atoyo-uz`) o'chirildi, repo private qilindi.
 loyihasi va domeni, xarajat mijoz tomonida yoki oylik xizmatga qo'shilgan holda, yozma
 kelishuv bilan.
 
-**Saboq:** to'lov va xarajat kelishuvi ishdan oldin yozma bo'lishi kerak; Firebase'da
+**Saboq:** xarajat kelishuvi ishdan oldin yozma bo'lishi kerak; Firebase'da
 budjet ogohlantirishi (budget alert) boshidan qo'yilishi shart.
 
-*Oxirgi yangilanish: 2026-10-26*
+*Oxirgi yangilanish: 2026-11-05*

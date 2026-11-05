@@ -25,7 +25,7 @@ O'quv markazlarini avtomatlashtiruvchi CRM.
 **Mustaqil dasturchi, frilanser | 2025-yil oktabr – hozirgacha**<br>
 **Veb, mobil va Telegram botlar**
 
-* Atoyo santexnika do'koni uchun e-commerce platforma qurdim (repo private — so'rasangiz ko'rsataman): sayt, Android ilova, desktop, do'kon TV ekrani va Telegram bot bitta baza ustida; 2026-yil oktabrgacha do'konda ishlatildi (katalogga 500 ga yaqin mahsulot), 2026-10-26 da to'xtatilgan: do'kon xodimlarining saytni boshqarishga vaqti yo'q, server uchun to'lash imkoni ham yo'q.
+* Atoyo santexnika do'koni uchun e-commerce platforma qurdim (repo private — so'rasangiz ko'rsataman): sayt, Android ilova, desktop, do'kon TV ekrani va Telegram bot bitta baza ustida; 2026-yil oktabrgacha do'konda ishlatildi (katalogga 500 ga yaqin mahsulot), 2026-10-26 da to'xtatilgan: do'kon xodimlarining butun tizimni boshqarishga vaqti yo'q.
 * Mahsulot kirimini AI bilan avtomatlashtirdim: admin rasm tashlaydi, Gemini Vision tayyor katalog kartasini qaytaradi — kartani qo'lda yozish shart emas.
 * 15 ta Telegram botni bitta monorepoga yig'dim, o'z CLI bilan bitta buyruqda ishga tushadi; har commit oldidan test va kalit skaneri.
 * 2026-yil iyuldan loyihalarni production holatiga keltiryapman (deploy, testlar, CI); 2026-yil oktabrdan buyurtmaga ishlayman.

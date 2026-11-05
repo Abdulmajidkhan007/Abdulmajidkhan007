@@ -42,7 +42,7 @@ Token yangilansa — secret'ni almashtirib, workflow'ni qayta ishga tushirish ki
 ```bash
 curl -X POST https://ariza-worker.<nom>.workers.dev \
   -H "Origin: https://abdulmajidkhan007.github.io" -H "Content-Type: application/json" \
-  -d '{"ism":"Test","tel":"+998901234567","paket":"Telegram bot","tavsif":"sinov"}'
+  -d '{"ism":"Test","tel":"+998901234567","paket":"Telegram bot","tavsif":"sinov xabari"}'
 ```
 
 Guruhga xabar tushsa — tayyor.
@@ -50,7 +50,8 @@ Guruhga xabar tushsa — tayyor.
 ## Himoya
 
 - Faqat `ALLOWED_ORIGIN` (sayt manzili) dan kelgan so'rov qabul qilinadi.
-- Maydon uzunligi cheklangan, telefon formati tekshiriladi, HTML qochiriladi.
+- Maydon uzunligi cheklangan, HTML qochiriladi. Tekshiruv (`src/validate.ts`, saytdagi bilan bir xil): Ism, Telefon (+998 + 9 raqam, `+998XXXXXXXXX` ga normalizatsiya), Xabar — majburiy; Email (format + domen MX yozuvi, DNS-over-HTTPS) va Telegram `@username` — ixtiyoriy. Xato: `400 {error, field}`.
+- Testlar: `npm i && npm test`; tur tekshiruvi: `npm run typecheck`.
 - Yashirin `sayt` maydoni: oddiy spam botlar uni to'ldiradi — bunday ariza yuborilmaydi.
 
 ## Portfolio formasi (`/contact`)

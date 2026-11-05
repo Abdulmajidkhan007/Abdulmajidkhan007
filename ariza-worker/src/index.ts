@@ -1,22 +1,13 @@
 // Ariza formasi -> Telegram guruh. Bot tokeni faqat shu yerda (Worker secret),
 // saytning o'zida hech qanday kalit yo'q.
 
+import { type Ariza, emailDomain, hasMx, parseAriza } from "./validate.ts";
+
 interface Env {
   TELEGRAM_BOT_TOKEN: string;
   TELEGRAM_CHAT_ID: string;
   ALLOWED_ORIGIN: string;
 }
-
-interface Ariza {
-  ism: string;
-  tel: string;
-  paket: string;
-  tavsif: string;
-  sayt: string; // honeypot: odam to'ldirmaydi, bot to'ldiradi
-}
-
-const LIMITS = { ism: 60, tel: 20, paket: 60, tavsif: 800 } as const;
-const PHONE_RE = /^\+?[\d\s()-]{7,20}$/;
 
 // ALLOWED_ORIGIN — vergul bilan ajratilgan ro'yxat (xizmatlar sayti + portfolio).
 function allowedOrigins(env: Env): string[] {
@@ -40,26 +31,8 @@ function json(body: unknown, status: number, env: Env, origin: string | null): R
   });
 }
 
-function str(value: unknown, max: number): string {
-  return typeof value === "string" ? value.trim().slice(0, max) : "";
-}
-
 function escapeHtml(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-}
-
-function parse(body: unknown): Ariza | null {
-  if (typeof body !== "object" || body === null) return null;
-  const b = body as Record<string, unknown>;
-  const ariza: Ariza = {
-    ism: str(b.ism, LIMITS.ism),
-    tel: str(b.tel, LIMITS.tel),
-    paket: str(b.paket, LIMITS.paket),
-    tavsif: str(b.tavsif, LIMITS.tavsif),
-    sayt: str(b.sayt, 200),
-  };
-  if (!ariza.ism || !ariza.paket || !PHONE_RE.test(ariza.tel)) return null;
-  return ariza;
 }
 
 function message(a: Ariza): string {
@@ -67,8 +40,11 @@ function message(a: Ariza): string {
     "📥 <b>Saytdan yangi ariza</b>",
     `👤 ${escapeHtml(a.ism)}`,
     `📞 ${escapeHtml(a.tel)}`,
-    `📦 ${escapeHtml(a.paket)}`,
-    a.tavsif ? `📝 ${escapeHtml(a.tavsif)}` : "",
+    a.email ? `✉️ ${escapeHtml(a.email)}` : "",
+    a.telegram ? `✈️ ${escapeHtml(a.telegram)}` : "",
+    a.paket ? `📦 ${escapeHtml(a.paket)}` : "",
+    a.jami ? `💰 ${escapeHtml(a.jami)}` : "",
+    `📝 ${escapeHtml(a.tavsif)}`,
   ].filter(Boolean).join("\n");
 }
 
@@ -85,6 +61,7 @@ interface Contact {
 }
 type ContactResult = { ok: true; data: Contact } | { ok: false; error: string; field?: keyof Contact };
 
+const PHONE_RE = /^\+?[\d\s()-]{7,20}$/;
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 // Telegram qoidasi: harf bilan boshlanadi, 5–32 belgi (harf, raqam, _).
 const TELEGRAM_RE = /^@?[A-Za-z][A-Za-z0-9_]{4,31}$/;
@@ -162,10 +139,14 @@ export default {
       return json({ ok: sent }, sent ? 200 : 502, env, origin);
     }
 
-    const ariza = parse(body);
-    if (!ariza) return json({ ok: false, error: "invalid" }, 400, env, origin);
+    const parsed = parseAriza(body);
+    if (!parsed.ok) return json({ ok: false, error: parsed.error, field: parsed.field }, 400, env, origin);
+    const ariza = parsed.data;
     // Honeypot to'lgan bo'lsa — spam bot. Unga "ok" deymiz, lekin yubormaymiz.
     if (ariza.sayt) return json({ ok: true }, 200, env, origin);
+    if (ariza.email && !(await hasMx(emailDomain(ariza.email), fetch))) {
+      return json({ ok: false, error: "Email manzil noto'g'ri", field: "email" }, 400, env, origin);
+    }
 
     const sent = await sendTelegram(env, message(ariza));
     return json({ ok: sent }, sent ? 200 : 502, env, origin);

@@ -9,6 +9,8 @@
 <meta property="og:description" content="Telegram bot, do'kon sayti va landing. Ishlab turgan misollar bilan.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#4f46e5">
+<!-- Ariza worker manzili (ariza-worker/ deploy bo'lgach): https://ariza-worker.<nom>.workers.dev. Bo'sh bo'lsa — zaxira: Telegram chati. -->
+<meta name="ariza-url" content="">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234f46e5'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='18' font-weight='700' fill='white' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
 <script>
   // Tema sahifa chizilishidan oldin qo'yiladi — "oq chaqnash" bo'lmasin.
@@ -296,6 +298,42 @@
   }
   .sheet-title { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
+  /* Narx kalkulyatori */
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .pk-grid { display: grid; gap: 24px; align-items: start; }
+  .pk-list { min-width: 0; }
+  @media (min-width: 1024px) {
+    .pk-grid { grid-template-columns: minmax(0, 1fr) 380px; }
+    .calc { position: sticky; top: 76px; max-height: calc(100dvh - 92px); overflow-y: auto; }
+  }
+  @media (max-width: 1023px) { .pk-list { margin-bottom: 0; } }
+  .calc h3 { margin: 0 0 6px; font-size: 1.2rem; }
+  .calc fieldset { border: 0; padding: 0; margin: 12px 0 0; min-width: 0; display: grid; gap: 6px; }
+  .chk { display: grid; grid-template-columns: 22px 1fr auto; align-items: center; gap: 10px; padding: 9px 12px;
+    border: 1px solid var(--line); border-radius: 10px; cursor: pointer; font-weight: 500; background: var(--bg); }
+  .chk:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }
+  .chk input { width: 18px; height: 18px; padding: 0; accent-color: var(--accent); }
+  .chk b { color: var(--muted); font-weight: 600; }
+  .calc-unit { margin-top: 8px; }
+  .sum { margin: 14px 0 4px; display: grid; gap: 6px; }
+  .sum div { display: flex; justify-content: space-between; gap: 12px; }
+  .sum div[hidden] { display: none; }
+  .sum dt { color: var(--muted); }
+  .sum dd { margin: 0; font-weight: 600; }
+  .sum-total { padding-top: 8px; border-top: 1px solid var(--line); font-size: 1.15rem; }
+  .sum-total dt { color: var(--text); font-weight: 700; }
+  .sum-total dd { color: var(--accent); font-weight: 800; }
+  .calc form { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .acc-btns { display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn[aria-pressed="true"] { background: var(--ok); color: #fff; }
+  :root[data-theme="dark"] .btn[aria-pressed="true"] { color: #0e0f14; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .btn[aria-pressed="true"] { color: #0e0f14; } }
+  label small { font-weight: 400; color: var(--muted); }
+  .fld-err { color: var(--err); font-weight: 500; font-size: .85rem; min-height: 0; }
+  .fld-err:empty { display: none; }
+  input[aria-invalid="true"], textarea[aria-invalid="true"] { border-color: var(--err); }
+  .status a { color: inherit; }
+
   footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: .95rem; }
   footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: space-between; }
   footer a { text-decoration: none; }
@@ -341,6 +379,8 @@
     <div class="wrap">
       <h2>Nima qilib beraman</h2>
       <p class="acc-note">Narx va muddat taxminiy (o'rtacha). Aniq narx va muddat biznesingizdagi muammo, loyihaning hajmi va holatiga qarab o'zgarishi mumkin — yozing, 1 kunda aniq taklif beraman.</p>
+      <div class="pk-grid">
+      <div class="pk-list">
       <div class="acc">
       <article class="acc-item">
         <h3 class="acc-head"><button class="acc-btn" type="button" id="acc-b1" aria-expanded="false" aria-controls="acc-p1">
@@ -360,7 +400,7 @@
           <div><h4>Kimga mos</h4><p>Do'kon, kafe, o'quv markaz, go'zallik saloni, xizmat ko'rsatish.</p></div>
           
           <div class="acc-meta"><div><b>Muddat:</b> <span>≈ 3–7 kun</span></div><div><b>Narx:</b> <span>≈ 1,5 mln so'mdan</span></div></div>
-          <a class="btn btn-primary" href="#ariza" data-paket="Oddiy Telegram bot">Tanlash</a>
+          <button class="btn btn-primary" type="button" data-svc="bot" aria-pressed="false">Tanlash</button>
         </div></div></div>
       </article>
       <article class="acc-item">
@@ -381,7 +421,7 @@
           <div><h4>Kimga mos</h4><p>Restoran, kafe, yetkazib berish, kichik do'kon.</p></div>
           
           <div class="acc-meta"><div><b>Muddat:</b> <span>≈ 2–3 hafta</span></div><div><b>Narx:</b> <span>≈ 4,5 mln so'mdan</span></div></div>
-          <a class="btn btn-primary" href="#ariza" data-paket="Bot + ichki menyu (mini ilova)">Tanlash</a>
+          <button class="btn btn-primary" type="button" data-svc="menu" aria-pressed="false">Tanlash</button>
         </div></div></div>
       </article>
       <article class="acc-item">
@@ -402,7 +442,7 @@
           <div><h4>Kimga mos</h4><p>Yangi biznes, xizmat ko'rsatuvchilar, o'quv markaz, usta va mutaxassislar.</p></div>
           
           <div class="acc-meta"><div><b>Muddat:</b> <span>≈ 5–10 kun</span></div><div><b>Narx:</b> <span>≈ 3 mln so'mdan</span></div></div>
-          <a class="btn btn-primary" href="#ariza" data-paket="Bir sahifali sayt">Tanlash</a>
+          <button class="btn btn-primary" type="button" data-svc="sayt" aria-pressed="false">Tanlash</button>
         </div></div></div>
       </article>
       <article class="acc-item">
@@ -423,7 +463,7 @@
           <div><h4>Kimga mos</h4><p>Mahsuloti ko'p do'konlar: kiyim, oziq-ovqat, uy-ro'zg'or buyumlari.</p></div>
           
           <div class="acc-meta"><div><b>Muddat:</b> <span>≈ 3–5 hafta</span></div><div><b>Narx:</b> <span>≈ 8 mln so'mdan</span></div></div>
-          <a class="btn btn-primary" href="#ariza" data-paket="Internet-do'kon">Tanlash</a>
+          <button class="btn btn-primary" type="button" data-svc="dokon" aria-pressed="false">Tanlash</button>
         </div></div></div>
       </article>
       <article class="acc-item">
@@ -444,7 +484,7 @@
           <div><h4>Kimga mos</h4><p>Doimiy mijozi bor do'kon, yetkazib berish va xizmat ko'rsatuvchilar.</p></div>
           
           <div class="acc-meta"><div><b>Muddat:</b> <span>≈ 3–6 hafta</span></div><div><b>Narx:</b> <span>≈ 5 mln so'mdan</span></div></div>
-          <a class="btn btn-primary" href="#ariza" data-paket="Android ilova">Tanlash</a>
+          <button class="btn btn-primary" type="button" data-svc="android" aria-pressed="false">Tanlash</button>
         </div></div></div>
       </article>
       <article class="acc-item">
@@ -465,7 +505,7 @@
           <div><h4>Kimga mos</h4><p>Ombori va kassasi bor do'konlar, ulgurji savdo.</p></div>
           
           <div class="acc-meta"><div><b>Muddat:</b> <span>≈ 1–2 oy</span></div><div><b>Narx:</b> <span>≈ 12 mln so'mdan</span></div></div>
-          <a class="btn btn-primary" href="#ariza" data-paket="Savdo va ombor hisobi">Tanlash</a>
+          <button class="btn btn-primary" type="button" data-svc="hisob" aria-pressed="false">Tanlash</button>
         </div></div></div>
       </article>
       <article class="acc-item">
@@ -484,9 +524,60 @@
                 <li>Oylik qo'llab-quvvatlash — <b>500 ming so'm/oy</b></li>
           </ul></div>
           <div><h4>Kimga mos</h4><p>Yuqoridagi paketlardan birini tanlagan har bir mijoz.</p></div>
-          <a class="btn btn-primary" href="#ariza" data-paket="Qo'shimchalar">Tanlash</a>
+          <div class="acc-btns"><button class="btn btn-primary" type="button" data-svc="ai" aria-pressed="false">AI bilan kiritishni tanlash</button><button class="btn btn-primary" type="button" data-svc="tv" aria-pressed="false">TV ekranni tanlash</button></div>
         </div></div></div>
       </article>
+      </div>
+      </div>
+      <aside class="calc card" id="kalkulyator" aria-labelledby="calc-h">
+        <h3 id="calc-h">Narx kalkulyatori</h3>
+        <p class="note">Kerakli xizmatlarni belgilang — taxminiy narx pastda ko'rinadi.</p>
+        <fieldset class="calc-list">
+          <legend class="sr">Xizmatlar</legend>
+          <label class="chk"><input type="checkbox" name="svc" value="bot" data-price="1500" data-name="Oddiy Telegram bot"><span>Oddiy Telegram bot</span><b>1,5</b></label>
+          <label class="chk"><input type="checkbox" name="svc" value="menu" data-price="4500" data-name="Bot + ichki menyu"><span>Bot + ichki menyu</span><b>4,5</b></label>
+          <label class="chk"><input type="checkbox" name="svc" value="sayt" data-price="3000" data-name="Bir sahifali sayt"><span>Bir sahifali sayt</span><b>3</b></label>
+          <label class="chk"><input type="checkbox" name="svc" value="dokon" data-price="8000" data-name="Internet-do'kon"><span>Internet-do'kon</span><b>8</b></label>
+          <label class="chk"><input type="checkbox" name="svc" value="android" data-price="5000" data-name="Android ilova"><span>Android ilova</span><b>5</b></label>
+          <label class="chk"><input type="checkbox" name="svc" value="hisob" data-price="12000" data-name="Savdo va ombor hisobi"><span>Savdo va ombor hisobi</span><b>12</b></label>
+          <label class="chk"><input type="checkbox" name="svc" value="ai" data-price="2000" data-name="AI bilan mahsulot kiritish"><span>AI bilan mahsulot kiritish</span><b>2</b></label>
+          <label class="chk"><input type="checkbox" name="svc" value="tv" data-price="2000" data-name="Do'kon TV ekrani"><span>Do'kon TV ekrani</span><b>2</b></label>
+        </fieldset>
+        <p class="note calc-unit">Narxlar — mln so'm, taxminiy.</p>
+        <dl class="sum" aria-live="polite">
+          <div><dt>Jami</dt><dd id="calc-sum">0</dd></div>
+          <div id="calc-disc-row" hidden><dt id="calc-disc-label">Chegirma</dt><dd id="calc-disc">0</dd></div>
+          <div class="sum-total"><dt>Yakuniy</dt><dd id="calc-total">≈ 0 mln so'm</dd></div>
+        </dl>
+        <p class="note">2 ta xizmat — −5%, 3 va undan ko'p — −10%.</p>
+        <form id="calc-form" class="ariza-form" novalidate>
+          <label>Muammongiz nima?
+            <textarea name="tavsif" maxlength="800" required placeholder="Masalan: do'konimga buyurtma qabul qiladigan bot kerak"></textarea>
+            <span class="fld-err" data-err="tavsif"></span>
+          </label>
+          <label>Ismingiz
+            <input name="ism" autocomplete="name" required maxlength="60" placeholder="Masalan: Jasur">
+            <span class="fld-err" data-err="ism"></span>
+          </label>
+          <label>Telefon
+            <input name="tel" type="tel" autocomplete="tel" required maxlength="20" placeholder="+998 90 123 45 67">
+            <span class="fld-err" data-err="tel"></span>
+          </label>
+          <div class="row-2">
+            <label><span>Email <small>(ixtiyoriy)</small></span>
+              <input name="email" type="email" autocomplete="email" maxlength="254" placeholder="nom@gmail.com">
+              <span class="fld-err" data-err="email"></span>
+            </label>
+            <label><span>Telegram <small>(ixtiyoriy)</small></span>
+              <input name="telegram" autocomplete="off" maxlength="33" placeholder="@username">
+              <span class="fld-err" data-err="telegram"></span>
+            </label>
+          </div>
+          <input class="hp" name="sayt" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn btn-primary" type="submit">Ariza yuborish</button>
+          <p class="status" role="status" aria-live="polite"></p>
+        </form>
+      </aside>
       </div>
       <div class="acc-foot">
         <p>Server va domen to'lovi — mijoz hisobidan.</p>
@@ -505,7 +596,7 @@
           <p>Mijozlar narxni so'rab yozardi, sotuvchi kun bo'yi javob berardi. Buyurtmalar qo'lda yozilardi,
             kanalda eski narxlar qolib ketardi.</p>
           <span class="tag" style="margin-top:18px">Hozir</span>
-          <p>Qo'qondagi do'konda 2026-yil oktabrgacha ishladi; hozir to'xtatilgan: do'kon xodimlarining saytni boshqarishga vaqti yo'q, server uchun to'lash imkoni ham yo'q.
+          <p>Qo'qondagi do'konda 2026-yil oktabrgacha ishladi; hozir to'xtatilgan: do'kon xodimlarining butun tizimni boshqarishga vaqti yo'q.
             Mijoz narxni o'zi ko'radi, buyurtma do'konning Telegram guruhiga tushadi.</p>
           <!-- egasi to'ldiradi: natija raqamlari (oylik buyurtma, tashrifchi, tejalgan vaqt) -->
           <p class="live">⏸ Sayt to'xtatilgan (2026-10-26) · repo private</p>
@@ -582,19 +673,31 @@
   <section id="ariza" class="soft">
     <div class="wrap">
       <h2>Ariza</h2>
-      <p class="lead">To'ldiring — Telegram ochiladi, xabar tayyor turadi. "Yuborish" ni bosasiz.</p>
+      <p class="lead">Ism, telefon va xabarni yozing — ariza menga darhol keladi.</p>
       <div class="card">
-        <form id="ariza-form" novalidate>
+        <form id="ariza-form" class="ariza-form" novalidate>
           <div class="row-2">
             <label>Ismingiz
               <input name="ism" autocomplete="name" required maxlength="60" placeholder="Masalan: Jasur">
+              <span class="fld-err" data-err="ism"></span>
             </label>
             <label>Telefon
               <input name="tel" type="tel" autocomplete="tel" required maxlength="20" placeholder="+998 90 123 45 67">
+              <span class="fld-err" data-err="tel"></span>
             </label>
           </div>
-          <label>Nima kerak?
-            <select name="paket" id="paket" required>
+          <div class="row-2">
+            <label><span>Email <small>(ixtiyoriy)</small></span>
+              <input name="email" type="email" autocomplete="email" maxlength="254" placeholder="nom@gmail.com">
+              <span class="fld-err" data-err="email"></span>
+            </label>
+            <label><span>Telegram <small>(ixtiyoriy)</small></span>
+              <input name="telegram" autocomplete="off" maxlength="33" placeholder="@username">
+              <span class="fld-err" data-err="telegram"></span>
+            </label>
+          </div>
+          <label><span>Nima kerak? <small>(ixtiyoriy)</small></span>
+            <select name="paket" id="paket">
               <option value="">Tanlang</option>
               <option>Oddiy Telegram bot</option>
               <option>Bot + ichki menyu (mini ilova)</option>
@@ -606,13 +709,14 @@
               <option>Bilmayman, maslahat kerak</option>
             </select>
           </label>
-          <label>Qisqacha
-            <textarea name="tavsif" maxlength="800" placeholder="Masalan: kiyim do'konimga buyurtma qabul qiladigan bot kerak"></textarea>
+          <label>Xabar
+            <textarea name="tavsif" maxlength="800" required placeholder="Masalan: kiyim do'konimga buyurtma qabul qiladigan bot kerak"></textarea>
+            <span class="fld-err" data-err="tavsif"></span>
           </label>
           <input class="hp" name="sayt" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <button class="btn btn-primary" type="submit" id="ariza-btn">Yuborish</button>
-          <p class="note" id="ariza-note">Arizangiz to'g'ridan-to'g'ri menga keladi.</p>
-          <p class="status" id="ariza-status" role="status" aria-live="polite"></p>
+          <button class="btn btn-primary" type="submit">Ariza yuborish</button>
+          <p class="note">Arizangiz to'g'ridan-to'g'ri menga keladi.</p>
+          <p class="status" role="status" aria-live="polite"></p>
         </form>
       </div>
     </div>
@@ -693,83 +797,217 @@
     });
   })();
 
-  // Ariza ARIZA_URL (Cloudflare Worker, ariza-worker/) ga yuboriladi, u bot orqali guruhga tashlaydi.
-  // Bot tokeni saytda yo'q. ARIZA_URL bo'sh yoki xato bo'lsa — Telegram chati tayyor matn bilan ochiladi.
-  (function () {
-    var ARIZA_URL = "";
-    var USERNAME = "Abdulloh_77700";
-    var form = document.getElementById("ariza-form");
-    var status = document.getElementById("ariza-status");
+  // Paketlar accordion: JS bo'lmasa hammasi ochiq va o'qiladi.
+  document.querySelectorAll(".acc-btn").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var open = btn.getAttribute("aria-expanded") !== "true";
+      btn.setAttribute("aria-expanded", String(open));
+      btn.closest(".acc-item").classList.toggle("open", open);
+    });
+  });
 
-    // Paketlar accordion: JS bo'lmasa hammasi ochiq va o'qiladi.
-    document.querySelectorAll(".acc-btn").forEach(function (btn) {
+  // Narx kalkulyatori. Narxlar ming so'mda (butun son) — kasr xatosi bo'lmasin.
+  var calc = (function () {
+    var boxes = Array.prototype.slice.call(document.querySelectorAll("#kalkulyator input[name=svc]"));
+    var sumEl = document.getElementById("calc-sum");
+    var discRow = document.getElementById("calc-disc-row");
+    var discLabel = document.getElementById("calc-disc-label");
+    var discEl = document.getElementById("calc-disc");
+    var totalEl = document.getElementById("calc-total");
+
+    function mln(ming) {
+      return String(Math.round(ming) / 1000).replace(".", ",");
+    }
+    function selected() { return boxes.filter(function (b) { return b.checked; }); }
+    function compute() {
+      var list = selected();
+      var sum = list.reduce(function (t, b) { return t + Number(b.dataset.price); }, 0);
+      var pct = list.length >= 3 ? 10 : list.length === 2 ? 5 : 0;
+      var disc = Math.round(sum * pct / 100);
+      return { list: list, sum: sum, pct: pct, disc: disc, total: sum - disc };
+    }
+    function render() {
+      var c = compute();
+      sumEl.textContent = mln(c.sum) + " mln so'm";
+      discRow.hidden = c.pct === 0;
+      discLabel.textContent = "Chegirma (−" + c.pct + "%, " + c.list.length + " ta xizmat)";
+      discEl.textContent = "−" + mln(c.disc) + " mln so'm";
+      totalEl.textContent = "≈ " + mln(c.total) + " mln so'm";
+      document.querySelectorAll("[data-svc]").forEach(function (btn) {
+        var on = boxes.some(function (b) { return b.value === btn.dataset.svc && b.checked; });
+        btn.setAttribute("aria-pressed", String(on));
+        if (btn.dataset.label === undefined) btn.dataset.label = btn.textContent;
+        btn.textContent = on ? "✓ Tanlandi" : btn.dataset.label;
+      });
+    }
+    boxes.forEach(function (b) { b.addEventListener("change", render); });
+
+    // Accordion'dagi "Tanlash": kalkulyatorda xizmatni belgilaydi (qayta bosilsa — olib tashlaydi).
+    document.querySelectorAll("[data-svc]").forEach(function (btn) {
       btn.addEventListener("click", function () {
-        var open = btn.getAttribute("aria-expanded") !== "true";
-        btn.setAttribute("aria-expanded", String(open));
-        btn.closest(".acc-item").classList.toggle("open", open);
+        var box = boxes.filter(function (b) { return b.value === btn.dataset.svc; })[0];
+        if (!box) return;
+        box.checked = !box.checked;
+        render();
+        // Planshet/telefonda kalkulyator ro'yxat ostida — belgilanganini ko'rsatamiz.
+        if (box.checked && window.matchMedia("(max-width: 1023px)").matches) {
+          document.getElementById("kalkulyator").scrollIntoView({ behavior: "smooth", block: "start" });
+        }
       });
     });
-    // "Tanlash" bosilganda forma tanlovi (quyida) ishlaydi.
-    var paket = document.getElementById("paket");
-    if (!ARIZA_URL) {
-      document.getElementById("ariza-btn").textContent = "Telegram'da yuborish";
-      document.getElementById("ariza-note").textContent = "Telegram ochiladi, xabar tayyor turadi — \"Yuborish\" ni bosasiz.";
+    render();
+    return {
+      reset: function () { boxes.forEach(function (b) { b.checked = false; }); render(); },
+      summary: function () {
+        var c = compute();
+        return {
+          names: c.list.map(function (b) { return b.dataset.name; }).join(", "),
+          count: c.list.length,
+          jami: "≈ " + mln(c.total) + " mln so'm" + (c.pct ? " (chegirma −" + c.pct + "%)" : "")
+        };
+      }
+    };
+  })();
+
+  // Ariza formalari (asosiy va kalkulyator). Tekshiruv ariza-worker/src/validate.ts bilan bir xil.
+  // Ariza meta[name=ariza-url] manzilidagi Cloudflare Worker'ga ketadi, u bot orqali guruhga tashlaydi
+  // (bot tokeni saytda yo'q). Faqat Worker'ga ulanib bo'lmasa — zaxira: Telegram chati tayyor matn bilan.
+  (function () {
+    var USERNAME = "Abdulloh_77700";
+    var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+    var TELEGRAM_RE = /^@?[A-Za-z][A-Za-z0-9_]{4,31}$/;
+
+    function normalizePhone(raw) {
+      if (/[^\d\s()+-]/.test(raw)) return null;
+      var digits = raw.replace(/\D/g, "");
+      if (!/^998\d{9}$/.test(digits)) return null;
+      if (raw.indexOf("+") !== -1 && raw.trim().charAt(0) !== "+") return null;
+      return "+" + digits;
     }
 
-    // "Shu paketni tanlash" tugmasi formadagi paketni oldindan tanlaydi.
-    document.querySelectorAll("[data-paket]").forEach(function (a) {
-      a.addEventListener("click", function () {
-        paket.value = a.getAttribute("data-paket");
-      });
-    });
+    // Maydon -> xato matni (bo'sh obyekt — hammasi to'g'ri).
+    function validate(v) {
+      var e = {};
+      if (!v.ism) e.ism = "Ismni kiriting";
+      if (!v.tel) e.tel = "Telefon raqamini kiriting";
+      else if (!normalizePhone(v.tel)) e.tel = "Telefon +998 va 9 raqamdan iborat bo'lsin";
+      if (v.email && (v.email.length > 254 || !EMAIL_RE.test(v.email))) e.email = "Email manzil noto'g'ri";
+      if (v.telegram && !TELEGRAM_RE.test(v.telegram)) e.telegram = "Telegram username noto'g'ri (@ bilan, 5–32 belgi: harf, raqam, _)";
+      if (!v.tavsif) e.tavsif = "Xabarni kiriting";
+      else if (v.tavsif.length < 5) e.tavsif = "Xabar kamida 5 belgi bo'lsin";
+      return e;
+    }
 
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      var d = new FormData(form);
-      var ism = (d.get("ism") || "").trim();
-      var tel = (d.get("tel") || "").trim();
-      var tanlov = d.get("paket") || "";
-      var tavsif = (d.get("tavsif") || "").trim();
-
-      if (!ism || !tel || !tanlov) {
-        status.classList.add("err");
-        status.textContent = "Ism, telefon va paketni to'ldiring.";
-        return;
-      }
-
-      var btn = document.getElementById("ariza-btn");
-      var matn = "Assalomu alaykum! Saytingizdan ariza:\n" +
-        "Ism: " + ism + "\n" +
-        "Telefon: " + tel + "\n" +
-        "Paket: " + tanlov +
-        (tavsif ? "\nTavsif: " + tavsif : "");
-
-      function openTelegram() {
-        if (navigator.clipboard) {
-          navigator.clipboard.writeText(matn).catch(function () { /* nusxalash ixtiyoriy — link baribir ochiladi */ });
+    function showErrors(form, errors) {
+      var first = null;
+      form.querySelectorAll("[data-err]").forEach(function (span) {
+        var name = span.dataset.err;
+        var input = form.elements[name];
+        var msg = errors[name] || "";
+        span.textContent = msg;
+        if (input) {
+          if (msg) {
+            input.setAttribute("aria-invalid", "true");
+            if (!span.id) span.id = form.id + "-err-" + name;
+            input.setAttribute("aria-describedby", span.id);
+            if (!first) first = input;
+          } else {
+            input.removeAttribute("aria-invalid");
+            input.removeAttribute("aria-describedby");
+          }
         }
-        status.classList.remove("err");
-        status.textContent = "Telegram ochilmoqda...";
-        window.location.href = "https://t.me/" + USERNAME + "?text=" + encodeURIComponent(matn);
-      }
+      });
+      if (first) first.focus();
+    }
 
-      if (!ARIZA_URL) { openTelegram(); return; }
+    function fallbackText(v, extra) {
+      return "Assalomu alaykum! Saytingizdan ariza:\n" +
+        "Ism: " + v.ism + "\nTelefon: " + v.tel +
+        (v.email ? "\nEmail: " + v.email : "") +
+        (v.telegram ? "\nTelegram: " + v.telegram : "") +
+        (extra.paket ? "\nXizmat: " + extra.paket : "") +
+        (extra.jami ? "\nJami: " + extra.jami : "") +
+        "\nXabar: " + v.tavsif;
+    }
 
-      btn.disabled = true;
-      status.classList.remove("err");
-      status.textContent = "Yuborilmoqda...";
-      fetch(ARIZA_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ism: ism, tel: tel, paket: tanlov, tavsif: tavsif, sayt: d.get("sayt") || "" })
-      })
-        .then(function (res) {
-          if (!res.ok) throw new Error("status " + res.status);
-          form.reset();
-          status.textContent = "Rahmat! Arizangiz keldi, tez orada bog'lanaman.";
+    function setup(form, getExtra) {
+      var status = form.querySelector(".status");
+      var btn = form.querySelector("button[type=submit]");
+      function say(text, err) { status.textContent = text; status.classList.toggle("err", !!err); }
+
+      form.addEventListener("submit", function (ev) {
+        ev.preventDefault();
+        var d = new FormData(form);
+        var v = {
+          ism: String(d.get("ism") || "").trim(),
+          tel: String(d.get("tel") || "").trim(),
+          email: String(d.get("email") || "").trim(),
+          telegram: String(d.get("telegram") || "").trim(),
+          tavsif: String(d.get("tavsif") || "").trim()
+        };
+        var errors = validate(v);
+        var extra = getExtra(d);
+        if (extra.error) say(extra.error, true); else say("", false);
+        showErrors(form, errors);
+        if (Object.keys(errors).length || extra.error) return;
+
+        var url = (document.querySelector("meta[name=ariza-url]") || {}).content || "";
+
+        function openTelegram(reason) {
+          var text = fallbackText(v, extra);
+          var link = "https://t.me/" + USERNAME + "?text=" + encodeURIComponent(text);
+          if (navigator.clipboard) navigator.clipboard.writeText(text).catch(function () {});
+          status.classList.add("err");
+          status.textContent = reason + " Zaxira: Telegram chati ochilmoqda — xabar tayyor, \"Yuborish\" ni bosing. ";
+          var a = document.createElement("a");
+          a.href = link; a.target = "_blank"; a.rel = "noopener"; a.textContent = "Ochilmasa — shu yerni bosing";
+          status.appendChild(a);
+          setTimeout(function () { window.open(link, "_blank", "noopener"); }, 1500);
+        }
+
+        if (!url) { openTelegram("Ariza serveri hozircha ulanmagan."); return; }
+
+        btn.disabled = true;
+        say("Yuborilmoqda...", false);
+        fetch(url, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            ism: v.ism, tel: v.tel, email: v.email, telegram: v.telegram, tavsif: v.tavsif,
+            paket: extra.paket || "", jami: extra.jami || "", sayt: String(d.get("sayt") || "")
+          })
         })
-        .catch(function () { openTelegram(); })
-        .finally(function () { btn.disabled = false; });
+          .then(function (res) {
+            return res.json().catch(function () { return {}; }).then(function (data) { return { res: res, data: data }; });
+          })
+          .then(function (r) {
+            if (r.res.ok) {
+              form.reset();
+              showErrors(form, {});
+              if (extra.onSent) extra.onSent();
+              say("Rahmat! Arizangiz keldi, tez orada bog'lanaman.", false);
+            } else if (r.res.status === 400 && r.data && r.data.field) {
+              // Worker rad etdi (masalan, email domeni MX yozuvisiz) — foydalanuvchi to'g'rilaydi.
+              var er = {}; er[r.data.field] = r.data.error;
+              showErrors(form, er);
+              say("", false);
+            } else {
+              openTelegram("Arizani yuborib bo'lmadi.");
+            }
+          })
+          .catch(function () { openTelegram("Ariza serveriga ulanib bo'lmadi."); })
+          .finally(function () { btn.disabled = false; });
+      });
+    }
+
+    var main = document.getElementById("ariza-form");
+    setup(main, function (d) { return { paket: String(d.get("paket") || "") }; });
+
+    var cf = document.getElementById("calc-form");
+    setup(cf, function () {
+      var s = calc.summary();
+      if (!s.count) return { error: "Kamida bitta xizmatni belgilang." };
+      return { paket: s.names, jami: s.jami, onSent: calc.reset };
     });
   })();
 </script>

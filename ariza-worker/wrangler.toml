@@ -7,4 +7,4 @@ compatibility_date = "2026-10-01"
 [vars]
 # Faqat shu manbalardan kelgan so'rov qabul qilinadi (CORS), vergul bilan:
 # xizmatlar sayti va portfolio (portfolio forma → /contact).
-ALLOWED_ORIGIN = "https://abdulmajidkhan007.github.io,https://abdulmajidkhan-portfolio.web.app,https://abdulmajidkhan-portfolio.firebaseapp.com"
+ALLOWED_ORIGIN = "https://abdulmajidkhan007.github.io,https://abdulmajidkhan-portfolio.web.app,https://abdulmajidkhan-portfolio.firebaseapp.com,https://nafidastur.uz,https://www.nafidastur.uz"
