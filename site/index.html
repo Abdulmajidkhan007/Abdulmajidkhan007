@@ -13,6 +13,7 @@
 <script>
   // Tema sahifa chizilishidan oldin qo'yiladi — "oq chaqnash" bo'lmasin.
   (function () {
+    document.documentElement.classList.add("js");
     try {
       var t = localStorage.getItem("tema");
       if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
@@ -160,21 +161,52 @@
     border-radius: 50%; background: var(--accent);
   }
 
-  /* Paketlar */
-  .pkg { display: flex; flex-direction: column; gap: 14px; }
-  .pkg .who { color: var(--muted); margin: 0; }
-  .pkg h4 { margin: 0 0 4px; font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
-  .pkg .meta { display: grid; gap: 6px; padding: 12px 14px; border-radius: 10px; background: var(--bg-soft); font-size: .95rem; }
-  .pkg .meta b { color: var(--text); }
-  .pkg .meta span { color: var(--muted); }
-  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
-  .chips a {
-    padding: 6px 12px; border-radius: 99px; border: 1px solid var(--line); background: var(--bg-soft);
-    font-weight: 600; font-size: .92rem; text-decoration: none; white-space: nowrap;
+  /* Paketlar — accordion */
+  .acc { display: grid; gap: 10px; }
+  .acc-item { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+  .acc-item.open { border-color: var(--accent); }
+  .acc-head { margin: 0; font-size: inherit; }
+  .acc-btn {
+    width: 100%; display: grid; grid-template-columns: 44px 1fr auto 36px; align-items: center; gap: 4px 16px;
+    padding: 14px 16px; background: none; border: 0; border-radius: var(--radius); cursor: pointer;
+    font: inherit; color: inherit; text-align: left;
   }
-  .chips a:hover { border-color: var(--accent); }
-  .pkg .btn { margin-top: auto; }
-  .extra { margin-top: 18px; color: var(--muted); font-size: .95rem; }
+  .acc-btn:hover .acc-name { color: var(--accent); }
+  .acc-btn .icon { grid-row: 1 / span 2; font-size: 1.4rem; }
+  .acc-name { font-weight: 700; font-size: 1.08rem; grid-column: 2; }
+  .acc-sub { color: var(--muted); font-weight: 400; font-size: .95rem; grid-column: 2; grid-row: 2; }
+  .acc-price { grid-column: 3; grid-row: 1 / span 2; font-weight: 700; white-space: nowrap; text-align: right; }
+  .acc-price small { display: block; font-weight: 500; color: var(--muted); font-size: .8rem; }
+  .acc-plus {
+    grid-column: 4; grid-row: 1 / span 2; width: 36px; height: 36px; border-radius: 50%;
+    background: var(--accent-soft); color: var(--accent); display: grid; place-items: center;
+    font-size: 1.5rem; line-height: 1; transition: transform .25s ease;
+  }
+  .acc-item.open .acc-plus { transform: rotate(45deg); }
+  .acc-panel { display: grid; grid-template-rows: 1fr; transition: grid-template-rows .3s ease; }
+  .js .acc-panel { grid-template-rows: 0fr; }
+  .js .acc-item.open .acc-panel { grid-template-rows: 1fr; }
+  .acc-panel > div { overflow: hidden; min-height: 0; }
+  .js .acc-item:not(.open) .acc-panel > div { visibility: hidden; transition: visibility 0s .3s; }
+  .acc-body { padding: 4px 20px 20px 76px; display: grid; gap: 14px; }
+  .acc-body h4 { margin: 0 0 4px; font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+  .acc-body p { margin: 0; color: var(--muted); }
+  .acc-meta { display: flex; flex-wrap: wrap; gap: 6px 24px; padding: 12px 14px; border-radius: 10px; background: var(--bg-soft); font-size: .95rem; }
+  .acc-meta span { color: var(--muted); }
+  .acc-meta b { color: var(--text); }
+  .acc-body .btn { justify-self: start; }
+  .acc-note { margin: 0 0 18px; padding: 12px 14px; border-radius: 10px; background: var(--accent-soft); color: var(--text); font-size: .95rem; }
+  .acc-foot { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; justify-content: space-between; color: var(--muted); font-size: .95rem; }
+  .acc-foot p { margin: 0; }
+  @media (prefers-reduced-motion: reduce) { .acc-plus, .acc-panel { transition: none; } }
+  @media (max-width: 639px) {
+    .acc-btn { grid-template-columns: 40px 1fr 36px; padding: 12px; gap: 2px 12px; }
+    .acc-btn .icon { width: 40px; height: 40px; grid-row: 1 / span 3; }
+    .acc-price { grid-column: 2; grid-row: 3; text-align: left; font-size: .95rem; }
+    .acc-price small { display: inline; margin-left: 6px; }
+    .acc-plus { grid-column: 3; grid-row: 1 / span 3; }
+    .acc-body { padding: 4px 16px 18px; }
+  }
 
   /* Keys */
   .case { display: grid; gap: 16px; }
@@ -308,79 +340,158 @@
   <section id="paketlar" class="soft">
     <div class="wrap">
       <h2>Nima qilib beraman</h2>
-      <p class="lead">Narx ishning hajmiga qarab. Nima kerakligini yozing — narx va muddatni aytaman.</p>
-      <div class="grid grid-3">
-
-        <article class="card pkg">
-          <div>
-            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg></div>
-            <h3>Telegram bot</h3>
-            <p class="who">Buyurtma va arizalarni Telegram'da qabul qiladi.</p>
-          </div>
-          <ul class="list">
-            <li>Do'kon, kafe, o'quv markaz, xizmat ko'rsatish uchun</li>
-            <li>Mijoz botda tanlaydi yoki ariza qoldiradi</li>
-            <li>Ariza darhol sizning guruhingizga keladi</li>
-            <li>Mijozlar ro'yxati botning o'zida</li>
-          </ul>
-          <div class="meta">
-            <div><b>Muddat:</b> <span>5–14 kun</span></div>
-            <div><b>Narx:</b> <span>yozing, kelishamiz</span></div>
-          </div>
-          <div class="chips">
-            <a href="https://t.me/COUNTLIST_BOT" target="_blank" rel="noopener">@COUNTLIST_BOT</a>
-            <a href="#botlar">Boshqa botlarim ↓</a>
-          </div>
-          <a class="btn btn-primary" href="#ariza" data-paket="Telegram bot">Tanlash</a>
-        </article>
-
-        <article class="card pkg">
-          <div>
-            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l1.5-5h15L21 9"/><path d="M4 9v11h16V9"/><path d="M3 9h18"/><path d="M9 20v-6h6v6"/></svg></div>
-            <h3>Do'kon sayti + Telegram</h3>
-            <p class="who">Mijoz saytda tanlaydi, buyurtma Telegram'ingizga tushadi.</p>
-          </div>
-          <ul class="list">
-            <li>Mahsuloti ko'p do'konlar uchun</li>
-            <li>Katalog, qidiruv, savat, buyurtma</li>
-            <li>Narx va mahsulotni o'zingiz o'zgartirasiz</li>
-            <li>Domen va joylashni ham qilaman</li>
-          </ul>
-          <div class="meta">
-            <div><b>Muddat:</b> <span>3–6 hafta</span></div>
-            <div><b>Narx:</b> <span>yozing, kelishamiz</span></div>
-          </div>
-          <div class="chips">
-            <a href="https://organick-e1c5a.web.app" target="_blank" rel="noopener">Organick</a>
-          </div>
-          <a class="btn btn-primary" href="#ariza" data-paket="Do'kon sayti + Telegram">Tanlash</a>
-        </article>
-
-        <article class="card pkg">
-          <div>
-            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14h8"/></svg></div>
-            <h3>Landing sayt</h3>
-            <p class="who">Biznesingiz haqida bitta chiroyli sahifa.</p>
-          </div>
-          <ul class="list">
-            <li>Yangi biznes yoki xizmat uchun</li>
-            <li>Telefonda ham, kompyuterda ham yaxshi ko'rinadi</li>
-            <li>Ariza formasi — xabar Telegram'ingizga</li>
-            <li>Google'da topiladigan qilib sozlanadi</li>
-          </ul>
-          <div class="meta">
-            <div><b>Muddat:</b> <span>3–7 kun</span></div>
-            <div><b>Narx:</b> <span>yozing, kelishamiz</span></div>
-          </div>
-          <div class="chips">
-            <a href="https://abdulmajidkhan-portfolio.web.app" target="_blank" rel="noopener">Portfolio</a>
-            <a href="https://organick-e1c5a.web.app" target="_blank" rel="noopener">Organick</a>
-          </div>
-          <a class="btn btn-primary" href="#ariza" data-paket="Landing sayt">Tanlash</a>
-        </article>
-
+      <p class="acc-note">Narx va muddat taxminiy (o'rtacha). Aniq narx va muddat biznesingizdagi muammo, loyihaning hajmi va holatiga qarab o'zgarishi mumkin — yozing, 1 kunda aniq taklif beraman.</p>
+      <div class="acc">
+      <article class="acc-item">
+        <h3 class="acc-head"><button class="acc-btn" type="button" id="acc-b1" aria-expanded="false" aria-controls="acc-p1">
+          <span class="icon" aria-hidden="true">💬</span>
+          <span class="acc-name">Oddiy Telegram bot</span>
+          <span class="acc-sub">Savollarga javob beradi, ariza yig'adi.</span>
+          <span class="acc-price">≈ 1,5 mln so'm<small>dan</small></span>
+          <span class="acc-plus" aria-hidden="true">+</span>
+        </button></h3>
+        <div class="acc-panel" id="acc-p1" role="region" aria-labelledby="acc-b1"><div><div class="acc-body">
+          <div><h4>Nima qilinadi</h4><ul class="list">
+                <li>Mijoz savol beradi — bot darhol javob beradi</li>
+                <li>Ariza va buyurtma sizning Telegram'ingizga tushadi</li>
+                <li>Mijozlar ro'yxati botning o'zida saqlanadi</li>
+                <li>Botni ishga tushirib, qanday ishlatishni o'rgataman</li>
+          </ul></div>
+          <div><h4>Kimga mos</h4><p>Do'kon, kafe, o'quv markaz, go'zallik saloni, xizmat ko'rsatish.</p></div>
+          
+          <div class="acc-meta"><div><b>Muddat:</b> <span>≈ 3–7 kun</span></div><div><b>Narx:</b> <span>≈ 1,5 mln so'mdan</span></div></div>
+          <a class="btn btn-primary" href="#ariza" data-paket="Oddiy Telegram bot">Tanlash</a>
+        </div></div></div>
+      </article>
+      <article class="acc-item">
+        <h3 class="acc-head"><button class="acc-btn" type="button" id="acc-b2" aria-expanded="false" aria-controls="acc-p2">
+          <span class="icon" aria-hidden="true">🍽</span>
+          <span class="acc-name">Bot + ichki menyu (mini ilova)</span>
+          <span class="acc-sub">Restoran menyusi yoki katalog Telegram ichida: tanlaydi, savatga soladi, buyurtma beradi.</span>
+          <span class="acc-price">≈ 4,5 mln so'm<small>dan</small></span>
+          <span class="acc-plus" aria-hidden="true">+</span>
+        </button></h3>
+        <div class="acc-panel" id="acc-p2" role="region" aria-labelledby="acc-b2"><div><div class="acc-body">
+          <div><h4>Nima qilinadi</h4><ul class="list">
+                <li>Telegram ichida chiroyli menyu yoki katalog ochiladi</li>
+                <li>Mijoz tanlaydi, savatga soladi, buyurtma beradi</li>
+                <li>Buyurtma sizga va xodimlaringizga darhol keladi</li>
+                <li>Narx va taomlarni o'zingiz o'zgartira olasiz</li>
+          </ul></div>
+          <div><h4>Kimga mos</h4><p>Restoran, kafe, yetkazib berish, kichik do'kon.</p></div>
+          
+          <div class="acc-meta"><div><b>Muddat:</b> <span>≈ 2–3 hafta</span></div><div><b>Narx:</b> <span>≈ 4,5 mln so'mdan</span></div></div>
+          <a class="btn btn-primary" href="#ariza" data-paket="Bot + ichki menyu (mini ilova)">Tanlash</a>
+        </div></div></div>
+      </article>
+      <article class="acc-item">
+        <h3 class="acc-head"><button class="acc-btn" type="button" id="acc-b3" aria-expanded="false" aria-controls="acc-p3">
+          <span class="icon" aria-hidden="true">🌐</span>
+          <span class="acc-name">Bir sahifali sayt</span>
+          <span class="acc-sub">Biznesingiz haqida chiroyli sahifa: xizmatlar, narxlar, manzil, ariza formasi.</span>
+          <span class="acc-price">≈ 3 mln so'm<small>dan</small></span>
+          <span class="acc-plus" aria-hidden="true">+</span>
+        </button></h3>
+        <div class="acc-panel" id="acc-p3" role="region" aria-labelledby="acc-b3"><div><div class="acc-body">
+          <div><h4>Nima qilinadi</h4><ul class="list">
+                <li>Telefonda ham, kompyuterda ham yaxshi ko'rinadi</li>
+                <li>Xizmatlar, narxlar, manzil va xarita</li>
+                <li>Ariza formasi — xabar Telegram'ingizga keladi</li>
+                <li>Google'da topilishi uchun sozlab beraman</li>
+          </ul></div>
+          <div><h4>Kimga mos</h4><p>Yangi biznes, xizmat ko'rsatuvchilar, o'quv markaz, usta va mutaxassislar.</p></div>
+          
+          <div class="acc-meta"><div><b>Muddat:</b> <span>≈ 5–10 kun</span></div><div><b>Narx:</b> <span>≈ 3 mln so'mdan</span></div></div>
+          <a class="btn btn-primary" href="#ariza" data-paket="Bir sahifali sayt">Tanlash</a>
+        </div></div></div>
+      </article>
+      <article class="acc-item">
+        <h3 class="acc-head"><button class="acc-btn" type="button" id="acc-b4" aria-expanded="false" aria-controls="acc-p4">
+          <span class="icon" aria-hidden="true">🛍</span>
+          <span class="acc-name">Internet-do'kon</span>
+          <span class="acc-sub">Mahsulotlar, qidiruv, savat, buyurtma va o'zingiz boshqaradigan admin panel.</span>
+          <span class="acc-price">≈ 8 mln so'm<small>dan</small></span>
+          <span class="acc-plus" aria-hidden="true">+</span>
+        </button></h3>
+        <div class="acc-panel" id="acc-p4" role="region" aria-labelledby="acc-b4"><div><div class="acc-body">
+          <div><h4>Nima qilinadi</h4><ul class="list">
+                <li>Mahsulotlar katalogi, qidiruv va savat</li>
+                <li>Buyurtma Telegram'ingizga ham tushadi</li>
+                <li>Admin panel: mahsulot va narxni o'zingiz o'zgartirasiz</li>
+                <li>Domenga joylab, ishga tushirib beraman</li>
+          </ul></div>
+          <div><h4>Kimga mos</h4><p>Mahsuloti ko'p do'konlar: kiyim, oziq-ovqat, uy-ro'zg'or buyumlari.</p></div>
+          
+          <div class="acc-meta"><div><b>Muddat:</b> <span>≈ 3–5 hafta</span></div><div><b>Narx:</b> <span>≈ 8 mln so'mdan</span></div></div>
+          <a class="btn btn-primary" href="#ariza" data-paket="Internet-do'kon">Tanlash</a>
+        </div></div></div>
+      </article>
+      <article class="acc-item">
+        <h3 class="acc-head"><button class="acc-btn" type="button" id="acc-b5" aria-expanded="false" aria-controls="acc-p5">
+          <span class="icon" aria-hidden="true">📱</span>
+          <span class="acc-name">Android ilova</span>
+          <span class="acc-sub">Do'kon yoki xizmatingiz uchun telefon ilovasi, Play Market'ga joylab beraman.</span>
+          <span class="acc-price">≈ 5 mln so'm<small>dan</small></span>
+          <span class="acc-plus" aria-hidden="true">+</span>
+        </button></h3>
+        <div class="acc-panel" id="acc-p5" role="region" aria-labelledby="acc-b5"><div><div class="acc-body">
+          <div><h4>Nima qilinadi</h4><ul class="list">
+                <li>Katalog, savat, buyurtma</li>
+                <li>Yangiliklar haqida telefonga xabar (bildirishnoma)</li>
+                <li>Saytingiz va Telegram bilan bitta ma'lumotlar bazasida</li>
+                <li>Play Market'ga joylab beraman</li>
+          </ul></div>
+          <div><h4>Kimga mos</h4><p>Doimiy mijozi bor do'kon, yetkazib berish va xizmat ko'rsatuvchilar.</p></div>
+          
+          <div class="acc-meta"><div><b>Muddat:</b> <span>≈ 3–6 hafta</span></div><div><b>Narx:</b> <span>≈ 5 mln so'mdan</span></div></div>
+          <a class="btn btn-primary" href="#ariza" data-paket="Android ilova">Tanlash</a>
+        </div></div></div>
+      </article>
+      <article class="acc-item">
+        <h3 class="acc-head"><button class="acc-btn" type="button" id="acc-b6" aria-expanded="false" aria-controls="acc-p6">
+          <span class="icon" aria-hidden="true">📊</span>
+          <span class="acc-name">Savdo va ombor hisobi</span>
+          <span class="acc-sub">Kirim-chiqim, qoldiq, kassa, hisobot — bitta joyda.</span>
+          <span class="acc-price">≈ 12 mln so'm<small>dan</small></span>
+          <span class="acc-plus" aria-hidden="true">+</span>
+        </button></h3>
+        <div class="acc-panel" id="acc-p6" role="region" aria-labelledby="acc-b6"><div><div class="acc-body">
+          <div><h4>Nima qilinadi</h4><ul class="list">
+                <li>Tovar kirimi va chiqimi, ombordagi qoldiq</li>
+                <li>Kassa va kunlik savdo hisoboti</li>
+                <li>Qaysi tovar ko'p sotilayotgani, qaysi biri qolib ketgani</li>
+                <li>Daftar va Excel o'rniga bitta tizim</li>
+          </ul></div>
+          <div><h4>Kimga mos</h4><p>Ombori va kassasi bor do'konlar, ulgurji savdo.</p></div>
+          
+          <div class="acc-meta"><div><b>Muddat:</b> <span>≈ 1–2 oy</span></div><div><b>Narx:</b> <span>≈ 12 mln so'mdan</span></div></div>
+          <a class="btn btn-primary" href="#ariza" data-paket="Savdo va ombor hisobi">Tanlash</a>
+        </div></div></div>
+      </article>
+      <article class="acc-item">
+        <h3 class="acc-head"><button class="acc-btn" type="button" id="acc-b7" aria-expanded="false" aria-controls="acc-p7">
+          <span class="icon" aria-hidden="true">➕</span>
+          <span class="acc-name">Qo'shimchalar</span>
+          <span class="acc-sub">Asosiy ishga qo'shib olinadigan imkoniyatlar.</span>
+          <span class="acc-price">+2 mln so'm<small>dan</small></span>
+          <span class="acc-plus" aria-hidden="true">+</span>
+        </button></h3>
+        <div class="acc-panel" id="acc-p7" role="region" aria-labelledby="acc-b7"><div><div class="acc-body">
+          <div><h4>Nimalar qo'shish mumkin</h4><ul class="list">
+                <li>AI yordamida mahsulot kiritish — <b>+2 mln so'm</b></li>
+                <li>Do'kon TV ekrani — <b>+2 mln so'm</b></li>
+                <li>Telefon ilovasi (saytga qo'shimcha) — <b>+5 mln so'm</b></li>
+                <li>Oylik qo'llab-quvvatlash — <b>500 ming so'm/oy</b></li>
+          </ul></div>
+          <div><h4>Kimga mos</h4><p>Yuqoridagi paketlardan birini tanlagan har bir mijoz.</p></div>
+          <a class="btn btn-primary" href="#ariza" data-paket="Qo'shimchalar">Tanlash</a>
+        </div></div></div>
+      </article>
       </div>
-      <p class="extra">Kerak bo'lsa Android ilova yoki AI yordamchi ham qo'shib beraman.</p>
+      <div class="acc-foot">
+        <p>Server va domen to'lovi — mijoz hisobidan.</p>
+        <a class="btn btn-primary" href="#ariza">Ariza qoldirish</a>
+      </div>
     </div>
   </section>
 
@@ -485,9 +596,13 @@
           <label>Nima kerak?
             <select name="paket" id="paket" required>
               <option value="">Tanlang</option>
-              <option>Telegram bot</option>
-              <option>Do'kon sayti + Telegram</option>
-              <option>Landing sayt</option>
+              <option>Oddiy Telegram bot</option>
+              <option>Bot + ichki menyu (mini ilova)</option>
+              <option>Bir sahifali sayt</option>
+              <option>Internet-do'kon</option>
+              <option>Android ilova</option>
+              <option>Savdo va ombor hisobi</option>
+              <option>Qo'shimchalar</option>
               <option>Bilmayman, maslahat kerak</option>
             </select>
           </label>
@@ -585,6 +700,16 @@
     var USERNAME = "Abdulloh_77700";
     var form = document.getElementById("ariza-form");
     var status = document.getElementById("ariza-status");
+
+    // Paketlar accordion: JS bo'lmasa hammasi ochiq va o'qiladi.
+    document.querySelectorAll(".acc-btn").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var open = btn.getAttribute("aria-expanded") !== "true";
+        btn.setAttribute("aria-expanded", String(open));
+        btn.closest(".acc-item").classList.toggle("open", open);
+      });
+    });
+    // "Tanlash" bosilganda forma tanlovi (quyida) ishlaydi.
     var paket = document.getElementById("paket");
     if (!ARIZA_URL) {
       document.getElementById("ariza-btn").textContent = "Telegram'da yuborish";
