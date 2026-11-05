@@ -106,3 +106,7 @@ QO'SHIMCHA
 * **Tillar:** o'zbek — ona tili; ingliz — texnik hujjatlarni o'qiy olaman; rus — boshlang'ich.
 * **Ish formati:** masofaviy ishga tayyorman; Toshkentga ko'chish — kelishuv asosida.
 * [Rezyume (PDF)](https://abdulmajidkhan-portfolio.web.app/Abdulmajid_Sharipov_Frontend_CV.pdf) · [Vizitka](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/vizitka/vizitka.pdf)
+
+---
+
+© Abdulmajid Sharipov. All rights reserved.

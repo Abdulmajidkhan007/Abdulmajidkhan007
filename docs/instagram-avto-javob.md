@@ -30,6 +30,6 @@ echo rejimi; 38 test, lint va typecheck toza. **Haqiqiy Meta bilan sinalmagan** 
 Reja 2026-10-24 da `telegram-bots` dan repo ichidagi `docs/REJA.md` ga ko'chirildi.
 
 ## Havolalar
-Repo private: `Abdulmajidkhan007/instagram-avto-javob`.
+🔒 Private repo — ko'rish uchun so'rang.
 
 *Oxirgi yangilanish: 2026-11-01*
