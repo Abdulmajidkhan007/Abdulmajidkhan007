@@ -1,154 +1,99 @@
-// Ariza formasi -> Telegram guruh. Bot tokeni faqat shu yerda (Worker secret),
-// saytning o'zida hech qanday kalit yo'q.
+// Ariza formalari -> bitta Telegram guruh. Bot tokeni faqat shu yerda (Worker secret),
+// saytlarda hech qanday kalit yo'q. Endpoint'lar:
+//   POST /         — xizmatlar sayti (ism, tel, tavsif, ...)
+//   POST /contact  — portfolio aloqa formasi
+//   POST /ariza    — boshqa saytlar uchun umumiy forma
 
-import { type Ariza, emailDomain, hasMx, parseAriza } from "./validate.ts";
+import { parseGeneric } from "./generic.ts";
+import { parseContact } from "./contact.ts";
+import { refererPath, parseSites, siteName } from "./sites.ts";
+import { arizaBody, compose, contactBody, genericBody, sendTelegram, type TelegramEnv } from "./telegram.ts";
+import { emailDomain, hasMx, parseAriza } from "./validate.ts";
 
-interface Env {
-  TELEGRAM_BOT_TOKEN: string;
-  TELEGRAM_CHAT_ID: string;
-  ALLOWED_ORIGIN: string;
+interface Env extends TelegramEnv {
+  /** JSON: { "https://sayt.uz": "Sayt nomi" } */
+  SITES: string;
 }
 
-// ALLOWED_ORIGIN — vergul bilan ajratilgan ro'yxat (xizmatlar sayti + portfolio).
-function allowedOrigins(env: Env): string[] {
-  return env.ALLOWED_ORIGIN.split(",").map((o) => o.trim()).filter(Boolean);
-}
+type Outcome =
+  | { kind: "send"; body: string[] }
+  | { kind: "spam" }
+  | { kind: "reject"; error: string; field?: string };
 
-function cors(env: Env, origin: string | null): HeadersInit {
-  const list = allowedOrigins(env);
+type Handler = (body: unknown) => Promise<Outcome>;
+
+const emailHasMx = (email: string): Promise<boolean> => hasMx(emailDomain(email), (url, init) => fetch(url, init));
+const badEmail: Outcome = { kind: "reject", error: "Email manzil noto'g'ri", field: "email" };
+
+const handlers: ReadonlyMap<string, Handler> = new Map<string, Handler>(Object.entries({
+  "/": async (raw) => {
+    const r = parseAriza(raw);
+    if (!r.ok) return { kind: "reject", error: r.error, field: r.field };
+    // Honeypot to'lgan bo'lsa — spam bot: "ok" deymiz, lekin yubormaymiz.
+    if (r.data.sayt) return { kind: "spam" };
+    if (r.data.email && !(await emailHasMx(r.data.email))) return badEmail;
+    return { kind: "send", body: arizaBody(r.data) };
+  },
+  "/contact": async (raw) => {
+    const r = parseContact(raw);
+    if ("bot" in r) return { kind: "spam" };
+    if (!r.ok) return { kind: "reject", error: r.error, field: r.field };
+    if (r.data.email && !(await emailHasMx(r.data.email))) {
+      return { kind: "reject", error: "Email domeni pochta qabul qilmaydi", field: "email" };
+    }
+    return { kind: "send", body: contactBody(r.data) };
+  },
+  "/ariza": async (raw) => {
+    const r = parseGeneric(raw);
+    if ("bot" in r) return { kind: "spam" };
+    if (!r.ok) return { kind: "reject", error: r.error, field: r.field };
+    if (r.data.email && !(await emailHasMx(r.data.email))) return badEmail;
+    return { kind: "send", body: genericBody(r.data) };
+  },
+}));
+
+function corsHeaders(allowOrigin: string | null): Record<string, string> {
   return {
-    "Access-Control-Allow-Origin": origin && list.includes(origin) ? origin : list[0],
     "Access-Control-Allow-Methods": "POST, OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type",
     "Vary": "Origin",
+    ...(allowOrigin ? { "Access-Control-Allow-Origin": allowOrigin } : {}),
   };
 }
 
-function json(body: unknown, status: number, env: Env, origin: string | null): Response {
+function respond(body: unknown, status: number, allowOrigin: string | null): Response {
   return new Response(JSON.stringify(body), {
     status,
-    headers: { "Content-Type": "application/json", ...cors(env, origin) },
+    headers: { "Content-Type": "application/json", ...corsHeaders(allowOrigin) },
   });
-}
-
-function escapeHtml(s: string): string {
-  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-}
-
-function message(a: Ariza): string {
-  return [
-    "📥 <b>Saytdan yangi ariza</b>",
-    `👤 ${escapeHtml(a.ism)}`,
-    `📞 ${escapeHtml(a.tel)}`,
-    a.email ? `✉️ ${escapeHtml(a.email)}` : "",
-    a.telegram ? `✈️ ${escapeHtml(a.telegram)}` : "",
-    a.paket ? `📦 ${escapeHtml(a.paket)}` : "",
-    a.jami ? `💰 ${escapeHtml(a.jami)}` : "",
-    `📝 ${escapeHtml(a.tavsif)}`,
-  ].filter(Boolean).join("\n");
-}
-
-// Portfolio (abdulmajidkhan-portfolio.web.app) aloqa formasi. Maydonlar va xabarlar
-// portfolio-3d/functions/src/validate.ts bilan bir xil — forma xatoni maydon yonida ko'rsatadi.
-interface Contact {
-  name: string;
-  email: string;
-  /** Ixtiyoriy; bo'sh satr — kiritilmagan. */
-  phone: string;
-  /** `@username` yoki bo'sh satr. */
-  telegram: string;
-  message: string;
-}
-type ContactResult = { ok: true; data: Contact } | { ok: false; error: string; field?: keyof Contact };
-
-const PHONE_RE = /^\+?[\d\s()-]{7,20}$/;
-const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-// Telegram qoidasi: harf bilan boshlanadi, 5–32 belgi (harf, raqam, _).
-const TELEGRAM_RE = /^@?[A-Za-z][A-Za-z0-9_]{4,31}$/;
-const CONTACT_LIMITS = { name: 100, email: 254, message: 4000, messageMin: 10 } as const;
-
-function clean(value: unknown): string {
-  // eslint-disable-next-line no-control-regex
-  return typeof value === "string" ? value.replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/g, "").trim() : "";
-}
-
-function parseContact(body: unknown): ContactResult | "bot" {
-  if (typeof body !== "object" || body === null) return { ok: false, error: "invalid" };
-  const b = body as Record<string, unknown>;
-  if (clean(b.botField) || clean(b["bot-field"])) return "bot";
-  const name = clean(b.name);
-  const email = clean(b.email);
-  const phone = clean(b.phone);
-  const telegramRaw = clean(b.telegram);
-  const message = clean(b.message);
-  if (!name) return { ok: false, error: "Ism kiritilmagan", field: "name" };
-  if (name.length > CONTACT_LIMITS.name) return { ok: false, error: `Ism ${CONTACT_LIMITS.name} belgidan uzun`, field: "name" };
-  if (!email) return { ok: false, error: "Email kiritilmagan", field: "email" };
-  if (email.length > CONTACT_LIMITS.email || !EMAIL_RE.test(email)) return { ok: false, error: "Email formati noto'g'ri", field: "email" };
-  if (phone) {
-    const digits = phone.replace(/\D/g, "").length;
-    if (!PHONE_RE.test(phone) || digits < 7 || digits > 15) return { ok: false, error: "Telefon raqami noto'g'ri", field: "phone" };
-  }
-  if (telegramRaw && !TELEGRAM_RE.test(telegramRaw)) return { ok: false, error: "Telegram username noto'g'ri", field: "telegram" };
-  const telegram = telegramRaw ? `@${telegramRaw.replace(/^@/, "")}` : "";
-  if (!message) return { ok: false, error: "Xabar kiritilmagan", field: "message" };
-  if (message.length < CONTACT_LIMITS.messageMin) return { ok: false, error: `Xabar kamida ${CONTACT_LIMITS.messageMin} belgi bo'lsin`, field: "message" };
-  if (message.length > CONTACT_LIMITS.message) return { ok: false, error: `Xabar ${CONTACT_LIMITS.message} belgidan uzun`, field: "message" };
-  return { ok: true, data: { name, email, phone, telegram, message } };
-}
-
-function contactMessage(c: Contact): string {
-  return [
-    "📬 <b>Portfoliodan yangi xabar</b>",
-    "",
-    `<b>Ism:</b> ${escapeHtml(c.name)}`,
-    `<b>Email:</b> ${escapeHtml(c.email)}`,
-    ...(c.phone ? [`<b>Telefon:</b> ${escapeHtml(c.phone)}`] : []),
-    ...(c.telegram ? [`<b>Telegram:</b> ${escapeHtml(c.telegram)}`] : []),
-    "",
-    escapeHtml(c.message),
-  ].join("\n");
-}
-
-async function sendTelegram(env: Env, text: string): Promise<boolean> {
-  const tg = await fetch(`https://api.telegram.org/bot${env.TELEGRAM_BOT_TOKEN}/sendMessage`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ chat_id: env.TELEGRAM_CHAT_ID, text, parse_mode: "HTML" }),
-  });
-  return tg.ok;
 }
 
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
+    const sites = parseSites(env.SITES);
+    if (!sites.ok) {
+      console.error(`[ariza-worker] sozlama xatosi: ${sites.error}`);
+      return respond({ ok: false, error: "server sozlamasi xato" }, 500, null);
+    }
+
     const origin = request.headers.get("Origin");
-    const allowed = origin !== null && allowedOrigins(env).includes(origin);
-    if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: cors(env, origin) });
-    if (request.method !== "POST") return json({ ok: false }, 405, env, origin);
-    if (!allowed) return json({ ok: false }, 403, env, origin);
+    const site = siteName(sites.sites, origin);
+    const allowOrigin = site ? origin : null;
 
-    const path = new URL(request.url).pathname;
-    const body = await request.json().catch(() => null);
+    if (request.method === "OPTIONS") return new Response(null, { status: site ? 204 : 403, headers: corsHeaders(allowOrigin) });
+    if (request.method !== "POST") return respond({ ok: false }, 405, allowOrigin);
+    if (!site) return respond({ ok: false }, 403, null);
 
-    if (path === "/contact") {
-      const parsed = parseContact(body);
-      // Honeypot: bot "ok" ko'radi, lekin hech narsa yuborilmaydi.
-      if (parsed === "bot") return json({ ok: true }, 200, env, origin);
-      if (!parsed.ok) return json({ ok: false, error: parsed.error, field: parsed.field }, 400, env, origin);
-      const sent = await sendTelegram(env, contactMessage(parsed.data));
-      return json({ ok: sent }, sent ? 200 : 502, env, origin);
-    }
+    const url = new URL(request.url);
+    const handler = handlers.get(url.pathname);
+    if (!handler) return respond({ ok: false }, 404, allowOrigin);
 
-    const parsed = parseAriza(body);
-    if (!parsed.ok) return json({ ok: false, error: parsed.error, field: parsed.field }, 400, env, origin);
-    const ariza = parsed.data;
-    // Honeypot to'lgan bo'lsa — spam bot. Unga "ok" deymiz, lekin yubormaymiz.
-    if (ariza.sayt) return json({ ok: true }, 200, env, origin);
-    if (ariza.email && !(await hasMx(emailDomain(ariza.email), fetch))) {
-      return json({ ok: false, error: "Email manzil noto'g'ri", field: "email" }, 400, env, origin);
-    }
+    const outcome = await handler(await request.json().catch(() => null));
+    if (outcome.kind === "spam") return respond({ ok: true }, 200, allowOrigin);
+    if (outcome.kind === "reject") return respond({ ok: false, error: outcome.error, field: outcome.field }, 400, allowOrigin);
 
-    const sent = await sendTelegram(env, message(ariza));
-    return json({ ok: sent }, sent ? 200 : 502, env, origin);
+    const text = compose(site, refererPath(request.headers.get("Referer")), outcome.body);
+    const sent = await sendTelegram(env, text);
+    return respond({ ok: sent }, sent ? 200 : 502, allowOrigin);
   },
 };

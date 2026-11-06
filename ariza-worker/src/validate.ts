@@ -1,5 +1,8 @@
 // Ariza formasi tekshiruvi. Brauzerdagi tekshiruv (site/index.html) bilan bir xil qoidalar:
 // xabarlar ham bir xil, chunki worker rad etsa foydalanuvchi shuni maydon ostida ko'radi.
+// Endpoint: POST /  (xizmatlar sayti).
+
+import { clean, EMAIL_RE, isRecord, type Parsed, TELEGRAM_RE, withAt } from "./common.ts";
 
 export interface Ariza {
   ism: string;
@@ -19,21 +22,9 @@ export interface Ariza {
 }
 
 export type ArizaField = "ism" | "tel" | "email" | "telegram" | "tavsif" | "paket";
-export type ParseResult =
-  | { ok: true; data: Ariza }
-  | { ok: false; error: string; field?: ArizaField };
+export type ParseResult = Parsed<Ariza, ArizaField>;
 
 export const LIMITS = { ism: 60, email: 254, paket: 300, jami: 60, tavsif: 800, tavsifMin: 5 } as const;
-
-const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-// Telegram qoidasi: harf bilan boshlanadi, 5–32 belgi (harf, raqam, _).
-const TELEGRAM_RE = /^@?[A-Za-z][A-Za-z0-9_]{4,31}$/;
-
-function str(value: unknown, max: number): string {
-  // eslint-disable-next-line no-control-regex
-  const s = typeof value === "string" ? value.replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/g, "") : "";
-  return s.trim().slice(0, max);
-}
 
 /** "+998 90 123-45-67", "998901234567" → "+998901234567"; noto'g'ri bo'lsa null. */
 export function normalizePhone(raw: string): string | null {
@@ -46,13 +37,13 @@ export function normalizePhone(raw: string): string | null {
 }
 
 export function parseAriza(body: unknown): ParseResult {
-  if (typeof body !== "object" || body === null) return { ok: false, error: "invalid" };
-  const b = body as Record<string, unknown>;
-  const ism = str(b.ism, LIMITS.ism + 1);
-  const telRaw = str(b.tel, 40);
-  const email = str(b.email, LIMITS.email + 1);
-  const telegramRaw = str(b.telegram, 60);
-  const tavsif = str(b.tavsif, LIMITS.tavsif + 1);
+  if (!isRecord(body)) return { ok: false, error: "invalid" };
+  const b = body;
+  const ism = clean(b.ism, LIMITS.ism + 1);
+  const telRaw = clean(b.tel, 40);
+  const email = clean(b.email, LIMITS.email + 1);
+  const telegramRaw = clean(b.telegram, 60);
+  const tavsif = clean(b.tavsif, LIMITS.tavsif + 1);
 
   if (!ism) return { ok: false, error: "Ismni kiriting", field: "ism" };
   if (ism.length > LIMITS.ism) return { ok: false, error: `Ism ${LIMITS.ism} belgidan uzun`, field: "ism" };
@@ -65,7 +56,7 @@ export function parseAriza(body: unknown): ParseResult {
   if (telegramRaw && !TELEGRAM_RE.test(telegramRaw)) {
     return { ok: false, error: "Telegram username noto'g'ri (@ bilan, 5–32 belgi: harf, raqam, _)", field: "telegram" };
   }
-  const telegram = telegramRaw ? `@${telegramRaw.replace(/^@/, "")}` : "";
+  const telegram = withAt(telegramRaw);
   if (!tavsif) return { ok: false, error: "Xabarni kiriting", field: "tavsif" };
   if (tavsif.length < LIMITS.tavsifMin) return { ok: false, error: `Xabar kamida ${LIMITS.tavsifMin} belgi bo'lsin`, field: "tavsif" };
   if (tavsif.length > LIMITS.tavsif) return { ok: false, error: `Xabar ${LIMITS.tavsif} belgidan uzun`, field: "tavsif" };
@@ -77,10 +68,10 @@ export function parseAriza(body: unknown): ParseResult {
       tel,
       email,
       telegram,
-      paket: str(b.paket, LIMITS.paket),
-      jami: str(b.jami, LIMITS.jami),
+      paket: clean(b.paket, LIMITS.paket),
+      jami: clean(b.jami, LIMITS.jami),
       tavsif,
-      sayt: str(b.sayt, 200),
+      sayt: clean(b.sayt, 200),
     },
   };
 }
