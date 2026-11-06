@@ -5,6 +5,15 @@ main = "src/index.ts"
 compatibility_date = "2026-10-01"
 
 [vars]
-# Faqat shu manbalardan kelgan so'rov qabul qilinadi (CORS), vergul bilan:
-# xizmatlar sayti va portfolio (portfolio forma → /contact).
-ALLOWED_ORIGIN = "https://abdulmajidkhan007.github.io,https://abdulmajidkhan-portfolio.web.app,https://abdulmajidkhan-portfolio.firebaseapp.com,https://nafidastur.uz,https://www.nafidastur.uz"
+# Ruxsat etilgan saytlar (JSON: origin -> xabar sarlavhasidagi nom). Origin header shu
+# ro'yxatdan tekshiriladi va manba nomi ham shu yerdan olinadi (CORS ham shundan hosil bo'ladi).
+# Yangi sayt qo'shish = shu yerga bitta qator. Token YO'Q — u Worker secret'larida.
+SITES = '''
+{
+  "https://abdulmajidkhan007.github.io": "Xizmatlar sayti",
+  "https://nafidastur.uz": "Xizmatlar sayti",
+  "https://www.nafidastur.uz": "Xizmatlar sayti",
+  "https://abdulmajidkhan-portfolio.web.app": "Portfolio",
+  "https://abdulmajidkhan-portfolio.firebaseapp.com": "Portfolio"
+}
+'''
