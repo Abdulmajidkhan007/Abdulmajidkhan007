@@ -89,6 +89,18 @@ describe("manba nomi Origin'dan", () => {
   });
 });
 
+describe("yo'l qatori: bosh sahifa", () => {
+  it("Referer yo'li `/` bo'lsa 🔗 qatori yozilmaydi", async () => {
+    await post("/", ariza, { Origin: SERVICES, Referer: "https://abdulmajidkhan007.github.io/" });
+    await post("/", ariza, { Origin: SERVICES, Referer: "https://abdulmajidkhan007.github.io/?utm=1#ariza" });
+    assert.equal(telegram.length, 2);
+    for (const t of telegram) {
+      assert.ok(!t.text.includes("🔗"));
+      assert.match(t.text.split("\n")[1]!, /^👤/);
+    }
+  });
+});
+
 describe("ruxsat", () => {
   it("ro'yxatda yo'q Origin — 403, Telegram'ga hech narsa ketmaydi", async () => {
     const res = await post("/", ariza, { Origin: "https://yomon.example" });

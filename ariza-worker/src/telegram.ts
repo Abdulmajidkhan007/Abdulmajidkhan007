@@ -13,11 +13,12 @@ export function escapeHtml(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
 
-/** Har xabar: `📥 Yangi ariza — <manba>` + (ixtiyoriy) sahifa yo'li + endpoint matni. */
+/** Har xabar: `📥 Yangi ariza — <manba>` + (ixtiyoriy) sahifa yo'li + endpoint matni.
+ *  Yo'l faqat ma'noli bo'lsa yoziladi: bo'sh yoki bosh sahifa (`/`) — yozilmaydi. */
 export function compose(site: string, path: string | null, body: string[]): string {
   return [
     `📥 <b>Yangi ariza — ${escapeHtml(site)}</b>`,
-    ...(path ? [`🔗 ${escapeHtml(path)}`] : []),
+    ...(path && path !== "/" ? [`🔗 ${escapeHtml(path)}`] : []),
     ...body,
   ].join("\n");
 }
