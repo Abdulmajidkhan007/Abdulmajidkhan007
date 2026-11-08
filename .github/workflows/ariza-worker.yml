@@ -2,6 +2,9 @@
 # deploy paytida Worker secret'iga o'tkaziladi — saytga ham, repoga ham tushmaydi.
 # Kerakli secret'lar (Settings → Secrets and variables → Actions):
 #   CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
+# Ixtiyoriy repo VARIABLE (Settings → Secrets and variables → Actions → Variables):
+#   LEAD_BUTTONS=on — arizalarga holat tugmalari + Telegram webhook (ariza-worker/README.md ga qarang).
+#   Webhook shu botning polling'ini to'xtatadi, shuning uchun faqat egasi "on" qo'yganda ulanadi.
 name: Ariza worker (Cloudflare)
 
 on:
@@ -39,14 +42,41 @@ jobs:
             echo "ok=true" >> "$GITHUB_OUTPUT"
           fi
       - uses: cloudflare/wrangler-action@v3
+        id: deploy
         if: steps.check.outputs.ok == 'true'
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           workingDirectory: ariza-worker
+          vars: |
+            LEAD_BUTTONS
           secrets: |
             TELEGRAM_BOT_TOKEN
             TELEGRAM_CHAT_ID
         env:
+          LEAD_BUTTONS: ${{ vars.LEAD_BUTTONS }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      # Webhook holati har deploy'da chiqadi (o'zgartirmaydi). Boshqa joyda polling bo'lsa,
+      # `url` bo'sh bo'ladi va getUpdates ishlayveradi.
+      - name: Telegram getWebhookInfo
+        if: steps.check.outputs.ok == 'true'
+        env:
+          TG_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: |
+          curl -sS "https://api.telegram.org/bot${TG_TOKEN}/getWebhookInfo" | jq '{url: .result.url, pending: .result.pending_update_count, allowed_updates: .result.allowed_updates, last_error: .result.last_error_message}'
+      # FAQAT repo variable LEAD_BUTTONS=on bo'lsa. secret_token = HMAC-SHA256(kalit=bot tokeni,
+      # matn="ariza-worker/tg-webhook") — Worker (src/leads.ts) xuddi shuni hisoblaydi.
+      - name: Telegram setWebhook (LEAD_BUTTONS=on bo'lsa)
+        if: steps.check.outputs.ok == 'true' && vars.LEAD_BUTTONS == 'on'
+        env:
+          TG_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          WORKER_URL: ${{ steps.deploy.outputs.deployment-url }}
+        run: |
+          [ -n "$WORKER_URL" ] || { echo "::error::deployment-url yo'q — webhook ulanmadi"; exit 1; }
+          secret=$(printf '%s' 'ariza-worker/tg-webhook' | openssl dgst -sha256 -hmac "$TG_TOKEN" -hex | awk '{print $NF}')
+          curl -sS -X POST "https://api.telegram.org/bot${TG_TOKEN}/setWebhook" \
+            --data-urlencode "url=${WORKER_URL%/}/tg" \
+            --data-urlencode "secret_token=${secret}" \
+            --data-urlencode 'allowed_updates=["callback_query"]' \
+            --data-urlencode 'drop_pending_updates=false' | jq -e '.ok == true'
