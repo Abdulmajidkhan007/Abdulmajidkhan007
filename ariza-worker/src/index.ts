@@ -3,14 +3,16 @@
 //   POST /         — xizmatlar sayti (ism, tel, tavsif, ...)
 //   POST /contact  — portfolio aloqa formasi
 //   POST /ariza    — boshqa saytlar uchun umumiy forma
+//   POST /tg       — Telegram webhook (ariza holati tugmalari); Origin emas, secret header bilan himoyalangan
 
 import { parseGeneric } from "./generic.ts";
 import { parseContact } from "./contact.ts";
 import { refererPath, parseSites, siteName } from "./sites.ts";
-import { arizaBody, compose, contactBody, genericBody, sendTelegram, type TelegramEnv } from "./telegram.ts";
+import { arizaBody, compose, contactBody, genericBody, sendTelegram } from "./telegram.ts";
+import { buttonsEnabled, handleWebhook, leadKeyboard, type LeadEnv } from "./leads.ts";
 import { emailDomain, hasMx, parseAriza } from "./validate.ts";
 
-interface Env extends TelegramEnv {
+interface Env extends LeadEnv {
   /** JSON: { "https://sayt.uz": "Sayt nomi" } */
   SITES: string;
 }
@@ -70,6 +72,11 @@ function respond(body: unknown, status: number, allowOrigin: string | null): Res
 
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
+    // Telegram brauzer emas: Origin yo'q, shuning uchun sayt tekshiruvidan oldin, o'z secret'i bilan.
+    if (new URL(request.url).pathname === "/tg") {
+      return request.method === "POST" ? handleWebhook(request, env) : new Response(null, { status: 405 });
+    }
+
     const sites = parseSites(env.SITES);
     if (!sites.ok) {
       console.error(`[ariza-worker] sozlama xatosi: ${sites.error}`);
@@ -93,7 +100,7 @@ export default {
     if (outcome.kind === "reject") return respond({ ok: false, error: outcome.error, field: outcome.field }, 400, allowOrigin);
 
     const text = compose(site, refererPath(request.headers.get("Referer")), outcome.body);
-    const sent = await sendTelegram(env, text);
+    const sent = await sendTelegram(env, text, buttonsEnabled(env) ? leadKeyboard() : undefined);
     return respond({ ok: sent }, sent ? 200 : 502, allowOrigin);
   },
 };

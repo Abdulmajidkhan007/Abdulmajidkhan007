@@ -56,11 +56,25 @@ export function genericBody(a: GenericAriza): string[] {
   ];
 }
 
-export async function sendTelegram(env: TelegramEnv, text: string): Promise<boolean> {
-  const res = await fetch(`https://api.telegram.org/bot${env.TELEGRAM_BOT_TOKEN}/sendMessage`, {
+export interface InlineKeyboard {
+  inline_keyboard: { text: string; callback_data: string }[][];
+}
+
+/** Bot API chaqiruvi; muvaffaqiyat (`res.ok`) qaytaradi. */
+export async function tgApi(env: TelegramEnv, method: string, payload: Record<string, unknown>): Promise<boolean> {
+  const res = await fetch(`https://api.telegram.org/bot${env.TELEGRAM_BOT_TOKEN}/${method}`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ chat_id: env.TELEGRAM_CHAT_ID, text, parse_mode: "HTML" }),
+    body: JSON.stringify(payload),
   });
   return res.ok;
+}
+
+export function sendTelegram(env: TelegramEnv, text: string, replyMarkup?: InlineKeyboard): Promise<boolean> {
+  return tgApi(env, "sendMessage", {
+    chat_id: env.TELEGRAM_CHAT_ID,
+    text,
+    parse_mode: "HTML",
+    ...(replyMarkup ? { reply_markup: replyMarkup } : {}),
+  });
 }

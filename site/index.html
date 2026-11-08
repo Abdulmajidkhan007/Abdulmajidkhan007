@@ -210,6 +210,28 @@
     .acc-body { padding: 4px 16px 18px; }
   }
 
+  /* Ishlarim */
+  .works { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); grid-auto-rows: 1fr; }
+  .work { display: flex; flex-direction: column; padding: 0; overflow: hidden; }
+  .work-thumb { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; object-position: top; background: var(--bg-soft); border-bottom: 1px solid var(--line); }
+  .work-thumb.ph { display: grid; place-items: center; font-size: 2.8rem; color: #fff; }
+  .ph-kids { background: linear-gradient(135deg, #be185d, #ea580c); }
+  .ph-bot { background: linear-gradient(135deg, #4338ca, #0e7490); }
+  .ph-org { background: linear-gradient(135deg, #15803d, #65a30d); }
+  .work-body { display: flex; flex-direction: column; gap: 10px; padding: 18px 20px 20px; flex: 1; }
+  .work-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 10px; }
+  .work h3 { margin: 0; font-size: 1.15rem; }
+  .badge { font-size: .78rem; font-weight: 600; padding: 3px 10px; border-radius: 99px; background: var(--accent-soft); color: var(--accent); white-space: nowrap; }
+  .badge.ok { background: color-mix(in srgb, var(--ok) 16%, transparent); color: var(--ok); }
+  .work p { margin: 0; color: var(--muted); }
+  .work .work-note { font-size: .88rem; }
+  .work-tags { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; padding: 0; margin: 0; }
+  .work-tags li { font-size: .8rem; padding: 2px 9px; border-radius: 6px; border: 1px solid var(--line); color: var(--muted); }
+  .work-links { margin-top: auto; padding-top: 6px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .work-links .btn { padding: 9px 16px; font-size: .95rem; }
+
+  #keys { border-top: 1px solid var(--line); }
+
   /* Keys */
   .case { display: grid; gap: 16px; }
   @media (min-width: 860px) { .case { grid-template-columns: 1fr 1fr; } }
@@ -346,6 +368,7 @@
     <a class="logo" href="#"><span class="logo-mark">A</span> Abdulmajid</a>
     <nav>
       <a class="hide-sm" href="#paketlar">Paketlar</a>
+      <a class="hide-sm" href="#ishlar">Ishlarim</a>
       <a class="hide-sm" href="#keys">Keys</a>
       <a class="hide-sm" href="#tartib">Ish tartibi</a>
       <a href="#ariza">Ariza</a>
@@ -582,6 +605,74 @@
       <div class="acc-foot">
         <p>Server va domen to'lovi — mijoz hisobidan.</p>
         <a class="btn btn-primary" href="#ariza">Ariza qoldirish</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="ishlar">
+    <div class="wrap">
+      <h2>Ishlarim</h2>
+      <p class="lead">Ochib ko'rish mumkin bo'lganlari. Har kartada holati rost yozilgan.</p>
+      <div class="works">
+
+        <article class="card work">
+          <img class="work-thumb" src="img/atoyo-demo.webp" width="800" height="450" loading="lazy" alt="Atoyo Santexnika demo sahifasi: katalog toifalari va bosh banner">
+          <div class="work-body">
+            <div class="work-head"><h3>Atoyo Santexnika</h3><span class="badge">Demo</span></div>
+            <p>Qo'qondagi santexnika do'koni uchun: mijoz narx so'rab yozmasin — katalog, buyurtma va admin panel bir joyda.</p>
+            <p class="work-note">Do'kon to'xtatgan (2026-10-26) — shu sababli jonli sayt emas, demo ochiladi.</p>
+            <ul class="work-tags" aria-label="Texnologiyalar"><li>Next.js 16</li><li>Firebase</li><li>Telegram bot</li><li>Android</li></ul>
+            <div class="work-links"><a class="btn btn-primary" href="demo-atoyo.html" target="_blank" rel="noopener">Demo</a></div>
+          </div>
+        </article>
+
+        <article class="card work">
+          <div class="work-thumb ph ph-kids" aria-hidden="true">👕</div>
+          <div class="work-body">
+            <div class="work-head"><h3>KidsWear</h3><span class="badge">Qurilmoqda</span></div>
+            <p>Bolalar kiyimi do'koni uchun: veb sayt va Android ilova bitta kod bazasida, buyurtma real vaqtda ko'rinadi.</p>
+            <p class="work-note">Demo katalog; to'lov sinov rejimida (Payme/Click hali ulanmagan).</p>
+            <ul class="work-tags" aria-label="Texnologiyalar"><li>React 19</li><li>MUI</li><li>React Native</li><li>Firebase</li></ul>
+            <div class="work-links"><a class="btn btn-primary" href="https://kids-wear-007.web.app" target="_blank" rel="noopener">Ochish</a></div>
+          </div>
+        </article>
+
+        <article class="card work">
+          <div class="work-thumb ph ph-bot" aria-hidden="true">🤖</div>
+          <div class="work-body">
+            <div class="work-head"><h3>Katalog-bot</h3><span class="badge ok">Atoyo uchun</span></div>
+            <p>Do'kon admini uchun: mahsulot rasmini tashlaydi — bot tayyor katalog kartasini yozib beradi.</p>
+            <p class="work-note">Ichki bot, ommaga ochiq emas — namunani so'rab ko'ring.</p>
+            <ul class="work-tags" aria-label="Texnologiyalar"><li>Python</li><li>Gemini Vision</li><li>Telegram</li></ul>
+            <div class="work-links"><a class="btn btn-ghost" href="#ariza" data-ask="Katalog-bot (rasmdan katalog kartasi) bilan tanishmoqchiman.">So'rang</a></div>
+          </div>
+        </article>
+
+        <article class="card work">
+          <img class="work-thumb" src="img/portfolio-ocean.webp" width="1280" height="720" loading="lazy" alt="3D Lab: okean va orol, suvda eshkakli qayiq">
+          <div class="work-body">
+            <div class="work-head"><h3>Portfolio 3D</h3><span class="badge ok">Ishlayapti</span></div>
+            <p>Ish beruvchi uchun: kimligim va ishlarim bir joyda; ichida qayiqni o'zingiz boshqaradigan 3D sahna (/ocean).</p>
+            <p class="work-note">Aloqa formasi hali ulanmagan — u Telegram havolasiga o'tadi.</p>
+            <ul class="work-tags" aria-label="Texnologiyalar"><li>React 19</li><li>Three.js</li><li>GSAP</li><li>Vite 8</li></ul>
+            <div class="work-links">
+              <a class="btn btn-primary" href="https://abdulmajidkhan-portfolio.web.app" target="_blank" rel="noopener">Ochish</a>
+              <a class="btn btn-ghost" href="https://abdulmajidkhan-portfolio.web.app/ocean" target="_blank" rel="noopener">3D Lab</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card work">
+          <div class="work-thumb ph ph-org" aria-hidden="true">🥬</div>
+          <div class="work-body">
+            <div class="work-head"><h3>Organick</h3><span class="badge ok">Ishlayapti</span></div>
+            <p>Kichik oziq-ovqat do'koni uchun: uch tilli katalog, savat, buyurtma va admin panel; buyurtma Telegram'ga tushadi.</p>
+            <p class="work-note">Onlayn to'lov hali yo'q.</p>
+            <ul class="work-tags" aria-label="Texnologiyalar"><li>React 19</li><li>Tailwind v4</li><li>Vite 8</li><li>Firebase</li></ul>
+            <div class="work-links"><a class="btn btn-primary" href="https://organick-e1c5a.web.app" target="_blank" rel="noopener">Ochish</a></div>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
@@ -1010,6 +1101,14 @@
       return { paket: s.names, jami: s.jami, onSent: calc.reset };
     });
   })();
+
+  // «So'rang» tugmasi: formani ochib, xabar maydonini tayyor matn bilan to'ldiradi (bo'sh bo'lsa).
+  document.querySelectorAll("[data-ask]").forEach(function (a) {
+    a.addEventListener("click", function () {
+      var ta = document.querySelector("#ariza-form textarea[name=tavsif]");
+      if (ta && !ta.value.trim()) ta.value = a.dataset.ask || "";
+    });
+  });
 </script>
 </body>
 </html>

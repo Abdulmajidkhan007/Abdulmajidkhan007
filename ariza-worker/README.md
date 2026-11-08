@@ -9,6 +9,7 @@ Har xabar sarlavhasi qayerdan kelganini ko'rsatadi: `📥 Yangi ariza — <sayt 
 | `POST /` | xizmatlar sayti | `ism`, `tel`, `tavsif` |
 | `POST /contact` | portfolio | `name`, `phone`, `message` |
 | `POST /ariza` | boshqa saytlar (umumiy) | `ism`, `tel` |
+| `POST /tg` | Telegram webhook (ariza holati tugmalari) | — (secret header) |
 
 ## Variant A — GitHub Secrets orqali (kompyuter shart emas, tavsiya)
 
@@ -43,6 +44,40 @@ Token yangilansa — secret'ni almashtirib, workflow'ni qayta ishga tushirish ki
 
    Oxirida manzil chiqadi: `https://ariza-worker.<nom>.workers.dev`
 5. Shu manzilni `site/index.html` dagi `ARIZA_URL` ga yozing (yoki menga yuboring).
+
+## Ariza holati tugmalari (ixtiyoriy)
+
+Yoqilsa, guruhga tushgan har arizada uchta tugma bo'ladi: «📞 Gaplashdim» · «✅ Kelishdik» · «❌ Rad».
+Bosilganda xabar tahrirlanadi: pastiga `Holat: ✅ Kelishdik — @kim, 08.11.2026 14:05` (Toshkent vaqti)
+qo'shiladi, tanlangan tugma `•` bilan belgilanadi. Holatni qayta bosib almashtirsa bo'ladi.
+
+**⚠️ Egasi uchun muhim.** Tugmalar ishlashi uchun Telegram bot **webhook** rejimida bo'lishi kerak.
+Telegram'da bitta bot bir vaqtda **webhook ham, polling (`getUpdates`) ham bo'la olmaydi**:
+agar shu bot tokeni boshqa joyda polling bilan ishlayotgan bo'lsa (masalan, boshqa bot dasturi),
+webhook ulangach u `409 Conflict` bilan to'xtaydi. Shuning uchun:
+
+- **Tavsiya:** arizalar uchun alohida bot (BotFather → `/newbot`), uni guruhga qo'shing, `TELEGRAM_BOT_TOKEN`
+  va `TELEGRAM_CHAT_ID` secret'larini shunga almashtiring. Shunda hech narsa buzilmaydi.
+- Yoqish: repo → Settings → Secrets and variables → Actions → **Variables** → `LEAD_BUTTONS` = `on`,
+  so'ng Actions → *Ariza worker (Cloudflare)* → Run workflow.
+- Workflow har deploy'da `getWebhookInfo` ni chiqaradi (hozirgi `url` ni shu yerdan ko'rasiz) va
+  **faqat** `LEAD_BUTTONS=on` bo'lsa `setWebhook` chaqiradi. O'zgaruvchi yo'q bo'lsa — tugmalar ham,
+  webhook ham yo'q, hamma narsa avvalgidek ishlaydi.
+- O'chirish: `LEAD_BUTTONS` ni olib tashlang (yoki `off`) va qayta deploy qiling — tugmalar yangi
+  arizalarda chiqmaydi. Webhook'ni olib tashlash (polling'ni qaytarish) uchun qo'lda:
+  `curl https://api.telegram.org/bot<TOKEN>/deleteWebhook`.
+
+Himoya: `POST /tg` faqat `X-Telegram-Bot-Api-Secret-Token` to'g'ri bo'lsa ishlaydi (noto'g'ri → `403`).
+Secret alohida saqlanmaydi: `HMAC-SHA256(kalit = bot tokeni, matn = "ariza-worker/tg-webhook")`, hex —
+Worker va workflow bir xil hisoblaydi. Faqat `TELEGRAM_CHAT_ID` guruhidagi xabarlarning callback'i qabul
+qilinadi; `callback_data` qat'iy `lead:(talked|agreed|rejected)`.
+
+**Hozircha yo'q — `/hisobot` (oylik son).** Hisob yuritish uchun Cloudflare KV kerak, uning namespace'i
+`wrangler.toml` da id talab qiladi va API token'ga KV ruxsati kerak; buni ishlamayotgan token bilan
+sinab ko'rib bo'lmaydi, noto'g'ri sozlama esa butun ariza oqimini yiqitishi mumkin. Shuning uchun
+keyingi bosqichga qoldirildi. Reja: workflow KV namespace'ni API orqali (bor bo'lsa qayta yaratmay) ochadi,
+har ariza `lead:<YYYY-MM>:<message_id>` kaliti ostida holat bilan yoziladi (poyga holatsiz), `/hisobot`
+prefiks bo'yicha sanaydi.
 
 ## Tekshirish
 
@@ -108,4 +143,4 @@ orqali beriladi (`docs/FIREBASE.md` → "Aloqa formasi: Cloudflare Worker").
 ## Tuzilish
 
 `src/index.ts` — routing va javoblar · `sites.ts` — `SITES` va Referer · `validate.ts` — `/` ·
-`contact.ts` — `/contact` · `generic.ts` — `/ariza` · `telegram.ts` — xabar va yuborish · `common.ts` — umumiy yordamchilar.
+`contact.ts` — `/contact` · `generic.ts` — `/ariza` · `leads.ts` — holat tugmalari va `/tg` webhook · `telegram.ts` — xabar va Bot API chaqiruvi · `common.ts` — umumiy yordamchilar.
