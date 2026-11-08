@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Abdulmajid (Abdulloh) — Telegram bot, do'kon sayti, landing</title>
-<meta name="description" content="Biznesingiz uchun Telegram bot, do'kon sayti va landing. Ishlarim: do'kon platformasi va Telegram botlar. Buyurtma: @Abdulloh_77700">
+<meta name="description" content="Biznesingiz uchun Telegram bot, do'kon sayti va landing. Ishlarim: do'kon platformasi va Telegram botlar. Buyurtma: Telegram orqali">
 <meta property="og:title" content="Abdulmajid (Abdulloh) — Telegram bot, do'kon sayti, landing">
 <meta property="og:description" content="Telegram bot, do'kon sayti va landing. Ishlab turgan misollar bilan.">
 <meta property="og:type" content="website">
@@ -248,7 +248,7 @@
   details p { color: var(--muted); margin: 10px 0 0; }
 
   /* Form */
-  form { display: grid; gap: 14px; }
+  form { display: grid; gap: 20px; }
   label { font-weight: 600; font-size: .95rem; display: grid; gap: 6px; }
   input, select, textarea {
     font: inherit; padding: 12px 14px; border-radius: 10px; border: 1px solid var(--line);
@@ -256,7 +256,7 @@
   }
   input:focus, select:focus, textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
   textarea { min-height: 110px; resize: vertical; }
-  .row-2 { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr)); }
+  .row-2 { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr)); }
   .note { color: var(--muted); font-size: .9rem; margin: 0; }
   .status { font-weight: 600; color: var(--ok); margin: 0; min-height: 1.5em; }
   .status.err { color: var(--err); }
@@ -329,14 +329,47 @@
   :root[data-theme="dark"] .btn[aria-pressed="true"] { color: #0e0f14; }
   @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .btn[aria-pressed="true"] { color: #0e0f14; } }
   label small { font-weight: 400; color: var(--muted); }
+  .req { color: var(--err); margin-left: 2px; }
+  .fld-err { display: flex; align-items: center; gap: 6px; }
+  input[aria-invalid="true"], textarea[aria-invalid="true"] { box-shadow: 0 0 0 3px color-mix(in srgb, var(--err) 18%, transparent); }
+  .ariza-form .btn { min-height: 48px; }
+  .btn[disabled] { opacity: .75; cursor: progress; }
+  .btn .spin {
+    width: 18px; height: 18px; border-radius: 50%; flex: none;
+    border: 2px solid currentColor; border-right-color: transparent; animation: spin .7s linear infinite;
+  }
+  .btn .spin[hidden] { display: none; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) { .btn .spin { animation-duration: 2s; } }
+  .sent {
+    display: flex; gap: 12px; align-items: flex-start; padding: 16px 18px; border-radius: 12px;
+    border: 1px solid var(--ok); background: color-mix(in srgb, var(--ok) 12%, var(--card));
+  }
+  .sent[hidden] { display: none; }
+  .sent svg { width: 26px; height: 26px; flex: none; color: var(--ok); }
+  .sent b { display: block; color: var(--ok); font-size: 1.05rem; }
+  .sent span { color: var(--text); font-weight: 400; }
   .fld-err { color: var(--err); font-weight: 500; font-size: .85rem; min-height: 0; }
   .fld-err:empty { display: none; }
   input[aria-invalid="true"], textarea[aria-invalid="true"] { border-color: var(--err); }
   .status a { color: inherit; }
 
   footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: .95rem; }
-  footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: space-between; }
-  footer a { text-decoration: none; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 20px 28px; justify-content: space-between; align-items: flex-start; }
+  .ct-title { font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 700; margin-bottom: 8px; }
+  .contacts { width: 100%; max-width: 380px; }
+  .ct-list { list-style: none; margin: 0; padding: 0; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); overflow: hidden; }
+  .ct-list li { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-left: 16px; }
+  .ct-list li + li { border-top: 1px solid var(--line); }
+  .ct-label { color: var(--muted); }
+  .ct-link {
+    display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 8px 16px;
+    color: var(--text); font-weight: 600; text-decoration: none; transition: background .15s, color .15s;
+  }
+  .ct-link svg { width: 18px; height: 18px; flex: none; color: var(--accent); }
+  .ct-link:hover { color: var(--accent); background: var(--accent-soft); }
+  .ct-link:focus-visible { outline-offset: -2px; background: var(--accent-soft); }
+  @media (max-width: 560px) { .contacts { max-width: none; } }
 </style>
 </head>
 <body>
@@ -551,15 +584,15 @@
         </dl>
         <p class="note">2 ta xizmat — −5%, 3 va undan ko'p — −10%.</p>
         <form id="calc-form" class="ariza-form" novalidate>
-          <label>Muammongiz nima?
+          <label><span>Muammongiz nima?<span class="req" aria-hidden="true">*</span></span>
             <textarea name="tavsif" maxlength="800" required placeholder="Masalan: do'konimga buyurtma qabul qiladigan bot kerak"></textarea>
             <span class="fld-err" data-err="tavsif"></span>
           </label>
-          <label>Ismingiz
+          <label><span>Ismingiz<span class="req" aria-hidden="true">*</span></span>
             <input name="ism" autocomplete="name" required maxlength="60" placeholder="Masalan: Jasur">
             <span class="fld-err" data-err="ism"></span>
           </label>
-          <label>Telefon
+          <label><span>Telefon<span class="req" aria-hidden="true">*</span></span>
             <input name="tel" type="tel" autocomplete="tel" required maxlength="20" placeholder="+998 90 123 45 67">
             <span class="fld-err" data-err="tel"></span>
           </label>
@@ -574,7 +607,8 @@
             </label>
           </div>
           <input class="hp" name="sayt" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <button class="btn btn-primary" type="submit">Ariza yuborish</button>
+          <div class="sent" hidden role="status"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8 12.5 3 3 5-6"/></svg><div><b>Arizangiz yuborildi</b><span>Tez orada bog'lanaman.</span></div></div>
+          <button class="btn btn-primary" type="submit"><span class="spin" hidden aria-hidden="true"></span><span class="btn-text">Ariza yuborish</span></button>
           <p class="status" role="status" aria-live="polite"></p>
         </form>
       </aside>
@@ -677,11 +711,11 @@
       <div class="card">
         <form id="ariza-form" class="ariza-form" novalidate>
           <div class="row-2">
-            <label>Ismingiz
+            <label><span>Ismingiz<span class="req" aria-hidden="true">*</span></span>
               <input name="ism" autocomplete="name" required maxlength="60" placeholder="Masalan: Jasur">
               <span class="fld-err" data-err="ism"></span>
             </label>
-            <label>Telefon
+            <label><span>Telefon<span class="req" aria-hidden="true">*</span></span>
               <input name="tel" type="tel" autocomplete="tel" required maxlength="20" placeholder="+998 90 123 45 67">
               <span class="fld-err" data-err="tel"></span>
             </label>
@@ -709,12 +743,13 @@
               <option>Bilmayman, maslahat kerak</option>
             </select>
           </label>
-          <label>Xabar
+          <label><span>Xabar<span class="req" aria-hidden="true">*</span></span>
             <textarea name="tavsif" maxlength="800" required placeholder="Masalan: kiyim do'konimga buyurtma qabul qiladigan bot kerak"></textarea>
             <span class="fld-err" data-err="tavsif"></span>
           </label>
           <input class="hp" name="sayt" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <button class="btn btn-primary" type="submit">Ariza yuborish</button>
+          <div class="sent" hidden role="status"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8 12.5 3 3 5-6"/></svg><div><b>Arizangiz yuborildi</b><span>Tez orada bog'lanaman.</span></div></div>
+          <button class="btn btn-primary" type="submit"><span class="spin" hidden aria-hidden="true"></span><span class="btn-text">Ariza yuborish</span></button>
           <p class="note">Arizangiz to'g'ridan-to'g'ri menga keladi.</p>
           <p class="status" role="status" aria-live="polite"></p>
         </form>
@@ -734,14 +769,20 @@
 
 <footer>
   <div class="wrap">
-    <span>© Abdulmajid (Abdulloh) — Telegram bot, do'kon sayti, landing</span>
-    <span>
-      <a href="https://t.me/Abdulloh_77700" target="_blank" rel="noopener">Telegram: @Abdulloh_77700</a>
-      &nbsp;·&nbsp;
-      <a href="https://t.me/NafiDastur" target="_blank" rel="noopener">Kanal: @NafiDastur</a>
-      &nbsp;·&nbsp;
-      <a href="https://github.com/Abdulmajidkhan007" target="_blank" rel="noopener">GitHub</a>
-    </span>
+    <span class="foot-copy">© Abdulmajid (Abdulloh) — Telegram bot, do'kon sayti, landing</span>
+    <div class="contacts">
+      <h2 class="ct-title">To'g'ridan-to'g'ri</h2>
+      <ul class="ct-list">
+        <li><span class="ct-label">Yozish</span>
+          <a class="ct-link" href="https://t.me/Abdulloh_77700" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M21.5 4.3 2.9 11.5c-.9.3-.9 1.2 0 1.5l4.7 1.5 1.8 5.6c.2.6.9.8 1.4.4l2.6-2.2 4.8 3.5c.6.4 1.3.1 1.5-.6L22.9 5.7c.2-.9-.6-1.7-1.4-1.4ZM9.2 14l8.5-5.3-6.6 6.6-.3 3L9.2 14Z"/></svg>Telegram</a></li>
+        <li><span class="ct-label">Yangiliklar</span>
+          <a class="ct-link" href="https://t.me/NafiDastur" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6L6 10H4a1 1 0 0 0-1 1Zm13.5 1a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4ZM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6Z"/></svg>Telegram kanal</a></li>
+        <li><span class="ct-label">Ishlarim</span>
+          <a class="ct-link" href="https://abdulmajidkhan-portfolio.web.app" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.9 9h-3a15.7 15.7 0 0 0-1.2-5.2A8 8 0 0 1 18.9 11ZM12 4c.8 1 1.9 3.4 2 7H10c.1-3.6 1.200-6 2-7ZM9.3 5.800A15.700 15.700 0 0 0 8.100 11h-3a8 8 0 0 1 4.200-5.200ZM5.100 13h3a15.700 15.700 0 0 0 1.200 5.200A8 8 0 0 1 5.100 13ZM12 20c-.8-1-1.900-3.400-2-7h4c-.1 3.600-1.200 6-2 7Zm2.700-1.800A15.700 15.700 0 0 0 15.900 13h3a8 8 0 0 1-4.200 5.200Z"/></svg>Portfolio</a></li>
+        <li><span class="ct-label">Kodlar</span>
+          <a class="ct-link" href="https://github.com/Abdulmajidkhan007" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.200 19.500c.5.1.7-.2.7-.5v-1.800c-2.800.6-3.400-1.200-3.400-1.200-.5-1.200-1.100-1.500-1.100-1.500-.9-.6.1-.6.1-.6 1 .1 1.500 1 1.500 1 .9 1.500 2.400 1.100 3 .8.1-.7.4-1.100.7-1.400-2.200-.3-4.600-1.100-4.600-5 0-1.100.4-2 1-2.700-.1-.3-.4-1.300.1-2.700 0 0 .8-.3 2.800 1a9.600 9.600 0 0 1 5 0c1.900-1.300 2.800-1 2.800-1 .5 1.400.2 2.400.1 2.700.6.700 1 1.600 1 2.700 0 3.900-2.400 4.700-4.600 5 .4.300.7.900.7 1.800v2.700c0 .3.200.6.700.5A10 10 0 0 0 12 2Z"/></svg>GitHub</a></li>
+      </ul>
+    </div>
   </div>
 </footer>
 
@@ -933,6 +974,15 @@
     function setup(form, getExtra) {
       var status = form.querySelector(".status");
       var btn = form.querySelector("button[type=submit]");
+      var spin = btn.querySelector(".spin");
+      var btnText = btn.querySelector(".btn-text");
+      var sent = form.querySelector(".sent");
+      function busy(on) {
+        btn.disabled = on; spin.hidden = !on;
+        btn.setAttribute("aria-busy", String(on));
+        btnText.textContent = on ? "Yuborilmoqda..." : "Ariza yuborish";
+      }
+      form.addEventListener("input", function () { sent.hidden = true; });
       function say(text, err) { status.textContent = text; status.classList.toggle("err", !!err); }
 
       form.addEventListener("submit", function (ev) {
@@ -967,8 +1017,9 @@
 
         if (!url) { openTelegram("Ariza serveri hozircha ulanmagan."); return; }
 
-        btn.disabled = true;
-        say("Yuborilmoqda...", false);
+        sent.hidden = true;
+        busy(true);
+        say("", false);
         fetch(url, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -985,7 +1036,8 @@
               form.reset();
               showErrors(form, {});
               if (extra.onSent) extra.onSent();
-              say("Rahmat! Arizangiz keldi, tez orada bog'lanaman.", false);
+              say("", false);
+              sent.hidden = false;
             } else if (r.res.status === 400 && r.data && r.data.field) {
               // Worker rad etdi (masalan, email domeni MX yozuvisiz) — foydalanuvchi to'g'rilaydi.
               var er = {}; er[r.data.field] = r.data.error;
@@ -996,7 +1048,7 @@
             }
           })
           .catch(function () { openTelegram("Ariza serveriga ulanib bo'lmadi."); })
-          .finally(function () { btn.disabled = false; });
+          .finally(function () { busy(false); });
       });
     }
 
