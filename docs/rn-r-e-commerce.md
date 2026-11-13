@@ -2,7 +2,7 @@
 
 > KidsWear — bolalar kiyimi do'koni: React veb va React Native (bare CLI) Android ilova, bitta monorepoda.
 
-**Repo:** https://github.com/Abdulmajidkhan007/rn-r-e-commerce · **Jonli:** https://kids-wear-007.web.app · **Holat:** 🚧 Qurilmoqda
+**Repo:** 🔒 yopiq (private, 2026-11) · **Jonli:** https://kids-wear-007.web.app · **Holat:** 🚧 Qurilmoqda
 
 ---
 
@@ -103,7 +103,7 @@ hudud bo'yicha yetkazish narxi, profilda hudud tanlash; admin bo'limida
 hisobot, xabarlar, blog, promo-kodlar va yetkazish narxlari. Ilova ham
 buyurtma paytida promo va narxlarni bazadan qayta o'qiydi — qoidalar bir xil.
 Tekshiruv: tsc, lint, 168 test, Metro bundle.
-APK har `main` push'da GitHub Release'ga chiqadi: https://github.com/Abdulmajidkhan007/rn-r-e-commerce/releases/latest/download/kidswear.apk
+APK har `main` push'da GitHub Release'ga chiqadi (repo private bo'lgani uchun ochiq havola yo'q — so'rasangiz yuboraman).
 (debug kalit bilan imzolangan — telefonga o'rnatish uchun, Play Store uchun emas).
 
 **2026-10-11:** foydalanuvchi sinovida ikki jiddiy xato chiqdi va tuzatildi:
@@ -154,10 +154,10 @@ Vebda emulyatorda 13/13 oqim sinalgan; jonli bazada va telefonda sinalmagan.
 
 ## Havolalar
 
-- Repo: https://github.com/Abdulmajidkhan007/rn-r-e-commerce
+- Repo: 🔒 yopiq (private) — so'rasangiz ko'rsataman
 - Jonli sayt: https://kids-wear-007.web.app (Spark: demo katalog, test to'lov)
 - Repo ichidagi to'liq tavsif: `docs/LOYIHA-HAQIDA.md`; funksiyalar xaritasi: `docs/FUNKSIYALAR.md`; fazalar: `docs/FAZALAR.md`
 
 ---
 
-*Oxirgi yangilanish: 2026-11-04*
+*Oxirgi yangilanish: 2026-11-13 (repo private qilindi)*

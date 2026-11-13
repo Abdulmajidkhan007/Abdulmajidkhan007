@@ -2,7 +2,7 @@
 
 > Organik oziq-ovqat do'koni: uch tilli React SPA, Firebase backend va Telegram bildirishnomalari.
 
-**Repo:** https://github.com/Abdulmajidkhan007/Organick_org · **Jonli:** https://organick-e1c5a.web.app
+**Repo:** 🔒 yopiq (private, 2026-11) · **Jonli:** https://organick-e1c5a.web.app
 **Holat:** ✅ Ishlayapti
 
 ---
@@ -71,9 +71,9 @@ blog, reyting), Telegram bildirishnomalari, dark/light rejim, uch til.
 
 ## Havolalar
 
-- Repo: https://github.com/Abdulmajidkhan007/Organick_org
+- Repo: 🔒 yopiq (private) — so'rasangiz ko'rsataman
 - Jonli sayt: https://organick-e1c5a.web.app
 
 ---
 
-*Oxirgi yangilanish: 2026-10-04*
+*Oxirgi yangilanish: 2026-11-13 (repo private qilindi)*

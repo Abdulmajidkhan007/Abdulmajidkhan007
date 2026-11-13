@@ -37,8 +37,8 @@ LOYIHALAR
 ❄️ **atoyo-e-commerce** 🔒 — santexnika do'koni uchun e-commerce: veb, Android, desktop va TV ekrani bitta baza ustida; 2026-10-26 dan to'xtatilgan, repo private<br>
 <sub>Next.js 16 · React 19 · Firebase · TypeScript · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/atoyo-e-commerce.md)</sub>
 
-✅ **[Organick](https://organick-e1c5a.web.app)** — organik oziq-ovqat do'koni: uch til, admin panel, Google / email / SMS orqali kirish, buyurtma Telegram'ga<br>
-<sub>React 19 · Vite 8 · Tailwind v4 · Redux Toolkit 2 · Firebase · Playwright · [🌐 jonli](https://organick-e1c5a.web.app) · [💻 kod](https://github.com/Abdulmajidkhan007/Organick_org) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/organick_org.md)</sub>
+✅ **[Organick](https://organick-e1c5a.web.app)** 🔒 — organik oziq-ovqat do'koni: uch til, admin panel, Google / email / SMS orqali kirish, buyurtma Telegram'ga<br>
+<sub>React 19 · Vite 8 · Tailwind v4 · Redux Toolkit 2 · Firebase · Playwright · [🌐 jonli](https://organick-e1c5a.web.app) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/organick_org.md)</sub>
 
 ✅ **[telegram-bots](https://github.com/Abdulmajidkhan007/telegram-bots)** — 15 ta bot bitta repoda, bitta buyruq bilan ishga tushadi. Telegram'da ochiq botlarim:<br>
 <sub>Node · Python · TypeScript · Gemini API · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/telegram-bots.md)</sub>
@@ -54,8 +54,8 @@ LOYIHALAR
 | 🧠 [@SavolJavob_007_bot](https://t.me/SavolJavob_007_bot) | IT bo'yicha testlar, o'z testingizni ham yaratasiz |
 | 🗂 [@arxiv_topadi_bot](https://t.me/arxiv_topadi_bot) | O'chgan xabarlarni rasmiy yo'l bilan qaytarishni o'rgatadi |
 
-✅ **[portfolio-3d](https://abdulmajidkhan-portfolio.web.app)** 🔒 — 3D portfolio: React Three Fiber sahnasi, uz/en, rezyume PDF; telefondan GitHub Actions orqali Firebase'ga deploy<br>
-<sub>React Three Fiber · three.js · GSAP · Vite 8 · Firebase · [🌐 jonli](https://abdulmajidkhan-portfolio.web.app) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/portfolio-3d.md)</sub>
+✅ **[portfolio-3d](https://abdulmajidkhan-portfolio.web.app)** — 3D portfolio: React Three Fiber sahnasi, uz/en, rezyume PDF; telefondan GitHub Actions orqali Firebase'ga deploy<br>
+<sub>React Three Fiber · three.js · GSAP · Vite 8 · Firebase · [🌐 jonli](https://abdulmajidkhan-portfolio.web.app) · [💻 kod](https://github.com/Abdulmajidkhan007/portfolio-3d) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/portfolio-3d.md)</sub>
 
 🚧 **[learning-center-front](https://github.com/nurulloh-coder-dev/learning-center-front)** — o'quv markazi CRM'i (A.L.I.A.), jamoaviy loyiha: men frontend tomonidaman<br>
 <sub>React 19 · TypeScript · Vite 8 · Tailwind v4 · TanStack Query 5 · Vitest · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/learning-center-front.md)</sub>
@@ -63,8 +63,8 @@ LOYIHALAR
 🚧 **[lumina](https://lumina-007app.web.app)** — Instagram uslubidagi social ilova; veb jonli, Android APK GitHub Releases'da, Play Store'da hali yo'q<br>
 <sub>React Native (bare) · TanStack Query · Zustand · Firebase · [🌐 jonli](https://lumina-007app.web.app) · [📱 APK](https://github.com/Abdulmajidkhan007/lumina/releases/latest/download/lumina.apk) · [💻 kod](https://github.com/Abdulmajidkhan007/lumina) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/lumina.md)</sub>
 
-🚧 **[rn-r-e-commerce](https://kids-wear-007.web.app)** — KidsWear: bolalar kiyimi do'koni, veb + Android bitta monorepoda; veb jonli (demo katalog, test to'lov), Android APK GitHub Releases'da<br>
-<sub>React 19 · Vite 8 · MUI 9 · React Native (bare) · Turborepo · Firebase · [🌐 jonli](https://kids-wear-007.web.app) · [📱 APK](https://github.com/Abdulmajidkhan007/rn-r-e-commerce/releases/latest/download/kidswear.apk) · [💻 kod](https://github.com/Abdulmajidkhan007/rn-r-e-commerce) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/rn-r-e-commerce.md)</sub>
+🚧 **[rn-r-e-commerce](https://kids-wear-007.web.app)** 🔒 — KidsWear: bolalar kiyimi do'koni, veb + Android bitta monorepoda; veb jonli (demo katalog, test to'lov), Android APK ham bor (repo yopiq)<br>
+<sub>React 19 · Vite 8 · MUI 9 · React Native (bare) · Turborepo · Firebase · [🌐 jonli](https://kids-wear-007.web.app) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/rn-r-e-commerce.md)</sub>
 
 🚧 **[suhbat](https://suhbatweb-production.up.railway.app)** — o'zbekcha messenjer: shaxsiy chat, guruh, kanal, 1:1 qo'ng'iroq (WebRTC, o'z TURN serveri); veb jonli, desktop va Android relizlari GitHub'da (beta)<br>
 <sub>NestJS · Prisma 7 · PostgreSQL · Socket.IO · React 19 · Electron · React Native (bare) · [🌐 jonli](https://suhbatweb-production.up.railway.app) · [📦 reliz](https://github.com/Abdulmajidkhan007/suhbat/releases/latest) · [💻 kod](https://github.com/Abdulmajidkhan007/suhbat) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/suhbat.md)</sub>

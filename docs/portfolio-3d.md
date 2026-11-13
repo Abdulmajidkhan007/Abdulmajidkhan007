@@ -2,7 +2,7 @@
 
 > 3D portfolio sayti: React Three Fiber sahnasi, GSAP animatsiyalari, Firebase backend bilan.
 
-**Repo:** 🔒 yopiq · **Jonli:** https://abdulmajidkhan-portfolio.web.app
+**Repo:** https://github.com/Abdulmajidkhan007/portfolio-3d (public) · **Jonli:** https://abdulmajidkhan-portfolio.web.app
 **Holat:** ✅ Ishlayapti (forma — Blaze'dan keyin)
 
 ---
@@ -90,4 +90,4 @@ ni ham tekshiradi.
 
 ---
 
-*Oxirgi yangilanish: 2026-10-09*
+*Oxirgi yangilanish: 2026-11-13 (repo public)*
