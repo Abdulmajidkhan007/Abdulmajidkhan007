@@ -69,6 +69,9 @@ LOYIHALAR
 🚧 **[suhbat](https://suhbatweb-production.up.railway.app)** — o'zbekcha messenjer: shaxsiy chat, guruh, kanal, 1:1 qo'ng'iroq (WebRTC, o'z TURN serveri); veb jonli, desktop va Android relizlari GitHub'da (beta)<br>
 <sub>NestJS · Prisma 7 · PostgreSQL · Socket.IO · React 19 · Electron · React Native (bare) · [🌐 jonli](https://suhbatweb-production.up.railway.app) · [📦 reliz](https://github.com/Abdulmajidkhan007/suhbat/releases/latest) · [💻 kod](https://github.com/Abdulmajidkhan007/suhbat) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/suhbat.md)</sub>
 
+🚧 **[uzbek-tg](https://github.com/Abdulmajidkhan007/uzbek-tg)** — Telegram uchun uchinchi tomon mijozi (Android): haqiqiy akkaunt, chatlar, media va ghost mode (o'qildi / onlayn / yozmoqda yuborilmaydi); ghost mode telefonda hali sinalmagan<br>
+<sub>React Native (bare) · TDLib · TypeScript · Zustand · Reanimated · [💻 kod](https://github.com/Abdulmajidkhan007/uzbek-tg) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/uzbek-tg.md)</sub>
+
 🚧 **go-uz 🔒** — Vroom — ride-hailing va kuryer super-app, 9 ta umumiy paket qurilgan<br>
 <sub>React Native · React · Turborepo · pnpm · Firebase · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/go-uz.md)</sub>
 

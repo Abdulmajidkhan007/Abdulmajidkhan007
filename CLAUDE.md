@@ -33,8 +33,8 @@ kompyuter, kanal matnlari, post qoralamalari) — yopiq **`Abdulmajidkhan007/huj
 - Loyihalar (2026-10-04 qarori, shu tartibda): atoyo-e-commerce (atoyo.uz), Organick_org,
   telegram-bots (ochiq botlar username bilan), portfolio-3d, learning-center-front
   (nurulloh-coder-dev, jamoaviy — men frontend), lumina, rn-r-e-commerce, suhbat (2026-10-30
-  qo'shildi), go-uz.
-  lumina va go-uz — bare React Native CLI, Expo emas.
+  qo'shildi), uzbek-tg (2026-11-13 qo'shildi), go-uz.
+  lumina, uzbek-tg va go-uz — bare React Native CLI, Expo emas.
 - Holat faqat: ✅ Ishlayapti · 🚧 Qurilmoqda · ❄️ Muzlatilgan. "Rejalashtirilgan" yo'q.
   ✅ lar birinchi.
 - Stack'da versiya faqat hozirgi major bo'lsa (React 19, Next.js 16, Tailwind v4, Vite 8,
