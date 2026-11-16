@@ -40,19 +40,8 @@ LOYIHALAR
 ✅ **[Organick](https://organick-e1c5a.web.app)** 🔒 — organik oziq-ovqat do'koni: uch til, admin panel, Google / email / SMS orqali kirish, buyurtma Telegram'ga<br>
 <sub>React 19 · Vite 8 · Tailwind v4 · Redux Toolkit 2 · Firebase · Playwright · [🌐 jonli](https://organick-e1c5a.web.app) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/organick_org.md)</sub>
 
-✅ **[telegram-bots](https://github.com/Abdulmajidkhan007/telegram-bots)** — 15 ta bot bitta repoda, bitta buyruq bilan ishga tushadi. Telegram'da ochiq botlarim:<br>
+❄️ **[telegram-bots](https://github.com/Abdulmajidkhan007/telegram-bots)** — 16 ta bot bitta repoda, bitta buyruq bilan ishga tushadi. Hozir hammasi to'xtatilgan (2026-11), shuning uchun jonli bot havolalari yo'q; kod ochiq<br>
 <sub>Node · Python · TypeScript · Gemini API · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/telegram-bots.md)</sub>
-
-| Bot | Nima qiladi |
-|---|---|
-| 🛡 [@KillSpam_007_Bot](https://t.me/KillSpam_007_Bot) | Guruhni spam, reklama va zararli havolalardan tozalaydi |
-| 💰 [@COUNTLIST_BOT](https://t.me/COUNTLIST_BOT) | Oila yoki jamoa xarajatlarini hisoblaydi — matn yoki ovozli xabar |
-| 🎬 [@Uzb_saver_007_bot](https://t.me/Uzb_saver_007_bot) | Instagram, TikTok, YouTube'dan video va musiqa yuklaydi |
-| 🆔 [@IDFINDER007BOT](https://t.me/IDFINDER007BOT) | Foydalanuvchi, kanal va guruh ID sini topadi |
-| 🕵️ [@Anonim_007_bot](https://t.me/Anonim_007_bot) | Shaxsiy havola orqali anonim savol-javob |
-| 🦠 [@Tekshiruvchi_07_bot](https://t.me/Tekshiruvchi_07_bot) | Fayl va havolani ochishdan oldin virusga tekshiradi |
-| 🧠 [@SavolJavob_007_bot](https://t.me/SavolJavob_007_bot) | IT bo'yicha testlar, o'z testingizni ham yaratasiz |
-| 🗂 [@arxiv_topadi_bot](https://t.me/arxiv_topadi_bot) | O'chgan xabarlarni rasmiy yo'l bilan qaytarishni o'rgatadi |
 
 ✅ **[portfolio-3d](https://abdulmajidkhan-portfolio.web.app)** — 3D portfolio: React Three Fiber sahnasi, uz/en, rezyume PDF; telefondan GitHub Actions orqali Firebase'ga deploy<br>
 <sub>React Three Fiber · three.js · GSAP · Vite 8 · Firebase · [🌐 jonli](https://abdulmajidkhan-portfolio.web.app) · [💻 kod](https://github.com/Abdulmajidkhan007/portfolio-3d) · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/portfolio-3d.md)</sub>

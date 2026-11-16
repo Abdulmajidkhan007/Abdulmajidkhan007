@@ -1,6 +1,6 @@
 # telegram-bots
 
-> 15 ta mustaqil Telegram bot bitta repoda: bitta clone, bitta buyruq — hammasi ishga tushadi. 9 tasi Telegram'da ochiq ishlaydi.
+> 16 ta mustaqil Telegram bot bitta repoda: bitta clone, bitta buyruq — hammasi ishga tushadi. **Hozir hammasi to'xtatilgan (2026-11)**; kod ochiq, qayta ishga tushirish mumkin.
 
 **Repo:** https://github.com/Abdulmajidkhan007/telegram-bots · **Jonli:** botlar Telegram'da
 **Holat:** ✅ Ishlayapti
@@ -88,7 +88,7 @@ tugaydi. Sekin test yozilmaydi va ishlatilmaydi.
 | `ovoz-bot` | Python | Gemini bilan ovoz → matn (STT) va matn → ovoz (TTS), 1-faza |
 | `insta-avtojavob-bot` | Node | Instagram'ga AI avto-javobni tayyor xizmat orqali ulash qo'llanmasi: bepul qadamlar (obuna), pullik qo'llanma + 7 ta AI shablon, qo'lda to'lov, admin panel. 2026-10-24: `.env` yuklanmasligi tuzatildi; 2026-10-25: pullik qo'llanma (7 bo'lim, ChatPlace) yozildi, 29 test. Telegram'da sinalmagan, ishga tushirilmagan |
 
-## Telegram'da ochiq botlar
+## Telegram'da ochiq botlar (2026-11 gacha; hozir hammasi to'xtatilgan)
 
 | Bot | Papka | Nima qiladi |
 |---|---|---|
@@ -110,9 +110,9 @@ uchtasi ommaga e'lon qilinmagan: `gemini-qa-bot`, hamda `xulosa-ai-bot` va
 ## Holat
 
 **Ishlaydi:**
-- 15 ta bot, `npm run list` / `npm run start` orqali boshqariladi
+- 16 ta bot (repo README'si bo'yicha), `npm run list` / `npm run start` orqali boshqariladi
 - GitHub Actions CI: har push'da testlar va kalit skaneri (`.github/workflows/ci.yml`)
-- 9 tasi Telegram'da ochiq (yuqoridagi jadval, @Atoyo_uz_bot dan tashqari)
+- 2026-11 gacha 9 tasi Telegram'da ochiq edi (yuqoridagi jadval); hozir hammasi to'xtatilgan
 - `npm run check` — testlar + kalit skaneri, yashil
 - Har botda o'z README va `.env.example`
 
@@ -132,4 +132,4 @@ uchtasi ommaga e'lon qilinmagan: `gemini-qa-bot`, hamda `xulosa-ai-bot` va
 
 ---
 
-*Oxirgi yangilanish: 2026-10-25*
+*Oxirgi yangilanish: 2026-11-16 (botlar to'xtatilgani; soni 16)*
