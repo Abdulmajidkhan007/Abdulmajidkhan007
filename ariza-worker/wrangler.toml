@@ -17,3 +17,9 @@ SITES = '''
   "https://abdulmajidkhan-portfolio.firebaseapp.com": "Portfolio"
 }
 '''
+
+# IP rate limit (5 so'rov/soat/IP). Namespace yaratilgach izohni oching va id ni qo'ying
+# (README → «Rate limit»). Id yo'qligida bu blok yoqilmasin — deploy yiqiladi.
+# [[kv_namespaces]]
+# binding = "RATE_LIMIT_KV"
+# id = "<npx wrangler kv namespace create RATE_LIMIT_KV chiqargan id>"

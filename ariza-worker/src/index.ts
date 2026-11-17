@@ -10,11 +10,14 @@ import { parseContact } from "./contact.ts";
 import { refererPath, parseSites, siteName } from "./sites.ts";
 import { arizaBody, compose, contactBody, genericBody, sendTelegram } from "./telegram.ts";
 import { buttonsEnabled, handleWebhook, leadKeyboard, type LeadEnv } from "./leads.ts";
+import { checkRateLimit, type RateLimitKV } from "./ratelimit.ts";
 import { emailDomain, hasMx, parseAriza } from "./validate.ts";
 
 interface Env extends LeadEnv {
   /** JSON: { "https://sayt.uz": "Sayt nomi" } */
   SITES: string;
+  /** Ixtiyoriy: IP rate limit hisoblagichi (wrangler.toml, README ga qarang). Yo'q bo'lsa cheklov o'chiq. */
+  RATE_LIMIT_KV?: RateLimitKV;
 }
 
 type Outcome =
@@ -94,6 +97,13 @@ export default {
     const url = new URL(request.url);
     const handler = handlers.get(url.pathname);
     if (!handler) return respond({ ok: false }, 404, allowOrigin);
+
+    const limit = await checkRateLimit(env.RATE_LIMIT_KV, request.headers.get("cf-connecting-ip"));
+    if (!limit.allowed) {
+      const res = respond({ ok: false, error: "Juda ko'p so'rov. Birozdan keyin qayta urinib ko'ring." }, 429, allowOrigin);
+      res.headers.set("Retry-After", String(limit.retryAfter));
+      return res;
+    }
 
     const outcome = await handler(await request.json().catch(() => null));
     if (outcome.kind === "spam") return respond({ ok: true }, 200, allowOrigin);
