@@ -27,7 +27,7 @@ kompyuter, kanal matnlari, post qoralamalari) — yopiq **`Abdulmajidkhan007/huj
 - JS va ko'p HTML ishlamaydi: markdown jadval, badge, rasm, `<img align>`.
 - Qisqa va skanerlanadigan; batafsili `docs/` da.
 - Tarkib (2026-10-25, rezyume uslubi — darhonbek gist namunasi, o'zbekcha): ism (setext H1) →
-  H3 lavozim (Strong Junior Frontend Developer) · shahar → kontaktlar bir qatorda `|` bilan →
+  H3 lavozim (Frontend Developer — darajasiz, 2026-11-17) · shahar → kontaktlar bir qatorda `|` bilan →
   bir gap → buyurtma qatori → ISH TAJRIBASI → LOYIHALAR → STACK → TA'LIM → QO'SHIMCHA.
   Bo'lim sarlavhalari katta harf, setext H2. Rezyume (`hujjatlar/rezyume/`, portfolio-3d PDF) bilan mos.
 - Loyihalar (2026-10-04 qarori, shu tartibda): atoyo-e-commerce (atoyo.uz), Organick_org,
