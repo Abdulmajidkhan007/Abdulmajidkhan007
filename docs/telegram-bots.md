@@ -2,8 +2,8 @@
 
 > 16 ta mustaqil Telegram bot bitta repoda: bitta clone, bitta buyruq — hammasi ishga tushadi. **Hozir hammasi to'xtatilgan (2026-11)**; kod ochiq, qayta ishga tushirish mumkin.
 
-**Repo:** https://github.com/Abdulmajidkhan007/telegram-bots · **Jonli:** botlar Telegram'da
-**Holat:** ✅ Ishlayapti
+**Repo:** https://github.com/Abdulmajidkhan007/telegram-bots · **Jonli:** yo'q — botlar 2026-11 da Railway'da to'xtatilgan
+**Holat:** ❄️ Muzlatilgan (kod ochiq, qayta ishga tushirish mumkin)
 
 ---
 
@@ -132,4 +132,4 @@ uchtasi ommaga e'lon qilinmagan: `gemini-qa-bot`, hamda `xulosa-ai-bot` va
 
 ---
 
-*Oxirgi yangilanish: 2026-11-16 (botlar to'xtatilgani; soni 16)*
+*Oxirgi yangilanish: 2026-11-17 (holat ❄️; Railway'da faqat katalog-bot va suhbat qoldi)*

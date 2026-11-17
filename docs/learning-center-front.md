@@ -16,7 +16,7 @@ ko'radi: administrator, o'qituvchi, o'quvchi, super-admin (tashkilot va filialla
 
 ## Mening hissam
 
-2026-08-13 dan beri, mening nomim bilan 75 ta commit:
+2026-08-13 dan beri, mening nomim bilan 128 ta commit (2026-11-17; repoda jami 440+):
 
 - **JSX → TypeScript migratsiyasi** — butun `src/` `strict` TypeScript'ga o'tkazildi.
 - **Login** — backendning ikki bosqichli (tashkilot tanlash) oqimiga ko'chirildi,
@@ -85,4 +85,4 @@ kalit yoki manzil bundle'ga yozilmaydi.
 
 ---
 
-*Oxirgi yangilanish: 2026-10-04*
+*Oxirgi yangilanish: 2026-11-17 (commit soni 128)*

@@ -58,7 +58,7 @@ Market'da emas, to'g'ridan-to'g'ri tarqatiladi.
 ## Sizga ham kerakmi?
 
 Shunga o'xshash tizim — do'kon sayti + Telegram bot + buyurtmalar guruhga —
-sizning biznesingiz uchun ham qilinadi. Yozing: [@Abdulloh_77700](https://t.me/Abdulloh_77700)
+sizning biznesingiz uchun ham qilinadi. Yozing: [@abdulmajid_sharipov](https://t.me/abdulmajid_sharipov)
 · Xizmatlar va paketlar: https://abdulmajidkhan007.github.io/Abdulmajidkhan007/
 · Shu keys sayt ko'rinishida: https://abdulmajidkhan007.github.io/Abdulmajidkhan007/keys-atoyo.html
 

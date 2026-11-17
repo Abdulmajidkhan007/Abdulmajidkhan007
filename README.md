@@ -1,9 +1,9 @@
 Abdulmajid Sharipov
 ===================
 
-### Strong Junior Frontend Developer · Qo'qon, O'zbekiston
+### Frontend Developer · Qo'qon, O'zbekiston
 
-[GitHub](https://github.com/Abdulmajidkhan007) | [LinkedIn](https://linkedin.com/in/abdulmajid-sharipov-profile) | [Portfolio](https://abdulmajidkhan-portfolio.web.app) | [Telegram](https://t.me/Abdulloh_77700) | abdulmajidsharipovlc@gmail.com | [Rezyume (PDF)](https://abdulmajidkhan-portfolio.web.app/Abdulmajid_Sharipov_Frontend_CV.pdf)
+[GitHub](https://github.com/Abdulmajidkhan007) | [LinkedIn](https://linkedin.com/in/abdulmajid-sharipov-profile) | [Portfolio](https://abdulmajidkhan-portfolio.web.app) | [Telegram](https://t.me/abdulmajid_sharipov) | abdulmajidsharipovish@gmail.com | [Rezyume (PDF)](https://abdulmajidkhan-portfolio.web.app/Abdulmajid_Sharipov_Frontend_CV.pdf)
 
 React va TypeScript bilan veb va mobil interfeyslar quraman; backendni o'zim yopaman va kerak bo'lganda AI integratsiyasini qo'shaman.
 
@@ -13,11 +13,11 @@ React va TypeScript bilan veb va mobil interfeyslar quraman; backendni o'zim yop
 ISH TAJRIBASI
 -------------
 
-**Learning Center (startap) | 2026-yil avgust – hozirgacha**<br>
+**A.L.I.A. Learning Center (alia.uz) | 2026-yil avgust – hozirgacha**<br>
 **Frontend team lead**<br>
 O'quv markazlarini avtomatlashtiruvchi CRM.
 
-* Butun frontendni JSX'dan strict TypeScript'ga o'tkazdim — tip xatolari endi build bosqichida ushlanadi; 75 ta commit.
+* Butun frontendni JSX'dan strict TypeScript'ga o'tkazdim — tip xatolari endi build bosqichida ushlanadi; 128 ta commit (repoda 440+).
 * Backend kodini tahlil qilib, jamoa e'tibordan chetda qoldirgan bir nechta xatoni topdim — backend dasturchilar tuzatdi.
 * Jamoa uchun umumiy qoidalar va hujjatlar yozdim (`CLAUDE.md`, `docs/`) — frontendchilar bir uslubda kod yozadi.
 * Ikki bosqichli login, developer va super-admin panellar, telefon bo'yicha dublikat tekshiruvi, o'qituvchi KPI ekranlari.
@@ -64,7 +64,7 @@ LOYIHALAR
 🚧 **go-uz 🔒** — Vroom — ride-hailing va kuryer super-app, 9 ta umumiy paket qurilgan<br>
 <sub>React Native · React · Turborepo · pnpm · Firebase · [📄 batafsil](https://github.com/Abdulmajidkhan007/Abdulmajidkhan007/blob/main/docs/go-uz.md)</sub>
 
-<sub>✅ Ishlayapti · 🚧 Qurilmoqda · 🔒 repo yopiq, so'rasangiz ko'rsataman</sub>
+<sub>✅ Ishlayapti · 🚧 Qurilmoqda · ❄️ Muzlatilgan · 🔒 repo yopiq, so'rasangiz ko'rsataman</sub>
 
 
 STACK
