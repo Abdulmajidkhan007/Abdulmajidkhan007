@@ -144,3 +144,20 @@ orqali beriladi (`docs/FIREBASE.md` → "Aloqa formasi: Cloudflare Worker").
 
 `src/index.ts` — routing va javoblar · `sites.ts` — `SITES` va Referer · `validate.ts` — `/` ·
 `contact.ts` — `/contact` · `generic.ts` — `/ariza` · `leads.ts` — holat tugmalari va `/tg` webhook · `telegram.ts` — xabar va Bot API chaqiruvi · `common.ts` — umumiy yordamchilar.
+
+## Rate limit (IP bo'yicha, 5 so'rov/soat)
+
+Origin header'ni skript (curl) soxtalashtira oladi, shuning uchun `POST /`, `/contact`, `/ariza` IP
+(`cf-connecting-ip`) bo'yicha cheklanadi: 6-so'rov → `429` + `Retry-After`. `/tg` cheklanmaydi.
+Hisoblagich — Workers KV (Cloudflare'ning Rate Limiting binding'i faqat 10/60 soniyalik oyna beradi,
+soatlik uchun yaramaydi). Binding yo'q bo'lsa cheklov o'chiq turadi (lokal/test).
+
+Bir martalik yoqish (shu papkada):
+
+```bash
+npx wrangler kv namespace create RATE_LIMIT_KV   # chiqargan id ni nusxalang
+```
+
+So'ng `wrangler.toml` oxiridagi `[[kv_namespaces]]` blokining izohini oching, `id` ga qo'ying va
+main'ga push qiling — `ariza-worker.yml` o'zi deploy qiladi. (CI tokeni KV namespace'ga yozishi uchun
+«Edit Cloudflare Workers» shablonida **Workers KV Storage: Edit** ruxsati ham bo'lishi kerak.)

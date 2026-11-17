@@ -1134,6 +1134,8 @@
               var er = {}; er[r.data.field] = r.data.error;
               showErrors(form, er);
               say("", false);
+            } else if (r.res.status === 429) {
+              openTelegram("Juda ko'p urinish bo'ldi, keyinroq qayta urining.");
             } else {
               openTelegram("Arizani yuborib bo'lmadi.");
             }

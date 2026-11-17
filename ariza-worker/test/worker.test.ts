@@ -289,3 +289,34 @@ describe("POST /ariza — umumiy endpoint", () => {
     assert.equal(res.status, 400);
   });
 });
+
+describe("IP rate limit", () => {
+  const store = new Map<string, string>();
+  const kv = {
+    get: async (k: string) => store.get(k) ?? null,
+    put: async (k: string, v: string) => { store.set(k, v); },
+  };
+  const limited = { ...env, RATE_LIMIT_KV: kv };
+  const from = (ip: string) => ({ Origin: SERVICES, "cf-connecting-ip": ip });
+  beforeEach(() => store.clear());
+
+  it("5 so'rov — 200, 6-si — 429 + Retry-After; boshqa IP ta'sirlanmaydi", async () => {
+    for (let i = 0; i < 5; i++) assert.equal((await post("/", ariza, from("1.1.1.1"), limited)).status, 200);
+    const res = await post("/", ariza, from("1.1.1.1"), limited);
+    assert.equal(res.status, 429);
+    const retry = Number(res.headers.get("Retry-After"));
+    assert.ok(retry > 0 && retry <= 3600);
+    assert.match(String(((await res.json()) as { error: string }).error), /Juda ko'p/);
+    assert.equal((await post("/", ariza, from("2.2.2.2"), limited)).status, 200);
+  });
+
+  it("KV binding yo'q bo'lsa cheklov yo'q", async () => {
+    for (let i = 0; i < 7; i++) assert.equal((await post("/", ariza, from("3.3.3.3"))).status, 200);
+  });
+
+  it("/tg cheklanmaydi", async () => {
+    store.set(`rl:4.4.4.4:${Math.floor(Date.now() / 3_600_000)}`, "99");
+    const res = await post("/tg", {}, { "cf-connecting-ip": "4.4.4.4" }, limited);
+    assert.notEqual(res.status, 429);
+  });
+});
